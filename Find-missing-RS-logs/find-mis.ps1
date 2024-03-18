@@ -10,6 +10,7 @@ $rsPath = "C:\DDA\station\data\RS" + $date + "24.D1" + $shift
 $rsContent = Get-Content -Path $rsPath
 $numOfLines = (Get-Content $rsPath | Measure-Object -Line).Lines
 $startIndex = 39 #The first index after "rec =" on the dlg file"
+$count = 0
 #END DECLERATIONS
 
 for ($i = 1; $i -lt $numOfLines; $i++) {
@@ -26,12 +27,13 @@ for ($i = 1; $i -lt $numOfLines; $i++) {
     if($tmp -lt 0){
         $tmp = $tranNum+1 #Set the next expected transaction number
         continue
-    } elseif ($tmp == $tranNum) { #If the expected transaction number is found
+    } elseif ($tmp -eq $tranNum) { #If the expected transaction number is found
         $tmp = $tranNum+1
         continue
     } else { #If the expected transaction number is not found
         $missingTran += $tmp #Add the missing transaction number to the missing transaction array
-        $missingTran[$i] += $i + [Math]::Floor($i/2) #Add the line number of the missing transaction number to the missing transaction array
+        $missingTran[$i] += $i $count
+        $count++
         $tmp = $tranNum+1
     }
 }
