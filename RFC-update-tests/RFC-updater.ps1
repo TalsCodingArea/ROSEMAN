@@ -109,4 +109,7 @@ for ($i = 1; $i -lt $prmContent.Length; $i++) {
 Set-Content -Path $prmPath -Value $prmContent
 Write-Output "The new content has been set"
 Write-Output "Step 4 completed"
+
+#Step 5: Defining pump in the station.json file
+$jsonPath = "C:\DDA\station\DC\station.json"
 Start-Sleep -Seconds 5
