@@ -7,7 +7,7 @@ $missingTran = @()
 $tmp = -1
 $firstTran = 0
 $dlgPath = "C:\DDA\station\log"
-$dlgFiles = Get-ChildItem -Path $dlgPath -Filter "*.dlg" -Recurse
+$dlgFiles = Get-ChildItem -Path $dlgPath -Filter "*dlg*" -Recurse
 $rsPath = "C:\DDA\station\data\RS" + $dateInput + ".D1" + $shiftInput
 $rsContent = Get-Content -Path $rsPath
 $numOfLines = (Get-Content $rsPath | Measure-Object -Line).Lines
@@ -17,26 +17,27 @@ $count = 0
 
 for ($i = 1; $i -lt $numOfLines; $i++) {
     $line = $rsContent[$i]
-    $tranNum = $line.Substring(40 - 1, 52 - 40 + 1)
-    if(-not($tranNum -match "^\d+$")){
+    $tranNum = $line.Substring(45 - 1, 52 - 45 + 1)
+    if(-not($tranNum -match "\d")){
         continue #Skip the lines that doesn't have a transaction number
     }
     else{
+        $tranNum = $tranNum -replace '\D', '' #Remove all non-numeric characters
         $tranNum = [int]$tranNum
     }
-    $firstTran = $tranNum #Set the first transaction number
     #ADD SCRIPT TO CHECK MATCH FROM PREVIOUS TRANSACTION NUMBER
     if($tmp -lt 0){
+        $firstTran = $tranNum #Set the first transaction number
         $tmp = $tranNum+1 #Set the next expected transaction number
         continue
     } elseif ($tmp -eq $tranNum) { #If the expected transaction number is found
-        $tmp = $tranNum+1
+        $tmp++
         continue
     } else { #If the expected transaction number is not found
         $missingTran += $tmp #Add the missing transaction number to the missing transaction array
-        $missingTran[$i] += $i $count
+        $missingTran += $i + ˙$count
         $count++
-        $tmp = $tranNum+1
+        $tmp++
     }
 }
 #Back up the RS file
@@ -56,8 +57,12 @@ for($i = 0; $i -lt $missingTran.Length; $i = $i+2){
             # Check if line contains the specific integer and the string "rec ="
             if ($line -match "rec =" -and $line -match $missingTran[$i]) {
                 $sourceLine = $line.Substring($startIndex)
+                $newContent = $rsContent[0..$missingTran[$i+1]]
+                $newContent += $sourceLine
+                $newContent += $rsContent[($missingTran[$i+1]+1)..$rsContent.Length - 1]
                 $rsContent = $rsContent[0..$missingTran[$i+1]] + $sourceLine + $rsContent[$missingTran[$i+1]..$rsContent.Length - 1]
             }
         }
     }
 }
+Set-Content -Path $rsPath -Value $rsContent
