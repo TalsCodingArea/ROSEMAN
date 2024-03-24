@@ -1,12 +1,14 @@
 #DECLERATIONS
 $date = xxxx #Change this to the desired date (ddmm)
 $shift = x #Change this to the desired shift (A, B, C)
+$dateInput = Read-Host -Prompt "Enter the date in the format DDMMYY"
+$shiftInput = Read-Host -Prompt "Enter the shift (A, B, C ...)"
 $missingTran = @()
 $tmp = -1
 $firstTran = 0
 $dlgPath = "C:\DDA\station\log"
 $dlgFiles = Get-ChildItem -Path $dlgPath -Filter "*.dlg" -Recurse
-$rsPath = "C:\DDA\station\data\RS" + $date + "24.D1" + $shift
+$rsPath = "C:\DDA\station\data\RS" + $dateInput + ".D1" + $shiftInput
 $rsContent = Get-Content -Path $rsPath
 $numOfLines = (Get-Content $rsPath | Measure-Object -Line).Lines
 $startIndex = 39 #The first index after "rec =" on the dlg file"
@@ -39,10 +41,12 @@ for ($i = 1; $i -lt $numOfLines; $i++) {
 }
 #Back up the RS file
 # Rename the existing file
-Rename-Item -Path "C:\DDA\station\data\RS" + $date + "24.D1" + $shift -NewName "old-rs" + $date + "24.D1" + $shift
+$backUpName = "RS" + $dateInput + ".D1" + $shiftInput + "-old"
+Rename-Item -Path $rsPath -NewName $backUpName
+$backUpPath = "C:\DDA\station\data\" + $backUpName
 
 # Create a new file with the same content
-Get-Content $rsPath + "-old" | Set-Content -Path $rsPath
+Get-Content $backUpPath | Set-Content -Path $rsPath
 
 #Replace the missing transaction numbers with the corresponding lines from the dlg files
 for($i = 0; $i -lt $missingTran.Length; $i = $i+2){
