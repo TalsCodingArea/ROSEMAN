@@ -8,6 +8,11 @@ from datetime import datetime
     - This function checks if a pump has been opened and closed
 2. pump_difference
     - This function sums the opening counter in the pump's opening with all the transactions and compares it to the closing counter
+3. dlg_finder
+    - This function finds all the processes of a pump and nzl in a given shift
+    @param array: An array of the following format: [nzl, start_shift, end_shift, date, pump, nzl, start_shift, end_shift, date, pump, ...]
+    The time should be in the format of 20:30
+    The date should be in the format of 0103 (Mar 1st)
 '''
 #Done
 def open_close(date, shift, register, pump, nzl):
@@ -79,56 +84,72 @@ def pump_difference(pump, nzl):
     print("Pump: " + pump + " NZL: " + nzl + " has been opened and not closed")
     return False
 
-
+#Done
 def dlg_finder(array):
-    start = False
-    money = 0.0
-    nzl = 1 #TEMPORARY
-    date = input("Enter the date (DD-MM): ")
-    pump = input("Enter the pump: ")
-    DLG_path = "/Users/talshaubi/Documents/ROSEMAN/log/DLG" + date + "." + str(pump).zfill(2)
-    found = False
-    date_obj = datetime.strptime(date[0:2] + "-" + date[2:4], '%d-%m')
-    formatted_date = date_obj.strftime('%b %d').replace(" 0", " ")
-    print(formatted_date)
-    time = "6:20" #TEMPORARY
-    temp_line = ""
-    nzl_found = False
-    lines_to_write = ""
-    for i in range(1, 30):
-        if not os.path.isfile(DLG_path + (str(i).zfill(2))):
-            print("File not found")
-            break
-        else:
-            with open(DLG_path + (str(i).zfill(2)), 'r', errors="ignore") as file:
-                print("File found")
-                i = 0
-                lines = file.readlines()
-                while (i < len(lines)):
-                    if(found):
-                        if("------------------------- s t a r t - p r o c e s s -------------------------" in lines[i]):
-                            temp_line += lines[i]
-                            i += 1
-                            while(i < len(lines) and "------------------------- s t a r t - p r o c e s s -------------------------" not in lines[i]):
-                                if "Handle " + nzl in lines[i]:
-                                    nzl_found = True
-                                temp_line += lines[i]
+    for j in range(0, array.__len__(), 5):
+        nzl = array[j]
+        start_shift = array[j+1]
+        end_shift = array[j+2]
+        date = array[j+3]
+        pump = array[j+4]
+        DLG_path = "/Users/talshaubi/Documents/ROSEMAN/log/DLG" + date + "." + str(pump).zfill(2)
+        date_obj = datetime.strptime(date[0:2] + "-" + date[2:4], '%d-%m')
+        formatted_date = date_obj.strftime('%b %d').replace("0", " ")
+        #print(formatted_date)
+        temp_lines = ""
+        lines_to_write = ""
+        nzl_found = False
+        shift_opened = False
+        shift_closed = False
+        for i in range(1, 30): #Loop through every DLG file with the given date and pump
+            if not os.path.isfile(DLG_path + (str(i).zfill(2))): #Make sure the DLG was created
+                print("File not found")
+                break
+            else:
+                with open(DLG_path + (str(i).zfill(2)), 'r', errors="ignore") as file:
+                    print("File found")
+                    i = 0
+                    lines = file.readlines()
+                    while (i < len(lines)):
+                        if(shift_opened):
+                            if("------------------------- s t a r t - p r o c e s s -------------------------" in lines[i]): #Find the start of a process
+                                #print ("Process found in line " + str(i))
+                                temp_lines += lines[i]
                                 i += 1
-                            if nzl_found:
-                                lines_to_write += temp_line
-                                nzl_found = False
-                            temp_line = ""
-                    if (formatted_date in lines[i] and "......... Open Shift at" in lines[i] and time in lines[i]):
-                        found = True
-                        continue
-                    if(found and formatted_date in lines[i] and".......... Close Shift at" in lines[i]):
-                        break
-                    i += 1
-                output_path = "/Users/talshaubi/Documents/ROSEMAN/log/"
-                with open(output_path + "output.txt", 'w') as file:
-                    for line in lines:
-                        # Write each line to the file with a newline at the end
-                        file.write(line + '\n')
+                                while(i < len(lines) and "------------------------- s t a r t - p r o c e s s -------------------------" not in lines[i]): #Until next process starts
+                                    if ("Handle " + str(nzl)) in lines[i]: #A flag if this is a process with the desired nzl
+                                        print ("NZL found in line " + str(i))
+                                        nzl_found = True
+                                    temp_lines += lines[i] #Lines stored in temporary variable in case this isn't the nzl we want
+                                    if(shift_opened and formatted_date in lines[i] and "Close Shift" in lines[i]): #If the shift was close in the middle of a process
+                                        print("Shift closed in line in the middle of a process!")
+                                        shift_closed = True
+                                        break
+                                    i += 1
+                                i-=1 #This is to copy the --start process-- line for the next process and in case we exit the while loop at the end of the file
+                                if nzl_found:
+                                    lines_to_write += temp_lines #If this is the nzl we want, copy the lines
+                                    #print("copied lines")
+                                    nzl_found = False
+                                temp_lines = "" #Reset the temporary variable
+                        if (formatted_date in lines[i] and "Open Shift" in lines[i] and start_shift in lines[i]): #Find the start of the shift
+                            #print("Shift opened in line " + str(i))
+                            shift_opened = True
+                        if(shift_opened and formatted_date in lines[i] and "Close Shift" in lines[i] and end_shift in line[i]): #Find the end of the shift
+                            #print("Shift closed in line " + str(i))
+                            shift_closed = True
+                            break
+                        i += 1
+                    if lines_to_write != "" and shift_closed: #If we found lines to copy
+                        print ("Writing to file")
+                        output_path = "/Users/talshaubi/Documents/ROSEMAN/log/"
+                        with open(output_path + "output.txt", 'w') as new_file:
+                            for line in lines_to_write:
+                                # Write each line to the file with a newline at the end
+                                new_file.write(line)
+                    if shift_opened and shift_closed:
+                        print("Shift opened and closed")
+                        return
 
 def check_string_in_file(file_name, string_to_search):
     """Check if any line in the file contains given string."""
@@ -140,12 +161,6 @@ def check_string_in_file(file_name, string_to_search):
             if string_to_search in line:
                 return True
     return False
-
-'''
-file_name = 'test.txt'
-string_to_search = 'Hello'
-print(check_string_in_file(file_name, string_to_search))
-'''
 
 def counter_difference():
     tran_start = 45
@@ -189,11 +204,4 @@ def counter_difference():
                 break
     return
 
-'''
-if __name__ == "__main__":
-    func_name = sys.argv[1]   # get function name
-    if func_name == "pump_difference":
-        pump_difference()  # call function
-'''
 
-dlg_finder([])

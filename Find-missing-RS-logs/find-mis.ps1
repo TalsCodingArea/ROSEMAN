@@ -59,7 +59,7 @@ for($i = 0; $i -lt $missingTran.Length; $i = $i+2){
                 $sourceLine = $line.Substring($startIndex)
                 $newContent = $rsContent[0..$missingTran[$i+1]]
                 $newContent += $sourceLine
-                $newContent += $rsContent[($missingTran[$i+1]+1)..$rsContent.Length - 1]
+                $newContent += $rsContent[($missingTran[$i+1]+1)..($rsContent.Count - 1)]
                 $rsContent = $rsContent[0..$missingTran[$i+1]] + $sourceLine + $rsContent[$missingTran[$i+1]..$rsContent.Length - 1]
             }
         }
