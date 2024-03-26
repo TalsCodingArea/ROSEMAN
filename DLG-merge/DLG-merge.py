@@ -13,9 +13,10 @@ from datetime import datetime
     @param array: An array of the following format: [nzl, start_shift, end_shift, date, pump, nzl, start_shift, end_shift, date, pump, ...]
     The time should be in the format of 20:30
     The date should be in the format of 0103 (Mar 1st)
+    @return: A file with all the processes of the given pump and nzl in the given shift called output.txt
 '''
 #Done
-def open_close(date, shift, register, pump, nzl):
+def open_close(rs_path, pump, nzl):
     tran_start = 45
     tran_end = 51
     pump_start = 38
@@ -23,10 +24,9 @@ def open_close(date, shift, register, pump, nzl):
     nzl_start = 34
     nzl_end = 37
     cnt = 0
-    rs_path = "/Users/talshaubi/Documents/ROSEMAN/data/RS" + date + "24.D" + register + shift
     if not os.path.isfile(rs_path):
-        print("File not found")
-        return
+        #print("File not found")
+        return False
     else:
         with open(rs_path, 'r', errors="ignore") as file:
             lines = file.readlines()
@@ -47,7 +47,7 @@ def open_close(date, shift, register, pump, nzl):
         return False
 
 #Done
-def pump_difference(pump, nzl):
+def pump_difference(rs_path, pump, nzl):
     tran_start = 45
     tran_end = 51
     pump_start = 38
@@ -58,10 +58,6 @@ def pump_difference(pump, nzl):
     money_end = 9
     start = False
     money = 0.0
-    date = input("Enter the date (DD-MM): ")
-    shift = input("Enter the shift (A, B, C): ")
-    register = input("Enter the register number: ")
-    rs_path = "/Users/talshaubi/Documents/ROSEMAN/data/RS" + date + "24.D" + register + shift
     if not os.path.isfile(rs_path):
         print("File not found")
         return
@@ -85,14 +81,18 @@ def pump_difference(pump, nzl):
     return False
 
 #Done
-def dlg_finder(array):
-    for j in range(0, array.__len__(), 5):
-        nzl = array[j]
-        start_shift = array[j+1]
-        end_shift = array[j+2]
-        date = array[j+3]
-        pump = array[j+4]
-        DLG_path = "/Users/talshaubi/Documents/ROSEMAN/log/DLG" + date + "." + str(pump).zfill(2)
+def dlg_finder(rs_path, DLG_path, date, pump, nzl):
+    with open(rs_path, 'r', errors="ignore") as file:
+        lines = file.readlines()
+        reversed_lines = reversed(lines)
+        for line in lines[1:]:
+            if("Open" in line):
+                start_shift = line[45:51]
+                break
+        for line in reversed_lines:
+            if("Close" in line):
+                end_shift = line[45:51]
+                break
         date_obj = datetime.strptime(date[0:2] + "-" + date[2:4], '%d-%m')
         formatted_date = date_obj.strftime('%b %d').replace("0", " ")
         #print(formatted_date)
@@ -143,7 +143,7 @@ def dlg_finder(array):
                     if lines_to_write != "" and shift_closed: #If we found lines to copy
                         print ("Writing to file")
                         output_path = "/Users/talshaubi/Documents/ROSEMAN/log/"
-                        with open(output_path + "output.txt", 'w') as new_file:
+                        with open(output_path + "pump " + pump + " nzl " + nzl + ".txt", 'w') as new_file:
                             for line in lines_to_write:
                                 # Write each line to the file with a newline at the end
                                 new_file.write(line)
@@ -205,3 +205,23 @@ def counter_difference():
     return
 
 
+date = input("Please enter the date in a format of DDMM: ")  # Get the date from the user
+shift = input("Please enter the shift in a format of A, B, C: ")  # Get the shift from the user
+amount_pump = input("Please enter the amount of pumps in the station: ")  # Get the amount of pumps in the station from the user
+rs_path = "/Users/talshaubi/Documents/ROSEMAN/data/RS" + date + "24.D1" + shift  # The path to the RS file
+
+for i in range(1, 3): #Loop through all the registers
+    if os.path.isfile(rs_path):
+        for j in range(1, int(amount_pump) + 1): #Loop through all the pumps
+            DLG_path = "/Users/talshaubi/Documents/ROSEMAN/log/DLG" + date + str(j).zfill(2)  # The path to the DLG file
+            for t in range(1, 4): #Loop through all the NZLs
+                if(pump_difference()):
+                    print("Pump: " + j + " NZL: " + t + " has a difference in the counter")
+                    if(open_close(rs_path, j, t)):
+                        print("Pump: " + j + " NZL: " + t + " has been opened and closed")
+                        dlg_finder([t, shift, shift, date, j])
+                    else:
+                        print("Pump: " + j + " NZL: " + t + " has not been opened and closed properly")
+                else:
+                    continue
+print("Done :)")
