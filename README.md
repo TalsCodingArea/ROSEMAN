@@ -2,7 +2,7 @@
 This directory was created by in order to have a centerlized and orgenized location for all the automations I intend to create in order to make the workflow of the technical support at "ROSEMAN Enginnering" more effective! <br><br>
 <p align="center">
   <img src="https://media.licdn.com/dms/image/C4E1BAQFJIo2QCTY_Sw/company-background_10000/0/1595165863888/roseman_engineering_cover?e=2147483647&v=beta&t=VffMSm77VKWzF46rZb_urH5Okf1McHxVT-b5RF2Xag0" alt="button" style="width:300px; height:100px; border-radius:50%; padding:10px;"/>
-  <a href="[https://www.npmjs.com/package/readme-md-generator](https://www.roseman.tech/)">
+  <a href="https://www.npmjs.com/package/readme-md-generator](https://www.roseman.tech/">
   </a>
 </p>
 
