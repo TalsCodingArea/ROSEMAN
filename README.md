@@ -7,7 +7,7 @@ This directory was created by in order to have a centerlized and orgenized locat
 </p>
 
 ## How to use this directory
-The only part that is functional is the [exe files folder](github.com)
+The only part that is functional is the [Automations](https://github.com/TalsCodingArea/ROSEMAN/tree/main/Automation) folder
 
 You can find an intire list of exe files you can run in any windows computer
 <br><br>

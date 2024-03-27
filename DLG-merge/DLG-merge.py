@@ -208,12 +208,12 @@ def counter_difference():
 date = input("Please enter the date in a format of DDMM: ")  # Get the date from the user
 shift = input("Please enter the shift in a format of A, B, C: ")  # Get the shift from the user
 amount_pump = input("Please enter the amount of pumps in the station: ")  # Get the amount of pumps in the station from the user
-rs_path = "/Users/talshaubi/Documents/ROSEMAN/data/RS" + date + "24.D1" + shift  # The path to the RS file
+rs_path = "C:\DDA\station\data\RS" + date + "24.D1" + shift  # The path to the RS file
 
 for i in range(1, 3): #Loop through all the registers
     if os.path.isfile(rs_path):
         for j in range(1, int(amount_pump) + 1): #Loop through all the pumps
-            DLG_path = "/Users/talshaubi/Documents/ROSEMAN/log/DLG" + date + str(j).zfill(2)  # The path to the DLG file
+            DLG_path = "C:\DDA\station\log\DLG" + date + str(j).zfill(2)  # The path to the DLG file
             for t in range(1, 4): #Loop through all the NZLs
                 if(pump_difference()):
                     print("Pump: " + j + " NZL: " + t + " has a difference in the counter")
