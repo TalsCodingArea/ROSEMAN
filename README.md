@@ -6,7 +6,7 @@ This directory was created by in order to have a centerlized and orgenized locat
   </a>
 </p>
 
-## How to use this directory
+## How to use this directory 🤔
 The only part that is functional is the [Automations](https://github.com/TalsCodingArea/ROSEMAN/tree/main/Automation) folder
 
 You can find an intire list of exe files you can run in any windows computer
@@ -14,7 +14,7 @@ You can find an intire list of exe files you can run in any windows computer
 <br><br>
 
 
-## List of Automations
+## List of Automations 📓
 
 This will have the list of every automation I create and the detailes about each one.
 <br><br>
