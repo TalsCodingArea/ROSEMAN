@@ -20,11 +20,13 @@ This will have the list of every automation I create and the detailes about each
 <br><br>
 
 ### DLG-merge 🤲🏻🙏🏻
-**Input** - The function will ask you for a date in the format of DDMM
+**Input** - The automation will ask you for a date, shift and how many pumps are in the station
 
-**Output** - The function will...
+**Output** - If the pump and nozzle have been opened and/or closed properly and if so it will create a new file that has all the proccesses that are related to this pump and nozzles in the DLG files
 
-**Description** - 123123
+**Description** - Checking for all the pumps and for nozzles 1 to 3 it will output weather the pump and nozzles have been opened, if so it will check if they have a difference in counter.
+For the nozzles that have a difference in them the automation will check if the nozzle have been opened and closed properly, and if not it will print that the pump and nozzles have not been closed properly
+For each pump and nozzle that have been opened and closed properly it will create a new file for all the processes that are in the DLG files that are related to this specific pump and nozzle
 
 <br><br>
 ---
