@@ -198,6 +198,7 @@ shift = input("Please enter the shift in a format of A, B, C: ")  # Get the shif
 rs_path = "C:/DDA/station/data/RS" + date + "24.D1" + shift  # The path to the RS file
 DLG_path = "C:/DDA/station/log/DLG" + date  # The path to the DLG file
 station_path = "C:/DDA/station/STATION.PRM" #The path to the station.prm file
+
 #End of declerations
 
 
