@@ -1,6 +1,8 @@
 import os
 import sys
 from datetime import datetime
+import easygui
+
 
 '''
 -------------------------------FUNCTIONS DESCRIPTION-------------------------------
@@ -173,7 +175,7 @@ def dlg_finder(rs_path, DLG_path, date, pump, nzl):
                         i += 1
                     if lines_to_write != "" and shift_closed: #If we found lines to copy
                         print ("Writing to file")
-                        output_path = "/Users/talshaubi/Documents/ROSEMAN/log/"
+                        output_path = "C:\DDA\station\log\\"
                         with open(output_path + "pump" + str(pump) + " nzl" + str(nzl) + ".txt", 'w') as new_file:
                             for line in lines_to_write:
                                 # Write each line to the file with a newline at the end
@@ -183,48 +185,6 @@ def dlg_finder(rs_path, DLG_path, date, pump, nzl):
                         return
 
 
-    tran_start = 45
-    tran_end = 51
-    pump_start = 38
-    pump_end = 44
-    nzl_start = 34
-    nzl_end = 37
-    money_start = 0
-    money_end = 6
-    date = input("Enter the date (DD-MM): ")
-    shift = input("Enter the shift (A, B, C): ")
-    register = input("Enter the register number: ")
-    rs_path = "/Users/talshaubi/Documents/ROSEMAN/data/RS" + date + "24.D" + register + shift
-    if not os.path.isfile(rs_path):
-        print("File not found")
-        return
-    else:
-        with open(rs_path, 'r', errors="ignore") as file:
-            lines = file.readlines()
-            reversed_lines = reversed(lines)
-        for line in lines[1:]:
-            tran_val = line[tran_start:tran_end].replace(" ", "")
-            if not tran_val.isdigit():
-                pump_number = line[pump_start:pump_end]
-                nzl_number = line[nzl_start:nzl_end]
-                for reveresed_line in reversed(lines):
-                    trans_val = reveresed_line[tran_start:tran_end].replace(" ", "")
-                    if not trans_val.isdigit():
-                        if(reveresed_line[pump_start:pump_end] == pump_number and reveresed_line[nzl_start:nzl_end] == nzl_number):
-                            if trans_val == "Close":
-                                print("Pump: " + pump_number + " NZL: " + nzl_number + " has been opened and closed")
-                                break
-                        else:
-                            continue
-                    else:
-                        print("Pump: " + pump_number + " NZL: " + nzl_number + " has been opened and not closed after the last transaction")
-                        break
-            else:
-                print("Finished going through the file")
-                break
-    return
-
-
 date = input("Please enter the date in a format of DDMM: ")  # Get the date from the user
 shift = input("Please enter the shift in a format of A, B, C: ")  # Get the shift from the user
 amount_pump = input("Please enter the amount of pumps in the station: ")  # Get the amount of pumps in the station from the user
@@ -232,12 +192,12 @@ amount_pump = input("Please enter the amount of pumps in the station: ")  # Get 
 #Declerations
 
 #Windows rs_path = "C:\DDA\station\data\RS" + date + "24.D1" + shift  # The path to the RS file
-#Windows dlg_path = "C:\DDA\station\log\DLG" + date + "01"  # The path to the DLG file
+#Windows DLG_path = "C:\DDA\station\log\DLG" + date + "01"  # The path to the DLG file
 #Mac rs_path = "/Users/talshaubi/Documents/ROSEMAN/data/RS" + date + "24.D1" + shift  # The path to the RS file
-#Mac dlg_path = "/Users/talshaubi/Documents/ROSEMAN/log/DLG" + date + "01"  # The path to the DLG file
+#Mac DLG_path = "/Users/talshaubi/Documents/ROSEMAN/log/DLG" + date + "01"  # The path to the DLG file
 
 rs_path = "C:\DDA\station\data\RS" + date + "24.D1" + shift  # The path to the RS file
-dlg_path = "C:\DDA\station\log\DLG" + date + "01"  # The path to the DLG file
+DLG_path = "C:\DDA\station\log\DLG" + date  # The path to the DLG file
 #End of declerations
 
 
@@ -259,3 +219,4 @@ for i in range(1, 3): #Loop through all the registers
     else:
         print("Couldn't find the rs file in the path: " + rs_path)
 print("Done :)")
+input()
