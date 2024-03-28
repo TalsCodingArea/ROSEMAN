@@ -236,8 +236,8 @@ amount_pump = input("Please enter the amount of pumps in the station: ")  # Get 
 #Mac rs_path = "/Users/talshaubi/Documents/ROSEMAN/data/RS" + date + "24.D1" + shift  # The path to the RS file
 #Mac dlg_path = "/Users/talshaubi/Documents/ROSEMAN/log/DLG" + date + "01"  # The path to the DLG file
 
-rs_path = "/Users/talshaubi/Documents/ROSEMAN/data/RS" + date + "24.D1" + shift  # The path to the RS file
-DLG_path = "/Users/talshaubi/Documents/ROSEMAN/log/DLG" + date  # The path to the DLG file
+rs_path = "C:\DDA\station\data\RS" + date + "24.D1" + shift  # The path to the RS file
+dlg_path = "C:\DDA\station\log\DLG" + date + "01"  # The path to the DLG file
 #End of declerations
 
 
