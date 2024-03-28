@@ -2,6 +2,7 @@ import os
 import sys
 from datetime import datetime
 
+
 '''
 -------------------------------FUNCTIONS DESCRIPTION-------------------------------
 1. open_close
@@ -39,7 +40,6 @@ from datetime import datetime
 '''
 
 
-
 #Done
 def open_close(rs_path, pump, nzl):
     tran_start = 45
@@ -62,7 +62,7 @@ def open_close(rs_path, pump, nzl):
             elif (int(line[pump_start:pump_end].replace(" ", "")) == pump and int(line[nzl_start:nzl_end].replace(" ", "")) == nzl and line[tran_start:tran_end].replace(" ", "") == "Close"):
                 cnt -= 1
     if cnt == 0:
-        print("Pump: " + str(pump) + " NZL: " + str(nzl) + " has been opened and closed")
+        #print("Pump: " + str(pump) + " NZL: " + str(nzl) + " has been opened and closed")
         return True
     elif cnt > 0:
         print("Pump: " + str(pump) + " NZL: " + str(nzl) + " has been opened more time than closed")
@@ -173,89 +173,54 @@ def dlg_finder(rs_path, DLG_path, date, pump, nzl):
                         i += 1
                     if lines_to_write != "" and shift_closed: #If we found lines to copy
                         print ("Writing to file")
-                        output_path = "/Users/talshaubi/Documents/ROSEMAN/log/"
+                        output_path = "C:/DDA/station/log/"
                         with open(output_path + "pump" + str(pump) + " nzl" + str(nzl) + ".txt", 'w') as new_file:
                             for line in lines_to_write:
                                 # Write each line to the file with a newline at the end
                                 new_file.write(line)
+                                print ("Stored all the processes for the pump and nozzle in a new file")
                     if shift_opened and shift_closed:
                         print("Shift opened and closed")
                         return
 
 
-    tran_start = 45
-    tran_end = 51
-    pump_start = 38
-    pump_end = 44
-    nzl_start = 34
-    nzl_end = 37
-    money_start = 0
-    money_end = 6
-    date = input("Enter the date (DD-MM): ")
-    shift = input("Enter the shift (A, B, C): ")
-    register = input("Enter the register number: ")
-    rs_path = "/Users/talshaubi/Documents/ROSEMAN/data/RS" + date + "24.D" + register + shift
-    if not os.path.isfile(rs_path):
-        print("File not found")
-        return
-    else:
-        with open(rs_path, 'r', errors="ignore") as file:
-            lines = file.readlines()
-            reversed_lines = reversed(lines)
-        for line in lines[1:]:
-            tran_val = line[tran_start:tran_end].replace(" ", "")
-            if not tran_val.isdigit():
-                pump_number = line[pump_start:pump_end]
-                nzl_number = line[nzl_start:nzl_end]
-                for reveresed_line in reversed(lines):
-                    trans_val = reveresed_line[tran_start:tran_end].replace(" ", "")
-                    if not trans_val.isdigit():
-                        if(reveresed_line[pump_start:pump_end] == pump_number and reveresed_line[nzl_start:nzl_end] == nzl_number):
-                            if trans_val == "Close":
-                                print("Pump: " + pump_number + " NZL: " + nzl_number + " has been opened and closed")
-                                break
-                        else:
-                            continue
-                    else:
-                        print("Pump: " + pump_number + " NZL: " + nzl_number + " has been opened and not closed after the last transaction")
-                        break
-            else:
-                print("Finished going through the file")
-                break
-    return
-
-
 date = input("Please enter the date in a format of DDMM: ")  # Get the date from the user
 shift = input("Please enter the shift in a format of A, B, C: ")  # Get the shift from the user
-amount_pump = input("Please enter the amount of pumps in the station: ")  # Get the amount of pumps in the station from the user
+#amount_pump = input("Please enter the amount of pumps in the station: ")  # Get the amount of pumps in the station from the user
 
 #Declerations
 
-#Windows rs_path = "C:\DDA\station\data\RS" + date + "24.D1" + shift  # The path to the RS file
-#Windows dlg_path = "C:\DDA\station\log\DLG" + date + "01"  # The path to the DLG file
+#Windows rs_path = "C:/DDA/station/data/RS" + date + "24.D1" + shift  # The path to the RS file
+#Windows DLG_path = "C:/DDA/station/log/DLG" + date + "01"  # The path to the DLG file
 #Mac rs_path = "/Users/talshaubi/Documents/ROSEMAN/data/RS" + date + "24.D1" + shift  # The path to the RS file
-#Mac dlg_path = "/Users/talshaubi/Documents/ROSEMAN/log/DLG" + date + "01"  # The path to the DLG file
+#Mac DLG_path = "/Users/talshaubi/Documents/ROSEMAN/log/DLG" + date + "01"  # The path to the DLG file
 
-rs_path = "C:\DDA\station\data\RS" + date + "24.D1" + shift  # The path to the RS file
-dlg_path = "C:\DDA\station\log\DLG" + date + "01"  # The path to the DLG file
+rs_path = "C:/DDA/station/data/RS" + date + "24.D1" + shift  # The path to the RS file
+DLG_path = "C:/DDA/station/log/DLG" + date  # The path to the DLG file
+station_path = "C:/DDA/station/STATION.PRM" #The path to the station.prm file
 #End of declerations
 
 
-for i in range(1, 3): #Loop through all the registers
-    if os.path.isfile(rs_path):
-        for j in range(1, int(amount_pump) + 1): #Loop through all the pumps
-            for t in range(1, 4): #Loop through all the NZLs
-                if(pump_difference(rs_path, j, t)):
-                    print("Pump: " + str(j) + " NZL: " + str(t) + " has a difference in the counter")
-                    if(open_close(rs_path, j, t)):
-                        DLG_path += "." + str(j).zfill(2)  # The path to the DLG file
-                        #print("Pump: " + str(j) + " NZL: " + str(t) + " has been opened and closed")
-                        dlg_finder(rs_path, DLG_path, date, j, t)
+if os.path.isfile(station_path):
+    with open(station_path, 'r', errors="ignore") as file:
+        lines = file.readlines()
+        for line in lines:
+            if line[1:3].replace(" ", "").isdigit():
+                pump = int(line[1:3].replace(" ", ""))
+                nzl = int(line[39:40])
+                if(pump_difference(rs_path, pump, nzl)):
+                    print("Pump: " + str(pump) + " NZL: " + str(nzl) + " has a difference in the counter")
+                    print("Looking if the pump and nozzle was opened and closed properly...")
+                    if(open_close(rs_path, pump, nzl)):
+                        print("The pump and nozzle was opened and closed properly")
+                        DLG_path += "." + str(pump).zfill(2)  # The path to the DLG file
+                        #print("Pump: " + str(pump) + " NZL: " + str(nzl) + " has been opened and closed")
+                        dlg_finder(rs_path, DLG_path, date, pump, nzl)
                         DLG_path = DLG_path[:-3]
                     else:
-                        print("Pump: " + str(j) + " NZL: " + str(t) + " has not been opened and closed properly")
+                        print("Pump: " + str(pump) + " NZL: " + str(nzl) + " has not been opened and closed properly")
                 else:
                     continue
-    else:
-        print("Couldn't find the rs file in the path: " + rs_path)
-print("Done :)")
+else:
+    print("Couldn't find the station file in the path: " + rs_path)
+input()
