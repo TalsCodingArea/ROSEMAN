@@ -33,20 +33,22 @@ For each pump and nozzle that have been opened and closed properly it will creat
 <br><br>
 
 ### find-mis 🧐
-**Input** - The function will ask you for a date in the format of DDMM
+**Input** - The automation will ask you for a date in the format of DDMM and shift (A, B, C...)
 
-**Output** - The function will...
+**Output** - The function doesn't output anything on the command prompt but creates a new RS file
 
-**Description** - 123123
+**Description** - This automation is going through the entire RS file and find the missing transactions numbers according the ascending order wiriting the missing transaction to an array.
+Afterwards, for each transaction number in the array, it looks for information in the DLG files for those specific transactions. It the the automation finds the transaction information it adds the missing transaction to the RS file in the correct position.
+Before entering the information to the RS file it create a backup RS file.
 
 <br><br>
 ---
 <br><br>
 
 ### RFC-updater ⬆️📥
-**Input** - The function will ask you for a date in the format of DDMM
+**Input** - This automation doesn't ask for input
 
-**Output** - The function will...
+**Output** - The automation doesn't output anything on the command prompt
 
-**Description** - 123123
+**Description** - The RFC updater makes sure all the necessary files are well written in order to update the RFC
 
