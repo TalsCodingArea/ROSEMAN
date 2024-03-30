@@ -16,7 +16,7 @@ You can find an intire list of exe files you can run in any windows computer
 
 <h1 align="center">List of Automations 📓</h1>
 
-This will have the list of every automation I create and the detailes about each one.
+<p align="center">This is a list of every automation I've create and the detailes about each one.</p>
 <br><br>
 
 ### DLG-merge 🤲🏻🙏🏻
