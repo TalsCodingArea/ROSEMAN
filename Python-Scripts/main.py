@@ -209,7 +209,7 @@ def dlg_check(rs_path, DLG_path, pump, nzl):
             tran_array = []
             money = 0.0
             for line in rs_file:
-                if("Open" in line and open_money == 0):
+                if("Open" in line and money == 0):
                     money = float(line.split()[0])
                 if (line.split()[5].isdigit() and int(line.split()[3]) == pump and int(line.split()[2]) == nzl):
                     tran_array.append(line)
