@@ -243,6 +243,78 @@ def dlg_check(rs_path, DLG_path, pump, nzl):
                                         if ("OP:fs" in line):
                                             cnt += 1
 
+def tran_check(rs_path, DLG_path, pump, nzl):
+    if not os.path.isfile(rs_path):
+        print("RS file not found")
+        return
+    else:
+        with open(rs_path, 'r', errors="ignore") as rs_file:
+            for line in rs_file:
+                first_line = True
+                for line in rs_file:
+                    cnt = 0.0
+                    time = ""
+                    shift_opened = False
+                    if first_line:
+                        first_line = False
+                        continue
+                    if (line.split()[5] == "Open" and int(line.split()[3]) == pump and int(line.split()[2]) == nzl):
+                        cnt = line.split()[1]
+                        time = line.split()[5]
+                    if (line.split()[5].isdigit() and int(line.split()[4]) == pump and int(line.split()[3]) == nzl):
+                        tran_num = line.split()[5]
+                        DLG_path = DLG_path[:-3]
+                        for i in range (1, 30):
+                            if not os.path.isfile(DLG_path + (str(i).zfill(2))):
+                                break
+                            else:
+                                with open(DLG_path + (str(i).zfill(2)), 'r', errors="ignore") as DLG_file:
+                                    for i in range(len(DLG_file)):
+                                        op_fs_cnt = 0
+                                        if ("rec =" in DLG_file[i] and tran_num in DLG_file[i]):
+                                            start_process = False
+                                            invalid_cnt = 0
+                                            while not start_process and i > 0:
+                                                i -= 1
+                                                if ("- s t a r t - p r o c e s s -" in DLG_file[i]):
+                                                    start_process = True
+                                                    i += 1
+                                            while start_process and i < len(DLG_file):
+                                                if ("- s t a r t - p r o c e s s -" in DLG_file[i]):
+                                                    if(op_fs_cnt > int(line.split()[1])):
+                                                        print("The transaction number " + tran_num + " pumped fuel and not registered correctly")
+                                                    if (invalid_cnt >10):
+                                                        print("Found several lines with 'Invalid event' on the process description of transaction number: " + tran_num)
+                                                    cnt += line.split()[1]
+                                                    break
+                                                if ("Current  total volume=" in DLG_file[i]):
+                                                    current = float(extract_between(DLG_file[i]))
+                                                    if (abs(current - cnt) > 1):
+                                                        print("The opening counter for transaction number " + tran_num + " is not equal to the sum of the earlier transactions")
+                                                        return
+                                                if ("OP:fs" in DLG_file[i]):
+                                                    op_fs_cnt += 1
+                                                if ("Dda: 2-1  F" in DLG_file[i]):
+                                                    tmp = cnt + (line.split()[1])
+                                                    tmp = int(tmp*10)
+                                                    tmp = float(tmp)/10
+                                                    if (str(tmp) in DLG_file[i]):
+                                                        print("The transaction number " + tran_num + " is correct")
+                                                        break
+                                                    else:
+                                                        print("Transaction number: " + tran_num + "")
+                                                if ("Invalid" in DLG_file[i]):
+                                                    invalid_cnt += 1
+                                                i += 1
+                                                    
+
+                                                
+
+
+def extract_between(s):
+    start = s.find('=') + 1 # to get the index after "="
+    end = s.find(';') # to get the index of ";"
+    return s[start:end].strip() if start != -1 and end != -1 else "Not found" # strip to remove leading/trailing spaces
 
 
 
@@ -250,8 +322,8 @@ def dlg_check(rs_path, DLG_path, pump, nzl):
 
 
 
-date = input("Please enter the date in a format of DDMM: ")  # Get the date from the user
-shift = input("Please enter the shift in a format of A, B, C: ")  # Get the shift from the user
+#date = input("Please enter the date in a format of DDMM: ")  # Get the date from the user
+#shift = input("Please enter the shift in a format of A, B, C: ")  # Get the shift from the user
 #amount_pump = input("Please enter the amount of pumps in the station: ")  # Get the amount of pumps in the station from the user
 
 #Declerations
@@ -261,8 +333,8 @@ shift = input("Please enter the shift in a format of A, B, C: ")  # Get the shif
 #Mac rs_path = "/Users/talshaubi/Documents/ROSEMAN/data/RS" + date + "24.D1" + shift  # The path to the RS file
 #Mac DLG_path = "/Users/talshaubi/Documents/ROSEMAN/log/DLG" + date + "01"  # The path to the DLG file
 
-rs_path = "C:/DDA/station/data/RS" + date + "24.D1" + shift  # The path to the RS file
-DLG_path = "C:/DDA/station/log/DLG" + date  # The path to the DLG file
+rs_path = "C:/DDA/station/data/RS"   # The path to the RS file
+DLG_path = "C:/DDA/station/log/DLG"  # The path to the DLG file
 station_path = "C:/DDA/station/STATION.PRM" #The path to the station.prm file
 
 #End of declerations
@@ -285,7 +357,7 @@ if os.path.isfile(station_path):
                         print("The pump and nozzle was opened and closed")
                         DLG_path += "." + str(pump).zfill(2)  # The path to the DLG file
                         #print("Pump: " + str(pump) + " NZL: " + str(nzl) + " has been opened and closed")
-                        dlg_finder(rs_path, DLG_path, date, pump, nzl)
+                        dlg_finder(rs_path, DLG_path, pump, nzl)
                         DLG_path = DLG_path[:-3]
                     else:
                         print("Pump: " + str(pump) + " NZL: " + str(nzl) + " has not been opened and closed properly")
