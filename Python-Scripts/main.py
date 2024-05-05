@@ -42,36 +42,8 @@ from datetime import datetime
 
 #Done
 def open_close(rs_path, pump, nzl):
-    '''cnt = 0
-    open_cnt = 0
     first_line = True
-    if not os.path.isfile(rs_path):
-        #print("File not found")
-        return False
-    else:
-        with open(rs_path, 'r', errors="ignore") as rs_file:
-            for line in rs_file:
-                if first_line:
-                    first_line = False
-                    continue
-                line = line.split()
-                if (line[4] == "Open" and cnt == 0):
-                    if(int(line[3] == pump and int(line[2] == nzl))):
-                        cnt = line[0]
-                        open_cnt = line[0]
-                elif (line[3] == nzl and line[4] == pump):
-                    cnt += line[0]
-            if cnt == 0:
-                #print("Pump: " + str(pump) + " NZL: " + str(nzl) + " has been opened and closed")
-                return True
-            elif cnt > 0:
-                print("Pump: " + str(pump) + " NZL: " + str(nzl) + " has been opened more time than closed")
-                return False
-            else:
-                print("Pump: " + str(pump) + " NZL: " + str(nzl) + " has been closed more times than opened")
-                return False'''
-    first_line = True
-    open = False
+    opened = False
     if not os.path.isfile(rs_path):
         #print("File not found")
         return False
@@ -82,11 +54,11 @@ def open_close(rs_path, pump, nzl):
                     first_line = False
                     continue
                 if "Open" in line:
-                    if (line.split(line)[2] == nzl and line.split(line)[3] == pump):
-                        open = True
+                    if (int(line.split()[2]) == nzl and int(line.split()[3]) == pump):
+                        opened = True
                     continue
-                if ("Close" in line and open):
-                    if (line.split(line)[2] == nzl and line.split(line)[3] == pump):
+                if ("Close" in line and opened):
+                    if (int(line.split()[2]) == nzl and int(line.split()[3]) == pump):
                         return True
             return False
 
@@ -104,16 +76,19 @@ def pump_difference(rs_path, pump, nzl):
                     first_line = False
                     continue
                 if "Open" in line:
-                    if(line.split()[2] == nzl and line.split()[3] == pump and money == 0): #This is the first open for the pump and nzl
+                    if(int(line.split()[2]) == nzl and int(line.split()[3]) == pump and money == 0): #This is the first open for the pump and nzl
                         money = float(line.split()[0])
-                    elif(line.split()[2] == nzl and line.split()[3] == pump and money != 0): #This is not the first opening for the pump and nzl so we compare the money counter
+                    elif(int(line.split()[2]) == nzl and int(line.split()[3]) == pump and money != 0): #This is not the first opening for the pump and nzl so we compare the money counter
                         if(abs(money - float(line.split()[0])) > 1):
                             print("Pump: " + str(pump) + " NZL: " + str(nzl) + " has a difference in the counter before the opening at " + line.split()[5])
                             return False
                 elif (int(line.split()[3]) == nzl and int(line.split()[4]) == pump): #Finds that the pump and nzl has been opened and initializes the money count
                     money += float(line.split()[0])
                     continue
-            for reveresed_line in reversed(rs_file):#Loop from the end line to find the last closing counter of the pump and nzl and checks if it matches the total money count
+        with open(rs_path, 'r', errors="ignore") as rs_file:
+            lines = rs_file.readlines()
+            lines = lines[::-1]
+            for reveresed_line in lines:#Loop from the end line to find the last closing counter of the pump and nzl and checks if it matches the total money count
                 if ("Close" in reveresed_line):
                     if (int(reveresed_line.split()[2]) == nzl and int(reveresed_line.split()[3]) == pump):
                         #Money comparison with a precision of 1 digits after the decimal point
@@ -124,6 +99,8 @@ def pump_difference(rs_path, pump, nzl):
                         close_money_counter = float(close_money_counter)/10
                         if abs(money - close_money_counter) > 1:
                             print("Pump: " + str(pump) + " NZL: " + str(nzl) + " has a difference of " + str(abs(money - close_money_counter)) + " in the counter")
+                            return True
+                        else:
                             return False
     print("Pump: " + str(pump) + " NZL: " + str(nzl) + " has not been closed")
     return False
