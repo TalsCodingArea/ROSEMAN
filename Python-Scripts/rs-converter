@@ -1,0 +1,66 @@
+import os
+import pandas as pd
+import openpyxl
+
+def contains_any(line, array_of_strings):
+    return any(item in line for item in array_of_strings)
+
+def process_rs_file(file_path, encodings=['utf-8', 'latin1', 'iso-8859-1', 'cp1252']):
+    lines = None
+    for encoding in encodings:
+        try:
+            with open(file_path, 'r', encoding=encoding) as file:
+                lines = file.readlines()
+            break  # Exit the loop if reading was successful
+        except UnicodeDecodeError:
+            print(f"Could not decode the file with {encoding} encoding.")
+        except Exception as e:
+            print(f"An error occurred while reading the file with {encoding} encoding: {e}")
+
+    if lines is None:
+        print(f"Failed to decode the file {file_path} with provided encodings.")
+        return [], []
+
+    ids = ['020000', '030000', '040000', '050000', '060000', '070000']  # Add more IDs as needed
+
+    headers = lines[0].strip().split()
+    data = []
+
+    for line in lines[1:]:
+        entry = line.strip().split()
+        if contains_any(line, ids):
+            data.append(entry)
+
+    return headers, data
+
+def process_all_files(folder_path):
+    all_data = []
+    headers = None
+
+    for file_name in os.listdir(folder_path):
+        file_path = os.path.join(folder_path, file_name)
+        if os.path.isfile(file_path):  # Ensure it's a file and not a directory
+            print("\n")
+            print(f"Processing {file_path}...")
+            file_headers, file_data = process_rs_file(file_path)
+            if headers is None and file_headers:
+                headers = file_headers
+
+            all_data.extend(file_data)
+
+    return headers, all_data
+
+def write_to_excel(headers, data, output_file):
+    df = pd.DataFrame(data, columns=headers)
+    df.to_excel(output_file, index=False)
+
+# Main Code
+folder_path = '/Users/talshaubi/GitHub/rs-files'  # Replace with the path to your RS files
+output_file = 'output.xlsx'
+
+headers, data = process_all_files(folder_path)
+if headers and data:
+    write_to_excel(headers, data, output_file)
+    print(f"Data has been successfully exported to {output_file}")
+else:
+    print("No data was processed.")
