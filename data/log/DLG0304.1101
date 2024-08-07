@@ -1,0 +1,527 @@
+
+
+********* Opened at Wed Apr  3 10:06:18 2024
+
+
+ 10:06:23.46         Dda: 6-0  Disp : Statetbl.scr ver 6.1.57.0 
+ 10:06:23.71  - Send Dda: 6-0  R  OP:RR M:8  0<02><0B>6R0RR87;32<03>
+ 10:06:27.26  - Send Dda: 6-0  R  OP:DF M:8  0<02><0D>6R0DF800;375<03>
+ 10:06:27.31  - Recv Dda: 6-0     OP:df M:8  <02><0B>6R0df8<566<03>
+ 10:06:54.63  - Send Dda: 6-0  R  OP:RT M:0  0<02><0D>6R0RT00025<4<03>
+ 10:06:54.67  - Recv Dda: 6-0     OP:rt M:0  <02><0D>6R0rt0001:3><03>
+ 10:06:55.16  - Recv Dda: 6-0     OP:pu M:1  <02><12>6R0pu1<00>0<00><00><00><00><00>;:2:<03>
+ 10:06:55.16  - Send Dda: 6-0  R  OP:RT M:2  0<02><0D>6R0RT2004;:4<03>
+ 10:06:55.20  - Recv Dda: 6-0     OP:rt M:2  <02><0D>6R0rt200745><03>
+ 10:06:55.20         Dda: 6-0  Enable RS <- RT
+ 10:06:56.11  - Recv Dda: 6-0     OP:er M:3  <02>“6R0er3<00>000<00><00>|deviceType=0|deviceIdM
+ain=02hex|deviceIdSub=0|mainErrNum=1|subErrNum=0|isError=0|date=03042024|hour=
+100615|desc=Online|Ip=|port=|151?<03>
+ 10:06:56.11         Dda: 6-0  Invalid Event er at state 21
+  - Recv Dda: 6-0     OP:db M:4  <02>&6R0db4<00>0 DDM2 version: 5.0.207.2 4712
+<03>
+  - Recv Dda: 6-0     OP:db M:5  <02><1C>6R0db5<00>0 pump_type = 0 55?7<03>
+  - Recv Dda: 6-0     OP:db M:6  <02><1C>6R0db6<00>0 Error:Pump OK 273:<03>
+  - Recv Dda: 6-0     OP:db M:7  <02><18>6R0db7<00>0 SUPPORTED 8>;7<03>
+  - Recv Dda: 6-0     OP:db M:8  <02> 6R0db8<00>0 vista factor=50 0013?6<03>
+  - Recv Dda: 6-0     OP:db M:9  <02><1B>6R0db9<00>0 P-T: VISTA_1 5=:1<03>
+  - Recv Dda: 6-0     OP:db M:0  <02>,6R0db0<00>0 10:06:16:343: Pump status: 17 >8
+3><03>
+ 10:07:01.42  - Recv Dda: 6-0     OP:ta M:5  <02>=6R0ta5<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|9??2<03>
+ 10:07:01.42         Dda: 6-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 10:07:01.42  - Send Dda: 6-0  R  OP:CD M:6  0<02><0D>6R0CD60022<8<03>
+ 10:07:01.46  - Recv Dda: 6-0     OP:cd M:6  <02><0B>6R0cd6<75:<03>
+ 10:07:01.46         Dda: 6-0  Enable RS <- CD
+ 10:07:01.46  - Send Dda: 6-0  R  OP:SP M:7  0<02>36R0SP74.690|4.690|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|3858<03>
+ 10:07:01.50  - Recv Dda: 6-0     OP:sp M:7  <02><0B>6R0sp75;:?<03>
+ 10:07:02.32         Dda: 6-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 6-0     OP:db M:8  <02><1B>6R0db8<00>0 Stop Pump CD ?8;;<03>
+  - Recv Dda: 6-0     OP:db M:9  <02>)6R0db9<00>0 Dresser set prices (false) 22?1
+<03>
+  - Recv Dda: 6-0     OP:db M:3  <02> 6R0db3<00>0 Dresser, Price OK 209=<03>
+......... Open Shift in CloseShift at Wed Apr  3 10:08:58 2024
+
+......... Creating TS for substation 1 at Wed Apr  3 10:08:58 2024
+
+......... Close Shift at Wed Apr  3 10:46:37 2024
+
+ 10:46:37.81  - Send Dda: 6-0  R  OP:RT M:2  0<02><0D>6R0RT2004;:4<03>
+ 10:46:37.84  - Recv Dda: 6-0     OP:rt M:2  <02><0D>6R0rt200745><03>
+ 10:46:40.89  - Recv Dda: 6-0     OP:ta M:8  <02>=6R0ta8<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|=9;6<03>
+ 10:46:40.89         Dda: 6-0  WritePumpTotals: iType [1], trs totalizers to server [0], shift totalizers to server [0]
+......... Close Shift in CloseShift at Wed Apr  3 10:46:46 2024
+
+......... Creating TS for substation 1 at Wed Apr  3 10:46:47 2024
+
+......... Sending shift change message to USA_XML at Wed Apr  3 10:46:47 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Wed Apr  3 10:46:48 2024
+
+......... Open Shift at Wed Apr  3 10:46:53 2024
+
+ 10:46:54.20  - Send Dda: 6-0  R  OP:RT M:4  0<02><0D>6R0RT400?904<03>
+ 10:46:54.23  - Recv Dda: 6-0     OP:rt M:4  <02><0D>6R0rt400<6?><03>
+ 10:46:57.54  - Recv Dda: 6-0     OP:ta M:2  <02>=6R0ta2<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|528:<03>
+ 10:46:57.54         Dda: 6-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 10:46:57.54  - Send Dda: 6-0  R  OP:CD M:3  0<02><0D>6R0CD300<938<03>
+ 10:46:57.58  - Recv Dda: 6-0     OP:cd M:3  <02><0B>6R0cd397??<03>
+ 10:46:57.58  - Send Dda: 6-0  R  OP:SP M:4  0<02>36R0SP44.690|4.690|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|>159<03>
+ 10:46:57.61  - Recv Dda: 6-0     OP:sp M:4  <02><0B>6R0sp46;<<<03>
+ 10:46:58.51         Dda: 6-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 6-0     OP:db M:5  <02><1B>6R0db5<00>0 Stop Pump CD 2<<1<03>
+  - Recv Dda: 6-0     OP:db M:6  <02>"6R0db6<00>0 VER:5.0.122|17/12/1512:7<03>
+  - Recv Dda: 6-0     OP:db M:7  <02><1C>6R0db7<00>0 COUNTRY:ISRAEL<26><03>
+  - Recv Dda: 6-0     OP:db M:8  <02><1B>6R0db8<00>0 Pump Type:DRS:;:9<03>
+  - Recv Dda: 6-0     OP:db M:9  <02>)6R0db9<00>0 Dresser set prices (false) 22?1
+<03>
+  - Recv Dda: 6-0     OP:db M:1  <02> 6R0db1<00>0 Dresser, Price OK ?;2=<03>
+......... Open Shift in CloseShift at Wed Apr  3 10:47:02 2024
+
+......... Creating TS for substation 1 at Wed Apr  3 10:47:02 2024
+
+
+********* Opened at Wed Apr  3 10:54:33 2024
+
+
+ 10:54:38.51         Dda: 6-0  Disp : Statetbl.scr ver 6.1.57.0 
+ 10:54:38.76  - Send Dda: 6-0  R  OP:RR M:8  0<02><0B>6R0RR87;32<03>
+ 10:54:42.44  - Send Dda: 6-0  R  OP:DF M:8  0<02><0D>6R0DF800;375<03>
+ 10:54:42.47  - Recv Dda: 6-0     OP:df M:8  <02><0B>6R0df8<566<03>
+ 10:55:09.24  - Send Dda: 6-0  R  OP:RT M:0  0<02><0D>6R0RT00025<4<03>
+ 10:55:09.27  - Recv Dda: 6-0     OP:rt M:0  <02><0D>6R0rt0001:3><03>
+ 10:55:09.27         Dda: 6-0  Enable RS <- RT
+ 10:55:09.83  - Recv Dda: 6-0     OP:pu M:1  <02><12>6R0pu1<00>0<00><00><00><00><00>;:2:<03>
+ 10:55:09.83  - Send Dda: 6-0  R  OP:RT M:2  0<02><0D>6R0RT2004;:4<03>
+ 10:55:09.86  - Recv Dda: 6-0     OP:rt M:2  <02><0D>6R0rt200745><03>
+ 10:55:09.86         Dda: 6-0  Enable RS <- RT
+ 10:55:10.24  - Recv Dda: 6-0     OP:er M:3  <02>“6R0er3<00>000<00><00>|deviceType=0|deviceIdM
+ain=02hex|deviceIdSub=0|mainErrNum=1|subErrNum=0|isError=0|date=03042024|hour=
+105433|desc=Online|Ip=|port=|2460<03>
+ 10:55:10.24         Dda: 6-0  Invalid Event er at state 21
+  - Recv Dda: 6-0     OP:db M:4  <02>&6R0db4<00>0 DDM2 version: 5.0.207.2 4712
+<03>
+  - Recv Dda: 6-0     OP:db M:5  <02><1C>6R0db5<00>0 pump_type = 0 55?7<03>
+  - Recv Dda: 6-0     OP:db M:6  <02><1C>6R0db6<00>0 Error:Pump OK 273:<03>
+  - Recv Dda: 6-0     OP:db M:7  <02><18>6R0db7<00>0 SUPPORTED 8>;7<03>
+  - Recv Dda: 6-0     OP:db M:8  <02> 6R0db8<00>0 vista factor=50 0013?6<03>
+  - Recv Dda: 6-0     OP:db M:9  <02><1B>6R0db9<00>0 P-T: VISTA_1 5=:1<03>
+  - Recv Dda: 6-0     OP:db M:0  <02>,6R0db0<00>0 10:54:33:489: Pump status: 17 31
+?7<03>
+ 10:55:14.26  - Recv Dda: 6-0     OP:ta M:3  <02>=6R0ta3<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|16?9<03>
+ 10:55:14.26         Dda: 6-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 10:55:14.26  - Send Dda: 6-0  R  OP:CD M:4  0<02><0D>6R0CD4004<:8<03>
+ 10:55:14.29  - Recv Dda: 6-0     OP:cd M:4  <02><0B>6R0cd4>718<03>
+ 10:55:14.29  - Send Dda: 6-0  R  OP:SP M:5  0<02>36R0SP54.690|4.690|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|59;9<03>
+ 10:55:14.33  - Recv Dda: 6-0     OP:sp M:5  <02><0B>6R0sp57;>=<03>
+ 10:55:15.01         Dda: 6-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+......... Open Shift in CloseShift at Wed Apr  3 10:55:15 2024
+
+......... Creating TS for substation 1 at Wed Apr  3 10:55:15 2024
+
+  - Recv Dda: 6-0     OP:db M:6  <02><1B>6R0db6<00>0 Stop Pump CD 1=>7<03>
+  - Recv Dda: 6-0     OP:db M:8  <02>)6R0db8<00>0 Dresser set prices (false) :<=8
+<03>
+  - Recv Dda: 6-0     OP:db M:2  <02> 6R0db2<00>0 Dresser, Price OK 4=45<03>
+......... Close Shift at Wed Apr  3 14:56:39 2024
+
+ 14:56:40.62  - Send Dda: 6-0  R  OP:RT M:3  0<02><0D>6R0RT3007<94<03>
+ 14:56:40.67  - Recv Dda: 6-0     OP:rt M:3  <02><0D>6R0rt300436><03>
+ 14:56:46.39  - Recv Dda: 6-0     OP:ta M:3  <02>=6R0ta3<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|16?9<03>
+ 14:56:46.39         Dda: 6-0  WritePumpTotals: iType [1], trs totalizers to server [0], shift totalizers to server [0]
+......... Close Shift in CloseShift at Wed Apr  3 14:56:49 2024
+
+......... Creating TS for substation 1 at Wed Apr  3 14:56:50 2024
+
+......... Sending shift change message to USA_XML at Wed Apr  3 14:56:50 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Wed Apr  3 14:56:51 2024
+
+......... Open Shift at Wed Apr  3 14:56:54 2024
+
+ 14:56:55.00  - Send Dda: 6-0  R  OP:RT M:7  0<02><0D>6R0RT700:054<03>
+ 14:56:55.05  - Recv Dda: 6-0     OP:rt M:7  <02><0D>6R0rt7009?:><03>
+ 14:57:01.52  - Recv Dda: 6-0     OP:ta M:2  <02>=6R0ta2<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|528:<03>
+ 14:57:01.52         Dda: 6-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 14:57:01.52  - Send Dda: 6-0  R  OP:CD M:3  0<02><0D>6R0CD300<938<03>
+ 14:57:01.56  - Recv Dda: 6-0     OP:cd M:3  <02><0B>6R0cd397??<03>
+ 14:57:01.56  - Send Dda: 6-0  R  OP:SP M:4  0<02>36R0SP44.690|4.690|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|>159<03>
+ 14:57:01.60  - Recv Dda: 6-0     OP:sp M:4  <02><0B>6R0sp46;<<<03>
+ 14:57:02.89         Dda: 6-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 6-0     OP:db M:5  <02><1B>6R0db5<00>0 Stop Pump CD 2<<1<03>
+  - Recv Dda: 6-0     OP:db M:6  <02>)6R0db6<00>0 Dresser set prices (false) 8981
+<03>
+......... Open Shift in CloseShift at Wed Apr  3 14:57:03 2024
+
+......... Creating TS for substation 1 at Wed Apr  3 14:57:03 2024
+
+  - Recv Dda: 6-0     OP:db M:0  <02> 6R0db0<00>0 Dresser, Price OK 96?5<03>
+......... Change shift request, pos=11, pump=0, cashreg=1 at Wed Apr  3 21:35:30 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Wed Apr  3 21:35:30 2024
+
+ 21:35:30.90  - Send Dda: 6-0  R  OP:RT M:7  0<02><0D>6R0RT700:054<03>
+ 21:35:30.93  - Recv Dda: 6-0     OP:rt M:7  <02><0D>6R0rt7009?:><03>
+ 21:35:34.17  - Recv Dda: 6-0     OP:ta M:3  <02>=6R0ta3<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|16?9<03>
+ 21:35:34.17         Dda: 6-0  WritePumpTotals: iType [1], trs totalizers to server [0], shift totalizers to server [0]
+......... Close Shift in CloseShift at Wed Apr  3 21:35:40 2024
+
+......... Creating TS for substation 1 at Wed Apr  3 21:35:41 2024
+
+......... Sending shift change message to USA_XML at Wed Apr  3 21:35:41 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Wed Apr  3 21:35:42 2024
+
+......... Open Shift at Wed Apr  3 21:35:44 2024
+
+ 21:35:44.96  - Send Dda: 6-0  R  OP:RT M:0  0<02><0D>6R0RT00025<4<03>
+ 21:35:45.01  - Recv Dda: 6-0     OP:rt M:0  <02><0D>6R0rt0001:3><03>
+ 21:35:52.17  - Recv Dda: 6-0     OP:ta M:2  <02>=6R0ta2<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|528:<03>
+ 21:35:52.17         Dda: 6-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 21:35:52.17  - Send Dda: 6-0  R  OP:CD M:3  0<02><0D>6R0CD300<938<03>
+  - Recv Dda: 6-0     OP:cd M:3  <02><0B>6R0cd397??<03>
+ 21:35:52.22  - Send Dda: 6-0  R  OP:SP M:4  0<02>36R0SP44.690|4.690|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|>159<03>
+ 21:35:52.25  - Recv Dda: 6-0     OP:sp M:4  <02><0B>6R0sp46;<<<03>
+ 21:35:53.50         Dda: 6-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+......... Open Shift in CloseShift at Wed Apr  3 21:35:53 2024
+
+......... Creating TS for substation 1 at Wed Apr  3 21:35:53 2024
+
+  - Recv Dda: 6-0     OP:db M:5  <02><1B>6R0db5<00>0 Stop Pump CD 2<<1<03>
+  - Recv Dda: 6-0     OP:db M:6  <02>)6R0db6<00>0 Dresser set prices (false) 8981
+<03>
+  - Recv Dda: 6-0     OP:db M:8  <02> 6R0db8<00>0 Dresser, Price OK <856<03>
+......... Change shift request, pos=11, pump=0, cashreg=1 at Thu Apr  4 05:47:02 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Thu Apr  4 05:47:02 2024
+
+ 05:47:03.02         Dda: 6-0  Interrupt: Shift Change from PC-POS
+ 05:47:03.77  - Send Dda: 6-0  R  OP:RT M:7  0<02><0D>6R0RT700:054<03>
+ 05:47:03.81  - Recv Dda: 6-0     OP:rt M:7  <02><0D>6R0rt7009?:><03>
+ 05:47:09.47  - Recv Dda: 6-0     OP:ta M:8  <02>=6R0ta8<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|=9;6<03>
+ 05:47:09.47         Dda: 6-0  WritePumpTotals: iType [1], trs totalizers to server [0], shift totalizers to server [0]
+......... Close Shift in CloseShift at Thu Apr  4 05:47:11 2024
+
+......... Creating TS for substation 1 at Thu Apr  4 05:47:12 2024
+
+......... Sending shift change message to USA_XML at Thu Apr  4 05:47:12 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Thu Apr  4 05:47:13 2024
+
+......... Open Shift at Thu Apr  4 05:47:15 2024
+
+ 05:47:15.53  - Send Dda: 6-0  R  OP:RT M:7  0<02><0D>6R0RT700:054<03>
+ 05:47:15.58  - Recv Dda: 6-0     OP:rt M:7  <02><0D>6R0rt7009?:><03>
+ 05:47:19.16  - Recv Dda: 6-0     OP:ta M:5  <02>=6R0ta5<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|9??2<03>
+ 05:47:19.16         Dda: 6-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 05:47:19.16  - Send Dda: 6-0  R  OP:CD M:6  0<02><0D>6R0CD60022<8<03>
+ 05:47:19.20  - Recv Dda: 6-0     OP:cd M:6  <02><0B>6R0cd6<75:<03>
+ 05:47:19.20  - Send Dda: 6-0  R  OP:SP M:7  0<02>36R0SP74.690|4.690|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|3858<03>
+ 05:47:19.24  - Recv Dda: 6-0     OP:sp M:7  <02><0B>6R0sp75;:?<03>
+ 05:47:20.05         Dda: 6-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 6-0     OP:db M:8  <02><1B>6R0db8<00>0 Stop Pump CD ?8;;<03>
+  - Recv Dda: 6-0     OP:db M:9  <02>"6R0db9<00>0 VER:5.0.122|17/12/153?97<03>
+  - Recv Dda: 6-0     OP:db M:0  <02><1C>6R0db0<00>0 COUNTRY:ISRAEL32;;<03>
+  - Recv Dda: 6-0     OP:db M:1  <02><1B>6R0db1<00>0 Pump Type:DRS3<5;<03>
+......... Open Shift in CloseShift at Thu Apr  4 05:47:24 2024
+
+......... Creating TS for substation 1 at Thu Apr  4 05:47:24 2024
+
+  - Recv Dda: 6-0     OP:db M:2  <02>)6R0db2<00>0 Dresser set prices (false) 9167
+<03>
+  - Recv Dda: 6-0     OP:db M:3  <02> 6R0db3<00>0 Dresser, Price OK 209=<03>
+......... Shva Transmit at Thu Apr  4 06:00:00 2024
+
+......... Change shift request, pos=11, pump=0, cashreg=1 at Thu Apr  4 14:28:44 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Thu Apr  4 14:28:44 2024
+
+ 14:28:45.41  - Send Dda: 6-0  R  OP:RT M:0  0<02><0D>6R0RT00025<4<03>
+  - Recv Dda: 6-0     OP:rt M:0  <02><0D>6R0rt0001:3><03>
+ 14:28:51.88  - Recv Dda: 6-0     OP:ta M:2  <02>=6R0ta2<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|528:<03>
+ 14:28:51.88         Dda: 6-0  WritePumpTotals: iType [1], trs totalizers to server [0], shift totalizers to server [0]
+......... Close Shift in CloseShift at Thu Apr  4 14:31:08 2024
+
+......... Creating TS for substation 1 at Thu Apr  4 14:31:09 2024
+
+......... Sending shift change message to USA_XML at Thu Apr  4 14:31:09 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Thu Apr  4 14:31:09 2024
+
+......... Open Shift at Thu Apr  4 14:31:11 2024
+
+ 14:31:12.28  - Send Dda: 6-0  R  OP:RT M:0  0<02><0D>6R0RT00025<4<03>
+ 14:31:12.33  - Recv Dda: 6-0     OP:rt M:0  <02><0D>6R0rt0001:3><03>
+ 14:31:15.93  - Recv Dda: 6-0     OP:ta M:8  <02>=6R0ta8<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|=9;6<03>
+ 14:31:15.93         Dda: 6-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 14:31:15.93  - Send Dda: 6-0  R  OP:CD M:9  0<02><0D>6R0CD9000>?9<03>
+ 14:31:15.97  - Recv Dda: 6-0     OP:cd M:9  <02><0B>6R0cd936;5<03>
+ 14:31:15.97  - Send Dda: 6-0  R  OP:SP M:0  0<02>36R0SP04.690|4.690|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|229;<03>
+ 14:31:16.00  - Recv Dda: 6-0     OP:sp M:0  <02><0B>6R0sp02;48<03>
+ 14:31:16.82         Dda: 6-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 6-0     OP:db M:1  <02><1B>6R0db1<00>0 Stop Pump CD 6?49<03>
+  - Recv Dda: 6-0     OP:db M:2  <02>"6R0db2<00>0 VER:5.0.122|17/12/15<>:;<03>
+  - Recv Dda: 6-0     OP:db M:3  <02><1C>6R0db3<00>0 COUNTRY:ISRAEL32<9<03>
+  - Recv Dda: 6-0     OP:db M:4  <02><1B>6R0db4<00>0 Pump Type:DRS6?31<03>
+......... Open Shift in CloseShift at Thu Apr  4 14:31:20 2024
+
+......... Creating TS for substation 1 at Thu Apr  4 14:31:20 2024
+
+  - Recv Dda: 6-0     OP:db M:5  <02>)6R0db5<00>0 Dresser set prices (false) 0;=;
+<03>
+  - Recv Dda: 6-0     OP:db M:6  <02> 6R0db6<00>0 Dresser, Price OK >:04<03>
+......... Change shift request, pos=11, pump=0, cashreg=1 at Thu Apr  4 16:55:43 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Thu Apr  4 16:55:43 2024
+
+ 16:55:43.78  - Send Dda: 6-0  R  OP:RT M:7  0<02><0D>6R0RT700:054<03>
+ 16:55:43.82  - Recv Dda: 6-0     OP:rt M:7  <02><0D>6R0rt7009?:><03>
+ 16:55:50.16  - Recv Dda: 6-0     OP:ta M:9  <02>=6R0ta9<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|9=<5<03>
+ 16:55:50.16         Dda: 6-0  WritePumpTotals: iType [1], trs totalizers to server [0], shift totalizers to server [0]
+......... Close Shift in CloseShift at Thu Apr  4 16:56:52 2024
+
+......... Creating TS for substation 1 at Thu Apr  4 16:56:53 2024
+
+......... Sending shift change message to USA_XML at Thu Apr  4 16:56:53 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Thu Apr  4 16:56:54 2024
+
+......... Open Shift at Thu Apr  4 16:56:56 2024
+
+  - Send Dda: 6-0  R  OP:RT M:4  0<02><0D>6R0RT400?904<03>
+ 16:56:56.91  - Recv Dda: 6-0     OP:rt M:4  <02><0D>6R0rt400<6?><03>
+ 16:57:00.40  - Recv Dda: 6-0     OP:ta M:2  <02>=6R0ta2<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|528:<03>
+ 16:57:00.40         Dda: 6-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 16:57:00.40  - Send Dda: 6-0  R  OP:CD M:3  0<02><0D>6R0CD300<938<03>
+ 16:57:00.45  - Recv Dda: 6-0     OP:cd M:3  <02><0B>6R0cd397??<03>
+ 16:57:00.45  - Send Dda: 6-0  R  OP:SP M:4  0<02>36R0SP44.690|4.690|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|>159<03>
+ 16:57:00.48  - Recv Dda: 6-0     OP:sp M:4  <02><0B>6R0sp46;<<<03>
+ 16:57:01.42         Dda: 6-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 6-0     OP:db M:5  <02><1B>6R0db5<00>0 Stop Pump CD 2<<1<03>
+  - Recv Dda: 6-0     OP:db M:6  <02>"6R0db6<00>0 VER:5.0.122|17/12/1512:7<03>
+  - Recv Dda: 6-0     OP:db M:7  <02><1C>6R0db7<00>0 COUNTRY:ISRAEL<26><03>
+  - Recv Dda: 6-0     OP:db M:8  <02><1B>6R0db8<00>0 Pump Type:DRS:;:9<03>
+  - Recv Dda: 6-0     OP:db M:9  <02>)6R0db9<00>0 Dresser set prices (false) 22?1
+<03>
+  - Recv Dda: 6-0     OP:db M:3  <02> 6R0db3<00>0 Dresser, Price OK 209=<03>
+......... Open Shift in CloseShift at Thu Apr  4 16:57:13 2024
+
+......... Creating TS for substation 1 at Thu Apr  4 16:57:13 2024
+
+......... Change shift request, pos=11, pump=0, cashreg=1 at Thu Apr  4 20:34:21 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Thu Apr  4 20:34:21 2024
+
+ 20:34:21.33  - Send Dda: 6-0  R  OP:RT M:4  0<02><0D>6R0RT400?904<03>
+ 20:34:21.36  - Recv Dda: 6-0     OP:rt M:4  <02><0D>6R0rt400<6?><03>
+ 20:34:24.47  - Recv Dda: 6-0     OP:ta M:0  <02>=6R0ta0<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|=:6<<03>
+ 20:34:24.47         Dda: 6-0  WritePumpTotals: iType [1], trs totalizers to server [0], shift totalizers to server [0]
+......... Close Shift in CloseShift at Thu Apr  4 20:34:29 2024
+
+......... Creating TS for substation 1 at Thu Apr  4 20:34:30 2024
+
+......... Sending shift change message to USA_XML at Thu Apr  4 20:34:30 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Thu Apr  4 20:34:31 2024
+
+......... Open Shift at Thu Apr  4 20:34:33 2024
+
+ 20:34:33.66  - Send Dda: 6-0  R  OP:RT M:3  0<02><0D>6R0RT3007<94<03>
+ 20:34:33.71  - Recv Dda: 6-0     OP:rt M:3  <02><0D>6R0rt300436><03>
+ 20:34:40.41  - Recv Dda: 6-0     OP:ta M:4  <02>=6R0ta4<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|=;81<03>
+ 20:34:40.41         Dda: 6-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 20:34:40.41  - Send Dda: 6-0  R  OP:CD M:5  0<02><0D>6R0CD5007;98<03>
+  - Recv Dda: 6-0     OP:cd M:5  <02><0B>6R0cd5?739<03>
+ 20:34:40.46  - Send Dda: 6-0  R  OP:SP M:6  0<02>36R0SP64.690|4.690|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|80;8<03>
+ 20:34:40.49  - Recv Dda: 6-0     OP:sp M:6  <02><0B>6R0sp64;8><03>
+ 20:34:41.74         Dda: 6-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 6-0     OP:db M:7  <02><1B>6R0db7<00>0 Stop Pump CD 0=05<03>
+......... Open Shift in CloseShift at Thu Apr  4 20:34:42 2024
+
+......... Creating TS for substation 1 at Thu Apr  4 20:34:42 2024
+
+  - Recv Dda: 6-0     OP:db M:8  <02>)6R0db8<00>0 Dresser set prices (false) :<=8
+<03>
+  - Recv Dda: 6-0     OP:db M:0  <02> 6R0db0<00>0 Dresser, Price OK 96?5<03>
+......... Change shift request, pos=11, pump=0, cashreg=1 at Fri Apr  5 04:40:38 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Fri Apr  5 04:40:38 2024
+
+ 04:40:38.80  - Send Dda: 6-0  R  OP:RT M:8  0<02><0D>6R0RT8008<65<03>
+ 04:40:38.83  - Recv Dda: 6-0     OP:rt M:8  <02><0D>6R0rt800;39?<03>
+ 04:40:41.93  - Recv Dda: 6-0     OP:ta M:4  <02>=6R0ta4<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|=;81<03>
+ 04:40:41.93         Dda: 6-0  WritePumpTotals: iType [1], trs totalizers to server [0], shift totalizers to server [0]
+......... Close Shift in CloseShift at Fri Apr  5 04:40:47 2024
+
+......... Creating TS for substation 1 at Fri Apr  5 04:40:48 2024
+
+......... Sending shift change message to USA_XML at Fri Apr  5 04:40:48 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Fri Apr  5 04:40:48 2024
+
+......... Open Shift at Fri Apr  5 04:40:50 2024
+
+ 04:40:51.32  - Send Dda: 6-0  R  OP:RT M:8  0<02><0D>6R0RT8008<65<03>
+ 04:40:51.36  - Recv Dda: 6-0     OP:rt M:8  <02><0D>6R0rt800;39?<03>
+ 04:40:58.01  - Recv Dda: 6-0     OP:ta M:9  <02>=6R0ta9<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|9=<5<03>
+ 04:40:58.01         Dda: 6-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 04:40:58.01  - Send Dda: 6-0  R  OP:CD M:0  0<02><0D>6R0CD0009068<03>
+ 04:40:58.05  - Recv Dda: 6-0     OP:cd M:0  <02><0B>6R0cd0:79<<03>
+ 04:40:58.05  - Send Dda: 6-0  R  OP:SP M:1  0<02>36R0SP14.690|4.690|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|9:7;<03>
+ 04:40:58.08  - Recv Dda: 6-0     OP:sp M:1  <02><0B>6R0sp13;69<03>
+ 04:40:59.33         Dda: 6-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 6-0     OP:db M:2  <02><1B>6R0db2<00>0 Stop Pump CD 5>6?<03>
+......... Open Shift in CloseShift at Fri Apr  5 04:40:59 2024
+
+......... Creating TS for substation 1 at Fri Apr  5 04:40:59 2024
+
+  - Recv Dda: 6-0     OP:db M:3  <02>)6R0db3<00>0 Dresser set prices (false) 1?4>
+<03>
+  - Recv Dda: 6-0     OP:db M:6  <02> 6R0db6<00>0 Dresser, Price OK >:04<03>
+......... Shva Transmit at Fri Apr  5 06:00:00 2024
+
+......... Change shift request, pos=11, pump=0, cashreg=1 at Fri Apr  5 21:00:39 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Fri Apr  5 21:00:39 2024
+
+ 21:00:39.17         Dda: 6-0  Interrupt: Shift Change from PC-POS
+ 21:00:39.92  - Send Dda: 6-0  R  OP:RT M:2  0<02><0D>6R0RT2004;:4<03>
+ 21:00:39.95  - Recv Dda: 6-0     OP:rt M:2  <02><0D>6R0rt200745><03>
+ 21:00:46.38  - Recv Dda: 6-0     OP:ta M:4  <02>=6R0ta4<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|=;81<03>
+ 21:00:46.38         Dda: 6-0  WritePumpTotals: iType [1], trs totalizers to server [0], shift totalizers to server [0]
+......... Close Shift in CloseShift at Fri Apr  5 21:00:47 2024
+
+......... Creating TS for substation 1 at Fri Apr  5 21:00:48 2024
+
+......... Sending shift change message to USA_XML at Fri Apr  5 21:00:48 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Fri Apr  5 21:00:49 2024
+
+......... Open Shift at Fri Apr  5 21:00:51 2024
+
+  - Send Dda: 6-0  R  OP:RT M:2  0<02><0D>6R0RT2004;:4<03>
+ 21:00:51.94  - Recv Dda: 6-0     OP:rt M:2  <02><0D>6R0rt200745><03>
+ 21:00:55.16  - Recv Dda: 6-0     OP:ta M:0  <02>=6R0ta0<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|=:6<<03>
+ 21:00:55.16         Dda: 6-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 21:00:55.16  - Send Dda: 6-0  R  OP:CD M:1  0<02><0D>6R0CD100:758<03>
+ 21:00:55.21  - Recv Dda: 6-0     OP:cd M:1  <02><0B>6R0cd1;7;=<03>
+ 21:00:55.21  - Send Dda: 6-0  R  OP:SP M:2  0<02>36R0SP24.690|4.690|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|437:<03>
+ 21:00:55.24  - Recv Dda: 6-0     OP:sp M:2  <02><0B>6R0sp20;0:<03>
+ 21:00:56.53         Dda: 6-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 6-0     OP:db M:3  <02><1B>6R0db3<00>0 Stop Pump CD 4>8=<03>
+  - Recv Dda: 6-0     OP:db M:4  <02>"6R0db4<00>0 VER:5.0.122|17/12/157<:1<03>
+  - Recv Dda: 6-0     OP:db M:5  <02><1C>6R0db5<00>0 COUNTRY:ISRAEL322=<03>
+  - Recv Dda: 6-0     OP:db M:6  <02><1B>6R0db6<00>0 Pump Type:DRS4>?5<03>
+  - Recv Dda: 6-0     OP:db M:7  <02>)6R0db7<00>0 Dresser set prices (false) 07:8
+<03>
+......... Open Shift in CloseShift at Fri Apr  5 21:01:01 2024
+
+......... Creating TS for substation 1 at Fri Apr  5 21:01:01 2024
+
+  - Recv Dda: 6-0     OP:db M:8  <02> 6R0db8<00>0 Dresser, Price OK <856<03>
+......... Change shift request, pos=11, pump=0, cashreg=1 at Sat Apr  6 05:32:26 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Sat Apr  6 05:32:26 2024
+
+ 05:32:26.64  - Send Dda: 6-0  R  OP:RT M:3  0<02><0D>6R0RT3007<94<03>
+ 05:32:26.67  - Recv Dda: 6-0     OP:rt M:3  <02><0D>6R0rt300436><03>
+ 05:32:29.81  - Recv Dda: 6-0     OP:ta M:9  <02>=6R0ta9<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|9=<5<03>
+ 05:32:29.81         Dda: 6-0  WritePumpTotals: iType [1], trs totalizers to server [0], shift totalizers to server [0]
+......... Close Shift in CloseShift at Sat Apr  6 05:32:34 2024
+
+......... Creating TS for substation 1 at Sat Apr  6 05:32:35 2024
+
+......... Sending shift change message to USA_XML at Sat Apr  6 05:32:35 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Sat Apr  6 05:32:36 2024
+
+......... Open Shift at Sat Apr  6 05:32:38 2024
+
+ 05:32:38.97  - Send Dda: 6-0  R  OP:RT M:3  0<02><0D>6R0RT3007<94<03>
+ 05:32:39.00  - Recv Dda: 6-0     OP:rt M:3  <02><0D>6R0rt300436><03>
+ 05:32:42.59  - Recv Dda: 6-0     OP:ta M:1  <02>=6R0ta1<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|9>1?<03>
+ 05:32:42.59         Dda: 6-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 05:32:42.59  - Send Dda: 6-0  R  OP:CD M:2  0<02><0D>6R0CD200?>08<03>
+ 05:32:42.64  - Recv Dda: 6-0     OP:cd M:2  <02><0B>6R0cd287=><03>
+ 05:32:42.64  - Send Dda: 6-0  R  OP:SP M:3  0<02>36R0SP34.690|4.690|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|?;9:<03>
+ 05:32:42.67  - Recv Dda: 6-0     OP:sp M:3  <02><0B>6R0sp31;2;<03>
+ 05:32:43.48         Dda: 6-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 6-0     OP:db M:4  <02><1B>6R0db4<00>0 Stop Pump CD 3<23<03>
+  - Recv Dda: 6-0     OP:db M:5  <02>"6R0db5<00>0 VER:5.0.122|17/12/154;:2<03>
+  - Recv Dda: 6-0     OP:db M:6  <02><1C>6R0db6<00>0 COUNTRY:ISRAEL325?<03>
+  - Recv Dda: 6-0     OP:db M:7  <02><1B>6R0db7<00>0 Pump Type:DRS5>17<03>
+  - Recv Dda: 6-0     OP:db M:8  <02>)6R0db8<00>0 Dresser set prices (false) :<=8
+<03>
+......... Open Shift in CloseShift at Sat Apr  6 05:32:46 2024
+
+......... Creating TS for substation 1 at Sat Apr  6 05:32:46 2024
+
+  - Recv Dda: 6-0     OP:db M:1  <02> 6R0db1<00>0 Dresser, Price OK ?;2=<03>
+......... Shva Transmit at Sat Apr  6 06:00:00 2024
+
+......... Change shift request, pos=11, pump=0, cashreg=1 at Sat Apr  6 13:27:48 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Sat Apr  6 13:27:48 2024
+
+ 13:27:48.51  - Send Dda: 6-0  R  OP:RT M:0  0<02><0D>6R0RT00025<4<03>
+ 13:27:48.55  - Recv Dda: 6-0     OP:rt M:0  <02><0D>6R0rt0001:3><03>
+ 13:27:54.88  - Recv Dda: 6-0     OP:ta M:1  <02>=6R0ta1<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|9>1?<03>
+ 13:27:54.88         Dda: 6-0  WritePumpTotals: iType [1], trs totalizers to server [0], shift totalizers to server [0]
+......... Close Shift in CloseShift at Sat Apr  6 13:27:56 2024
+
+......... Creating TS for substation 1 at Sat Apr  6 13:27:57 2024
+
+......... Sending shift change message to USA_XML at Sat Apr  6 13:27:57 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Sat Apr  6 13:27:58 2024
+
+......... Open Shift at Sat Apr  6 13:28:01 2024
+
+ 13:28:01.24  - Send Dda: 6-0  R  OP:RT M:0  0<02><0D>6R0RT00025<4<03>
+ 13:28:01.29  - Recv Dda: 6-0     OP:rt M:0  <02><0D>6R0rt0001:3><03>
+ 13:28:07.90  - Recv Dda: 6-0     OP:ta M:5  <02>=6R0ta5<00>0900.7|3373.46|0|1742.68|0|0|0|0|0
+|0|0|0|0|0|0|0|9??2<03>
+ 13:28:07.90         Dda: 6-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 13:28:07.90  - Send Dda: 6-0  R  OP:CD M:6  0<02><0D>6R0CD60022<8<03>
+  - Recv Dda: 6-0     OP:cd M:6  <02><0B>6R0cd6<75:<03>
+ 13:28:07.95  - Send Dda: 6-0  R  OP:SP M:7  0<02>36R0SP74.690|4.690|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|3858<03>
+ 13:28:07.98  - Recv Dda: 6-0     OP:sp M:7  <02><0B>6R0sp75;:?<03>
+ 13:28:09.04         Dda: 6-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 6-0     OP:db M:8  <02><1B>6R0db8<00>0 Stop Pump CD ?8;;<03>
+......... Open Shift in CloseShift at Sat Apr  6 13:28:10 2024
+
+......... Creating TS for substation 1 at Sat Apr  6 13:28:10 2024

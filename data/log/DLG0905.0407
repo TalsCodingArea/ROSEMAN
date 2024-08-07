@@ -1,0 +1,406 @@
+
+
+********* Opened at Thu May  9 23:43:23 2024
+
+
+ 23:43:23.44         Dda: 2-1  Disp : Shva-Posted 120314 
+ 23:43:23.44         Dda: 2-1  Disp : Before-printing1 0 
+ 23:43:23.44         Dda: 2-1  Disp : Temp1 0 
+ 23:43:23.44         Dda: 2-1  Disp : Go-to-print1 
+  - Recv Dda: 2-1     OP:db M:4  <02><1D>2R1db4<00><00> Money:02 67 93 74?3<03>
+  - Recv Dda: 2-1     OP:db M:5  <02><1B>2R1db5<00><00> Val:03 39 15 <;93<03>
+ 23:43:24.64         Dda: 2-1  Rcv  Ex. POS: 4 S T KMˇˇˇ
+  - Recv Dda: 2-1     OP:db M:6  <02><1A>2R1db6<00><00> Price: 0316 ?23=<03>
+ 23:43:24.87  - Send Dda: 2-1  R  OP:EF M:7  0<02><14>2R1EF7025<00><00>0<00><00><00>;>;0<03>
+ 23:43:24.92  - Recv Dda: 2-1     OP:ef M:7  <02><0E>2R1ef7025=;9?<03>
+ 23:43:26.02         Dda: 2-1  Disp : Ask_print_Entry 
+ 23:43:26.02         Dda: 2-1  Recovery remove pump 04
+ 23:43:26.02         Dda: 2-1  Recovery remove failed for pump 04, code=2
+ 23:43:26.02         Dda: 2-1  Disp : Floating pos ? 
+ 23:43:26.02         Dda: 2-1  POS#4, Pump#4, PcPos=1
+ 23:43:26.02         Dda: 2-1  Disp : No Floating pos ! 
+ 23:43:26.02         Dda: 2-1  Disp : No Integrated 
+ 23:43:26.02         Dda: 2-1  Disp : Release terminal 
+ 23:43:26.02  - Send Dda: 2-1  R  OP:CD M:8  0<02><0D>2R1CD8007304<03>
+ 23:43:26.06  - Recv Dda: 2-1     OP:cd M:8  <02><0B>2R1cd85681<03>
+ 23:43:26.06  - Send Dda: 2-1  R  OP:SP M:9  0<02>;2R1SP98.490|17.93|7.900|8.120|0|0|0|0|0|0|0
+|0|0|0|0|0|4<0=<03>
+ 23:43:26.11  - Recv Dda: 2-1     OP:sp M:9  <02><0B>2R1sp9<:74<03>
+ 23:43:26.61  - Send Dda: 2-1  R  OP:KM M:0  0<02><0E>2R1KM0<C3>0<F8>0?=3<03>
+ 23:43:26.66  - Recv Dda: 2-1     OP:km M:0  <02><0B>2R1km0<4;0<03>
+ 23:43:26.66  - Send Dda: 2-1  R  OP:EM M:1  0<02><0D>2R1EM100=367<03>
+  - Recv Dda: 2-1     OP:em M:1  <02><0D>2R1em100><9=<03>
+ 23:43:27.22         Dda: 2-1  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 2-1     OP:db M:2  <02>/2R1db2<00>0 Main thread did not send FT data
+ 385<<03>
+ 23:43:27.75  - Send Dda: 2-1  T  OP:KM M:3  0<02><0E>2T1KM3<FF><FF><FF>=28=<03>
+ 23:43:27.80  - Recv Dda: 2-1     OP:km M:3  <02><0B>2T1km33956<03>
+ 23:43:27.87         Dda: 2-1  Rcv  Ex. POS: 4 S T TPDN     §
+ 23:43:28.34  - Recv Dda: 2-1     OP:ke M:4  <02><0E>2R1ke4<00>0F<301<03>
+ 23:43:28.34         Dda: 2-1  Send Ex. POS: ke F. Receive=OK
+ 23:43:28.34  - Send Dda: 2-1  R  OP:EM M:5  0<02><0D>2R1EM5000?:7<03>
+ 23:43:28.39  - Recv Dda: 2-1     OP:em M:5  <02><0D>2R1em500305=<03>
+  - Recv Dda: 2-1     OP:db M:6  <02><17>2R1db6<00>0 Pump Off 9?<0<03>
+ 23:43:28.95  - Send Dda: 2-1  T  OP:TP M:7  0<02>:2T1TP7DN     ÑåÅó öëîÉÑå          òÖôâÄ ïáå
+     \\000K2:1?<03>
+ 23:43:29.00  - Recv Dda: 2-1     OP:tp M:7  <02><0B>2T1tp763:?<03>
+ 23:43:29.30         Dda: 2-1  Rcv  Ex. POS: 4 S T KMˇˇˇ
+  - Recv Dda: 2-1     OP:db M:8  <02>42R1db8<00>0 Dresser, Credit mode price + end
+ sale 7280<03>
+ 23:43:29.56  - Send Dda: 2-1  T  OP:KM M:9  0<02><0E>2T1KM9<FF><FF><FF>;:26<03>
+ 23:43:29.61  - Recv Dda: 2-1     OP:km M:9  <02><0B>2T1km9981<<03>
+ 23:43:29.69         Dda: 2-1  Rcv  Ex. POS: 4 S T TPDN      
+  - Recv Dda: 2-1     OP:db M:0  <02><1C>2R1db0<00>0 QS perform ft 1<;;<03>
+ 23:43:30.16  - Send Dda: 2-1  T  OP:TP M:1  0<02>:2T1TP1DN      èöéÑ ÄêÄ           ÑëîÉÑÅ ÑåÅ
+ó    \\000K628=<03>
+ 23:43:30.20  - Recv Dda: 2-1     OP:tp M:1  <02><0B>2T1tp10369<03>
+ 23:43:30.28         Dda: 2-1  Rcv  Ex. POS: 4 S T TPLO020---
+  - Recv Dda: 2-1     OP:db M:2  <02>,2R1db2<00>0 23:43:17:144: Pump status: 17 38
+7:<03>
+ 23:43:30.75  - Send Dda: 2-1  T  OP:TP M:3  0<02><EF>2T1TP3LO020------------------------<0D>
+<0A>***  òÖóé ëé öâêÖÅôá ***<0D><0A>09/05/2024         23:43<0D><0A>019-0038  
+  215250 :Ñóëí<0D><0A>****1781      âÉ Éòóòàëé<0D><0A>     öòôÖÄé   05/26:ìóÖö
+<0D><0A>           08513875 :Åãò<0D><0A>             000001 :é"ó<0D><0A>----- 
+ÑôâãòÑ âà8<:6<03>
+ 23:43:30.80  - Recv Dda: 2-1     OP:tp M:3  <02><0B>2T1tp3232;<03>
+ 23:43:30.87         Dda: 2-1  Rcv  Ex. POS: 4 S T TPLO021òî 
+ 23:43:31.36  - Recv Dda: 2-1     OP:ke M:4  <02><0E>2R1ke4<00>0F<301<03>
+ 23:43:31.36         Dda: 2-1  Send Ex. POS: ke F. Receive=OK
+ 23:43:31.36  - Send Dda: 2-1  R  OP:EM M:5  0<02><0D>2R1EM5000?:7<03>
+ 23:43:31.41  - Recv Dda: 2-1     OP:em M:5  <02><0D>2R1em500305=<03>
+  - Recv Dda: 2-1     OP:db M:6  <02>)2R1db6<00>0 Dresser set prices (false) ;0:0
+<03>
+ 23:43:31.97  - Send Dda: 2-1  T  OP:TP M:7  0<02><EF>2T1TP7LO021òî ------<0D><0A>04:ÑÅÄôé   9
+5 èâÜêÅ:òñÖé<0D><0A>òàâå       33.915  :öÖéã<0D><0A>òàâå/á"ô    7.900 :ìâòíö
+<0D><0A>    á"ô    267.93  :çÖãë<0D><0A>    á"ô  267.93    :ã"Ñë<0D><0A>    á"
+ô  229.00 :éíé Äåå<0D><0A>    á"ô   38.93:17.0%éíé<0D><0A>    á"ô  267.93    :
+ã"Ñë<0D><0A>---->61:<03>
+ 23:43:32.01  - Recv Dda: 2-1     OP:tp M:7  <02><0B>2T1tp763:?<03>
+ 23:43:32.09         Dda: 2-1  Rcv  Ex. POS: 4 S T TPLO021---
+  - Recv Dda: 2-1     OP:db M:8  <02> 2R1db8<00>0 Dresser, Price OK =87:<03>
+ 23:43:32.58  - Send Dda: 2-1  T  OP:TP M:9  0<02>(2T1TP9LO021--------------------<0D><0A>
+<0D><0A>4591<03>
+ 23:43:32.62  - Recv Dda: 2-1     OP:tp M:9  <02><0B>2T1tp98261<03>
+ 23:43:32.70         Dda: 2-1  Rcv  Ex. POS: 4 S T TPPR
+  - Recv Dda: 2-1     OP:db M:0  <02><1B>2R1db0<00>0 Stop Pump CD >=59<03>
+ 23:43:33.19  - Send Dda: 2-1  T  OP:TP M:1  0<02><0D>2T1TP1PR;9:6<03>
+ 23:43:33.23  - Recv Dda: 2-1     OP:tp M:1  <02><0B>2T1tp10369<03>
+  - Recv Dda: 2-1     OP:db M:2  <02>)2R1db2<00>0 Dresser set prices (false) :846
+<03>
+  - Recv Dda: 2-1     OP:db M:3  <02> 2R1db3<00>0 Dresser, Price OK 30;1<03>
+  - Recv Dda: 2-1     OP:db M:4  <02>(2R1db4<00>0 Wayne KeyDpt - EnableKeys 3;82
+<03>
+ 23:43:35.42  - Recv Dda: 2-1     OP:pe M:5  <02><0E>2R1pe5<00>0072<2<03>
+ 23:43:35.42         Dda: 2-1  Send Ex. POS: pe 0. Receive=OK
+ 23:43:35.61         Dda: 2-1  Rcv  Ex. POS: 4 S T KMˇˇˇ
+  - Recv Dda: 2-1     OP:db M:6  <02>(2R1db6<00>0 Wayne KeyDpt - EnableKeys 29;<
+<03>
+ 23:43:35.94  - Send Dda: 2-1  T  OP:KM M:7  0<02><0E>2T1KM7<FF><FF><FF>187<<03>
+ 23:43:35.98  - Recv Dda: 2-1     OP:km M:7  <02><0B>2T1km779=2<03>
+ 23:43:36.06         Dda: 2-1  Rcv  Ex. POS: 4 S T TPDN    ? 
+  - Recv Dda: 2-1     OP:db M:8  <02>(2R1db8<00>0 Wayne KeyDpt - EnableKeys 5706
+<03>
+ 23:43:36.51  - Send Dda: 2-1  T  OP:TP M:9  0<02>&2T1TP9DN    ? óöíÑ ëâîÉÑå   \\000K:<04<03>
+ 23:43:36.56  - Recv Dda: 2-1     OP:tp M:9  <02><0B>2T1tp98261<03>
+  - Recv Dda: 2-1     OP:db M:0  <02>-2R1db0<00>0OpenChanged = false, EnableKeys <
+7;0<03>
+  - Recv Dda: 2-1     OP:db M:1  <02>(2R1db1<00>0 Wayne KeyDpt - EnableKeys 16>1
+<03>
+  - Recv Dda: 2-1     OP:db M:2  <02>(2R1db2<00>0 Wayne KeyDpt - EnableKeys 0=<0
+<03>
+  - Recv Dda: 2-1     OP:db M:3  <02>(2R1db3<00>0 Wayne KeyDpt - EnableKeys 04=?
+<03>
+ 23:43:46.81         Dda: 2-1  Rcv  Ex. POS: 4 S X 
+ 23:43:48.78         Dda: 2-1  Rcv  Ex. POS: 4 S T KMˇˇˇ
+ 23:43:49.28  - Send Dda: 2-1  T  OP:KM M:3  0<02><0E>2T1KM3<FF><FF><FF>=28=<03>
+ 23:43:49.33  - Recv Dda: 2-1     OP:km M:3  <02><0B>2T1km33956<03>
+ 23:43:49.40         Dda: 2-1  Rcv  Ex. POS: 4 S R EF017X0
+  - Recv Dda: 2-1     OP:db M:4  <02>(2R1db4<00>0 Wayne KeyDpt - EnableKeys 3;82
+<03>
+ 23:43:49.87  - Send Dda: 2-1  R  OP:EF M:5  0<02><13>2R1EF5017\2X0<00><00>8:9=<03>
+ 23:43:49.92  - Recv Dda: 2-1     OP:ef M:5  <02><0E>2R1ef501743>6<03>
+ 23:43:50.00         Dda: 2-1  Rcv  Ex. POS: 4 S R EM
+ 23:43:50.47  - Send Dda: 2-1  R  OP:EM M:7  0<02><0D>2R1EM7<00><00>5201<03>
+ 23:43:50.51  - Recv Dda: 2-1     OP:em M:7  <02><0D>2R1em7<00><00>6=?;<03>
+ 23:45:05.52  - Recv Dda: 2-1     OP:to M:4  <02><0E>2R1to4<00><00>261:><03>
+ 23:45:05.52         Dda: 2-1  Invalid Event to at state 2
+  - Recv Dda: 2-1     OP:db M:5  <02><1C>2R1db5<00><00> form report_to585=<03>
+ 23:47:50.27         Dda: 2-1  PC-POS Refuel Discount type=0,voucher=       ,cust name=                        ,sign_c=0,ash=00001,clubtype=      
+ 23:47:50.27         Dda: 2-1  Refuel cont.: limit=00005000, rgis=0000000900, odo=000001, posNo=11, idbox=
+ 23:47:50.27         Dda: 2-1  clubID=0000000000000000000
+ 23:47:50.27         Dda: 2-1  POS start refuel sync
+ 23:47:50.77         Dda: 2-1  Disp : ID_CARD 
+ 23:47:50.78         Dda: 2-1  PC-POS Transaction mi
+ 23:47:50.78         Dda: 2-1  iCardLen=0,TrackLen=37
+ 23:47:50.78         Dda: 2-1  track2=0731071500000000000000000000000000000
+ 23:47:50.78         Dda: 2-1  Disp : WAIT_MI 
+ 23:47:50.78         Dda: 2-1  Disp : Checking-Coupon 
+ 23:47:50.78         Dda: 2-1  Disp : CH-3CardID 
+ 23:47:50.78         Dda: 2-1  track2=0731071500000000000000000000000000000
+ 23:47:50.78         Dda: 2-1  Disp : CH-3Temp4 0731 
+ 23:47:50.78         Dda: 2-1  Disp : IdType= C 
+ 23:47:50.78         Dda: 2-1  Disp : Checking-DorClub 
+ 23:47:50.78         Dda: 2-1  Disp : ChequeNum=            
+ 23:47:50.78         Dda: 2-1  Disp : chequeAmount=           
+ 23:47:50.78         Dda: 2-1  Disp : Checking-DOR 
+ 23:47:50.78         Dda: 2-1  Disp : Checking-DOR-Card 
+ 23:47:50.78         Dda: 2-1  Disp : temp4= 0731 
+ 23:47:50.78         Dda: 2-1  Disp : Checking-Praxell 
+ 23:47:50.78         Dda: 2-1  Disp : discounttype=  
+ 23:47:50.78         Dda: 2-1  Disp : Ashrait= 0 
+ 23:47:50.78         Dda: 2-1  Disp : Shva-Temp1= 0 
+ 23:47:50.78         Dda: 2-1  Disp : Checking-Shva 
+ 23:47:50.78         Dda: 2-1  Disp : Checking-AutoCard0 
+ 23:47:50.78         Dda: 2-1  Disp : Checking-Autocard 
+ 23:47:50.78         Dda: 2-1  Disp : Checking-Worker 
+ 23:47:50.78         Dda: 2-1  ItsMe() =    ÉÅÖí.òã    Code = 000003
+ 23:47:51.33         Dda: 2-1  Disp : ValConfirmed 
+ 23:47:51.33  - Send Dda: 2-1  R  OP:KM M:9  0<02><0E>2R1KM9A <3325<03>
+ 23:47:51.38  - Recv Dda: 2-1     OP:km M:9  <02><0B>2R1km95599<03>
+ 23:47:51.38  - Send Dda: 2-1  R  OP:EF M:0  0<02><14>2R1EF0026\2X0<00><00><00>3<?5<03>
+ 23:47:51.41  - Recv Dda: 2-1     OP:ef M:0  <02><0E>2R1ef0026;:=1<03>
+ 23:47:51.88  - Send Dda: 2-1  R  OP:SP M:1  0<02>;2R1SP18.490|17.93|7.900|8.120|0|0|0|0|0|0|0
+|0|0|0|0|0|?788<03>
+ 23:47:51.92  - Recv Dda: 2-1     OP:sp M:1  <02><0B>2R1sp14;7<<03>
+ 23:47:52.42         Dda: 2-1  Tran type=2, Rate type(cash/credit)=1, Nozzle BITMAP=2
+ 23:47:52.42  - Send Dda: 2-1  R  OP:CT M:2  0<02>p2R1CT276\2215.889|50.00|2.789|50.00|6.329|5
+0.00|6.158|50.00|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|6274<03>
+  - Recv Dda: 2-1     OP:ct M:2  <02><0D>2R1ct27669<9<03>
+  - Recv Dda: 2-1     OP:db M:3  <02>)2R1db3<00>7 Dresser set prices (false) =49?
+<03>
+  - Recv Dda: 2-1     OP:db M:4  <02><19>2R1db4<00>7 start_pump <98=<03>
+  - Recv Dda: 2-1     OP:db M:5  <02> 2R1db5<00>7 Dresser, Price OK <459<03>
+  - Recv Dda: 2-1     OP:db M:6  <02>(2R1db6<00>7 Dresser set prices (true) >7=>
+<03>
+  - Recv Dda: 2-1     OP:db M:8  <02> 2R1db8<00>7 Dresser, Price OK 5063<03>
+ 23:48:10.52  - Recv Dda: 2-1     OP:hn M:5  <02><0F>2R1hn5<00>702;069<03>
+ 23:48:10.52         Dda: 2-1  Handle 2
+ 23:48:10.52         Dda: 2-1  Send Ex. POS: hn 02. Receive=OK
+ 23:48:11.08  - Recv Dda: 2-1     OP:nz M:6  <02><10>2R1nz6<00>7021748<<03>
+ 23:48:11.08  - Send Dda: 2-1  R  OP:EF M:7  0<02><14>2R1EF7036<00><00>0<00><00><00>21>1<03>
+ 23:48:11.13  - Recv Dda: 2-1     OP:ef M:7  <02><0E>2R1ef7036=8<=<03>
+ 23:48:11.13         Dda: 2-1  Recovery save pump 04
+ 23:48:11.13         Dda: 2-1  S042
+ 23:48:11.13  - Send Dda: 2-1  R  OP:KM M:8  0<02><0E>2R1KM8Ç<00>0?=5<<03>
+ 23:48:11.17  - Recv Dda: 2-1     OP:km M:8  <02><0B>2R1km845;8<03>
+ 23:48:11.22  - Recv Dda: 2-1     OP:fs M:9  <02><18>2R1fs9<00>70217.9|0|0|>?6<<03>
+ 23:48:11.22         Dda: 2-1  Disp : Resume_update_Odo1 
+ 23:48:11.22  - Send Dda: 2-1  R  OP:EF M:0  0<02><14>2R1EF0036<00><00>0<00><00><00>3=1;<03>
+ 23:48:11.27  - Recv Dda: 2-1     OP:ef M:0  <02><0E>2R1ef003689>0<03>
+  - Send Dda: 2-1  R  OP:RF M:1  0<02><0D>2R1RF100:>?6<03>
+ 23:48:11.31  - Recv Dda: 2-1     OP:rf M:1  <02><0D>2R1rf100910<<03>
+ 23:48:11.86  - Recv Dda: 2-1     OP:fs M:2  <02><18>2R1fs2<00>00217.9|0|0|81>?<03>
+ 23:48:18.56  - Recv Dda: 2-1     OP:fs M:4  <02><1F>2R1fs4<00>00217.9|3.61|0.457|84>9<03>
+ 23:48:24.91  - Recv Dda: 2-1     OP:fs M:6  <02> 2R1fs6<00>00217.9|38.13|4.827|2;7?<03>
+ 23:48:31.58  - Recv Dda: 2-1     OP:fs M:8  <02> 2R1fs8<00>00217.9|48.94|6.195|0125<03>
+ 23:48:38.17  - Recv Dda: 2-1     OP:fs M:0  <02><1C>2R1fs0<00>00217.9|50|6.33|1<?3<03>
+ 23:48:39.28  - Recv Dda: 2-1     OP:hn M:2  <02><0F>2R1hn2<00>000726?<03>
+ 23:48:39.28         Dda: 2-1  Handle 0
+ 23:48:39.28         Dda: 2-1  Send Ex. POS: hn 00. Receive=OK
+  - Recv Dda: 2-1     OP:ft M:3  <02><1C>2R1ft3<00>00217.9|50|6.33|269><03>
+ 23:48:39.81         Dda: 2-1  Send Ex. POS: ft 0217. Receive=OK
+ 23:48:39.81         Dda: 2-1  F0420006.330231546.68
+ 23:48:39.81         Dda: 2-1  Disp : Worker-Post 
+ 23:48:39.81         Dda: 2-1  Disp : Paragr_28 
+ 23:48:39.81         Dda: 2-1  Disp : DiscountType=  
+ 23:48:39.81         Dda: 2-1  Enter into WriteTran
+ 23:48:39.81         Dda: 2-1  Try open shift file
+ 23:48:39.81         Dda: 2-1  Send Ex. POS: ft 0217. Receive=OK
+ 23:48:39.81         Dda: 2-1  Write to .\DATA\RS090524.D1C,len =253
+ 23:48:39.81         Dda: 2-1  RS rec =    50.00       6.330  00000009   2   04     215251 23:48 09/05/24   95 èâÜêÅ 05     ÉÅÖí.òã 000003            07310715 0.00   310715  00000001            7.900                     0000000000000000000          1 00  441           0                      
+ 23:48:39.81         Dda: 2-1  Recovery remove pump 04
+ 23:48:39.81         Dda: 2-1  after reco remove
+ 23:48:39.81         Dda: 2-1  RS Copy
+ 23:48:39.81         Dda: 2-1  End of WriteTran .\DATA\RS090524.D1C
+ 23:48:39.81         Dda: 2-1  FuelPointPostTran,TranNo=215251,PumpNo=4,Nozzle=2,ProdNo=0005,dQty=6330
+ 23:48:39.81         Dda: 2-1  Rfc transaction
+ 23:48:39.81         Dda: 2-1  FuelPoint_in=FT2|-1|215251|4|2|0005|07310715|0|000001|0|07310715|0|6330|||0000000000000000000|       |000003| 0|05/09/2024 23:48:11| 7.900|  50.00|   0.00|   0.00|00000009|000003|
+ 23:48:40.27  - Send Dda: 2-1  R  OP:KM M:4  0<02><0E>2R1KM4<00><00>0>754<03>
+ 23:48:40.31  - Recv Dda: 2-1     OP:km M:4  <02><0B>2R1km48434<03>
+  - Recv Dda: 2-1     OP:db M:5  <02>,2R1db5<00>0 23:48:09:990: Pump status: 11 19
+>7<03>
+  - Recv Dda: 2-1     OP:db M:6  <02><1A>2R1db6<00>0 Handle On:2 34>;<03>
+  - Recv Dda: 2-1     OP:db M:7  <02>,2R1db7<00>0 23:48:10:240: Pump status: C9 ;;
+?5<03>
+  - Recv Dda: 2-1     OP:db M:8  <02>,2R1db8<00>0 23:48:10:583: Pump status: 89 <6
+<=<03>
+  - Recv Dda: 2-1     OP:db M:9  <02><15>2R1db9<00>0 fueled 0734<03>
+  - Recv Dda: 2-1     OP:db M:0  <02>,2R1db0<00>0 23:48:38:831: Pump status: 8F 3;
+73<03>
+  - Recv Dda: 2-1     OP:db M:1  <02>'2R1db1<00>0 Dresser, Cash mode price 84;<
+<03>
+  - Recv Dda: 2-1     OP:db M:2  <02><1B>2R1db2<00>0 Handle Off:2 6;:2<03>
+  - Recv Dda: 2-1     OP:db M:3  <02><1B>2R1db3<00>0 Stop Pump CF ;:1=<03>
+ 23:48:44.96         Dda: 2-1  FuelPoint_ot=CF|
+ 23:48:44.96         Dda: 2-1  Disp : Worker-Posted 
+ 23:48:44.96         Dda: 2-1  Disp : Before-printing2 0 
+ 23:48:44.96         Dda: 2-1  Disp : Go-to-print2 
+ 23:48:44.96         Dda: 2-1  Disp : Before-printing1 0 
+ 23:48:44.96         Dda: 2-1  Disp : Temp1 0 
+ 23:48:44.96         Dda: 2-1  Disp : Go-to-print1 
+  - Recv Dda: 2-1     OP:db M:4  <02><1D>2R1db4<00>0 Money:00 50 00 ;;:0<03>
+  - Recv Dda: 2-1     OP:db M:5  <02><1B>2R1db5<00>0 Val:00 63 30 4442<03>
+  - Recv Dda: 2-1     OP:db M:6  <02><1A>2R1db6<00>0 Price: 0316 :905<03>
+ 23:48:46.08  - Send Dda: 2-1  R  OP:EF M:7  0<02><14>2R1EF7025<00><00>0<00><00><00>;>;0<03>
+ 23:48:46.13  - Recv Dda: 2-1     OP:ef M:7  <02><0E>2R1ef7025=;9?<03>
+ 23:48:47.69         Dda: 2-1  Disp : Ask_print_Entry 
+ 23:48:47.69         Dda: 2-1  Recovery remove pump 04
+ 23:48:47.69         Dda: 2-1  Recovery remove failed for pump 04, code=2
+ 23:48:47.69         Dda: 2-1  Disp : Floating pos ? 
+ 23:48:47.69         Dda: 2-1  POS#11, Pump#4, PcPos=1
+ 23:48:47.69  - Send Dda: 2-1  R  OP:CD M:8  0<02><0D>2R1CD8007304<03>
+ 23:48:47.74  - Recv Dda: 2-1     OP:cd M:8  <02><0B>2R1cd85681<03>
+ 23:48:47.74  - Send Dda: 2-1  R  OP:SP M:9  0<02>;2R1SP98.490|17.93|7.900|8.120|0|0|0|0|0|0|0
+|0|0|0|0|0|4<0=<03>
+ 23:48:47.79  - Recv Dda: 2-1     OP:sp M:9  <02><0B>2R1sp9<:74<03>
+ 23:48:48.30  - Send Dda: 2-1  R  OP:KM M:0  0<02><0E>2R1KM0<C3>0<F8>0?=3<03>
+ 23:48:48.35  - Recv Dda: 2-1     OP:km M:0  <02><0B>2R1km0<4;0<03>
+ 23:48:48.35  - Send Dda: 2-1  R  OP:EM M:1  0<02><0D>2R1EM100=367<03>
+  - Recv Dda: 2-1     OP:em M:1  <02><0D>2R1em100><9=<03>
+ 23:48:48.90  - Send Dda: 2-1  R  OP:EF M:2  0<02><14>2R1EF2017<00><00>0<00><00><00>=456<03>
+ 23:48:48.94  - Recv Dda: 2-1     OP:ef M:2  <02><0E>2R1ef201712<;<03>
+ 23:48:48.94         Dda: 2-1  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 2-1     OP:db M:3  <02>/2R1db3<00>0 Main thread did not send FT data
+ <<17<03>
+  - Recv Dda: 2-1     OP:db M:4  <02><17>2R1db4<00>0 Pump Off 1506<03>
+  - Recv Dda: 2-1     OP:db M:5  <02>42R1db5<00>0 Dresser, Credit mode price + end
+ sale <922<03>
+  - Recv Dda: 2-1     OP:db M:6  <02>,2R1db6<00>0 23:48:39:580: Pump status: 17 <3
+74<03>
+  - Recv Dda: 2-1     OP:db M:7  <02>)2R1db7<00>0 Dresser set prices (false) 3>89
+<03>
+  - Recv Dda: 2-1     OP:db M:8  <02><1C>2R1db8<00>0 QS perform ft >==4<03>
+  - Recv Dda: 2-1     OP:db M:9  <02> 2R1db9<00>0 Dresser, Price OK ;5:2<03>
+  - Recv Dda: 2-1     OP:db M:0  <02><1B>2R1db0<00>0 Stop Pump CD >=59<03>
+  - Recv Dda: 2-1     OP:db M:1  <02>)2R1db1<00>0 Dresser set prices (false) 2:1<
+<03>
+  - Recv Dda: 2-1     OP:db M:2  <02> 2R1db2<00>0 Dresser, Price OK 5=69<03>
+ 23:57:58.89         Dda: 2-1  PC-POS Refuel Discount type=0,voucher=       ,cust name=                        ,sign_c=0,ash=00001,clubtype=      
+ 23:57:58.89         Dda: 2-1  Refuel cont.: limit=00020000, rgis=0000000900, odo=000001, posNo=11, idbox=
+ 23:57:58.89         Dda: 2-1  clubID=0000000000000000000
+ 23:57:58.89         Dda: 2-1  POS start refuel sync
+ 23:57:59.13         Dda: 2-1  Disp : ID_CARD 
+ 23:57:59.14         Dda: 2-1  PC-POS Transaction mi
+ 23:57:59.14         Dda: 2-1  iCardLen=0,TrackLen=37
+ 23:57:59.14         Dda: 2-1  track2=0731071500000000000000000000000000000
+ 23:57:59.14         Dda: 2-1  Disp : WAIT_MI 
+ 23:57:59.14         Dda: 2-1  Disp : Checking-Coupon 
+ 23:57:59.14         Dda: 2-1  Disp : CH-3CardID 
+ 23:57:59.14         Dda: 2-1  track2=0731071500000000000000000000000000000
+ 23:57:59.14         Dda: 2-1  Disp : CH-3Temp4 0731 
+ 23:57:59.14         Dda: 2-1  Disp : IdType= C 
+ 23:57:59.14         Dda: 2-1  Disp : Checking-DorClub 
+ 23:57:59.14         Dda: 2-1  Disp : ChequeNum=            
+ 23:57:59.14         Dda: 2-1  Disp : chequeAmount=           
+ 23:57:59.14         Dda: 2-1  Disp : Checking-DOR 
+ 23:57:59.14         Dda: 2-1  Disp : Checking-DOR-Card 
+ 23:57:59.14         Dda: 2-1  Disp : temp4= 0731 
+ 23:57:59.14         Dda: 2-1  Disp : Checking-Praxell 
+ 23:57:59.14         Dda: 2-1  Disp : discounttype=  
+ 23:57:59.14         Dda: 2-1  Disp : Ashrait= 0 
+ 23:57:59.14         Dda: 2-1  Disp : Shva-Temp1= 0 
+ 23:57:59.14         Dda: 2-1  Disp : Checking-Shva 
+ 23:57:59.14         Dda: 2-1  Disp : Checking-AutoCard0 
+ 23:57:59.14         Dda: 2-1  Disp : Checking-Autocard 
+ 23:57:59.14         Dda: 2-1  Disp : Checking-Worker 
+ 23:57:59.14         Dda: 2-1  ItsMe() =    ÉÅÖí.òã    Code = 000003
+ 23:57:59.69         Dda: 2-1  Disp : ValConfirmed 
+ 23:57:59.69  - Send Dda: 2-1  R  OP:KM M:0  0<02><0E>2R1KM0A <<052<03>
+ 23:57:59.74  - Recv Dda: 2-1     OP:km M:0  <02><0B>2R1km0<4;0<03>
+ 23:57:59.74  - Send Dda: 2-1  R  OP:EF M:1  0<02><14>2R1EF1026\2X0<00><00><00>>4;<<03>
+ 23:57:59.78  - Recv Dda: 2-1     OP:ef M:1  <02><0E>2R1ef1026<<65<03>
+ 23:58:00.22  - Send Dda: 2-1  R  OP:SP M:2  0<02>;2R1SP28.490|17.93|7.900|8.120|0|0|0|0|0|0|0
+|0|0|0|0|0|2005<03>
+ 23:58:00.27  - Recv Dda: 2-1     OP:sp M:2  <02><0B>2R1sp27;1?<03>
+ 23:58:00.77         Dda: 2-1  Tran type=2, Rate type(cash/credit)=1, Nozzle BITMAP=2
+ 23:58:00.77  - Send Dda: 2-1  R  OP:CT M:3  0<02>x2R1CT377\22123.557|200.00|11.154|200.00|25.
+316|200.00|24.631|200.00|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|31<5
+<03>
+  - Recv Dda: 2-1     OP:ct M:3  <02><0D>2R1ct3774>=8<03>
+  - Recv Dda: 2-1     OP:db M:4  <02>)2R1db4<00>7 Dresser set prices (false) 4>23
+<03>
+  - Recv Dda: 2-1     OP:db M:5  <02><19>2R1db5<00>7 start_pump 6771<03>
+  - Recv Dda: 2-1     OP:db M:6  <02> 2R1db6<00>7 Dresser, Price OK 7231<03>
+  - Recv Dda: 2-1     OP:db M:7  <02>(2R1db7<00>7 Dresser set prices (true) >><1
+<03>
+  - Recv Dda: 2-1     OP:db M:9  <02> 2R1db9<00>7 Dresser, Price OK 3=;;<03>
+ 23:58:07.98  - Recv Dda: 2-1     OP:hn M:6  <02><0F>2R1hn6<00>7025>;;<03>
+ 23:58:07.98         Dda: 2-1  Handle 2
+ 23:58:07.98         Dda: 2-1  Send Ex. POS: hn 02. Receive=OK
+ 23:58:08.53  - Recv Dda: 2-1     OP:nz M:7  <02><10>2R1nz7<00>7021312<<03>
+ 23:58:08.53  - Send Dda: 2-1  R  OP:EF M:8  0<02><14>2R1EF8036<00><00>0<00><00><00>7750<03>
+ 23:58:08.58  - Recv Dda: 2-1     OP:ef M:8  <02><0E>2R1ef80360<23<03>
+ 23:58:08.58         Dda: 2-1  Recovery save pump 04
+ 23:58:08.58         Dda: 2-1  S042
+ 23:58:08.58  - Send Dda: 2-1  R  OP:KM M:9  0<02><0E>2R1KM9Ç<00>08;>8<03>
+ 23:58:08.63  - Recv Dda: 2-1     OP:km M:9  <02><0B>2R1km95599<03>
+  - Recv Dda: 2-1     OP:db M:0  <02>,2R1db0<00>7 23:58:07:645: Pump status: 11 06
+91<03>
+ 23:58:08.67         Dda: 2-1  Disp : Resume_update_Odo1 
+ 23:58:08.67  - Send Dda: 2-1  R  OP:EF M:1  0<02><14>2R1EF1036<00><00>0<00><00><00>525><03>
+ 23:58:08.72  - Recv Dda: 2-1     OP:ef M:1  <02><0E>2R1ef1036??54<03>
+ 23:58:08.72  - Send Dda: 2-1  R  OP:RF M:2  0<02><0D>2R1RF200?7:6<03>
+ 23:58:08.77  - Recv Dda: 2-1     OP:rf M:2  <02><0D>2R1rf200<85<<03>
+ 23:58:14.84  - Recv Dda: 2-1     OP:fs M:3  <02><18>2R1fs3<00>00217.9|0|0|?:8><03>
+ 23:58:21.45  - Recv Dda: 2-1     OP:fs M:5  <02> 2R1fs5<00>00217.9|11.67|1.477|;83?<03>
+ 23:58:28.09  - Recv Dda: 2-1     OP:fs M:7  <02> 2R1fs7<00>00217.9|46.18|5.845|5:5;<03>
+ 23:58:34.73  - Recv Dda: 2-1     OP:fs M:9  <02> 2R1fs9<00>00217.9|83.03|10.51|=06><03>
+ 23:58:41.32  - Recv Dda: 2-1     OP:fs M:1  <02>"2R1fs1<00>00217.9|117.17|14.832|>657<03>
+  - Recv Dda: 2-1     OP:fs M:3  <02>!2R1fs3<00>00217.9|151.52|19.18|>9?7<03>
+ 23:58:54.50  - Recv Dda: 2-1     OP:fs M:5  <02>"2R1fs5<00>00217.9|186.87|23.655|<;;7<03>
+ 23:59:00.43  - Recv Dda: 2-1     OP:fs M:7  <02>!2R1fs7<00>00217.9|198.8|25.165|817=<03>
+  - Recv Dda: 2-1     OP:db M:8  <02><1A>2R1db8<00>0 Handle On:2 >5=5<03>
+ 23:59:00.81         Dda: 2-1  Send Ex. POS: db  Han. Receive=OK
+  - Recv Dda: 2-1     OP:db M:4  <02>,2R1db4<00>0 23:58:07:895: Pump status: C9 ;:
+;3<03>
+ 23:59:03.07         Dda: 2-1  Send Ex. POS: db  23:. Receive=OK
+ 23:59:06.32  - Recv Dda: 2-1     OP:fs M:1  <02><1F>2R1fs1<00>00217.9|200|25.315|?>59<03>
+ 23:59:12.82  - Recv Dda: 2-1     OP:fs M:3  <02><1F>2R1fs3<00>00217.9|200|25.315|4594<03>
+ 23:59:19.49  - Recv Dda: 2-1     OP:fs M:5  <02><1F>2R1fs5<00>00217.9|200|25.315|99>2<03>
+ 23:59:26.01  - Recv Dda: 2-1     OP:fs M:7  <02><1F>2R1fs7<00>00217.9|200|25.315|222?<03>
+ 23:59:32.65  - Recv Dda: 2-1     OP:fs M:9  <02><1F>2R1fs9<00>00217.9|200|25.315|312?<03>
+ 23:59:39.26  - Recv Dda: 2-1     OP:fs M:1  <02><1F>2R1fs1<00>00217.9|200|25.315|?>59<03>
+ 23:59:45.71  - Recv Dda: 2-1     OP:fs M:3  <02><1F>2R1fs3<00>00217.9|200|25.315|4594<03>
+ 23:59:52.32  - Recv Dda: 2-1     OP:fs M:5  <02><1F>2R1fs5<00>00217.9|200|25.315|99>2<03>
+ 23:59:58.87  - Recv Dda: 2-1     OP:fs M:7  <02><1F>2R1fs7<00>00217.9|200|25.315|222?<03>
+  - Recv Dda: 2-1     OP:fs M:9  <02><1F>2R1fs9<00>00217.9|200|25.315|312?<03>
+ 00:00:11.97  - Recv Dda: 2-1     OP:fs M:1  <02><1F>2R1fs1<00>00217.9|200|25.315|?>59<03>
+ 00:00:18.66  - Recv Dda: 2-1     OP:fs M:3  <02><1F>2R1fs3<00>00217.9|200|25.315|4594<03>
+ 00:00:25.25  - Recv Dda: 2-1     OP:fs M:5  <02><1F>2R1fs5<00>00217.9|200|25.315|99>2<03>
+ 00:00:31.68  - Recv Dda: 2-1     OP:fs M:7  <02><1F>2R1fs7<00>00217.9|200|25.315|222?<03>
+ 00:00:38.32  - Recv Dda: 2-1     OP:fs M:9  <02><1F>2R1fs9<00>00217.9|200|25.315|312?<03>
+ 00:00:44.82  - Recv Dda: 2-1     OP:fs M:1  <02><1F>2R1fs1<00>00217.9|200|25.315|?>59<03>
+ 00:00:51.50  - Recv Dda: 2-1     OP:fs M:3  <02><1F>2R1fs3<00>00217.9|200|25.315|4594<03>
+ 00:00:58.13  - Recv Dda: 2-1     OP:fs M:5  <02><1F>2R1fs5<00>00217.9|200|25.315|99>2<03>
+ 00:01:04.50  - Recv Dda: 2-1     OP:fs M:7  <02><1F>2R1fs7<00>00217.9|200|25.315|222?<03>
+  - Recv Dda: 2-1     OP:fs M:9  <02><1F>2R1fs9<00>00217.9|200|25.315|312?<03>
+ 00:01:17.64  - Recv Dda: 2-1     OP:fs M:1  <02><1F>2R1fs1<00>00217.9|200|25.315|?>59<03>
+ 00:01:24.27  - Recv Dda: 2-1     OP:fs M:3  <02><1F>2R1fs3<00>00217.9|200|25.315|4594<03>
+ 00:01:30.94  - Recv Dda: 2-1     OP:fs M:5  <02><1F>2R1fs5<00>00217.9|200|25.315|99>2<03>
+ 00:01:37.59  - Recv Dda: 2-1     OP:fs M:7  <02><1F>2R1fs7<00>00217.9|200|25.315|222?<03>
+ 00:01:44.12  - Recv Dda: 2-1     OP:fs M:9  <02><1F>2R1fs9<00>00217.9|200|25.315|312?<03>
+ 00:01:50.75  - Recv Dda: 2-1     OP:fs M:1  <02><1F>2R1fs1<00>00217.9|200|25.315|?>59<03>
+ 00:01:57.36  - Recv Dda: 2-1     OP:fs M:3  <02><1F>2R1fs3<00>00217.9|200|25.315|4594<03>
+ 00:02:03.84  - Recv Dda: 2-1     OP:fs M:5  <02><1F>2R1fs5<00>00217.9|200|25.315|99>2<03>
+ 00:02:10.37  - Recv Dda: 2-1     OP:fs M:7  <02><1F>2R1fs7<00>00217.9|200|25.315|222?<03>
+  - Recv Dda: 2-1     OP:fs M:9  <02><1F>2R1fs9<00>00217.9|200|25.315|312?<03>
+ 00:02:23.59  - Recv Dda: 2-1     OP:fs M:1  <02><1F>2R1fs1<00>00217.9|200|25.315|?>59<03>
+ 00:02:30.20  - Recv Dda: 2-1     OP:fs M:3  <02><1F>2R1fs3<00>00217.9|200|25.315|4594<03>
+ 00:02:36.79  - Recv Dda: 2-1     OP:fs M:5  <02><1F>2R1fs5<00>00217.9|200|25.315|99>2<03>
+ 00:02:43.34  - Recv Dda: 2-1     OP:fs M:7  <02><1F>2R1fs7<00>00217.9|200|25.315|222?<03>
+ 00:02:49.82  - Recv Dda: 2-1     OP:fs M:9  <02><1F>2R1fs9<00>00217.9|200|25.315|312?<03>
+ 00:02:56.38  - Recv Dda: 2-1     OP:fs M:1  <02><1F>2R1fs1<00>00217.9|200|25.315|?>59<03>
+ 00:03:02.15  - Recv Dda: 2-1     OP:fs M:3  <02><1F>2R1fs3<00>00217.9|200|25.315|4594<03>
+ 00:03:08.68  - Recv Dda: 2-1     OP:fs M:5  <02><1F>2R1fs5<00>00217.9|200|25.315|99>2<03>
+ 00:03:15.29  - Recv Dda: 2-1     OP:fs M:7  <02><1F>2R1fs7<00>00217.9|200|25.315|222?<03>
+  - Recv Dda: 2-1     OP:fs M:9  <02><1F>2R1fs9<00>00217.9|200|25.315|312?<03>
+ 00:03:28.52  - Recv Dda: 2-1     OP:fs M:1  <02><1F>2R1fs1<00>00217.9|200|25.315|?>59<03>
+ 00:03:35.12  - Recv Dda: 2-1     OP:fs M:3  <02><1F>2R1fs3<00>00217.9|200|25.315|4594<03>
+ 00:03:41.71  - Recv Dda: 2-1     OP:fs M:5  <02><1F>2R1fs5<00>00217.9|200|25.315|99>2<03>
+ 00:03:48.30  - Recv Dda: 2-1     OP:fs M:7  <02><1F>2R1fs7<00>00217.9|200|25.315|222?<03>
+ 00:03:54.90  - Recv Dda: 2-1     OP:fs M:9  <02><1F>2R1fs9<00>00217.9|200|25.315|312?<03>
+ 00:03:55.88  - Recv Dda: 2-1     OP:hn M:1  <02><0F>2R1hn1<00>0009<;=<03>
+ 00:03:55.88         Dda: 2-1  Handle 0
+
+********* Closed at Fri May 10 00:03:55 2024
+

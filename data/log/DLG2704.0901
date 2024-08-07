@@ -1,0 +1,1409 @@
+
+
+********* Opened at Sat Apr 27 21:13:08 2024
+
+
+......... Close Shift in CloseShift at Sat Apr 27 21:13:15 2024
+
+......... Creating TS for substation 1 at Sat Apr 27 21:13:16 2024
+
+......... Sending shift change message to USA_XML at Sat Apr 27 21:13:16 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Sat Apr 27 21:13:17 2024
+
+......... Open Shift at Sat Apr 27 21:13:19 2024
+
+ 21:13:19.87  - Send Dda: 5-0  R  OP:RT M:4  0<02><0D>5R0RT4003171<03>
+ 21:13:19.91  - Recv Dda: 5-0     OP:rt M:4  <02><0D>5R0rt4000>8;<03>
+ 21:13:21.04  - Recv Dda: 5-0     OP:ta M:6  <02>=5R0ta6<00>032098.02|2197054.11|0|0|0|0|0|0|0
+|0|0|0|0|0|0|0|36;8<03>
+ 21:13:21.04         Dda: 5-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 21:13:21.04  - Send Dda: 5-0  R  OP:CD M:7  0<02><0D>5R0CD700==8=<03>
+ 21:13:21.08  - Recv Dda: 5-0     OP:cd M:7  <02><0B>5R0cd7199;<03>
+ 21:13:21.08  - Send Dda: 5-0  R  OP:SP M:8  0<02>35R0SP88.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|<068<03>
+ 21:13:21.13  - Recv Dda: 5-0     OP:sp M:8  <02><0B>5R0sp864:0<03>
+ 21:13:22.15         Dda: 5-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 5-0     OP:db M:9  <02><1B>5R0db9<00>0 Stop Pump CD 5>31<03>
+  - Recv Dda: 5-0     OP:db M:0  <02>"5R0db0<00>0 VER:5.0.122|17/12/15:1:6<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><1C>5R0db1<00>0 COUNTRY:ISRAEL6=97<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><1B>5R0db2<00>0 Pump Type:BEN50<=<03>
+  - Recv Dda: 5-0     OP:db M:3  <02><14>5R0db3<00>0 price 05;2<03>
+......... Open Shift in CloseShift at Sat Apr 27 21:13:29 2024
+
+......... Creating TS for substation 1 at Sat Apr 27 21:13:29 2024
+
+ 03:37:47.28  - Recv Dda: 5-0     OP:hn M:3  <02><0F>5R0hn3<00>0019336<03>
+ 03:37:47.28         Dda: 5-0  Handle 1
+ 03:37:47.28         Dda: 5-0  Send Ex. POS: hn 01. Receive=2 - Pu
+ 03:37:47.28         Dda: 5-0  Invalid Event hn at state 2
+  - Recv Dda: 5-0     OP:db M:4  <02><18>5R0db4<00>0 status= 611787<03>
+  - Recv Dda: 5-0     OP:db M:5  <02><1A>5R0db5<00>0 Handle On:1 5>6:<03>
+ 03:38:37.00  - Recv Dda: 5-0     OP:hn M:9  <02><0F>5R0hn9<00>000<5;9<03>
+ 03:38:37.00         Dda: 5-0  Handle 0
+ 03:38:37.00         Dda: 5-0  Send Ex. POS: hn 00. Receive=2 - Pu
+ 03:38:37.00         Dda: 5-0  Invalid Event hn at state 2
+  - Recv Dda: 5-0     OP:db M:0  <02><18>5R0db0<00>0 status= 409<61<03>
+ 03:38:38.11  - Recv Dda: 5-0     OP:hn M:1  <02><0F>5R0hn1<00>001=7;5<03>
+ 03:38:38.11         Dda: 5-0  Handle 1
+ 03:38:38.11         Dda: 5-0  Send Ex. POS: hn 01. Receive=2 - Pu
+ 03:38:38.11         Dda: 5-0  Invalid Event hn at state 2
+  - Recv Dda: 5-0     OP:db M:2  <02><1B>5R0db2<00>0 Handle Off:1 1:6;<03>
+  - Recv Dda: 5-0     OP:db M:3  <02><18>5R0db3<00>0 status= 616781<03>
+  - Recv Dda: 5-0     OP:db M:4  <02><1A>5R0db4<00>0 Handle On:1 ?64><03>
+ 03:38:59.98  - Recv Dda: 5-0     OP:hn M:1  <02><0F>5R0hn1<00>000<794<03>
+ 03:38:59.98         Dda: 5-0  Handle 0
+ 03:38:59.98         Dda: 5-0  Send Ex. POS: hn 00. Receive=2 - Pu
+ 03:38:59.98         Dda: 5-0  Invalid Event hn at state 2
+  - Recv Dda: 5-0     OP:db M:2  <02><18>5R0db2<00>0 status= 406::3<03>
+  - Recv Dda: 5-0     OP:db M:3  <02><1B>5R0db3<00>0 Handle Off:1 0:89<03>
+......... Change shift request, pos=11, pump=0, cashreg=1 at Sun Apr 28 04:08:44 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Sun Apr 28 04:08:44 2024
+
+ 04:08:45.10  - Send Dda: 5-0  R  OP:RT M:7  0<02><0D>5R0RT7006821<03>
+ 04:08:45.14  - Recv Dda: 5-0     OP:rt M:7  <02><0D>5R0rt70057=;<03>
+ 04:08:46.42  - Recv Dda: 5-0     OP:ta M:9  <02>=5R0ta9<00>032098.02|2197054.11|0|0|0|0|0|0|0
+|0|0|0|0|0|0|0|?81:<03>
+ 04:08:46.42         Dda: 5-0  WritePumpTotals: iType [1], trs totalizers to server [0], shift totalizers to server [0]
+......... Close Shift in CloseShift at Sun Apr 28 04:08:54 2024
+
+......... Creating TS for substation 1 at Sun Apr 28 04:08:55 2024
+
+......... Sending shift change message to USA_XML at Sun Apr 28 04:08:55 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Sun Apr 28 04:08:55 2024
+
+......... Open Shift at Sun Apr 28 04:08:57 2024
+
+ 04:08:57.81  - Send Dda: 5-0  R  OP:RT M:3  0<02><0D>5R0RT300;4>1<03>
+ 04:08:57.86  - Recv Dda: 5-0     OP:rt M:3  <02><0D>5R0rt3008;1;<03>
+ 04:08:59.00  - Recv Dda: 5-0     OP:ta M:5  <02>=5R0ta5<00>032098.02|2197054.11|0|0|0|0|0|0|0
+|0|0|0|0|0|0|0|?:2=<03>
+ 04:08:59.00         Dda: 5-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 04:08:59.00  - Send Dda: 5-0  R  OP:CD M:6  0<02><0D>5R0CD600>:;=<03>
+ 04:08:59.05  - Recv Dda: 5-0     OP:cd M:6  <02><0B>5R0cd609;:<03>
+ 04:08:59.05  - Send Dda: 5-0  R  OP:SP M:7  0<02>35R0SP78.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|4=0><03>
+ 04:08:59.09  - Recv Dda: 5-0     OP:sp M:7  <02><0B>5R0sp7954?<03>
+ 04:09:00.08         Dda: 5-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 5-0     OP:db M:8  <02><1B>5R0db8<00>0 Stop Pump CD 4>=3<03>
+  - Recv Dda: 5-0     OP:db M:9  <02>"5R0db9<00>0 VER:5.0.122|17/12/153>9<<03>
+  - Recv Dda: 5-0     OP:db M:0  <02><1C>5R0db0<00>0 COUNTRY:ISRAEL9=:6<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><1B>5R0db1<00>0 Pump Type:BEN61>;<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><14>5R0db2<00>0 price 6:?7<03>
+......... Open Shift in CloseShift at Sun Apr 28 04:09:06 2024
+
+......... Creating TS for substation 1 at Sun Apr 28 04:09:06 2024
+
+......... Shva Transmit at Sun Apr 28 06:00:00 2024
+
+ 09:22:39.82  - Recv Dda: 5-0     OP:hn M:0  <02><0F>5R0hn0<00>0017=>4<03>
+ 09:22:39.82         Dda: 5-0  Handle 1
+ 09:22:39.82         Dda: 5-0  Send Ex. POS: hn 01. Receive=2 - Pu
+ 09:22:39.82         Dda: 5-0  Invalid Event hn at state 2
+  - Recv Dda: 5-0     OP:db M:1  <02><18>5R0db1<00>0 status= 619143<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><1A>5R0db2<00>0 Handle On:1 36?5<03>
+ 09:22:42.17         Dda: 5-0  VSU event:[42] v400120uni|0|A3248594|0|0|||0|0||00000000|
+ 09:22:42.59         Dda: 5-0  Disp : G3_process 
+ 09:22:42.59         Dda: 5-0  Disp : CardId= uni00A3248594 
+ 09:22:42.59         Dda: 5-0  Disp : Checking-Universsal-Idbox uni 
+ 09:22:42.59         Dda: 5-0  Disp : UID= A3248594 
+ 09:22:42.59         Dda: 5-0  Disp : Validate-Uid-using-fuelpoint 
+ 09:22:42.59         Dda: 5-0  maximus_in=LI|uid:A3248594|0|9|
+ 09:22:43.34         Dda: 5-0  maximus_ot=OF|0||0|0|9999999|0|0|9999999|0|0|Invalid card number             ||||@|0|
+ 09:22:43.34         Dda: 5-0  Quit on error (0). index = 1
+ 09:22:43.34         Dda: 5-0  Disp : Fuel4/fuelpoint not open / refused 
+ 09:22:43.34         Dda: 5-0  Disp : Dor-universal 
+ 09:22:43.34         Dda: 5-0  Disp : Dorid 0000200027370797009 0106 
+ 09:22:43.34         Dda: 5-0  SetInt to 99900000
+ 09:22:43.34         Dda: 5-0  Disp : CH-3CardID 
+ 09:22:43.34         Dda: 5-0  track2=0000200027370797009
+ 09:22:43.34         Dda: 5-0  Disp : CH-3Temp4 0000 
+ 09:22:43.34         Dda: 5-0  Disp : IdType= I 
+ 09:22:43.34         Dda: 5-0  Disp : ProdCode= 0000 
+ 09:22:43.34         Dda: 5-0  Disp : Checking-2500-Local 
+ 09:22:43.34         Dda: 5-0  Disp : Checking-DOR 
+ 09:22:43.34         Dda: 5-0  Disp : DOR_BoxCarNo= 0000000000 
+ 09:22:43.34         Dda: 5-0  Disp : Temp4= 0000 
+ 09:22:43.34         Dda: 5-0  Disp : UIron 
+ 09:22:43.34         Dda: 5-0  Disp : Dor_Card_18                   
+ 09:22:43.34         Dda: 5-0  Disp : ShvaCardNo 0000200027370797009 
+ 09:22:43.34         Dda: 5-0  DorCh_in=ri|0000200027370797009|9|
+ 09:22:43.65         Dda: 5-0  DorCh_ot=OF|0|Q7100|@|0023947501|0|0|2|10000000001000000000||2500000|0|0|0|0|1|0|4|      é"íÅ âîéÄî|B|
+ 09:22:43.65         Dda: 5-0  Disp : carno= 0023947501 
+ 09:22:43.65         Dda: 5-0  Disp : Ok---fuels 0 0 
+ 09:22:43.65         Dda: 5-0  Disp : DorOK-Temp4 0106 
+ 09:22:43.65         Dda: 5-0  Disp : Solek= 0 
+ 09:22:43.65         Dda: 5-0  Disp : DOR_OK_RC=  
+ 09:22:43.65         Dda: 5-0  Disp : Device= H 
+ 09:22:43.65         Dda: 5-0  Disp : Checking-DOR-IDBOX 
+ 09:22:43.65         Dda: 5-0  ItsMe() =   ëöé-èóöÑ    Code = 000106
+ 09:22:43.65         Dda: 5-0  Disp : Validate-Idbox-Secret_Code 0000 
+ 09:22:43.65         Dda: 5-0  Disp : IDBOX_FuelType= 0000 
+ 09:22:43.65         Dda: 5-0  Disp : IDBOX_ProdCode= 0000 
+ 09:22:43.65         Dda: 5-0  Disp : Temp4= 0106 
+ 09:22:43.65         Dda: 5-0  Disp : Check fuel types CH 
+ 09:22:43.65         Dda: 5-0  Disp : DOR-IDBOX-Validated 
+ 09:22:44.08         Dda: 5-0  Disp : ValConfirmed-Rfc 
+ 09:22:44.52  - Send Dda: 5-0  R  OP:SP M:9  0<02>35R0SP98.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|7888<03>
+ 09:22:44.56  - Recv Dda: 5-0     OP:sp M:9  <02><0B>5R0sp97481<03>
+ 09:22:44.99         Dda: 5-0  Tran type=3, Rate type(cash/credit)=2, Nozzle BITMAP=1
+ 09:22:44.99  - Send Dda: 5-0  R  OP:CT M:0  0<02>d5R0CT051<01>3271.000|607.05|71.000|1270.9|0
+|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|07;8<03>
+  - Recv Dda: 5-0     OP:ct M:0  <02><0D>5R0ct0519394<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><14>5R0db1<00>5 price 9386<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><19>5R0db2<00>5 start_pump >=08<03>
+  - Recv Dda: 5-0     OP:db M:3  <02>%5R0db3<00>5 prices_ct, rate_type=2 02=7<03>
+  - Recv Dda: 5-0     OP:db M:4  <02><14>5R0db4<00>5 price 51?6<03>
+  - Recv Dda: 5-0     OP:db M:5  <02><15>5R0db5<00>5 author 8365<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><18>5R0db6<00>5 status= 696>><<03>
+ 09:22:53.87  - Recv Dda: 5-0     OP:nz M:6  <02><10>5R0nz6<00>50110>29<03>
+ 09:22:53.87         Dda: 5-0  Recovery save pump 09
+ 09:22:53.87         Dda: 5-0  S091
+  - Recv Dda: 5-0     OP:db M:7  <02><18>5R0db7<00>5 status= 5940=><03>
+ 09:22:58.98  - Recv Dda: 5-0     OP:fs M:6  <02>"5R0fs6<00>501117.9|111.19|6.212|<2<=<03>
+  - Recv Dda: 5-0     OP:db M:8  <02><12>5R0db8<00>5 run 2<67<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><15>5R0db2<00>5 fueled ;972<03>
+ 09:23:07.46  - Recv Dda: 5-0     OP:fs M:1  <02>#5R0fs1<00>501117.9|276.81|15.464|6090<03>
+ 09:23:15.71  - Recv Dda: 5-0     OP:fs M:5  <02>#5R0fs5<00>501117.9|449.59|25.117|:480<03>
+ 09:23:23.22  - Recv Dda: 5-0     OP:fs M:8  <02>#5R0fs8<00>501117.9|597.59|33.385|>:5?<03>
+ 09:23:30.46  - Recv Dda: 5-0     OP:fs M:1  <02>#5R0fs1<00>501117.9|744.98|41.619|>320<03>
+ 09:23:37.72  - Recv Dda: 5-0     OP:fs M:4  <02>"5R0fs4<00>501117.9|892.3|49.849|2=4:<03>
+ 09:23:44.97  - Recv Dda: 5-0     OP:fs M:7  <02>$5R0fs7<00>501117.9|1040.42|58.124|6292<03>
+ 09:23:52.33  - Recv Dda: 5-0     OP:fs M:0  <02>$5R0fs0<00>501117.9|1188.15|66.377|01=9<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><18>5R0db1<00>5 status= 51<:;1<03>
+  - Recv Dda: 5-0     OP:db M:4  <02><18>5R0db4<00>5 status= 417?44<03>
+ 09:24:17.35  - Recv Dda: 5-0     OP:hn M:5  <02><0F>5R0hn5<00>500:562<03>
+ 09:24:17.35         Dda: 5-0  Handle 0
+ 09:24:17.35         Dda: 5-0  Send Ex. POS: hn 00. Receive=2 - Pu
+  - Recv Dda: 5-0     OP:ft M:6  <02><1F>5R0ft6<00>501117.9|1270.9|71|0<?5<03>
+ 09:24:17.90         Dda: 5-0  Send Ex. POS: ft 0111. Receive=2 - Pump not exist
+ 09:24:17.90         Dda: 5-0  F0910071.000032169.02
+ 09:24:17.90         Dda: 5-0  Disp : DOR-IDBOX:Posting 
+ 09:24:17.90         Dda: 5-0  Disp : Dor_Total= 1270.90 
+ 09:24:17.90         Dda: 5-0  DorCh_in=ft|0000200027370797009|9|1|1| 127090|2394750100|000000|||@|0000| 127090|  71000|  1790|
+ 09:24:17.90         Dda: 5-0  Send Ex. POS: ft 0111. Receive=2 - Pump not exist
+ 09:24:18.05         Dda: 5-0  DorCh_ot=CF|0|
+ 09:24:18.05         Dda: 5-0  Disp : Dor-WriteShvaCardNo 0000200027370797009 
+ 09:24:18.05         Dda: 5-0  Disp : Dor-WriteTranCardNo 000200027370797009 
+ 09:24:18.05         Dda: 5-0  Enter into WriteTran
+ 09:24:18.05         Dda: 5-0  Try open shift file
+ 09:24:18.05         Dda: 5-0  Write to .\DATA\RS280424.D1A,len =253
+ 09:24:18.05         Dda: 5-0  RS rec =  1270.90      71.000  23947501   1   09     205464 09:24 28/04/24       òåÖë 00    ëöé-èóöÑ 000106 0000200027370797009                                   17.900                                                  1 10  441           0                      
+ 09:24:18.05         Dda: 5-0  Recovery remove pump 09
+ 09:24:18.06         Dda: 5-0  after reco remove
+ 09:24:18.06         Dda: 5-0  RS Copy
+ 09:24:18.06         Dda: 5-0  End of WriteTran .\DATA\RS280424.D1A
+ 09:24:18.06         Dda: 5-0  FuelPointPostTran,TranNo=205464,PumpNo=9,Nozzle=1,ProdNo=0000,dQty=71000
+ 09:24:18.06         Dda: 5-0  Rfc transaction
+ 09:24:18.06         Dda: 5-0  FuelPoint_in=FT2|-1|205464|9|1|0000|0000200027370797009|0|0|0|        |0|71000||||       |000106| 0|04/28/2024 09:22:53|17.900|1270.90|   0.00|0000000|23947501|000106|
+  - Recv Dda: 5-0     OP:db M:7  <02><18>5R0db7<00>5 status= 40>2<6<03>
+  - Recv Dda: 5-0     OP:db M:8  <02><1B>5R0db8<00>5 Handle Off:1 89?1<03>
+  - Recv Dda: 5-0     OP:db M:9  <02><1B>5R0db9<00>5 Stop Pump CF 0=1=<03>
+  - Recv Dda: 5-0     OP:db M:0  <02><0D>5R0db0<00>5729:<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><0D>5R0db1<00>545::<03>
+  - Recv Dda: 5-0     OP:db M:2  <02>/5R0db2<00>5 Main thread did not send FT data
+ 4=43<03>
+  - Recv Dda: 5-0     OP:db M:3  <02><17>5R0db3<00>5 Pump Off 0>?1<03>
+  - Recv Dda: 5-0     OP:db M:4  <02><1C>5R0db4<00>5 QS perform ft 3:0<<03>
+ 09:24:23.70         Dda: 5-0  FuelPoint_ot=CF|
+ 09:24:23.70         Dda: 5-0  Disp : DOR-IDBOX:Posted 
+ 09:24:23.70         Dda: 5-0  Coupon in:GCD|000200027370797009|
+ 09:24:25.76         Dda: 5-0  Fail to call Coupon CH
+ 09:24:25.76         Dda: 5-0  Disp : DOR_TranNo 205464 
+ 09:24:25.76         Dda: 5-0  Disp : DOR_CHtranNO=      
+ 09:24:25.76         Dda: 5-0  Disp : Dor_CustName=                          
+ 09:24:25.76         Dda: 5-0  Disp : Dor_CompanyName=       é"íÅ âîéÄî 
+ 09:24:25.76         Dda: 5-0  Disp : Before-printing1 0 
+ 09:24:25.76         Dda: 5-0  Disp : Temp1 0 
+ 09:24:25.76         Dda: 5-0  Disp : Go-to-print1 
+ 09:24:25.76         Dda: 5-0  Disp : T5-check-for-10 
+ 09:24:27.97         Dda: 5-0  Disp : Ask_print_Entry 
+ 09:24:27.97         Dda: 5-0  Recovery remove pump 09
+ 09:24:27.97         Dda: 5-0  Recovery remove failed for pump 09, code=2
+ 09:24:27.97  - Send Dda: 5-0  R  OP:CD M:4  0<02><0D>5R0CD40084==<03>
+ 09:24:28.01  - Recv Dda: 5-0     OP:cd M:4  <02><0B>5R0cd429?8<03>
+ 09:24:28.01  - Send Dda: 5-0  R  OP:SP M:5  0<02>35R0SP58.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|2<>?<03>
+ 09:24:28.06  - Recv Dda: 5-0     OP:sp M:5  <02><0B>5R0sp5;50=<03>
+ 09:24:28.86         Dda: 5-0  VSU event:[2] v0
+ 09:24:29.05         Dda: 5-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 5-0     OP:db M:6  <02><1B>5R0db6<00>5 Stop Pump CD 9><1<03>
+  - Recv Dda: 5-0     OP:db M:7  <02><14>5R0db7<00>5 price >039<03>
+ 09:24:52.60  - Recv Dda: 5-0     OP:hn M:9  <02><0F>5R0hn9<00>5013>68<03>
+ 09:24:52.60         Dda: 5-0  Handle 1
+ 09:24:52.60         Dda: 5-0  Send Ex. POS: hn 01. Receive=2 - Pu
+ 09:24:52.60         Dda: 5-0  Invalid Event hn at state 2
+  - Recv Dda: 5-0     OP:db M:0  <02><18>5R0db0<00>5 status= 61>483<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><1A>5R0db1<00>5 Handle On:1 587<<03>
+ 09:24:56.26         Dda: 5-0  VSU event:[42] v400120uni|0|A3248594|0|0|||0|0||00000000|
+ 09:24:56.48         Dda: 5-0  Disp : G3_process 
+ 09:24:56.48         Dda: 5-0  Disp : CardId= uni00A3248594 
+ 09:24:56.48         Dda: 5-0  Disp : Checking-Universsal-Idbox uni 
+ 09:24:56.48         Dda: 5-0  Disp : UID= A3248594 
+ 09:24:56.48         Dda: 5-0  Disp : Validate-Uid-using-fuelpoint 
+ 09:24:56.48         Dda: 5-0  maximus_in=LI|uid:A3248594|0|9|
+ 09:25:00.38         Dda: 5-0  maximus_ot=OF|0||0|0|9999999|0|0|9999999|0|0|Invalid card number             ||||@|0|
+ 09:25:00.38         Dda: 5-0  Quit on error (0). index = 1
+ 09:25:00.38         Dda: 5-0  Disp : Fuel4/fuelpoint not open / refused 
+ 09:25:00.38         Dda: 5-0  Disp : Dor-universal 
+ 09:25:00.38         Dda: 5-0  Disp : Dorid 0000200027370797009 0106 
+ 09:25:00.38         Dda: 5-0  SetInt to 99900000
+ 09:25:00.38         Dda: 5-0  Disp : CH-3CardID 
+ 09:25:00.38         Dda: 5-0  track2=0000200027370797009
+ 09:25:00.38         Dda: 5-0  Disp : CH-3Temp4 0000 
+ 09:25:00.38         Dda: 5-0  Disp : IdType= I 
+ 09:25:00.38         Dda: 5-0  Disp : ProdCode= 0000 
+ 09:25:00.38         Dda: 5-0  Disp : Checking-2500-Local 
+ 09:25:00.38         Dda: 5-0  Disp : Checking-DOR 
+ 09:25:00.38         Dda: 5-0  Disp : DOR_BoxCarNo= 0000000000 
+ 09:25:00.38         Dda: 5-0  Disp : Temp4= 0000 
+ 09:25:00.38         Dda: 5-0  Disp : UIron 
+ 09:25:00.38         Dda: 5-0  Disp : Dor_Card_18                   
+ 09:25:00.38         Dda: 5-0  Disp : ShvaCardNo 0000200027370797009 
+ 09:25:00.38         Dda: 5-0  DorCh_in=ri|0000200027370797009|9|
+ 09:25:00.69         Dda: 5-0  DorCh_ot=OF|0|Q7100|@|0023947501|0|0|2|10000000001000000000||2500000|0|0|0|0|1|0|4|      é"íÅ âîéÄî|B|
+ 09:25:00.69         Dda: 5-0  Disp : carno= 0023947501 
+ 09:25:00.69         Dda: 5-0  Disp : Ok---fuels 0 0 
+ 09:25:00.69         Dda: 5-0  Disp : DorOK-Temp4 0106 
+ 09:25:00.69         Dda: 5-0  Disp : Solek= 0 
+ 09:25:00.69         Dda: 5-0  Disp : DOR_OK_RC=  
+ 09:25:00.69         Dda: 5-0  Disp : Device= H 
+ 09:25:00.69         Dda: 5-0  Disp : Checking-DOR-IDBOX 
+ 09:25:00.69         Dda: 5-0  ItsMe() =   ëöé-èóöÑ    Code = 000106
+ 09:25:00.69         Dda: 5-0  Disp : Validate-Idbox-Secret_Code 0000 
+ 09:25:00.69         Dda: 5-0  Disp : IDBOX_FuelType= 0000 
+ 09:25:00.69         Dda: 5-0  Disp : IDBOX_ProdCode= 0000 
+ 09:25:00.69         Dda: 5-0  Disp : Temp4= 0106 
+ 09:25:00.69         Dda: 5-0  Disp : Check fuel types CH 
+ 09:25:00.69         Dda: 5-0  Disp : DOR-IDBOX-Validated 
+ 09:25:01.05         Dda: 5-0  Disp : ValConfirmed-Rfc 
+ 09:25:01.57  - Send Dda: 5-0  R  OP:SP M:5  0<02>35R0SP58.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|2<>?<03>
+ 09:25:01.62  - Recv Dda: 5-0     OP:sp M:5  <02><0B>5R0sp5;50=<03>
+ 09:25:02.16         Dda: 5-0  Tran type=3, Rate type(cash/credit)=2, Nozzle BITMAP=1
+ 09:25:02.16  - Send Dda: 5-0  R  OP:CT M:6  0<02>d5R0CT652<01>3271.000|607.05|71.000|1270.9|0
+|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|><33<03>
+  - Recv Dda: 5-0     OP:ct M:6  <02><0D>5R0ct6521157<03>
+  - Recv Dda: 5-0     OP:db M:7  <02><14>5R0db7<00>5 price >039<03>
+  - Recv Dda: 5-0     OP:db M:8  <02><19>5R0db8<00>5 start_pump 8794<03>
+  - Recv Dda: 5-0     OP:db M:9  <02>%5R0db9<00>5 prices_ct, rate_type=2 832;<03>
+  - Recv Dda: 5-0     OP:db M:0  <02><14>5R0db0<00>5 price ?<<3<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><15>5R0db1<00>5 author =222<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><18>5R0db2<00>5 status= 699349<03>
+ 09:25:10.18  - Recv Dda: 5-0     OP:nz M:0  <02><10>5R0nz0<00>501183<8<03>
+ 09:25:10.18         Dda: 5-0  Recovery save pump 09
+ 09:25:10.18         Dda: 5-0  S091
+  - Recv Dda: 5-0     OP:db M:1  <02><18>5R0db1<00>5 status= 594;;9<03>
+ 09:25:12.43  - Recv Dda: 5-0     OP:fs M:5  <02>!5R0fs5<00>501117.9|43.09|2.407|;=20<03>
+  - Recv Dda: 5-0     OP:db M:0  <02><12>5R0db0<00>5 run 32;=<03>
+ 09:25:19.77  - Recv Dda: 5-0     OP:fs M:8  <02>"5R0fs8<00>501117.9|178.84|9.991|1:51<03>
+  - Recv Dda: 5-0     OP:db M:5  <02><15>5R0db5<00>5 fueled 90<?<03>
+  - Recv Dda: 5-0     OP:fs M:1  <02>#5R0fs1<00>501117.9|314.45|17.567|4146<03>
+ 09:25:34.57  - Recv Dda: 5-0     OP:fs M:5  <02>"5R0fs5<00>501117.9|449.4|25.106|??27<03>
+  - Recv Dda: 5-0     OP:fs M:7  <02>#5R0fs7<00>501117.9|584.09|32.631|68<<<03>
+ 09:25:49.16  - Recv Dda: 5-0     OP:fs M:1  <02>#5R0fs1<00>501117.9|718.79|40.156|;?36<03>
+ 09:25:56.30  - Recv Dda: 5-0     OP:fs M:4  <02>#5R0fs4<00>501117.9|852.95|47.651|?3>><03>
+ 09:26:03.52  - Recv Dda: 5-0     OP:fs M:7  <02>#5R0fs7<00>501117.9|987.13|55.147|><3?<03>
+ 09:26:11.17  - Recv Dda: 5-0     OP:fs M:1  <02>$5R0fs1<00>501117.9|1121.09|62.631|222><03>
+ 09:26:18.36  - Recv Dda: 5-0     OP:fs M:4  <02>$5R0fs4<00>501117.9|1255.26|70.126|=?83<03>
+  - Recv Dda: 5-0     OP:db M:8  <02><18>5R0db8<00>5 status= 515:;;<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><18>5R0db1<00>5 status= 40>9:1<03>
+ 09:26:28.42  - Recv Dda: 5-0     OP:hn M:2  <02><0F>5R0hn2<00>500<2;6<03>
+ 09:26:28.42         Dda: 5-0  Handle 0
+ 09:26:28.42         Dda: 5-0  Send Ex. POS: hn 00. Receive=2 - Pu
+  - Recv Dda: 5-0     OP:ft M:3  <02><1F>5R0ft3<00>501117.9|1270.9|71|;>;8<03>
+ 09:26:28.98         Dda: 5-0  Send Ex. POS: ft 0111. Receive=2 - Pump not exist
+ 09:26:28.98         Dda: 5-0  F0910071.000032240.02
+ 09:26:28.98         Dda: 5-0  Disp : DOR-IDBOX:Posting 
+ 09:26:28.98         Dda: 5-0  Disp : Dor_Total= 1270.90 
+ 09:26:28.98         Dda: 5-0  DorCh_in=ft|0000200027370797009|9|1|1| 127090|2394750100|000000|||@|0000| 127090|  71000|  1790|
+ 09:26:28.98         Dda: 5-0  Send Ex. POS: ft 0111. Receive=2 - Pump not exist
+ 09:26:29.07         Dda: 5-0  DorCh_ot=CF|0|
+ 09:26:29.07         Dda: 5-0  Disp : Dor-WriteShvaCardNo 0000200027370797009 
+ 09:26:29.07         Dda: 5-0  Disp : Dor-WriteTranCardNo 000200027370797009 
+ 09:26:29.07         Dda: 5-0  Enter into WriteTran
+ 09:26:29.07         Dda: 5-0  Try open shift file
+ 09:26:29.07         Dda: 5-0  Write to .\DATA\RS280424.D1A,len =253
+ 09:26:29.07         Dda: 5-0  RS rec =  1270.90      71.000  23947501   1   09     205468 09:26 28/04/24       òåÖë 00    ëöé-èóöÑ 000106 0000200027370797009                                   17.900                                                  1 10  441           0                      
+ 09:26:29.07         Dda: 5-0  Recovery remove pump 09
+ 09:26:29.07         Dda: 5-0  after reco remove
+ 09:26:29.07         Dda: 5-0  RS Copy
+ 09:26:29.08         Dda: 5-0  End of WriteTran .\DATA\RS280424.D1A
+ 09:26:29.08         Dda: 5-0  FuelPointPostTran,TranNo=205468,PumpNo=9,Nozzle=1,ProdNo=0000,dQty=71000
+ 09:26:29.08         Dda: 5-0  Rfc transaction
+ 09:26:29.08         Dda: 5-0  FuelPoint_in=FT2|-1|205468|9|1|0000|0000200027370797009|0|0|0|        |0|71000||||       |000106| 0|04/28/2024 09:25:10|17.900|1270.90|   0.00|0000000|23947501|000106|
+  - Recv Dda: 5-0     OP:db M:4  <02><1B>5R0db4<00>5 Handle Off:1 4=69<03>
+  - Recv Dda: 5-0     OP:db M:5  <02><1B>5R0db5<00>5 Stop Pump CF <985<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><0D>5R0db6<00>5<03:<03>
+  - Recv Dda: 5-0     OP:db M:7  <02><0D>5R0db7<00>5?70:<03>
+  - Recv Dda: 5-0     OP:db M:8  <02>/5R0db8<00>5 Main thread did not send FT data
+ 674;<03>
+  - Recv Dda: 5-0     OP:db M:9  <02><17>5R0db9<00>5 Pump Off 8?6=<03>
+  - Recv Dda: 5-0     OP:db M:0  <02><1C>5R0db0<00>5 QS perform ft <::;<03>
+ 09:26:34.21         Dda: 5-0  FuelPoint_ot=CF|
+ 09:26:34.21         Dda: 5-0  Disp : DOR-IDBOX:Posted 
+ 09:26:34.21         Dda: 5-0  Coupon in:GCD|000200027370797009|
+ 09:26:36.24         Dda: 5-0  Fail to call Coupon CH
+ 09:26:36.24         Dda: 5-0  Disp : DOR_TranNo 205468 
+ 09:26:36.24         Dda: 5-0  Disp : DOR_CHtranNO=      
+ 09:26:36.24         Dda: 5-0  Disp : Dor_CustName=                          
+ 09:26:36.24         Dda: 5-0  Disp : Dor_CompanyName=       é"íÅ âîéÄî 
+ 09:26:36.24         Dda: 5-0  Disp : Before-printing1 0 
+ 09:26:36.24         Dda: 5-0  Disp : Temp1 0 
+ 09:26:36.24         Dda: 5-0  Disp : Go-to-print1 
+ 09:26:36.24         Dda: 5-0  Disp : T5-check-for-10 
+ 09:26:36.57         Dda: 5-0  VSU event:[2] v0
+ 09:26:38.33         Dda: 5-0  Disp : Ask_print_Entry 
+ 09:26:38.33         Dda: 5-0  Recovery remove pump 09
+ 09:26:38.33         Dda: 5-0  Recovery remove failed for pump 09, code=2
+ 09:26:38.33  - Send Dda: 5-0  R  OP:CD M:9  0<02><0D>5R0CD900<68<<03>
+ 09:26:38.38  - Recv Dda: 5-0     OP:cd M:9  <02><0B>5R0cd9?855<03>
+ 09:26:38.38  - Send Dda: 5-0  R  OP:SP M:0  0<02>35R0SP08.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|57<=<03>
+ 09:26:38.43  - Recv Dda: 5-0     OP:sp M:0  <02><0B>5R0sp0>5:8<03>
+ 09:26:39.41         Dda: 5-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 5-0     OP:db M:1  <02><1B>5R0db1<00>5 Stop Pump CD ><6?<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><14>5R0db2<00>5 price 2249<03>
+ 09:26:41.74  - Recv Dda: 5-0     OP:hn M:4  <02><0F>5R0hn4<00>5011?12<03>
+ 09:26:41.74         Dda: 5-0  Handle 1
+ 09:26:41.74         Dda: 5-0  Send Ex. POS: hn 01. Receive=2 - Pu
+ 09:26:41.74         Dda: 5-0  Invalid Event hn at state 2
+  - Recv Dda: 5-0     OP:db M:5  <02><18>5R0db5<00>5 status= 616247<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><1A>5R0db6<00>5 Handle On:1 30>3<03>
+ 09:26:44.85         Dda: 5-0  VSU event:[42] v400120uni|0|A3248594|0|0|||0|0||00000000|
+ 09:26:45.04         Dda: 5-0  Disp : G3_process 
+ 09:26:45.04         Dda: 5-0  Disp : CardId= uni00A3248594 
+ 09:26:45.04         Dda: 5-0  Disp : Checking-Universsal-Idbox uni 
+ 09:26:45.04         Dda: 5-0  Disp : UID= A3248594 
+ 09:26:45.04         Dda: 5-0  Disp : Validate-Uid-using-fuelpoint 
+ 09:26:45.04         Dda: 5-0  maximus_in=LI|uid:A3248594|0|9|
+ 09:26:45.88         Dda: 5-0  maximus_ot=OF|0||0|0|9999999|0|0|9999999|0|0|Invalid card number             ||||@|0|
+ 09:26:45.88         Dda: 5-0  Quit on error (0). index = 1
+ 09:26:45.88         Dda: 5-0  Disp : Fuel4/fuelpoint not open / refused 
+ 09:26:45.88         Dda: 5-0  Disp : Dor-universal 
+ 09:26:45.88         Dda: 5-0  Disp : Dorid 0000200027370797009 0106 
+ 09:26:45.88         Dda: 5-0  SetInt to 99900000
+ 09:26:45.88         Dda: 5-0  Disp : CH-3CardID 
+ 09:26:45.88         Dda: 5-0  track2=0000200027370797009
+ 09:26:45.88         Dda: 5-0  Disp : CH-3Temp4 0000 
+ 09:26:45.88         Dda: 5-0  Disp : IdType= I 
+ 09:26:45.88         Dda: 5-0  Disp : ProdCode= 0000 
+ 09:26:45.88         Dda: 5-0  Disp : Checking-2500-Local 
+ 09:26:45.88         Dda: 5-0  Disp : Checking-DOR 
+ 09:26:45.88         Dda: 5-0  Disp : DOR_BoxCarNo= 0000000000 
+ 09:26:45.88         Dda: 5-0  Disp : Temp4= 0000 
+ 09:26:45.88         Dda: 5-0  Disp : UIron 
+ 09:26:45.88         Dda: 5-0  Disp : Dor_Card_18                   
+ 09:26:45.88         Dda: 5-0  Disp : ShvaCardNo 0000200027370797009 
+ 09:26:45.88         Dda: 5-0  DorCh_in=ri|0000200027370797009|9|
+ 09:26:46.21         Dda: 5-0  DorCh_ot=OF|0|Q5800|@|0023947501|0|0|2|10000000001000000000||2500000|0|0|0|0|1|0|4|      é"íÅ âîéÄî|B|
+ 09:26:46.21         Dda: 5-0  Disp : carno= 0023947501 
+ 09:26:46.21         Dda: 5-0  Disp : Ok---fuels 0 0 
+ 09:26:46.21         Dda: 5-0  Disp : DorOK-Temp4 0106 
+ 09:26:46.21         Dda: 5-0  Disp : Solek= 0 
+ 09:26:46.21         Dda: 5-0  Disp : DOR_OK_RC=  
+ 09:26:46.21         Dda: 5-0  Disp : Device= H 
+ 09:26:46.21         Dda: 5-0  Disp : Checking-DOR-IDBOX 
+ 09:26:46.21         Dda: 5-0  ItsMe() =   ëöé-èóöÑ    Code = 000106
+ 09:26:46.21         Dda: 5-0  Disp : Validate-Idbox-Secret_Code 0000 
+ 09:26:46.21         Dda: 5-0  Disp : IDBOX_FuelType= 0000 
+ 09:26:46.21         Dda: 5-0  Disp : IDBOX_ProdCode= 0000 
+ 09:26:46.21         Dda: 5-0  Disp : Temp4= 0106 
+ 09:26:46.21         Dda: 5-0  Disp : Check fuel types CH 
+ 09:26:46.21         Dda: 5-0  Disp : DOR-IDBOX-Validated 
+ 09:26:46.58         Dda: 5-0  Disp : ValConfirmed-Rfc 
+ 09:26:47.08  - Send Dda: 5-0  R  OP:SP M:4  0<02>35R0SP48.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|940?<03>
+ 09:26:47.13  - Recv Dda: 5-0     OP:sp M:4  <02><0B>5R0sp4:52<<03>
+ 09:26:47.65         Dda: 5-0  Tran type=3, Rate type(cash/credit)=2, Nozzle BITMAP=1
+ 09:26:47.65  - Send Dda: 5-0  R  OP:CT M:5  0<02>d5R0CT553<01>3258.000|495.90|58.000|1038.2|0
+|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|7:7:<03>
+  - Recv Dda: 5-0     OP:ct M:5  <02><0D>5R0ct5535826<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><14>5R0db6<00>5 price 8?7<<03>
+  - Recv Dda: 5-0     OP:db M:7  <02><19>5R0db7<00>5 start_pump =846<03>
+  - Recv Dda: 5-0     OP:db M:8  <02>%5R0db8<00>5 prices_ct, rate_type=2 964=<03>
+  - Recv Dda: 5-0     OP:db M:9  <02><14>5R0db9<00>5 price =9<=<03>
+  - Recv Dda: 5-0     OP:db M:0  <02><15>5R0db0<00>5 author 0:6;<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><18>5R0db1<00>5 status= 691>>:<03>
+ 09:26:56.00  - Recv Dda: 5-0     OP:nz M:1  <02><10>5R0nz1<00>5011<668<03>
+ 09:26:56.00         Dda: 5-0  Recovery save pump 09
+ 09:26:56.00         Dda: 5-0  S091
+  - Recv Dda: 5-0     OP:db M:3  <02><18>5R0db3<00>5 status= 59;=7;<03>
+  - Recv Dda: 5-0     OP:db M:9  <02><12>5R0db9<00>5 run 6;;4<03>
+ 09:27:01.47  - Recv Dda: 5-0     OP:fs M:2  <02>!5R0fs2<00>501117.9|108.83|6.08|;8>;<03>
+  - Recv Dda: 5-0     OP:db M:0  <02><15>5R0db0<00>5 fueled 19<1<03>
+ 09:27:08.49  - Recv Dda: 5-0     OP:fs M:5  <02>#5R0fs5<00>501117.9|257.72|14.398|>9?6<03>
+  - Recv Dda: 5-0     OP:db M:9  <02><18>5R0db9<00>5 status= 4002<:<03>
+  - Recv Dda: 5-0     OP:ft M:0  <02>#5R0ft0<00>501117.9|336.75|18.813|?984<03>
+ 09:27:21.78         Dda: 5-0  Send Ex. POS: ft 0111. Receive=2 - Pump not exist
+ 09:27:21.78         Dda: 5-0  F0910018.813032258.83
+ 09:27:21.78         Dda: 5-0  Disp : DOR-IDBOX:Posting 
+ 09:27:21.78         Dda: 5-0  Disp : Dor_Total=  336.75 
+ 09:27:21.78         Dda: 5-0  DorCh_in=ft|0000200027370797009|9|1|1|  33675|2394750100|000000|||@|0000|  33675|  18813|  1790|
+ 09:27:21.78         Dda: 5-0  Send Ex. POS: ft 0111. Receive=2 - Pump not exist
+ 09:27:21.85         Dda: 5-0  DorCh_ot=CF|0|
+ 09:27:21.85         Dda: 5-0  Disp : Dor-WriteShvaCardNo 0000200027370797009 
+ 09:27:21.85         Dda: 5-0  Disp : Dor-WriteTranCardNo 000200027370797009 
+ 09:27:21.86         Dda: 5-0  Enter into WriteTran
+ 09:27:21.86         Dda: 5-0  Try open shift file
+ 09:27:21.86         Dda: 5-0  Write to .\DATA\RS280424.D1A,len =253
+ 09:27:21.86         Dda: 5-0  RS rec =   336.75      18.813  23947501   1   09     205470 09:27 28/04/24       òåÖë 00    ëöé-èóöÑ 000106 0000200027370797009                                   17.900                                                  1 10  441           0                      
+ 09:27:21.86         Dda: 5-0  Recovery remove pump 09
+ 09:27:21.86         Dda: 5-0  after reco remove
+ 09:27:21.86         Dda: 5-0  RS Copy
+ 09:27:21.87         Dda: 5-0  End of WriteTran .\DATA\RS280424.D1A
+ 09:27:21.87         Dda: 5-0  FuelPointPostTran,TranNo=205470,PumpNo=9,Nozzle=1,ProdNo=0000,dQty=18813
+ 09:27:21.87         Dda: 5-0  Rfc transaction
+ 09:27:21.87         Dda: 5-0  FuelPoint_in=FT2|-1|205470|9|1|0000|0000200027370797009|0|0|0|        |0|18813||||       |000106| 0|04/28/2024 09:26:56|17.900| 336.75|   0.00|0000000|23947501|000106|
+ 09:27:22.26  - Recv Dda: 5-0     OP:hn M:1  <02><0F>5R0hn1<00>5002<64<03>
+ 09:27:22.26         Dda: 5-0  Handle 0
+ 09:27:22.26         Dda: 5-0  Invalid Event hn at state 10
+  - Recv Dda: 5-0     OP:db M:2  <02><1B>5R0db2<00>5 Handle Off:1 2?25<03>
+  - Recv Dda: 5-0     OP:db M:3  <02><1B>5R0db3<00>5 Stop Pump CF :;<9<03>
+  - Recv Dda: 5-0     OP:db M:4  <02><0D>5R0db4<00>5:>5:<03>
+  - Recv Dda: 5-0     OP:db M:5  <02><0D>5R0db5<00>5996:<03>
+  - Recv Dda: 5-0     OP:db M:6  <02>/5R0db6<00>5 Main thread did not send FT data
+ :<0<<03>
+  - Recv Dda: 5-0     OP:db M:7  <02><17>5R0db7<00>5 Pump Off 0;5<<03>
+  - Recv Dda: 5-0     OP:db M:8  <02><1C>5R0db8<00>5 QS perform ft 3;<4<03>
+ 09:27:26.46         Dda: 5-0  VSU event:[2] v0
+ 09:27:26.79         Dda: 5-0  FuelPoint_ot=CF|
+ 09:27:26.79         Dda: 5-0  Disp : DOR-IDBOX:Posted 
+ 09:27:26.79         Dda: 5-0  Coupon in:GCD|000200027370797009|
+ 09:27:28.84         Dda: 5-0  Fail to call Coupon CH
+ 09:27:28.84         Dda: 5-0  Disp : DOR_TranNo 205470 
+ 09:27:28.84         Dda: 5-0  Disp : DOR_CHtranNO=      
+ 09:27:28.84         Dda: 5-0  Disp : Dor_CustName=                          
+ 09:27:28.84         Dda: 5-0  Disp : Dor_CompanyName=       é"íÅ âîéÄî 
+ 09:27:28.84         Dda: 5-0  Disp : Before-printing1 0 
+ 09:27:28.84         Dda: 5-0  Disp : Temp1 0 
+ 09:27:28.84         Dda: 5-0  Disp : Go-to-print1 
+ 09:27:28.84         Dda: 5-0  Disp : T5-check-for-10 
+ 09:27:30.99         Dda: 5-0  Disp : Ask_print_Entry 
+ 09:27:30.99         Dda: 5-0  Recovery remove pump 09
+ 09:27:30.99         Dda: 5-0  Recovery remove failed for pump 09, code=2
+ 09:27:30.99  - Send Dda: 5-0  R  OP:CD M:6  0<02><0D>5R0CD600>:;=<03>
+ 09:27:31.04  - Recv Dda: 5-0     OP:cd M:6  <02><0B>5R0cd609;:<03>
+ 09:27:31.04  - Send Dda: 5-0  R  OP:SP M:7  0<02>35R0SP78.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|4=0><03>
+ 09:27:31.09  - Recv Dda: 5-0     OP:sp M:7  <02><0B>5R0sp7954?<03>
+ 09:27:32.09         Dda: 5-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 5-0     OP:db M:8  <02><1B>5R0db8<00>5 Stop Pump CD 7;9=<03>
+  - Recv Dda: 5-0     OP:db M:9  <02><14>5R0db9<00>5 price =9<=<03>
+ 09:37:43.05         Dda: 5-0  PC-POS Refuel Discount type=0,voucher=       ,cust name=  ÖÄòàô)çâëâê èÖ        ,sign_c=3,ash=00001,clubtype=      
+ 09:37:43.05         Dda: 5-0  Refuel cont.: limit=Q0050000, rgis=0318317800, odo=000001, posNo=11, idbox=
+ 09:37:43.05         Dda: 5-0  clubID=0000000000000000000
+ 09:37:43.05         Dda: 5-0  POS start refuel sync
+ 09:37:43.16         Dda: 5-0  Disp : ID_CARD 
+ 09:37:43.17         Dda: 5-0  PC-POS Transaction mi
+ 09:37:43.17         Dda: 5-0  iCardLen=0,TrackLen=16
+ 09:37:43.17         Dda: 5-0  track2=6600010406000314
+ 09:37:43.17         Dda: 5-0  Disp : WAIT_MI 
+ 09:37:43.17         Dda: 5-0  Disp : Checking-Coupon 
+ 09:37:43.17         Dda: 5-0  Disp : CH-3CardID 
+ 09:37:43.17         Dda: 5-0  track2=6600010406000314
+ 09:37:43.17         Dda: 5-0  Disp : CH-3Temp4 6600 
+ 09:37:43.17         Dda: 5-0  Disp : IdType= C 
+ 09:37:43.17         Dda: 5-0  Disp : Checking-DorClub 
+ 09:37:43.17         Dda: 5-0  Disp : ChequeNum=            
+ 09:37:43.17         Dda: 5-0  Disp : chequeAmount=           
+ 09:37:43.17         Dda: 5-0  Disp : Checking-DOR 
+ 09:37:43.17         Dda: 5-0  Disp : Checking-DOR-Card 
+ 09:37:43.17         Dda: 5-0  Disp : temp4= 6600 
+ 09:37:43.17         Dda: 5-0  ItsMe() =     ëöé.òã    Code = 000106
+ 09:37:43.17         Dda: 5-0  Disp : Validate-Secret_Code 
+ 09:37:43.72         Dda: 5-0  Disp : ValConfirmed 
+ 09:37:44.24  - Send Dda: 5-0  R  OP:SP M:4  0<02>35R0SP48.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|940?<03>
+ 09:37:44.28  - Recv Dda: 5-0     OP:sp M:4  <02><0B>5R0sp4:52<<03>
+ 09:37:44.80         Dda: 5-0  Tran type=2, Rate type(cash/credit)=2, Nozzle BITMAP=1
+ 09:37:44.80  - Send Dda: 5-0  R  OP:CT M:5  0<02>f5R0CT554<01>22500.000|4275.0|418.994|7500.0
+|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|2273<03>
+  - Recv Dda: 5-0     OP:ct M:5  <02><0D>5R0ct55428<1<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><14>5R0db6<00>5 price 8?7<<03>
+  - Recv Dda: 5-0     OP:db M:7  <02><19>5R0db7<00>5 start_pump =846<03>
+ 09:38:11.70  - Recv Dda: 5-0     OP:hn M:3  <02><0F>5R0hn3<00>50178<6<03>
+ 09:38:11.70         Dda: 5-0  Handle 1
+ 09:38:11.70         Dda: 5-0  Send Ex. POS: hn 01. Receive=2 - Pu
+  - Recv Dda: 5-0     OP:db M:4  <02><18>5R0db4<00>5 status= 611926<03>
+  - Recv Dda: 5-0     OP:db M:5  <02><1A>5R0db5<00>5 Handle On:1 =8:><03>
+  - Recv Dda: 5-0     OP:db M:6  <02>%5R0db6<00>5 prices_ct, rate_type=2 4229<03>
+  - Recv Dda: 5-0     OP:db M:7  <02><14>5R0db7<00>5 price >039<03>
+  - Recv Dda: 5-0     OP:db M:8  <02><15>5R0db8<00>5 author :8>5<03>
+  - Recv Dda: 5-0     OP:db M:9  <02><18>5R0db9<00>5 status= 69?581<03>
+  - Recv Dda: 5-0     OP:nz M:4  <02><10>5R0nz4<00>50118569<03>
+ 09:38:18.82         Dda: 5-0  Recovery save pump 09
+ 09:38:18.82         Dda: 5-0  S091
+  - Recv Dda: 5-0     OP:db M:5  <02><18>5R0db5<00>5 status= 59;61<<03>
+ 09:38:18.87         Dda: 5-0  Disp : Resume_update_Odo1 
+ 09:38:18.87  - Send Dda: 5-0  R  OP:RF M:6  0<02><0D>5R0RF600:9=><03>
+ 09:38:18.90  - Recv Dda: 5-0     OP:rf M:6  <02><0D>5R0rf6009624<03>
+ 09:38:20.65  - Recv Dda: 5-0     OP:fs M:9  <02> 5R0fs9<00>001117.9|38.49|2.15|504><03>
+  - Recv Dda: 5-0     OP:db M:0  <02><12>5R0db0<00>0 run 71;<<03>
+ 09:38:26.99         Dda: 5-0  Send Ex. POS: db  run. Receive=2 - Pump 
+ 09:38:28.11  - Recv Dda: 5-0     OP:fs M:2  <02>#5R0fs2<00>001117.9|186.93|10.443|1>6?<03>
+ 09:38:35.19  - Recv Dda: 5-0     OP:fs M:4  <02>"5R0fs4<00>001117.9|335.45|18.74|904?<03>
+  - Recv Dda: 5-0     OP:db M:9  <02><15>5R0db9<00>0 fueled 14<:<03>
+ 09:38:37.91         Dda: 5-0  Send Ex. POS: db  fue. Receive=2 - Pump not
+ 09:38:42.30  - Recv Dda: 5-0     OP:fs M:7  <02>#5R0fs7<00>001117.9|482.64|26.963|33:5<03>
+ 09:38:49.71  - Recv Dda: 5-0     OP:fs M:4  <02>#5R0fs4<00>001117.9|628.45|35.109|0<>5<03>
+ 09:38:57.22  - Recv Dda: 5-0     OP:fs M:1  <02>#5R0fs1<00>001117.9|775.37|43.317|=669<03>
+ 09:39:04.72  - Recv Dda: 5-0     OP:fs M:9  <02>#5R0fs9<00>001117.9|919.29|51.357|5143<03>
+ 09:39:11.87  - Recv Dda: 5-0     OP:fs M:4  <02>#5R0fs4<00>001117.9|1062.2|59.341|>37<<03>
+ 09:39:19.45  - Recv Dda: 5-0     OP:fs M:8  <02>$5R0fs8<00>001117.9|1205.12|67.325|3312<03>
+  - Recv Dda: 5-0     OP:fs M:2  <02>$5R0fs2<00>001117.9|1354.03|75.644|?:15<03>
+ 09:39:33.76  - Recv Dda: 5-0     OP:fs M:6  <02>$5R0fs6<00>001117.9|1503.19|83.977|7709<03>
+ 09:39:41.76  - Recv Dda: 5-0     OP:fs M:2  <02>$5R0fs2<00>001117.9|1662.43|92.873|8=2;<03>
+ 09:39:48.87  - Recv Dda: 5-0     OP:fs M:7  <02>%5R0fs7<00>001117.9|1811.93|101.225|2851<03>
+ 09:39:56.15  - Recv Dda: 5-0     OP:fs M:1  <02>%5R0fs1<00>001117.9|1961.95|109.606|06<0<03>
+ 09:40:03.41  - Recv Dda: 5-0     OP:fs M:5  <02>$5R0fs5<00>001117.9|2110.59|117.91|9745<03>
+ 09:40:11.11  - Recv Dda: 5-0     OP:fs M:0  <02>%5R0fs0<00>001117.9|2260.16|126.266|;418<03>
+ 09:40:18.21  - Recv Dda: 5-0     OP:fs M:4  <02>%5R0fs4<00>001117.9|2411.43|134.717|7035<03>
+ 09:40:25.70  - Recv Dda: 5-0     OP:fs M:8  <02>%5R0fs8<00>001117.9|2562.64|143.164|05=4<03>
+ 09:40:35.74  - Recv Dda: 5-0     OP:fs M:7  <02>%5R0fs7<00>001117.9|2686.74|150.097|634<<03>
+ 09:40:49.39  - Recv Dda: 5-0     OP:fs M:2  <02>%5R0fs2<00>001117.9|2813.79|157.195|52?4<03>
+ 09:40:57.14  - Recv Dda: 5-0     OP:fs M:6  <02>$5R0fs6<00>001117.9|2961.91|165.47|?;65<03>
+ 09:41:04.61  - Recv Dda: 5-0     OP:fs M:9  <02>$5R0fs9<00>001117.9|3122.8|174.458|:0?0<03>
+ 09:41:12.23  - Recv Dda: 5-0     OP:fs M:3  <02>$5R0fs3<00>001117.9|3270.9|182.732|;><3<03>
+ 09:41:19.35  - Recv Dda: 5-0     OP:fs M:6  <02>%5R0fs6<00>001117.9|3419.69|191.044|9234<03>
+ 09:41:26.94  - Recv Dda: 5-0     OP:fs M:0  <02>%5R0fs0<00>001117.9|3566.68|199.256|2<?5<03>
+ 09:41:34.18  - Recv Dda: 5-0     OP:fs M:4  <02>#5R0fs4<00>001117.9|3648.02|203.8|?0>><03>
+ 09:41:41.61  - Recv Dda: 5-0     OP:fs M:8  <02>%5R0fs8<00>001117.9|3691.25|206.215|43=0<03>
+  - Recv Dda: 5-0     OP:fs M:4  <02>$5R0fs4<00>001117.9|3708.34|207.17|73==<03>
+ 09:42:01.08  - Recv Dda: 5-0     OP:fs M:4  <02>%5R0fs4<00>001117.9|3725.58|208.133|0>=><03>
+  - Recv Dda: 5-0     OP:db M:0  <02><18>5R0db0<00>0 status= 409<61<03>
+ 09:42:09.98         Dda: 5-0  Send Ex. POS: db  sta. Receive=2 - Pump not ex
+ 09:42:10.53  - Recv Dda: 5-0     OP:hn M:1  <02><0F>5R0hn1<00>000<794<03>
+ 09:42:10.53         Dda: 5-0  Handle 0
+ 09:42:10.53         Dda: 5-0  Send Ex. POS: hn 00. Receive=2 - Pu
+  - Recv Dda: 5-0     OP:ft M:2  <02>%5R0ft2<00>001117.9|3730.52|208.409|2;=6<03>
+ 09:42:10.95         Dda: 5-0  Send Ex. POS: ft 0111. Receive=2 - Pump not exist
+ 09:42:10.95         Dda: 5-0  F0910208.409032467.24
+ 09:42:10.95         Dda: 5-0  Disp : DOR-Card:Posting 
+ 09:42:10.95         Dda: 5-0  Credit=660001040******4
+ 09:42:10.95         Dda: 5-0  DorCh_in=ft|6600010406000314|9|1|1| 373052|0318317800|000001|||@|0000| 373052| 208409|  1790|
+ 09:42:10.95         Dda: 5-0  Send Ex. POS: ft 0111. Receive=2 - Pump not exist
+ 09:42:11.11         Dda: 5-0  DorCh_ot=CF|0|
+ 09:42:11.11         Dda: 5-0  Disp : temp4_2 6600 
+ 09:42:11.11         Dda: 5-0  Enter into WriteTran
+ 09:42:11.11         Dda: 5-0  Try open shift file
+ 09:42:11.11         Dda: 5-0  Write to .\DATA\RS280424.D1A,len =253
+ 09:42:11.11         Dda: 5-0  RS rec =  3730.52     208.409  03183178   1   09     205484 09:42 28/04/24       òåÖë 00      ëöé.òã 000106    6600010406000314                00000001           17.900                     0000000000000000000          1 03  441           0                      
+ 09:42:11.11         Dda: 5-0  Recovery remove pump 09
+ 09:42:11.11         Dda: 5-0  after reco remove
+ 09:42:11.11         Dda: 5-0  RS Copy
+ 09:42:11.12         Dda: 5-0  End of WriteTran .\DATA\RS280424.D1A
+ 09:42:11.12         Dda: 5-0  Disp : Dor-Card:Posted 
+ 09:42:11.12         Dda: 5-0  FuelPointPostTran,TranNo=205484,PumpNo=9,Nozzle=1,ProdNo=0000,dQty=208409
+ 09:42:11.12         Dda: 5-0  Rfc transaction
+ 09:42:11.12         Dda: 5-0  FuelPoint_in=FT2|-1|205484|9|1|0000|6600010406000314|0|000001|0|        |0|208409|||0000000000000000000|       |000106| 0|04/28/2024 09:38:18|17.900|3730.52|   0.00|0000000|03183178|000106|
+  - Recv Dda: 5-0     OP:db M:3  <02><1B>5R0db3<00>0 Handle Off:1 0:89<03>
+  - Recv Dda: 5-0     OP:db M:4  <02><1B>5R0db4<00>0 Stop Pump CF ><29<03>
+  - Recv Dda: 5-0     OP:db M:5  <02><0D>5R0db5<00>0<9<?<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><0D>5R0db6<00>0909?<03>
+  - Recv Dda: 5-0     OP:db M:7  <02>/5R0db7<00>0 Main thread did not send FT data
+ ;387<03>
+  - Recv Dda: 5-0     OP:db M:8  <02><17>5R0db8<00>0 Pump Off 4300<03>
+  - Recv Dda: 5-0     OP:db M:9  <02><1C>5R0db9<00>0 QS perform ft >303<03>
+ 09:42:16.14         Dda: 5-0  FuelPoint_ot=CF|
+ 09:42:16.14         Dda: 5-0  Coupon in:GCD|6600010406000314|
+ 09:42:18.19         Dda: 5-0  Fail to call Coupon CH
+ 09:42:18.19         Dda: 5-0  Disp : DOR_TranNo 205484 
+ 09:42:18.19         Dda: 5-0  Disp : DOR_CHtranNO=      
+ 09:42:18.19         Dda: 5-0  Disp : Dor_CustName=                          
+ 09:42:18.19         Dda: 5-0  Disp : Dor_CompanyName=   ÖÄòàô)çâëâê èÖ 
+ 09:42:18.19         Dda: 5-0  Disp : Before-printing1 0 
+ 09:42:18.19         Dda: 5-0  Disp : Temp1 0 
+ 09:42:18.19         Dda: 5-0  Disp : Go-to-print1 
+ 09:42:18.19         Dda: 5-0  Disp : T5-check-for-10 
+ 09:42:20.50         Dda: 5-0  Disp : Ask_print_Entry 
+ 09:42:20.50         Dda: 5-0  Recovery remove pump 09
+ 09:42:20.50         Dda: 5-0  Recovery remove failed for pump 09, code=2
+  - Send Dda: 5-0  R  OP:CD M:9  0<02><0D>5R0CD900<68<<03>
+ 09:42:20.55  - Recv Dda: 5-0     OP:cd M:9  <02><0B>5R0cd9?855<03>
+ 09:42:20.55  - Send Dda: 5-0  R  OP:SP M:0  0<02>35R0SP08.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|57<=<03>
+ 09:42:20.60  - Recv Dda: 5-0     OP:sp M:0  <02><0B>5R0sp0>5:8<03>
+ 09:42:21.60         Dda: 5-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 5-0     OP:db M:1  <02><1B>5R0db1<00>0 Stop Pump CD =921<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><14>5R0db2<00>0 price 6:?7<03>
+ 10:42:03.25         Dda: 5-0  PC-POS Refuel Discount type=9,voucher=       ,cust name=                        ,sign_c=0,ash=00001,clubtype=      
+ 10:42:03.25         Dda: 5-0  Refuel cont.: limit=00070000, rgis=0000000100, odo=000001, posNo=11, idbox=
+ 10:42:03.25         Dda: 5-0  clubID=D999901090000000000
+ 10:42:03.25         Dda: 5-0  POS start refuel sync
+ 10:42:03.28         Dda: 5-0  Disp : ID_CARD 
+ 10:42:03.31         Dda: 5-0  PC-POS Transaction mi
+ 10:42:03.31         Dda: 5-0  iCardLen=0,TrackLen=37
+ 10:42:03.31         Dda: 5-0  track2=0731071500000000000000000000000000000
+ 10:42:03.31         Dda: 5-0  Disp : WAIT_MI 
+ 10:42:03.31         Dda: 5-0  Disp : Checking-Coupon 
+ 10:42:03.31         Dda: 5-0  Disp : CH-3CardID 
+ 10:42:03.31         Dda: 5-0  track2=0731071500000000000000000000000000000
+ 10:42:03.31         Dda: 5-0  Disp : CH-3Temp4 0731 
+ 10:42:03.31         Dda: 5-0  Disp : IdType= C 
+ 10:42:03.31         Dda: 5-0  Disp : Checking-DorClub 
+ 10:42:03.31         Dda: 5-0  Disp : ChequeNum=            
+ 10:42:03.31         Dda: 5-0  Disp : chequeAmount=           
+ 10:42:03.31         Dda: 5-0  Disp : Checking-DOR 
+ 10:42:03.31         Dda: 5-0  Disp : Checking-DOR-Card 
+ 10:42:03.31         Dda: 5-0  Disp : temp4= 0731 
+ 10:42:03.31         Dda: 5-0  Disp : Checking-Praxell 
+ 10:42:03.31         Dda: 5-0  Disp : discounttype= 	 
+ 10:42:03.31         Dda: 5-0  Disp : Ashrait= 0 
+ 10:42:03.31         Dda: 5-0  Disp : Shva-Temp1= 0 
+ 10:42:03.31         Dda: 5-0  Disp : Checking-Shva 
+ 10:42:03.31         Dda: 5-0  Disp : Checking-AutoCard0 
+ 10:42:03.31         Dda: 5-0  Disp : Checking-Autocard 
+ 10:42:03.31         Dda: 5-0  Disp : Checking-Worker 
+ 10:42:03.31         Dda: 5-0  ItsMe() =    ÉÅÖí.òã    Code = 000003
+ 10:42:03.87         Dda: 5-0  Disp : ValConfirmed 
+ 10:42:04.39  - Send Dda: 5-0  R  OP:SP M:9  0<02>35R0SP97.550|16.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|59:=<03>
+ 10:42:04.44  - Recv Dda: 5-0     OP:sp M:9  <02><0B>5R0sp97481<03>
+ 10:42:04.95         Dda: 5-0  Tran type=2, Rate type(cash/credit)=1, Nozzle BITMAP=1
+ 10:42:04.95  - Send Dda: 5-0  R  OP:CT M:0  0<02>d5R0CT055<01>2192.715|700.00|41.420|700.00|0
+|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|2375<03>
+  - Recv Dda: 5-0     OP:ct M:0  <02><0D>5R0ct055=310<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><14>5R0db1<00>5 price 9386<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><19>5R0db2<00>5 start_pump >=08<03>
+ 10:42:53.76  - Recv Dda: 5-0     OP:hn M:9  <02><0F>5R0hn9<00>5013>68<03>
+ 10:42:53.76         Dda: 5-0  Handle 1
+ 10:42:53.76         Dda: 5-0  Send Ex. POS: hn 01. Receive=2 - Pu
+  - Recv Dda: 5-0     OP:db M:0  <02><18>5R0db0<00>5 status= 61>483<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><1A>5R0db1<00>5 Handle On:1 587<<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><15>5R0db2<00>5 author ::=8<03>
+  - Recv Dda: 5-0     OP:db M:3  <02><18>5R0db3<00>5 status= 69>828<03>
+ 10:43:00.73  - Recv Dda: 5-0     OP:nz M:2  <02><10>5R0nz2<00>50110888<03>
+ 10:43:00.73         Dda: 5-0  Recovery save pump 09
+ 10:43:00.73         Dda: 5-0  S091
+  - Recv Dda: 5-0     OP:db M:3  <02><18>5R0db3<00>5 status= 59;=7;<03>
+ 10:43:00.77         Dda: 5-0  Disp : Resume_update_Odo1 
+ 10:43:00.77  - Send Dda: 5-0  R  OP:RF M:4  0<02><0D>5R0RF400<7;><03>
+ 10:43:00.82  - Recv Dda: 5-0     OP:rf M:4  <02><0D>5R0rf400?844<03>
+ 10:43:05.27  - Recv Dda: 5-0     OP:fs M:2  <02>!5R0fs2<00>00117.55|40.94|5.423|<619<03>
+  - Recv Dda: 5-0     OP:db M:3  <02><12>5R0db3<00>0 run ;9<9<03>
+ 10:43:05.84         Dda: 5-0  Send Ex. POS: db  run. Receive=2 - Pump 
+  - Recv Dda: 5-0     OP:db M:8  <02><15>5R0db8<00>0 fueled <<83<03>
+ 10:43:08.40         Dda: 5-0  Send Ex. POS: db  fue. Receive=2 - Pump not
+ 10:43:12.98  - Recv Dda: 5-0     OP:fs M:7  <02>#5R0fs7<00>00117.55|106.52|14.109|?=03<03>
+ 10:43:20.27  - Recv Dda: 5-0     OP:fs M:0  <02>#5R0fs0<00>00117.55|168.73|22.348|<880<03>
+ 10:43:27.84  - Recv Dda: 5-0     OP:fs M:3  <02>#5R0fs3<00>00117.55|230.85|30.576|;247<03>
+ 10:43:35.24  - Recv Dda: 5-0     OP:fs M:6  <02>#5R0fs6<00>00117.55|293.11|38.823|><21<03>
+ 10:43:42.29  - Recv Dda: 5-0     OP:fs M:9  <02>"5R0fs9<00>00117.55|355.38|47.07|2691<03>
+ 10:43:49.63  - Recv Dda: 5-0     OP:fs M:2  <02>#5R0fs2<00>00117.55|417.52|55.301|9>33<03>
+ 10:43:57.19  - Recv Dda: 5-0     OP:fs M:6  <02>#5R0fs6<00>00117.55|479.97|63.572|35;4<03>
+ 10:44:04.36  - Recv Dda: 5-0     OP:fs M:9  <02>"5R0fs9<00>00117.55|542.3|71.828|410;<03>
+ 10:44:12.03  - Recv Dda: 5-0     OP:fs M:3  <02>#5R0fs3<00>00117.55|604.78|80.103|7>::<03>
+ 10:44:19.08  - Recv Dda: 5-0     OP:fs M:6  <02>"5R0fs6<00>00117.55|666.89|88.33|8>><<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><18>5R0db6<00>0 status= 51;416<03>
+ 10:44:24.60         Dda: 5-0  Send Ex. POS: db  sta. Receive=2 - Pump not ex
+  - Recv Dda: 5-0     OP:db M:6  <02><18>5R0db6<00>0 status= 418727<03>
+ 10:44:30.16         Dda: 5-0  Send Ex. POS: db  sta. Receive=2 - Pump not ex
+  - Recv Dda: 5-0     OP:db M:7  <02><18>5R0db7<00>0 status= 40><67<03>
+ 10:44:30.72         Dda: 5-0  Send Ex. POS: db  sta. Receive=2 - Pump not ex
+  - Recv Dda: 5-0     OP:ft M:8  <02> 5R0ft8<00>00117.55|700|92.715|>15;<03>
+ 10:44:31.27         Dda: 5-0  Send Ex. POS: ft 0117. Receive=2 - Pump not exist
+ 10:44:31.27         Dda: 5-0  F0910092.715032559.96
+ 10:44:31.27         Dda: 5-0  Disp : Worker-Post 
+ 10:44:31.27         Dda: 5-0  Disp : Paragr_28 
+ 10:44:31.27         Dda: 5-0  Disp : DiscountType= 	 
+ 10:44:31.27         Dda: 5-0  Enter into WriteTran
+ 10:44:31.27         Dda: 5-0  Try open shift file
+ 10:44:31.27         Dda: 5-0  Send Ex. POS: ft 0117. Receive=2 - Pump not exist
+ 10:44:31.27         Dda: 5-0  Write to .\DATA\RS280424.D1A,len =253
+ 10:44:31.27         Dda: 5-0  RS rec =   700.00      92.715  00000001   1   09     205547 10:44 28/04/24       òåÖë 00     ÉÅÖí.òã 000003            07310715        310715  00000001            7.550    0.00 0009        D999901090000000000          1 00  441           0                      
+ 10:44:31.27         Dda: 5-0  Recovery remove pump 09
+ 10:44:31.27         Dda: 5-0  after reco remove
+ 10:44:31.27         Dda: 5-0  RS Copy
+ 10:44:31.27         Dda: 5-0  End of WriteTran .\DATA\RS280424.D1A
+ 10:44:31.27         Dda: 5-0  FuelPointPostTran,TranNo=205547,PumpNo=9,Nozzle=1,ProdNo=0000,dQty=92715
+ 10:44:31.27         Dda: 5-0  Rfc transaction
+ 10:44:31.27         Dda: 5-0  FuelPoint_in=FT2|-1|205547|9|1|0000|07310715|0|000001|0|07310715|0|92715|||D999901090000000000|       |000003| 0|04/28/2024 10:43:00| 7.550| 700.00|   0.00|0000000|00000001|000003|
+ 10:44:31.79  - Recv Dda: 5-0     OP:hn M:9  <02><0F>5R0hn9<00>000<5;9<03>
+ 10:44:31.79         Dda: 5-0  Handle 0
+ 10:44:31.79         Dda: 5-0  Invalid Event hn at state 10
+  - Recv Dda: 5-0     OP:db M:0  <02><1B>5R0db0<00>0 Handle Off:1 3;:?<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><1B>5R0db1<00>0 Stop Pump CF ;?43<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><0D>5R0db2<00>04<5?<03>
+  - Recv Dda: 5-0     OP:db M:3  <02><0D>5R0db3<00>07;6?<03>
+  - Recv Dda: 5-0     OP:db M:4  <02>/5R0db4<00>0 Main thread did not send FT data
+ ;?7;<03>
+  - Recv Dda: 5-0     OP:db M:5  <02><17>5R0db5<00>0 Pump Off 0894<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><1C>5R0db6<00>0 QS perform ft >2;9<03>
+ 10:44:36.24         Dda: 5-0  FuelPoint_ot=CF|
+ 10:44:36.24         Dda: 5-0  Disp : Worker-Posted 
+ 10:44:36.24         Dda: 5-0  Disp : Before-printing2 0 
+ 10:44:36.24         Dda: 5-0  Disp : Go-to-print2 
+ 10:44:36.24         Dda: 5-0  Disp : Before-printing1 0 
+ 10:44:36.24         Dda: 5-0  Disp : Temp1 0 
+ 10:44:36.24         Dda: 5-0  Disp : Go-to-print1 
+ 10:44:38.63         Dda: 5-0  Disp : Ask_print_Entry 
+ 10:44:38.63         Dda: 5-0  Recovery remove pump 09
+ 10:44:38.63         Dda: 5-0  Recovery remove failed for pump 09, code=2
+ 10:44:38.63  - Send Dda: 5-0  R  OP:CD M:1  0<02><0D>5R0CD1006?2=<03>
+ 10:44:38.67  - Recv Dda: 5-0     OP:cd M:1  <02><0B>5R0cd1795=<03>
+ 10:44:38.67  - Send Dda: 5-0  R  OP:SP M:2  0<02>35R0SP28.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|362<<03>
+ 10:44:38.72  - Recv Dda: 5-0     OP:sp M:2  <02><0B>5R0sp2<5>:<03>
+ 10:44:39.74         Dda: 5-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 5-0     OP:db M:3  <02><1B>5R0db3<00>0 Stop Pump CD ?8>5<03>
+  - Recv Dda: 5-0     OP:db M:4  <02><14>5R0db4<00>0 price 1948<03>
+......... Close Shift at Sun Apr 28 13:56:57 2024
+
+ 13:56:58.23  - Send Dda: 5-0  R  OP:RT M:3  0<02><0D>5R0RT300;4>1<03>
+ 13:56:58.26  - Recv Dda: 5-0     OP:rt M:3  <02><0D>5R0rt3008;1;<03>
+ 13:56:59.83  - Recv Dda: 5-0     OP:ta M:6  <02>=5R0ta6<00>032559.96|2204363.18|0|0|0|0|0|0|0
+|0|0|0|0|0|0|0|054?<03>
+ 13:56:59.83         Dda: 5-0  WritePumpTotals: iType [1], trs totalizers to server [0], shift totalizers to server [0]
+......... Close Shift in CloseShift at Sun Apr 28 13:57:09 2024
+
+......... Creating TS for substation 1 at Sun Apr 28 13:57:10 2024
+
+......... Sending shift change message to USA_XML at Sun Apr 28 13:57:10 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Sun Apr 28 13:57:11 2024
+
+......... Open Shift at Sun Apr 28 13:57:15 2024
+
+ 13:57:15.61  - Send Dda: 5-0  R  OP:RT M:8  0<02><0D>5R0RT8004410<03>
+ 13:57:15.65  - Recv Dda: 5-0     OP:rt M:8  <02><0D>5R0rt8007;>:<03>
+ 13:57:16.78  - Recv Dda: 5-0     OP:ta M:0  <02>=5R0ta0<00>032559.96|2204363.18|0|0|0|0|0|0|0
+|0|0|0|0|0|0|0|8<44<03>
+ 13:57:16.78         Dda: 5-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 13:57:16.78  - Send Dda: 5-0  R  OP:CD M:1  0<02><0D>5R0CD1006?2=<03>
+ 13:57:16.82  - Recv Dda: 5-0     OP:cd M:1  <02><0B>5R0cd1795=<03>
+ 13:57:16.82  - Send Dda: 5-0  R  OP:SP M:2  0<02>35R0SP28.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|362<<03>
+ 13:57:16.87  - Recv Dda: 5-0     OP:sp M:2  <02><0B>5R0sp2<5>:<03>
+ 13:57:17.84         Dda: 5-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 5-0     OP:db M:3  <02><1B>5R0db3<00>0 Stop Pump CD ?8>5<03>
+  - Recv Dda: 5-0     OP:db M:4  <02>"5R0db4<00>0 VER:5.0.122|17/12/157=::<03>
+  - Recv Dda: 5-0     OP:db M:5  <02><1C>5R0db5<00>0 COUNTRY:ISRAEL9=30<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><1B>5R0db6<00>0 Pump Type:BEN1345<03>
+  - Recv Dda: 5-0     OP:db M:7  <02><14>5R0db7<00>0 price :887<03>
+......... Open Shift in CloseShift at Sun Apr 28 13:57:23 2024
+
+......... Creating TS for substation 1 at Sun Apr 28 13:57:23 2024
+
+......... Change shift request, pos=11, pump=0, cashreg=2 at Sun Apr 28 21:02:51 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=1  CanClose()=1 at Sun Apr 28 21:02:51 2024
+
+......... Close Shift at Sun Apr 28 21:05:37 2024
+
+ 21:05:38.03  - Send Dda: 5-0  R  OP:RT M:1  0<02><0D>5R0RT100=:81<03>
+ 21:05:38.08  - Recv Dda: 5-0     OP:rt M:1  <02><0D>5R0rt100>57;<03>
+ 21:05:39.53  - Recv Dda: 5-0     OP:ta M:3  <02>=5R0ta3<00>032559.96|2204363.18|0|0|0|0|0|0|0
+|0|0|0|0|0|0|0|40=1<03>
+ 21:05:39.53         Dda: 5-0  WritePumpTotals: iType [1], trs totalizers to server [0], shift totalizers to server [0]
+......... Close Shift in CloseShift at Sun Apr 28 21:05:46 2024
+
+......... Creating TS for substation 1 at Sun Apr 28 21:05:47 2024
+
+......... Sending shift change message to USA_XML at Sun Apr 28 21:05:47 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Sun Apr 28 21:05:48 2024
+
+......... Open Shift at Sun Apr 28 21:05:55 2024
+
+ 21:05:55.68  - Send Dda: 5-0  R  OP:RT M:6  0<02><0D>5R0RT6005?11<03>
+ 21:05:55.73  - Recv Dda: 5-0     OP:rt M:6  <02><0D>5R0rt60060>;<03>
+ 21:05:57.40  - Recv Dda: 5-0     OP:ta M:9  <02>=5R0ta9<00>032559.96|2204363.18|0|0|0|0|0|0|0
+|0|0|0|0|0|0|0|<;>=<03>
+ 21:05:57.40         Dda: 5-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 21:05:57.40  - Send Dda: 5-0  R  OP:CD M:0  0<02><0D>5R0CD000581=<03>
+ 21:05:57.45  - Recv Dda: 5-0     OP:cd M:0  <02><0B>5R0cd0697<<03>
+ 21:05:57.45  - Send Dda: 5-0  R  OP:SP M:1  0<02>35R0SP18.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|>?2=<03>
+ 21:05:57.49  - Recv Dda: 5-0     OP:sp M:1  <02><0B>5R0sp1?589<03>
+ 21:05:58.48         Dda: 5-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 5-0     OP:db M:2  <02><1B>5R0db2<00>0 Stop Pump CD >807<03>
+  - Recv Dda: 5-0     OP:db M:3  <02>"5R0db3<00>0 VER:5.0.122|17/12/15?8:3<03>
+  - Recv Dda: 5-0     OP:db M:4  <02><1C>5R0db4<00>0 COUNTRY:ISRAEL6=01<03>
+  - Recv Dda: 5-0     OP:db M:5  <02><1B>5R0db5<00>0 Pump Type:BEN2263<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><14>5R0db6<00>0 price <7<2<03>
+......... Open Shift in CloseShift at Sun Apr 28 21:06:03 2024
+
+......... Creating TS for substation 1 at Sun Apr 28 21:06:03 2024
+
+......... Change shift request, pos=11, pump=0, cashreg=2 at Mon Apr 29 05:50:06 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=1  CanClose()=1 at Mon Apr 29 05:50:06 2024
+
+......... Change shift request, pos=11, pump=0, cashreg=1 at Mon Apr 29 05:52:03 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Mon Apr 29 05:52:03 2024
+
+ 05:52:04.11  - Send Dda: 5-0  R  OP:RT M:7  0<02><0D>5R0RT7006821<03>
+ 05:52:04.16  - Recv Dda: 5-0     OP:rt M:7  <02><0D>5R0rt70057=;<03>
+ 05:52:05.62  - Recv Dda: 5-0     OP:ta M:9  <02>=5R0ta9<00>032559.96|2204363.18|0|0|0|0|0|0|0
+|0|0|0|0|0|0|0|<;>=<03>
+ 05:52:05.62         Dda: 5-0  WritePumpTotals: iType [1], trs totalizers to server [0], shift totalizers to server [0]
+......... Close Shift in CloseShift at Mon Apr 29 05:52:12 2024
+
+......... Creating TS for substation 1 at Mon Apr 29 05:52:13 2024
+
+......... Sending shift change message to USA_XML at Mon Apr 29 05:52:13 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Mon Apr 29 05:52:14 2024
+
+......... Open Shift at Mon Apr 29 05:52:16 2024
+
+ 05:52:16.36  - Send Dda: 5-0  R  OP:RT M:2  0<02><0D>5R0RT20083=1<03>
+ 05:52:16.40  - Recv Dda: 5-0     OP:rt M:2  <02><0D>5R0rt200;<2;<03>
+ 05:52:18.12  - Recv Dda: 5-0     OP:ta M:5  <02>=5R0ta5<00>032559.96|2204363.18|0|0|0|0|0|0|0
+|0|0|0|0|0|0|0|<9=:<03>
+ 05:52:18.12         Dda: 5-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 05:52:18.12  - Send Dda: 5-0  R  OP:CD M:6  0<02><0D>5R0CD600>:;=<03>
+ 05:52:18.17  - Recv Dda: 5-0     OP:cd M:6  <02><0B>5R0cd609;:<03>
+ 05:52:18.17  - Send Dda: 5-0  R  OP:SP M:7  0<02>35R0SP78.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|4=0><03>
+ 05:52:18.22  - Recv Dda: 5-0     OP:sp M:7  <02><0B>5R0sp7954?<03>
+ 05:52:19.22         Dda: 5-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 5-0     OP:db M:8  <02><1B>5R0db8<00>0 Stop Pump CD 4>=3<03>
+  - Recv Dda: 5-0     OP:db M:9  <02>"5R0db9<00>0 VER:5.0.122|17/12/153>9<<03>
+  - Recv Dda: 5-0     OP:db M:0  <02><1C>5R0db0<00>0 COUNTRY:ISRAEL9=:6<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><1B>5R0db1<00>0 Pump Type:BEN61>;<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><14>5R0db2<00>0 price 6:?7<03>
+......... Open Shift in CloseShift at Mon Apr 29 05:52:26 2024
+
+......... Creating TS for substation 1 at Mon Apr 29 05:52:26 2024
+
+......... Shva Transmit at Mon Apr 29 06:00:00 2024
+
+......... Change shift request, pos=11, pump=0, cashreg=1 at Mon Apr 29 13:22:42 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Mon Apr 29 13:22:42 2024
+
+ 13:22:42.99  - Send Dda: 5-0  R  OP:RT M:1  0<02><0D>5R0RT100=:81<03>
+ 13:22:43.03  - Recv Dda: 5-0     OP:rt M:1  <02><0D>5R0rt100>57;<03>
+ 13:22:44.45  - Recv Dda: 5-0     OP:ta M:3  <02>=5R0ta3<00>032559.96|2204363.18|0|0|0|0|0|0|0
+|0|0|0|0|0|0|0|40=1<03>
+ 13:22:44.45         Dda: 5-0  WritePumpTotals: iType [1], trs totalizers to server [0], shift totalizers to server [0]
+......... Close Shift in CloseShift at Mon Apr 29 13:22:57 2024
+
+......... Creating TS for substation 1 at Mon Apr 29 13:22:58 2024
+
+......... Sending shift change message to USA_XML at Mon Apr 29 13:22:58 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Mon Apr 29 13:22:59 2024
+
+......... Open Shift at Mon Apr 29 13:23:01 2024
+
+ 13:23:01.65  - Send Dda: 5-0  R  OP:RT M:7  0<02><0D>5R0RT7006821<03>
+ 13:23:01.69  - Recv Dda: 5-0     OP:rt M:7  <02><0D>5R0rt70057=;<03>
+ 13:23:02.85  - Recv Dda: 5-0     OP:ta M:9  <02>=5R0ta9<00>032559.96|2204363.18|0|0|0|0|0|0|0
+|0|0|0|0|0|0|0|<;>=<03>
+ 13:23:02.85         Dda: 5-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 13:23:02.85  - Send Dda: 5-0  R  OP:CD M:0  0<02><0D>5R0CD000581=<03>
+ 13:23:02.90  - Recv Dda: 5-0     OP:cd M:0  <02><0B>5R0cd0697<<03>
+ 13:23:02.90  - Send Dda: 5-0  R  OP:SP M:1  0<02>35R0SP18.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|>?2=<03>
+ 13:23:02.94  - Recv Dda: 5-0     OP:sp M:1  <02><0B>5R0sp1?589<03>
+ 13:23:03.91         Dda: 5-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 5-0     OP:db M:2  <02><1B>5R0db2<00>0 Stop Pump CD >807<03>
+  - Recv Dda: 5-0     OP:db M:3  <02>"5R0db3<00>0 VER:5.0.122|17/12/15?8:3<03>
+  - Recv Dda: 5-0     OP:db M:4  <02><1C>5R0db4<00>0 COUNTRY:ISRAEL6=01<03>
+  - Recv Dda: 5-0     OP:db M:5  <02><1B>5R0db5<00>0 Pump Type:BEN2263<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><14>5R0db6<00>0 price <7<2<03>
+......... Open Shift in CloseShift at Mon Apr 29 13:23:11 2024
+
+......... Creating TS for substation 1 at Mon Apr 29 13:23:11 2024
+
+......... Change shift request, pos=11, pump=0, cashreg=1 at Mon Apr 29 21:12:05 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Mon Apr 29 21:12:05 2024
+
+ 21:12:05.68  - Send Dda: 5-0  R  OP:RT M:7  0<02><0D>5R0RT7006821<03>
+ 21:12:05.73  - Recv Dda: 5-0     OP:rt M:7  <02><0D>5R0rt70057=;<03>
+ 21:12:07.13  - Recv Dda: 5-0     OP:ta M:9  <02>=5R0ta9<00>032559.96|2204363.18|0|0|0|0|0|0|0
+|0|0|0|0|0|0|0|<;>=<03>
+ 21:12:07.13         Dda: 5-0  WritePumpTotals: iType [1], trs totalizers to server [0], shift totalizers to server [0]
+......... Close Shift in CloseShift at Mon Apr 29 21:13:31 2024
+
+......... Creating TS for substation 1 at Mon Apr 29 21:13:32 2024
+
+......... Sending shift change message to USA_XML at Mon Apr 29 21:13:32 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Mon Apr 29 21:13:33 2024
+
+......... Open Shift at Mon Apr 29 21:13:35 2024
+
+ 21:13:35.71  - Send Dda: 5-0  R  OP:RT M:4  0<02><0D>5R0RT4003171<03>
+ 21:13:35.76  - Recv Dda: 5-0     OP:rt M:4  <02><0D>5R0rt4000>8;<03>
+ 21:13:36.91  - Recv Dda: 5-0     OP:ta M:6  <02>=5R0ta6<00>032559.96|2204363.18|0|0|0|0|0|0|0
+|0|0|0|0|0|0|0|054?<03>
+ 21:13:36.91         Dda: 5-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 21:13:36.91  - Send Dda: 5-0  R  OP:CD M:7  0<02><0D>5R0CD700==8=<03>
+ 21:13:36.96  - Recv Dda: 5-0     OP:cd M:7  <02><0B>5R0cd7199;<03>
+ 21:13:36.96  - Send Dda: 5-0  R  OP:SP M:8  0<02>35R0SP88.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|<068<03>
+  - Recv Dda: 5-0     OP:sp M:8  <02><0B>5R0sp864:0<03>
+ 21:13:37.96         Dda: 5-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 5-0     OP:db M:9  <02><1B>5R0db9<00>0 Stop Pump CD 5>31<03>
+  - Recv Dda: 5-0     OP:db M:0  <02>"5R0db0<00>0 VER:5.0.122|17/12/15:1:6<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><1C>5R0db1<00>0 COUNTRY:ISRAEL6=97<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><1B>5R0db2<00>0 Pump Type:BEN50<=<03>
+  - Recv Dda: 5-0     OP:db M:3  <02><14>5R0db3<00>0 price 05;2<03>
+......... Open Shift in CloseShift at Mon Apr 29 21:13:45 2024
+
+......... Creating TS for substation 1 at Mon Apr 29 21:13:45 2024
+
+......... Change shift request, pos=11, pump=0, cashreg=1 at Tue Apr 30 05:12:33 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Tue Apr 30 05:12:33 2024
+
+ 05:12:33.98  - Send Dda: 5-0  R  OP:RT M:2  0<02><0D>5R0RT20083=1<03>
+ 05:12:34.03  - Recv Dda: 5-0     OP:rt M:2  <02><0D>5R0rt200;<2;<03>
+ 05:12:35.65  - Recv Dda: 5-0     OP:ta M:4  <02>=5R0ta4<00>032559.96|2204363.18|0|0|0|0|0|0|0
+|0|0|0|0|0|0|0|8=:9<03>
+ 05:12:35.65         Dda: 5-0  WritePumpTotals: iType [1], trs totalizers to server [0], shift totalizers to server [0]
+......... Close Shift in CloseShift at Tue Apr 30 05:12:42 2024
+
+......... Creating TS for substation 1 at Tue Apr 30 05:12:43 2024
+
+......... Sending shift change message to USA_XML at Tue Apr 30 05:12:43 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Tue Apr 30 05:12:44 2024
+
+......... Open Shift at Tue Apr 30 05:12:46 2024
+
+ 05:12:47.09  - Send Dda: 5-0  R  OP:RT M:8  0<02><0D>5R0RT8004410<03>
+ 05:12:47.13  - Recv Dda: 5-0     OP:rt M:8  <02><0D>5R0rt8007;>:<03>
+ 05:12:48.82  - Recv Dda: 5-0     OP:ta M:1  <02>=5R0ta1<00>032559.96|2204363.18|0|0|0|0|0|0|0
+|0|0|0|0|0|0|0|<837<03>
+ 05:12:48.82         Dda: 5-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 05:12:48.82  - Send Dda: 5-0  R  OP:CD M:2  0<02><0D>5R0CD200367=<03>
+ 05:12:48.87  - Recv Dda: 5-0     OP:cd M:2  <02><0B>5R0cd2493><03>
+ 05:12:48.87  - Send Dda: 5-0  R  OP:SP M:3  0<02>35R0SP38.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|8><<<03>
+ 05:12:48.91  - Recv Dda: 5-0     OP:sp M:3  <02><0B>5R0sp3=5<;<03>
+ 05:12:49.91         Dda: 5-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 5-0     OP:db M:4  <02><1B>5R0db4<00>0 Stop Pump CD 8:4;<03>
+  - Recv Dda: 5-0     OP:db M:5  <02>"5R0db5<00>0 VER:5.0.122|17/12/154::9<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><1C>5R0db6<00>0 COUNTRY:ISRAEL9=42<03>
+  - Recv Dda: 5-0     OP:db M:7  <02><1B>5R0db7<00>0 Pump Type:BEN03:7<03>
+  - Recv Dda: 5-0     OP:db M:8  <02><14>5R0db8<00>0 price ?>36<03>
+......... Open Shift in CloseShift at Tue Apr 30 05:12:56 2024
+
+......... Creating TS for substation 1 at Tue Apr 30 05:12:56 2024
+
+......... Shva Transmit at Tue Apr 30 06:00:00 2024
+
+ 06:09:23.90         Dda: 5-0  VSU event:[42] v400120uni|0|A32C2198|0|0|||0|0||00000000|
+ 06:09:26.93  - Recv Dda: 5-0     OP:hn M:1  <02><0F>5R0hn1<00>001=7;5<03>
+ 06:09:26.93         Dda: 5-0  Handle 1
+ 06:09:26.93         Dda: 5-0  Send Ex. POS: hn 01. Receive=2 - Pu
+ 06:09:26.93         Dda: 5-0  Disp : G3_process 
+ 06:09:26.93         Dda: 5-0  Disp : CardId= uni00A32C2198 
+ 06:09:26.93         Dda: 5-0  Disp : Checking-Universsal-Idbox uni 
+ 06:09:26.93         Dda: 5-0  Disp : UID= A32C2198 
+ 06:09:26.93         Dda: 5-0  Disp : Validate-Uid-using-fuelpoint 
+ 06:09:26.93         Dda: 5-0  maximus_in=LI|uid:A32C2198|0|9|
+ 06:09:27.38         Dda: 5-0  maximus_ot=OF|0||0|0|9999999|0|0|9999999|0|0|Invalid card number             ||||@|0|
+ 06:09:27.38         Dda: 5-0  Quit on error (0). index = 1
+ 06:09:27.38         Dda: 5-0  Disp : Fuel4/fuelpoint not open / refused 
+ 06:09:27.38         Dda: 5-0  Disp : Dor-universal 
+ 06:09:27.38         Dda: 5-0  Disp : Dorid 0000200027375783929 0731 
+ 06:09:27.38         Dda: 5-0  SetInt to 99900000
+ 06:09:27.38         Dda: 5-0  Disp : CH-3CardID 
+ 06:09:27.38         Dda: 5-0  track2=0000200027375783929
+ 06:09:27.38         Dda: 5-0  Disp : CH-3Temp4 0000 
+ 06:09:27.38         Dda: 5-0  Disp : IdType= I 
+ 06:09:27.38         Dda: 5-0  Disp : ProdCode= 0000 
+ 06:09:27.38         Dda: 5-0  Disp : Checking-2500-Local 
+ 06:09:27.38         Dda: 5-0  Disp : Checking-DOR 
+ 06:09:27.38         Dda: 5-0  Disp : DOR_BoxCarNo= 0000000000 
+ 06:09:27.38         Dda: 5-0  Disp : Temp4= 0000 
+ 06:09:27.38         Dda: 5-0  Disp : UIron 
+ 06:09:27.38         Dda: 5-0  Disp : Dor_Card_18                   
+ 06:09:27.38         Dda: 5-0  Disp : ShvaCardNo 0000200027375783929 
+ 06:09:27.38         Dda: 5-0  DorCh_in=ri|0000200027375783929|9|
+  - Recv Dda: 5-0     OP:db M:2  <02><18>5R0db2<00>0 status= 611<>0<03>
+ 06:09:27.73         Dda: 5-0  DorCh_ot=OF|0|Q50000|@|0072808002|0|0|2|10000000001000000000||2500000|0|0|0|0|1|1|4|Å èÖÜé òáë é.Ç.Ä|B|
+ 06:09:27.73         Dda: 5-0  Disp : carno= 0072808002 
+ 06:09:27.73         Dda: 5-0  Disp : Ok---fuels 0 0 
+ 06:09:27.73         Dda: 5-0  Disp : DorOK-Temp4 0106 
+ 06:09:27.73         Dda: 5-0  Disp : Solek= 0 
+ 06:09:27.73         Dda: 5-0  Disp : DOR_OK_RC=  
+ 06:09:27.73         Dda: 5-0  Disp : Device= H 
+ 06:09:27.73         Dda: 5-0  Disp : Checking-DOR-IDBOX 
+ 06:09:27.74         Dda: 5-0  ItsMe() =   ëöé-èóöÑ    Code = 000106
+ 06:09:27.74         Dda: 5-0  Disp : Validate-Idbox-Secret_Code 0000 
+ 06:09:27.74         Dda: 5-0  Disp : IDBOX_FuelType= 0000 
+ 06:09:27.74         Dda: 5-0  Disp : IDBOX_ProdCode= 0000 
+ 06:09:27.74         Dda: 5-0  Disp : Temp4= 0106 
+ 06:09:27.74         Dda: 5-0  Disp : Check fuel types CH 
+ 06:09:27.74         Dda: 5-0  Disp : DOR-IDBOX-Validated 
+  - Recv Dda: 5-0     OP:db M:3  <02><1A>5R0db3<00>0 Handle On:1 9>=1<03>
+ 06:09:27.88         Dda: 5-0  Disp : ValConfirmed-Rfc 
+ 06:09:28.37  - Send Dda: 5-0  R  OP:SP M:4  0<02>35R0SP48.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|940?<03>
+ 06:09:28.41  - Recv Dda: 5-0     OP:sp M:4  <02><0B>5R0sp4:52<<03>
+ 06:09:28.91         Dda: 5-0  Tran type=3, Rate type(cash/credit)=2, Nozzle BITMAP=1
+ 06:09:28.91  - Send Dda: 5-0  R  OP:CT M:5  0<02>f5R0CT562<01>32500.000|4275.0|418.994|7500.0
+|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|11>8<03>
+  - Recv Dda: 5-0     OP:ct M:5  <02><0D>5R0ct5621=54<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><14>5R0db6<00>6 price 4709<03>
+  - Recv Dda: 5-0     OP:db M:7  <02><19>5R0db7<00>6 start_pump 17>3<03>
+  - Recv Dda: 5-0     OP:db M:8  <02>%5R0db8<00>6 prices_ct, rate_type=2 5891<03>
+  - Recv Dda: 5-0     OP:db M:9  <02><14>5R0db9<00>6 price 11;8<03>
+  - Recv Dda: 5-0     OP:db M:0  <02><15>5R0db0<00>6 author 272?<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><18>5R0db1<00>6 status= 691;75<03>
+ 06:09:37.26  - Recv Dda: 5-0     OP:nz M:0  <02><10>5R0nz0<00>60111814<03>
+ 06:09:37.26         Dda: 5-0  Recovery save pump 09
+ 06:09:37.26         Dda: 5-0  S091
+  - Recv Dda: 5-0     OP:db M:1  <02><18>5R0db1<00>6 status= 594>26<03>
+ 06:09:39.44  - Recv Dda: 5-0     OP:fs M:5  <02>!5R0fs5<00>601117.9|46.45|2.595|590:<03>
+  - Recv Dda: 5-0     OP:db M:7  <02><12>5R0db7<00>6 run 3;45<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><15>5R0db6<00>6 fueled <571<03>
+ 06:09:47.10  - Recv Dda: 5-0     OP:fs M:9  <02>#5R0fs9<00>601117.9|193.57|10.814|9>4<<03>
+ 06:09:54.24  - Recv Dda: 5-0     OP:fs M:2  <02>#5R0fs2<00>601117.9|341.16|19.059|<765<03>
+ 06:10:01.79  - Recv Dda: 5-0     OP:fs M:6  <02>#5R0fs6<00>601117.9|489.55|27.349|=071<03>
+ 06:10:09.03  - Recv Dda: 5-0     OP:fs M:0  <02>#5R0fs0<00>601117.9|642.52|35.895|2043<03>
+ 06:10:16.30  - Recv Dda: 5-0     OP:fs M:3  <02>#5R0fs3<00>601117.9|791.57|44.222|?110<03>
+ 06:10:24.01  - Recv Dda: 5-0     OP:fs M:7  <02>#5R0fs7<00>601117.9|939.95|52.511|<46><03>
+ 06:10:33.50  - Recv Dda: 5-0     OP:fs M:4  <02>#5R0fs4<00>601117.9|1060.04|59.22|7826<03>
+  - Recv Dda: 5-0     OP:db M:8  <02><18>5R0db8<00>6 status= 407<34<03>
+ 06:10:47.08  - Recv Dda: 5-0     OP:hn M:9  <02><0F>5R0hn9<00>6007719<03>
+ 06:10:47.08         Dda: 5-0  Handle 0
+ 06:10:47.08         Dda: 5-0  Send Ex. POS: hn 00. Receive=2 - Pu
+  - Recv Dda: 5-0     OP:ft M:0  <02>$5R0ft0<00>601117.9|1141.16|63.752|11>5<03>
+ 06:10:47.62         Dda: 5-0  Send Ex. POS: ft 0111. Receive=2 - Pump not exist
+ 06:10:47.62         Dda: 5-0  F0910063.752032623.71
+ 06:10:47.62         Dda: 5-0  Disp : DOR-IDBOX:Posting 
+ 06:10:47.62         Dda: 5-0  Disp : Dor_Total= 1141.16 
+ 06:10:47.62         Dda: 5-0  DorCh_in=ft|0000200027375783929|9|1|1| 114116|7280800200|000000|||@|0000| 114116|  63752|  1790|
+ 06:10:47.62         Dda: 5-0  Send Ex. POS: ft 0111. Receive=2 - Pump not exist
+ 06:10:47.70         Dda: 5-0  DorCh_ot=CF|0|
+ 06:10:47.70         Dda: 5-0  Disp : Dor-WriteShvaCardNo 0000200027375783929 
+ 06:10:47.70         Dda: 5-0  Disp : Dor-WriteTranCardNo 000200027375783929 
+ 06:10:47.70         Dda: 5-0  Enter into WriteTran
+ 06:10:47.70         Dda: 5-0  Try open shift file
+ 06:10:47.70         Dda: 5-0  Write to .\DATA\RS300424.D1A,len =253
+ 06:10:47.70         Dda: 5-0  RS rec =  1141.16      63.752  72808002   1   09     206555 06:10 30/04/24       òåÖë 00    ëöé-èóöÑ 000106 0000200027375783929                                   17.900                                                  1 10  441           0                      
+ 06:10:47.71         Dda: 5-0  Recovery remove pump 09
+ 06:10:47.71         Dda: 5-0  after reco remove
+ 06:10:47.71         Dda: 5-0  RS Copy
+ 06:10:47.71         Dda: 5-0  End of WriteTran .\DATA\RS300424.D1A
+ 06:10:47.71         Dda: 5-0  FuelPointPostTran,TranNo=206555,PumpNo=9,Nozzle=1,ProdNo=0000,dQty=63752
+ 06:10:47.71         Dda: 5-0  Rfc transaction
+ 06:10:47.71         Dda: 5-0  FuelPoint_in=FT2|-1|206555|9|1|0000|0000200027375783929|0|0|0|        |0|63752||||       |000106| 0|04/30/2024 06:09:37|17.900|1141.16|   0.00|0000000|72808002|000106|
+  - Recv Dda: 5-0     OP:db M:1  <02><1B>5R0db1<00>6 Handle Off:1 ?=26<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><1B>5R0db2<00>6 Stop Pump CF 580><03>
+  - Recv Dda: 5-0     OP:db M:3  <02><0D>5R0db3<00>61;:9<03>
+  - Recv Dda: 5-0     OP:db M:4  <02><0D>5R0db4<00>69>39<03>
+  - Recv Dda: 5-0     OP:db M:5  <02>/5R0db5<00>6 Main thread did not send FT data
+ 09:?<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><17>5R0db6<00>6 Pump Off 36<5<03>
+ 06:10:50.76         Dda: 5-0  VSU event:[2] v0
+  - Recv Dda: 5-0     OP:db M:7  <02><1C>5R0db7<00>6 QS perform ft =233<03>
+ 06:10:52.34         Dda: 5-0  FuelPoint_ot=CF|
+ 06:10:52.34         Dda: 5-0  Disp : DOR-IDBOX:Posted 
+ 06:10:52.34         Dda: 5-0  Coupon in:GCD|000200027375783929|
+ 06:10:54.39         Dda: 5-0  Fail to call Coupon CH
+ 06:10:54.39         Dda: 5-0  Disp : DOR_TranNo 206555 
+ 06:10:54.39         Dda: 5-0  Disp : DOR_CHtranNO=      
+ 06:10:54.39         Dda: 5-0  Disp : Dor_CustName=                          
+ 06:10:54.39         Dda: 5-0  Disp : Dor_CompanyName= Å èÖÜé òáë é.Ç.Ä 
+ 06:10:54.39         Dda: 5-0  Disp : Before-printing1 0 
+ 06:10:54.39         Dda: 5-0  Disp : Temp1 0 
+ 06:10:54.39         Dda: 5-0  Disp : Go-to-print1 
+ 06:10:54.39         Dda: 5-0  Disp : T5-check-for-10 
+ 06:10:56.59         Dda: 5-0  Disp : Ask_print_Entry 
+ 06:10:56.59         Dda: 5-0  Recovery remove pump 09
+ 06:10:56.59         Dda: 5-0  Recovery remove failed for pump 09, code=2
+ 06:10:56.59  - Send Dda: 5-0  R  OP:CD M:6  0<02><0D>5R0CD600>:;=<03>
+ 06:10:56.64  - Recv Dda: 5-0     OP:cd M:6  <02><0B>5R0cd609;:<03>
+ 06:10:56.64  - Send Dda: 5-0  R  OP:SP M:7  0<02>35R0SP78.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|4=0><03>
+ 06:10:56.68  - Recv Dda: 5-0     OP:sp M:7  <02><0B>5R0sp7954?<03>
+ 06:10:57.68         Dda: 5-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 5-0     OP:db M:8  <02><1B>5R0db8<00>6 Stop Pump CD 98;8<03>
+  - Recv Dda: 5-0     OP:db M:9  <02><14>5R0db9<00>6 price 11;8<03>
+ 06:37:27.26  - Recv Dda: 5-0     OP:hn M:6  <02><0F>5R0hn6<00>60102<1<03>
+ 06:37:27.26         Dda: 5-0  Handle 1
+ 06:37:27.26         Dda: 5-0  Send Ex. POS: hn 01. Receive=2 - Pu
+ 06:37:27.26         Dda: 5-0  Invalid Event hn at state 2
+  - Recv Dda: 5-0     OP:db M:7  <02><18>5R0db7<00>6 status= 61911:<03>
+  - Recv Dda: 5-0     OP:db M:8  <02><1A>5R0db8<00>6 Handle On:1 6<7><03>
+ 06:37:31.11         Dda: 5-0  VSU event:[47] v400120uni|0|E1EC0991|0|0|15614||0|0||00000000|
+ 06:37:31.62         Dda: 5-0  Disp : G3_process 
+ 06:37:31.62         Dda: 5-0  Disp : CardId= uni00E1EC0991 
+ 06:37:31.62         Dda: 5-0  Disp : Checking-Universsal-Idbox uni 
+ 06:37:31.62         Dda: 5-0  Disp : UID= E1EC0991 
+ 06:37:31.62         Dda: 5-0  Disp : Validate-Uid-using-fuelpoint 
+ 06:37:31.62         Dda: 5-0  maximus_in=LI|uid:E1EC0991|0|9|
+ 06:37:32.03         Dda: 5-0  maximus_ot=OF|0||0|0|9999999|0|0|9999999|0|0|Invalid card number             ||||@|0|
+ 06:37:32.03         Dda: 5-0  Quit on error (0). index = 1
+ 06:37:32.03         Dda: 5-0  Disp : Fuel4/fuelpoint not open / refused 
+ 06:37:32.03         Dda: 5-0  Disp : Dor-universal 
+ 06:37:32.03         Dda: 5-0  Disp : Dorid 0000200037903425459 0106 
+ 06:37:32.03         Dda: 5-0  SetInt to 99900000
+ 06:37:32.03         Dda: 5-0  Disp : CH-3CardID 
+ 06:37:32.03         Dda: 5-0  track2=0000200037903425459
+ 06:37:32.03         Dda: 5-0  Disp : CH-3Temp4 0000 
+ 06:37:32.03         Dda: 5-0  Disp : IdType= I 
+ 06:37:32.03         Dda: 5-0  Disp : ProdCode= 0000 
+ 06:37:32.03         Dda: 5-0  Disp : Checking-2500-Local 
+ 06:37:32.03         Dda: 5-0  Disp : Checking-DOR 
+ 06:37:32.03         Dda: 5-0  Disp : DOR_BoxCarNo= 0000000000 
+ 06:37:32.03         Dda: 5-0  Disp : Temp4= 0000 
+ 06:37:32.03         Dda: 5-0  Disp : UIron 
+ 06:37:32.03         Dda: 5-0  Disp : Dor_Card_18                   
+ 06:37:32.03         Dda: 5-0  Disp : ShvaCardNo 0000200037903425459 
+ 06:37:32.03         Dda: 5-0  DorCh_in=ri|0000200037903425459|9|
+ 06:37:32.36         Dda: 5-0  DorCh_ot=OF|0|Q50000|@|0072848302|0|0|2|10000000001000000000||2500000|0|0|0|0|1|1|0|é"íÅ îÖòÇ ëÖÄòàô|B|
+ 06:37:32.36         Dda: 5-0  Disp : carno= 0072848302 
+ 06:37:32.36         Dda: 5-0  Disp : Ok---fuels 0 0 
+ 06:37:32.36         Dda: 5-0  Disp : DorOK-Temp4 0106 
+ 06:37:32.36         Dda: 5-0  Disp : Solek= 0 
+ 06:37:32.36         Dda: 5-0  Disp : DOR_OK_RC=  
+ 06:37:32.36         Dda: 5-0  Disp : Device= H 
+ 06:37:32.36         Dda: 5-0  Disp : Checking-DOR-IDBOX 
+ 06:37:32.36         Dda: 5-0  ItsMe() =   ëöé-èóöÑ    Code = 000106
+ 06:37:32.36         Dda: 5-0  Disp : Validate-Idbox-Secret_Code 0000 
+ 06:37:32.36         Dda: 5-0  Disp : IDBOX_FuelType= 0000 
+ 06:37:32.36         Dda: 5-0  Disp : IDBOX_ProdCode= 0000 
+ 06:37:32.36         Dda: 5-0  Disp : Temp4= 0106 
+ 06:37:32.36         Dda: 5-0  Disp : Check fuel types CH 
+ 06:37:32.36         Dda: 5-0  Disp : DOR-IDBOX-Validated 
+ 06:37:32.61         Dda: 5-0  Disp : ValConfirmed-Rfc 
+ 06:37:33.12  - Send Dda: 5-0  R  OP:SP M:7  0<02>35R0SP78.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|4=0><03>
+ 06:37:33.17  - Recv Dda: 5-0     OP:sp M:7  <02><0B>5R0sp7954?<03>
+ 06:37:33.62         Dda: 5-0  Tran type=3, Rate type(cash/credit)=2, Nozzle BITMAP=1
+ 06:37:33.62  - Send Dda: 5-0  R  OP:CT M:8  0<02>f5R0CT863<01>32500.000|4275.0|418.994|7500.0
+|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1?38<03>
+  - Recv Dda: 5-0     OP:ct M:8  <02><0D>5R0ct8634?24<03>
+  - Recv Dda: 5-0     OP:db M:9  <02><14>5R0db9<00>6 price 11;8<03>
+  - Recv Dda: 5-0     OP:db M:0  <02><19>5R0db0<00>6 start_pump 6?74<03>
+  - Recv Dda: 5-0     OP:db M:1  <02>%5R0db1<00>6 prices_ct, rate_type=2 >6<7<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><14>5R0db2<00>6 price >:3<<03>
+  - Recv Dda: 5-0     OP:db M:3  <02><15>5R0db3<00>6 author 5?=5<03>
+  - Recv Dda: 5-0     OP:db M:4  <02><18>5R0db4<00>6 status= 699=;1<03>
+ 06:37:41.93  - Recv Dda: 5-0     OP:nz M:3  <02><10>5R0nz3<00>6011=6?4<03>
+ 06:37:41.93         Dda: 5-0  Recovery save pump 09
+ 06:37:41.93         Dda: 5-0  S091
+  - Recv Dda: 5-0     OP:db M:4  <02><18>5R0db4<00>6 status= 59<8>2<03>
+ 06:37:44.90  - Recv Dda: 5-0     OP:fs M:9  <02>!5R0fs9<00>601117.9|59.68|3.334|4;;0<03>
+ 06:37:52.15  - Recv Dda: 5-0     OP:fs M:1  <02>#5R0fs1<00>601117.9|208.12|11.627|7?03<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><12>5R0db6<00>6 run 7<96<03>
+ 06:37:59.52  - Recv Dda: 5-0     OP:fs M:4  <02>"5R0fs4<00>601117.9|356.57|19.92|>009<03>
+  - Recv Dda: 5-0     OP:db M:9  <02><15>5R0db9<00>6 fueled 4>42<03>
+ 06:38:06.79  - Recv Dda: 5-0     OP:fs M:7  <02>#5R0fs7<00>601117.9|504.55|28.187|8>?2<03>
+ 06:38:13.88  - Recv Dda: 5-0     OP:fs M:0  <02>#5R0fs0<00>601117.9|653.65|36.517|5>94<03>
+ 06:38:21.51  - Recv Dda: 5-0     OP:fs M:4  <02>#5R0fs4<00>601117.9|802.22|44.817|4<<><03>
+ 06:38:28.65  - Recv Dda: 5-0     OP:fs M:7  <02>"5R0fs7<00>601117.9|951.39|53.15|:58=<03>
+ 06:38:36.11  - Recv Dda: 5-0     OP:fs M:1  <02>$5R0fs1<00>601117.9|1106.54|61.818|==:7<03>
+ 06:38:43.56  - Recv Dda: 5-0     OP:fs M:4  <02>$5R0fs4<00>601117.9|1255.92|70.163|<2=8<03>
+ 06:38:51.62  - Recv Dda: 5-0     OP:fs M:8  <02>$5R0fs8<00>601117.9|1416.86|79.154|1069<03>
+ 06:38:58.94  - Recv Dda: 5-0     OP:fs M:1  <02>$5R0fs1<00>601117.9|1567.29|87.558|;4?:<03>
+ 06:39:06.48  - Recv Dda: 5-0     OP:fs M:5  <02>$5R0fs5<00>601117.9|1718.42|96.001|6=?=<03>
+ 06:39:13.70  - Recv Dda: 5-0     OP:fs M:8  <02>%5R0fs8<00>601117.9|1867.92|104.353|>>61<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><18>5R0db6<00>6 status= 409<38<03>
+  - Recv Dda: 5-0     OP:ft M:7  <02>%5R0ft7<00>601117.9|1952.08|109.055|2221<03>
+ 06:39:23.38         Dda: 5-0  Send Ex. POS: ft 0111. Receive=2 - Pump not exist
+ 06:39:23.38         Dda: 5-0  F0910109.055032732.77
+ 06:39:23.38         Dda: 5-0  Disp : DOR-IDBOX:Posting 
+ 06:39:23.38         Dda: 5-0  Disp : Dor_Total= 1952.08 
+ 06:39:23.38         Dda: 5-0  DorCh_in=ft|0000200037903425459|9|1|1| 195208|7284830200|015614|||@|0000| 195208| 109055|  1790|
+ 06:39:23.38         Dda: 5-0  Send Ex. POS: ft 0111. Receive=2 - Pump not exist
+ 06:39:23.47         Dda: 5-0  DorCh_ot=CF|0|
+ 06:39:23.47         Dda: 5-0  Disp : Dor-WriteShvaCardNo 0000200037903425459 
+ 06:39:23.47         Dda: 5-0  Disp : Dor-WriteTranCardNo 000200037903425459 
+ 06:39:23.47         Dda: 5-0  Enter into WriteTran
+ 06:39:23.47         Dda: 5-0  Try open shift file
+ 06:39:23.47         Dda: 5-0  Write to .\DATA\RS300424.D1A,len =253
+ 06:39:23.48         Dda: 5-0  RS rec =  1952.08     109.055  72848302   1   09     206570 06:39 30/04/24       òåÖë 00    ëöé-èóöÑ 000106 0000200037903425459                00015614           17.900                                                  1 10  441           0                      
+ 06:39:23.48         Dda: 5-0  Recovery remove pump 09
+ 06:39:23.48         Dda: 5-0  after reco remove
+ 06:39:23.48         Dda: 5-0  RS Copy
+ 06:39:23.48         Dda: 5-0  End of WriteTran .\DATA\RS300424.D1A
+ 06:39:23.48         Dda: 5-0  FuelPointPostTran,TranNo=206570,PumpNo=9,Nozzle=1,ProdNo=0000,dQty=109055
+ 06:39:23.48         Dda: 5-0  Rfc transaction
+ 06:39:23.48         Dda: 5-0  FuelPoint_in=FT2|-1|206570|9|1|0000|0000200037903425459|0|015614|0|        |0|109055||||       |000106| 0|04/30/2024 06:37:41|17.900|1952.08|   0.00|0000000|72848302|000106|
+ 06:39:23.86  - Recv Dda: 5-0     OP:hn M:8  <02><0F>5R0hn8<00>600==48<03>
+ 06:39:23.86         Dda: 5-0  Handle 0
+ 06:39:23.86         Dda: 5-0  Invalid Event hn at state 10
+  - Recv Dda: 5-0     OP:db M:9  <02><1B>5R0db9<00>6 Handle Off:1 7:36<03>
+  - Recv Dda: 5-0     OP:db M:0  <02><1B>5R0db0<00>6 Stop Pump CF 79<:<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><0D>5R0db1<00>675<9<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><0D>5R0db2<00>62<99<03>
+  - Recv Dda: 5-0     OP:db M:3  <02>/5R0db3<00>6 Main thread did not send FT data
+ 1057<03>
+  - Recv Dda: 5-0     OP:db M:4  <02><17>5R0db4<00>6 Pump Off ;<03<03>
+  - Recv Dda: 5-0     OP:db M:5  <02><1C>5R0db5<00>6 QS perform ft 2270<03>
+ 06:39:28.05         Dda: 5-0  FuelPoint_ot=CF|
+ 06:39:28.05         Dda: 5-0  Disp : DOR-IDBOX:Posted 
+ 06:39:28.05         Dda: 5-0  Coupon in:GCD|000200037903425459|
+ 06:39:30.09         Dda: 5-0  Fail to call Coupon CH
+ 06:39:30.09         Dda: 5-0  Disp : DOR_TranNo 206570 
+ 06:39:30.09         Dda: 5-0  Disp : DOR_CHtranNO=      
+ 06:39:30.09         Dda: 5-0  Disp : Dor_CustName=                          
+ 06:39:30.09         Dda: 5-0  Disp : Dor_CompanyName= é"íÅ îÖòÇ ëÖÄòàô 
+ 06:39:30.09         Dda: 5-0  Disp : Before-printing1 0 
+ 06:39:30.09         Dda: 5-0  Disp : Temp1 0 
+ 06:39:30.09         Dda: 5-0  Disp : Go-to-print1 
+ 06:39:30.09         Dda: 5-0  Disp : T5-check-for-10 
+ 06:39:31.65         Dda: 5-0  VSU event:[2] v0
+ 06:39:32.28         Dda: 5-0  Disp : Ask_print_Entry 
+ 06:39:32.28         Dda: 5-0  Recovery remove pump 09
+ 06:39:32.28         Dda: 5-0  Recovery remove failed for pump 09, code=2
+ 06:39:32.28  - Send Dda: 5-0  R  OP:CD M:3  0<02><0D>5R0CD300014=<03>
+ 06:39:32.33  - Recv Dda: 5-0     OP:cd M:3  <02><0B>5R0cd3591?<03>
+ 06:39:32.33  - Send Dda: 5-0  R  OP:SP M:4  0<02>35R0SP48.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|940?<03>
+ 06:39:32.37  - Recv Dda: 5-0     OP:sp M:4  <02><0B>5R0sp4:52<<03>
+ 06:39:33.36         Dda: 5-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 5-0     OP:db M:5  <02><1B>5R0db5<00>6 Stop Pump CD 4<<2<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><14>5R0db6<00>6 price 4709<03>
+ 06:53:01.42         Dda: 5-0  VSU event:[42] v400120uni|0|649DEC98|0|0|||0|0||00000000|
+ 06:53:06.70  - Recv Dda: 5-0     OP:hn M:9  <02><0F>5R0hn9<00>6016738<03>
+ 06:53:06.70         Dda: 5-0  Handle 1
+ 06:53:06.70         Dda: 5-0  Send Ex. POS: hn 01. Receive=2 - Pu
+ 06:53:06.70         Dda: 5-0  Disp : G3_process 
+ 06:53:06.70         Dda: 5-0  Disp : CardId= uni00649DEC98 
+ 06:53:06.70         Dda: 5-0  Disp : Checking-Universsal-Idbox uni 
+ 06:53:06.70         Dda: 5-0  Disp : UID= 649DEC98 
+ 06:53:06.70         Dda: 5-0  Disp : Validate-Uid-using-fuelpoint 
+ 06:53:06.70         Dda: 5-0  maximus_in=LI|uid:649DEC98|0|9|
+  - Recv Dda: 5-0     OP:db M:0  <02><18>5R0db0<00>6 status= 61>11<<03>
+ 06:53:07.62         Dda: 5-0  maximus_ot=OF|0||0|0|9999999|0|0|9999999|0|0|Invalid card number             ||||@|0|
+ 06:53:07.62         Dda: 5-0  Quit on error (0). index = 1
+ 06:53:07.62         Dda: 5-0  Disp : Fuel4/fuelpoint not open / refused 
+ 06:53:07.62         Dda: 5-0  Disp : Dor-universal 
+ 06:53:07.62         Dda: 5-0  Disp : Dorid 0000200016880713209 0106 
+ 06:53:07.62         Dda: 5-0  SetInt to 99900000
+ 06:53:07.62         Dda: 5-0  Disp : CH-3CardID 
+ 06:53:07.62         Dda: 5-0  track2=0000200016880713209
+ 06:53:07.62         Dda: 5-0  Disp : CH-3Temp4 0000 
+ 06:53:07.62         Dda: 5-0  Disp : IdType= I 
+ 06:53:07.62         Dda: 5-0  Disp : ProdCode= 0000 
+ 06:53:07.64         Dda: 5-0  Disp : Checking-2500-Local 
+ 06:53:07.64         Dda: 5-0  Disp : Checking-DOR 
+ 06:53:07.64         Dda: 5-0  Disp : DOR_BoxCarNo= 0000000000 
+ 06:53:07.64         Dda: 5-0  Disp : Temp4= 0000 
+ 06:53:07.64         Dda: 5-0  Disp : UIron 
+ 06:53:07.64         Dda: 5-0  Disp : Dor_Card_18                   
+ 06:53:07.64         Dda: 5-0  Disp : ShvaCardNo 0000200016880713209 
+ 06:53:07.64         Dda: 5-0  DorCh_in=ri|0000200016880713209|9|
+  - Recv Dda: 5-0     OP:db M:1  <02><1A>5R0db1<00>6 Handle On:1 =5=?<03>
+ 06:53:07.95         Dda: 5-0  DorCh_ot=OF|0|Q18500|@|0078052702|0|0|2|10000000001000000000||2500000|0|0|0|0|1|0|0|     é"íÅ åëòîÖô|B|
+ 06:53:07.95         Dda: 5-0  Disp : carno= 0078052702 
+ 06:53:07.95         Dda: 5-0  Disp : Ok---fuels 0 0 
+ 06:53:07.95         Dda: 5-0  Disp : DorOK-Temp4 0106 
+ 06:53:07.95         Dda: 5-0  Disp : Solek= 0 
+ 06:53:07.95         Dda: 5-0  Disp : DOR_OK_RC=  
+ 06:53:07.95         Dda: 5-0  Disp : Device= H 
+ 06:53:07.95         Dda: 5-0  Disp : Checking-DOR-IDBOX 
+ 06:53:07.95         Dda: 5-0  ItsMe() =   ëöé-èóöÑ    Code = 000106
+ 06:53:07.95         Dda: 5-0  Disp : Validate-Idbox-Secret_Code 0000 
+ 06:53:07.95         Dda: 5-0  Disp : IDBOX_FuelType= 0000 
+ 06:53:07.95         Dda: 5-0  Disp : IDBOX_ProdCode= 0000 
+ 06:53:07.95         Dda: 5-0  Disp : Temp4= 0106 
+ 06:53:07.95         Dda: 5-0  Disp : Check fuel types CH 
+ 06:53:07.95         Dda: 5-0  Disp : DOR-IDBOX-Validated 
+ 06:53:08.26         Dda: 5-0  Disp : ValConfirmed-Rfc 
+ 06:53:08.76  - Send Dda: 5-0  R  OP:SP M:3  0<02>35R0SP38.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|8><<<03>
+ 06:53:08.81  - Recv Dda: 5-0     OP:sp M:3  <02><0B>5R0sp3=5<;<03>
+ 06:53:09.31         Dda: 5-0  Tran type=3, Rate type(cash/credit)=2, Nozzle BITMAP=1
+ 06:53:09.31  - Send Dda: 5-0  R  OP:CT M:4  0<02>f5R0CT464<01>32185.000|1581.7|185.000|3311.5
+|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|427:<03>
+  - Recv Dda: 5-0     OP:ct M:4  <02><0D>5R0ct4644::2<03>
+  - Recv Dda: 5-0     OP:db M:5  <02><14>5R0db5<00>6 price ?6<6<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><19>5R0db6<00>6 start_pump ;91?<03>
+  - Recv Dda: 5-0     OP:db M:7  <02>%5R0db7<00>6 prices_ct, rate_type=2 9993<03>
+  - Recv Dda: 5-0     OP:db M:8  <02><14>5R0db8<00>6 price 7>?=<03>
+  - Recv Dda: 5-0     OP:db M:9  <02><15>5R0db9<00>6 author 5=>8<03>
+  - Recv Dda: 5-0     OP:db M:0  <02><18>5R0db0<00>6 status= 696014<03>
+ 06:53:17.07  - Recv Dda: 5-0     OP:nz M:8  <02><10>5R0nz8<00>60111556<03>
+ 06:53:17.07         Dda: 5-0  Recovery save pump 09
+ 06:53:17.07         Dda: 5-0  S091
+  - Recv Dda: 5-0     OP:db M:9  <02><18>5R0db9<00>6 status= 59:54=<03>
+ 06:53:18.76  - Recv Dda: 5-0     OP:fs M:2  <02>!5R0fs2<00>601117.9|33.22|1.856|;99;<03>
+  - Recv Dda: 5-0     OP:db M:3  <02><12>5R0db3<00>6 run 3428<03>
+  - Recv Dda: 5-0     OP:db M:0  <02><15>5R0db0<00>6 fueled 3485<03>
+ 06:53:26.17  - Recv Dda: 5-0     OP:fs M:6  <02>#5R0fs6<00>601117.9|181.54|10.142|876?<03>
+ 06:53:33.84  - Recv Dda: 5-0     OP:fs M:0  <02>#5R0fs0<00>601117.9|329.57|18.412|11;3<03>
+ 06:53:40.84  - Recv Dda: 5-0     OP:fs M:3  <02>#5R0fs3<00>601117.9|478.09|26.709|75>2<03>
+ 06:53:48.04  - Recv Dda: 5-0     OP:fs M:6  <02>#5R0fs6<00>601117.9|625.87|34.965|<:28<03>
+ 06:53:55.90  - Recv Dda: 5-0     OP:fs M:0  <02>#5R0fs0<00>601117.9|774.46|43.266|>97?<03>
+ 06:54:02.94  - Recv Dda: 5-0     OP:fs M:3  <02>#5R0fs3<00>601117.9|922.71|51.548|:358<03>
+ 06:54:10.05  - Recv Dda: 5-0     OP:fs M:6  <02>$5R0fs6<00>601117.9|1071.01|59.833|<327<03>
+ 06:54:17.74  - Recv Dda: 5-0     OP:fs M:0  <02>$5R0fs0<00>601117.9|1219.33|68.119|>055<03>
+  - Recv Dda: 5-0     OP:fs M:3  <02>$5R0fs3<00>601117.9|1368.24|76.438|;1?3<03>
+ 06:54:32.02  - Recv Dda: 5-0     OP:fs M:6  <02>$5R0fs6<00>601117.9|1517.01|84.749|=;4:<03>
+ 06:54:39.60  - Recv Dda: 5-0     OP:fs M:0  <02>$5R0fs0<00>601117.9|1665.25|93.031|2<7?<03>
+  - Recv Dda: 5-0     OP:fs M:3  <02>$5R0fs3<00>601117.9|1813.7|101.324|>593<03>
+ 06:54:54.56  - Recv Dda: 5-0     OP:fs M:8  <02>%5R0fs8<00>601117.9|1966.62|109.867|4;05<03>
+ 06:55:01.84  - Recv Dda: 5-0     OP:fs M:1  <02>%5R0fs1<00>601117.9|2115.33|118.175|3<57<03>
+ 06:55:08.90  - Recv Dda: 5-0     OP:fs M:4  <02>%5R0fs4<00>601117.9|2263.58|126.457|86?7<03>
+ 06:55:16.64  - Recv Dda: 5-0     OP:fs M:8  <02>$5R0fs8<00>601117.9|2411.7|134.732|0=59<03>
+ 06:55:23.79  - Recv Dda: 5-0     OP:fs M:1  <02>"5R0fs1<00>601117.9|2560|143.017|;7>?<03>
+ 06:55:30.85  - Recv Dda: 5-0     OP:fs M:4  <02>%5R0fs4<00>601117.9|2708.32|151.303|;>08<03>
+ 06:55:38.49  - Recv Dda: 5-0     OP:fs M:8  <02>$5R0fs8<00>601117.9|2856.7|159.592|=3;><03>
+ 06:55:45.96  - Recv Dda: 5-0     OP:fs M:2  <02>%5R0fs2<00>601117.9|3009.29|168.117|?1;=<03>
+ 06:55:53.41  - Recv Dda: 5-0     OP:fs M:6  <02>%5R0fs6<00>601117.9|3157.79|176.413|<961<03>
+ 06:56:00.68  - Recv Dda: 5-0     OP:fs M:9  <02>%5R0fs9<00>601117.9|3305.92|184.688|4?><<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><18>5R0db2<00>6 status= 51428=<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><18>5R0db2<00>6 status= 4171;<<03>
+  - Recv Dda: 5-0     OP:db M:3  <02><18>5R0db3<00>6 status= 401:?<<03>
+  - Recv Dda: 5-0     OP:ft M:4  <02> 5R0ft4<00>601117.9|3311.5|185|:98;<03>
+ 06:56:15.05         Dda: 5-0  Send Ex. POS: ft 0111. Receive=2 - Pump not exist
+ 06:56:15.05         Dda: 5-0  F0910185.000032917.77
+ 06:56:15.05         Dda: 5-0  Disp : DOR-IDBOX:Posting 
+ 06:56:15.05         Dda: 5-0  Disp : Dor_Total= 3311.50 
+ 06:56:15.05         Dda: 5-0  DorCh_in=ft|0000200016880713209|9|1|1| 331150|7805270200|000000|||@|0000| 331150| 185000|  1790|
+ 06:56:15.05         Dda: 5-0  Send Ex. POS: ft 0111. Receive=2 - Pump not exist
+ 06:56:15.15         Dda: 5-0  DorCh_ot=CF|0|
+ 06:56:15.15         Dda: 5-0  Disp : Dor-WriteShvaCardNo 0000200016880713209 
+ 06:56:15.15         Dda: 5-0  Disp : Dor-WriteTranCardNo 000200016880713209 
+ 06:56:15.15         Dda: 5-0  Enter into WriteTran
+ 06:56:15.15         Dda: 5-0  Try open shift file
+ 06:56:15.16         Dda: 5-0  Write to .\DATA\RS300424.D1A,len =253
+ 06:56:15.16         Dda: 5-0  RS rec =  3311.50     185.000  78052702   1   09     206584 06:56 30/04/24       òåÖë 00    ëöé-èóöÑ 000106 0000200016880713209                                   17.900                                                  1 10  441           0                      
+ 06:56:15.16         Dda: 5-0  Recovery remove pump 09
+ 06:56:15.16         Dda: 5-0  after reco remove
+ 06:56:15.16         Dda: 5-0  RS Copy
+ 06:56:15.16         Dda: 5-0  End of WriteTran .\DATA\RS300424.D1A
+ 06:56:15.16         Dda: 5-0  FuelPointPostTran,TranNo=206584,PumpNo=9,Nozzle=1,ProdNo=0000,dQty=185000
+ 06:56:15.16         Dda: 5-0  Rfc transaction
+ 06:56:15.16         Dda: 5-0  FuelPoint_in=FT2|-1|206584|9|1|0000|0000200016880713209|0|0|0|        |0|185000||||       |000106| 0|04/30/2024 06:53:17|17.900|3311.50|   0.00|0000000|78052702|000106|
+ 06:56:15.53  - Recv Dda: 5-0     OP:hn M:5  <02><0F>5R0hn5<00>600?<32<03>
+ 06:56:15.53         Dda: 5-0  Handle 0
+ 06:56:15.53         Dda: 5-0  Invalid Event hn at state 10
+  - Recv Dda: 5-0     OP:db M:6  <02><1B>5R0db6<00>6 Handle Off:1 8?88<03>
+  - Recv Dda: 5-0     OP:db M:7  <02><1B>5R0db7<00>6 Stop Pump CF 0;64<03>
+  - Recv Dda: 5-0     OP:db M:8  <02><0D>5R0db8<00>6>;58<03>
+  - Recv Dda: 5-0     OP:db M:9  <02><0D>5R0db9<00>6=<68<03>
+  - Recv Dda: 5-0     OP:db M:0  <02>/5R0db0<00>6 Main thread did not send FT data
+ 1<:;<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><17>5R0db1<00>6 Pump Off ?<<=<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><1C>5R0db2<00>6 QS perform ft =2:5<03>
+ 06:56:20.04         Dda: 5-0  FuelPoint_ot=CF|
+ 06:56:20.04         Dda: 5-0  Disp : DOR-IDBOX:Posted 
+ 06:56:20.04         Dda: 5-0  Coupon in:GCD|000200016880713209|
+ 06:56:22.08         Dda: 5-0  Fail to call Coupon CH
+ 06:56:22.08         Dda: 5-0  Disp : DOR_TranNo 206584 
+ 06:56:22.08         Dda: 5-0  Disp : DOR_CHtranNO=      
+ 06:56:22.08         Dda: 5-0  Disp : Dor_CustName=                          
+ 06:56:22.08         Dda: 5-0  Disp : Dor_CompanyName=      é"íÅ åëòîÖô 
+ 06:56:22.08         Dda: 5-0  Disp : Before-printing1 0 
+ 06:56:22.08         Dda: 5-0  Disp : Temp1 0 
+ 06:56:22.08         Dda: 5-0  Disp : Go-to-print1 
+ 06:56:22.08         Dda: 5-0  Disp : T5-check-for-10 
+ 06:56:23.56         Dda: 5-0  VSU event:[2] v0
+ 06:56:24.45         Dda: 5-0  Disp : Ask_print_Entry 
+ 06:56:24.45         Dda: 5-0  Recovery remove pump 09
+ 06:56:24.45         Dda: 5-0  Recovery remove failed for pump 09, code=2
+ 06:56:24.45  - Send Dda: 5-0  R  OP:CD M:1  0<02><0D>5R0CD1006?2=<03>
+ 06:56:24.50  - Recv Dda: 5-0     OP:cd M:1  <02><0B>5R0cd1795=<03>
+ 06:56:24.50  - Send Dda: 5-0  R  OP:SP M:2  0<02>35R0SP28.550|17.90|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|362<<03>
+ 06:56:24.54  - Recv Dda: 5-0     OP:sp M:2  <02><0B>5R0sp2<5>:<03>
+ 06:56:25.53         Dda: 5-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 

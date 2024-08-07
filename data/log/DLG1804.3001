@@ -1,0 +1,503 @@
+
+
+********* Opened at Thu Apr 18 03:33:24 2024
+
+
+ 03:33:32.37         Dda: 7-0  Disp : Statetbl.scr ver 6.1.57.0 
+ 03:33:32.37         Dda: 7-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+ 03:33:33.00         Dda: 7-0  Disp : enter_POS_state 
+ 03:33:33.77         Dda: 7-0  Rcv  Ex. POS: 30 S T KMˇˇˇ
+ 03:33:33.94  - Send Dda: 7-0  T  OP:KM M:4  0<02><0E>7T0KM4<FF><FF><FF>4<0=<03>
+ 03:33:33.97  - Recv Dda: 7-0     OP:km M:4  <02><0B>7T0km47<04<03>
+ 03:33:34.07         Dda: 7-0  Rcv  Ex. POS: 30 S R EF017X0
+ 03:33:34.44  - Send Dda: 7-0  R  OP:EF M:6  0<02><13>7R0EF6017\2X0<00><00>4;7?<03>
+ 03:33:34.49  - Recv Dda: 7-0     OP:ef M:6  <02><0E>7R0ef60171797<03>
+ 03:33:34.57         Dda: 7-0  Rcv  Ex. POS: 30 S R EM
+ 03:33:34.94  - Send Dda: 7-0  R  OP:EM M:8  0<02><0D>7R0EM8<00><00>732><03>
+  - Recv Dda: 7-0     OP:em M:8  <02><0B>7R0em86;0<<03>
+......... Open Shift in CloseShift at Thu Apr 18 05:35:19 2024
+
+......... Creating TS for substation 1 at Thu Apr 18 05:35:19 2024
+
+......... Change shift request, pos=11, pump=0, cashreg=2 at Thu Apr 18 05:39:40 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=1  CanClose()=1 at Thu Apr 18 05:39:40 2024
+
+......... Change shift request, pos=11, pump=0, cashreg=1 at Thu Apr 18 05:53:41 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Thu Apr 18 05:53:41 2024
+
+ 05:53:42.52         Dda: 7-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+ 05:53:43.42  - Send Dda: 7-0  R  OP:EF M:5  0<02><14>7R0EF5049<00><00>0<00><00><00><2;7<03>
+ 05:53:43.48  - Recv Dda: 7-0     OP:ef M:5  <02><0E>7R0ef50499270<03>
+ 05:53:46.89  - Send Dda: 7-0  R  OP:KM M:6  0<02><0E>7R0KM6<00><00><00>?3<2<03>
+ 05:53:46.94  - Recv Dda: 7-0     OP:km M:6  <02><0B>7R0km691<3<03>
+......... Close Shift in CloseShift at Thu Apr 18 05:53:51 2024
+
+......... Creating TS for substation 1 at Thu Apr 18 05:53:52 2024
+
+......... Sending shift change message to USA_XML at Thu Apr 18 05:53:52 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Thu Apr 18 05:53:52 2024
+
+......... Open Shift at Thu Apr 18 05:53:54 2024
+
+ 05:53:55.31  - Send Dda: 7-0  R  OP:EF M:0  0<02><14>7R0EF0017<00><00>0<00><00><00>7:?1<03>
+ 05:53:55.36  - Recv Dda: 7-0     OP:ef M:0  <02><0E>7R0ef0017300><03>
+ 05:53:55.36         Dda: 7-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+ 05:53:55.92         Dda: 7-0  Disp : enter_POS_state 
+......... Open Shift in CloseShift at Thu Apr 18 05:54:03 2024
+
+......... Creating TS for substation 1 at Thu Apr 18 05:54:03 2024
+
+......... Shva Transmit at Thu Apr 18 06:00:00 2024
+
+  - Recv Dda: 7-0     OP:mi M:8  
+ 10:47:46.60         Dda: 7-0  track2=6600040003684170001000008156050100000?
+ 10:47:46.60         Dda: 7-0  Send Ex. POS: mi 6600. Receive=OK
+ 10:47:46.60         Dda: 7-0  Invalid Event mi at state 26
+ 10:47:46.63         Dda: 7-0  Rcv  Ex. POS: 30 S R EM
+ 10:47:47.20  - Send Dda: 7-0  R  OP:EM M:0  0<02><0D>7R0EM0<00><00>=:8?<03>
+ 10:47:47.25  - Recv Dda: 7-0     OP:em M:0  <02><0B>7R0em0>:04<03>
+ 10:47:47.79         Dda: 7-0  Rcv  Ex. POS: 30 S T KM
+ 10:47:48.27  - Send Dda: 7-0  T  OP:KM M:3  0<02><0E>7T0KM3<00><00>0?91?<03>
+ 10:47:48.32  - Recv Dda: 7-0     OP:km M:3  <02><0B>7T0km30<>3<03>
+ 10:47:48.40         Dda: 7-0  Rcv  Ex. POS: 30 S R EF063X0
+ 10:47:48.94  - Send Dda: 7-0  R  OP:EF M:5  0<02><13>7R0EF5063\2X0<00><00>?<6><03>
+ 10:47:48.97  - Recv Dda: 7-0     OP:ef M:5  <02><0E>7R0ef50635558<03>
+ 10:47:51.16  - Recv Dda: 7-0     OP:fe M:9  <02><14>7R0fe9<00>012????^::85<03>
+ 10:47:51.16         Dda: 7-0  Send Ex. POS: fe 12??. Receive=OK
+ 10:47:51.34         Dda: 7-0  Rcv  Ex. POS: 30 S R EM
+  - Send Dda: 7-0  R  OP:EM M:1  0<02><0D>7R0EM1<00><00>>=;?<03>
+ 10:47:51.81  - Recv Dda: 7-0     OP:em M:1  <02><0B>7R0em1?:25<03>
+ 10:47:51.89         Dda: 7-0  Rcv  Ex. POS: 30 S T KM
+ 10:47:52.36  - Send Dda: 7-0  T  OP:KM M:3  0<02><0E>7T0KM3<00><00>0?91?<03>
+ 10:47:52.41  - Recv Dda: 7-0     OP:km M:3  <02><0B>7T0km30<>3<03>
+ 10:47:52.49         Dda: 7-0  Rcv  Ex. POS: 30 S R EF069X0
+ 10:47:53.01  - Send Dda: 7-0  R  OP:EF M:5  0<02><13>7R0EF5069\2X0<00><00>0?20<03>
+ 10:47:53.06  - Recv Dda: 7-0     OP:ef M:5  <02><0E>7R0ef5069?412<03>
+ 10:47:56.52  - Recv Dda: 7-0     OP:fe M:1  <02><11>7R0fe1<00>012?^<;0=<03>
+ 10:47:56.52         Dda: 7-0  Send Ex. POS: fe 12?^. Receive=OK
+ 10:47:58.35         Dda: 7-0  Rcv  Ex. POS: 30 S T KMˇˇˇ
+ 10:47:58.87  - Send Dda: 7-0  T  OP:KM M:6  0<02><0E>7T0KM6<FF><FF><FF>:165<03>
+ 10:47:58.92  - Recv Dda: 7-0     OP:km M:6  <02><0B>7T0km65<46<03>
+ 10:47:59.00         Dda: 7-0  Rcv  Ex. POS: 30 S T TPDN  §Æ©†
+ 10:47:59.52  - Send Dda: 7-0  T  OP:TP M:8  0<02>:7T0TP8DN  ÑéâÄöé öâÉâ ÄñÖÑ     012 .ëé ÑÅÄô
+éÅ   \\000K41>:<03>
+ 10:47:59.57  - Recv Dda: 7-0     OP:tp M:8  <02>47T0tp8  ÑéâÄöé öâÉâ ÄñÖÑ  <0A>   012 .ëé ÑÅÄ
+ôéÅ   <<96<03>
+ 10:48:03.50         Dda: 7-0  Rcv  Ex. POS: 30 S T KMˇˇˇ
+ 10:48:03.73  - Send Dda: 7-0  T  OP:KM M:6  0<02><0E>7T0KM6<FF><FF><FF>:165<03>
+ 10:48:03.78  - Recv Dda: 7-0     OP:km M:6  <02><0B>7T0km65<46<03>
+ 10:48:03.86         Dda: 7-0  Rcv  Ex. POS: 30 S R EF017X0
+ 10:48:04.33  - Send Dda: 7-0  R  OP:EF M:8  0<02><13>7R0EF8017\2X0<00><00>728;<03>
+ 10:48:04.39  - Recv Dda: 7-0     OP:ef M:8  <02><0E>7R0ef8017;5<=<03>
+ 10:48:04.46         Dda: 7-0  Rcv  Ex. POS: 30 S R EM
+ 10:48:05.00  - Send Dda: 7-0  R  OP:EM M:0  0<02><0D>7R0EM0<00><00>=:8?<03>
+ 10:48:05.05  - Recv Dda: 7-0     OP:em M:0  <02><0B>7R0em0>:04<03>
+ 10:49:04.44         Dda: 7-0  Rcv  Ex. POS: 30 S T KMˇˇˇ
+ 10:49:04.59  - Send Dda: 7-0  T  OP:KM M:1  0<02><0E>7T0KM1<FF><FF><FF>?048<03>
+ 10:49:04.64  - Recv Dda: 7-0     OP:km M:1  <02><0B>7T0km12<:1<03>
+ 10:49:04.73         Dda: 7-0  Rcv  Ex. POS: 30 S T TPDN     §
+ 10:49:05.30  - Send Dda: 7-0  T  OP:TP M:3  0<02>:7T0TP3DN     ÑåÅó öëîÉÑå          òÖôâÄ ïáå
+     \\000K4934<03>
+ 10:49:05.34  - Recv Dda: 7-0     OP:tp M:3  <02>47T0tp3     ÑåÅó öëîÉÑå    <0A>      òÖôâÄ ïá
+å     :604<03>
+ 10:49:17.35         Dda: 7-0  Rcv  Ex. POS: 30 S T KMˇˇˇ
+ 10:49:17.92  - Send Dda: 7-0  T  OP:KM M:5  0<02><0E>7T0KM5<FF><FF><FF>3:;9<03>
+ 10:49:17.97  - Recv Dda: 7-0     OP:km M:5  <02><0B>7T0km56<25<03>
+ 10:49:18.05         Dda: 7-0  Rcv  Ex. POS: 30 S R EF017X0
+ 10:49:18.57  - Send Dda: 7-0  R  OP:EF M:7  0<02><13>7R0EF7017\2X0<00><00>243:<03>
+ 10:49:18.62  - Recv Dda: 7-0     OP:ef M:7  <02><0E>7R0ef70176123<03>
+ 10:49:18.69         Dda: 7-0  Rcv  Ex. POS: 30 S R EM
+ 10:49:19.23  - Send Dda: 7-0  R  OP:EM M:9  0<02><0D>7R0EM9<00><00>441><03>
+ 10:49:19.27  - Recv Dda: 7-0     OP:em M:9  <02><0B>7R0em97;2=<03>
+  - Recv Dda: 7-0     OP:mi M:6  
+ 14:42:48.06         Dda: 7-0  track2=6600020073030310001000000437440800000?
+ 14:42:48.06         Dda: 7-0  Send Ex. POS: mi 6600. Receive=OK
+ 14:42:48.06         Dda: 7-0  Invalid Event mi at state 26
+ 14:42:48.11         Dda: 7-0  Rcv  Ex. POS: 30 S R EM
+ 14:42:48.66  - Send Dda: 7-0  R  OP:EM M:8  0<02><0D>7R0EM8<00><00>732><03>
+ 14:42:48.71  - Recv Dda: 7-0     OP:em M:8  <02><0B>7R0em86;0<<03>
+ 14:42:49.28         Dda: 7-0  Rcv  Ex. POS: 30 S R EM
+ 14:42:49.75  - Send Dda: 7-0  R  OP:EM M:1  0<02><0D>7R0EM1<00><00>>=;?<03>
+ 14:42:49.80  - Recv Dda: 7-0     OP:em M:1  <02><0B>7R0em1?:25<03>
+ 14:42:49.90         Dda: 7-0  Rcv  Ex. POS: 30 S T KM
+  - Send Dda: 7-0  T  OP:KM M:3  0<02><0E>7T0KM3<00><00>0?91?<03>
+ 14:42:50.44  - Recv Dda: 7-0     OP:km M:3  <02><0B>7T0km30<>3<03>
+ 14:42:50.54         Dda: 7-0  Rcv  Ex. POS: 30 S R EF069X0
+ 14:42:51.02  - Send Dda: 7-0  R  OP:EF M:5  0<02><13>7R0EF5069\2X0<00><00>0?20<03>
+ 14:42:51.06  - Recv Dda: 7-0     OP:ef M:5  <02><0E>7R0ef5069?412<03>
+ 14:42:55.25  - Recv Dda: 7-0     OP:fe M:2  <02><11>7R0fe2<00>09??^=41=<03>
+ 14:42:55.25         Dda: 7-0  Send Ex. POS: fe 9??^. Receive=OK
+ 14:42:57.13         Dda: 7-0  Rcv  Ex. POS: 30 S T KMˇˇˇ
+ 14:42:57.15  - Send Dda: 7-0  T  OP:KM M:6  0<02><0E>7T0KM6<FF><FF><FF>:165<03>
+ 14:42:57.20  - Recv Dda: 7-0     OP:km M:6  <02><0B>7T0km65<46<03>
+ 14:42:57.27         Dda: 7-0  Rcv  Ex. POS: 30 S T TPDN  §Æ©†
+ 14:42:57.80  - Send Dda: 7-0  T  OP:TP M:8  0<02>:7T0TP8DN  ÑéâÄöé öâÉâ ÄñÖÑ     009 .ëé ÑÅÄô
+éÅ   \\000K8=7?<03>
+ 14:42:57.86  - Recv Dda: 7-0     OP:tp M:8  <02>47T0tp8  ÑéâÄöé öâÉâ ÄñÖÑ  <0A>   009 .ëé ÑÅÄ
+ôéÅ   :0=2<03>
+ 14:43:01.56         Dda: 7-0  Rcv  Ex. POS: 30 S T KMˇˇˇ
+ 14:43:01.92  - Send Dda: 7-0  T  OP:KM M:4  0<02><0E>7T0KM4<FF><FF><FF>4<0=<03>
+ 14:43:01.96  - Recv Dda: 7-0     OP:km M:4  <02><0B>7T0km47<04<03>
+ 14:43:02.06         Dda: 7-0  Rcv  Ex. POS: 30 S R EF017X0
+ 14:43:02.44  - Send Dda: 7-0  R  OP:EF M:6  0<02><13>7R0EF6017\2X0<00><00>4;7?<03>
+ 14:43:02.48  - Recv Dda: 7-0     OP:ef M:6  <02><0E>7R0ef60171797<03>
+ 14:43:02.56         Dda: 7-0  Rcv  Ex. POS: 30 S R EM
+ 14:43:03.07  - Send Dda: 7-0  R  OP:EM M:8  0<02><0D>7R0EM8<00><00>732><03>
+ 14:43:03.11  - Recv Dda: 7-0     OP:em M:8  <02><0B>7R0em86;0<<03>
+ 14:50:35.30         Dda: 7-0  Rcv  Ex. POS: 30 S T KMˇˇˇ
+ 14:50:35.37  - Send Dda: 7-0  T  OP:KM M:6  0<02><0E>7T0KM6<FF><FF><FF>:165<03>
+ 14:50:35.41  - Recv Dda: 7-0     OP:km M:6  <02><0B>7T0km65<46<03>
+ 14:50:35.50         Dda: 7-0  Rcv  Ex. POS: 30 S T TPDN     §
+ 14:50:36.07  - Send Dda: 7-0  T  OP:TP M:8  0<02>:7T0TP8DN     ÑåÅó öëîÉÑå          òÖôâÄ ïáå
+     \\000K253<<03>
+ 14:50:36.12  - Recv Dda: 7-0     OP:tp M:8  <02>47T0tp8     ÑåÅó öëîÉÑå    <0A>      òÖôâÄ ïá
+å     :;0><03>
+ 14:50:47.74         Dda: 7-0  Rcv  Ex. POS: 30 S T KMˇˇˇ
+ 14:50:48.12  - Send Dda: 7-0  T  OP:KM M:0  0<02><0E>7T0KM0<FF><FF><FF>86?<<03>
+ 14:50:48.16  - Recv Dda: 7-0     OP:km M:0  <02><0B>7T0km03<80<03>
+ 14:50:48.26         Dda: 7-0  Rcv  Ex. POS: 30 S R EF017X0
+ 14:50:48.74  - Send Dda: 7-0  R  OP:EF M:2  0<02><13>7R0EF2017\2X0<00><00>>64:<03>
+ 14:50:48.79  - Recv Dda: 7-0     OP:ef M:2  <02><0E>7R0ef2017==66<03>
+ 14:50:48.88         Dda: 7-0  Rcv  Ex. POS: 30 S R EM
+ 14:50:49.35  - Send Dda: 7-0  R  OP:EM M:4  0<02><0D>7R0EM4<00><00>064?<03>
+ 14:50:49.39  - Recv Dda: 7-0     OP:em M:4  <02><0B>7R0em4::80<03>
+......... Change shift request, pos=11, pump=0, cashreg=1 at Thu Apr 18 15:04:29 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Thu Apr 18 15:04:29 2024
+
+ 15:04:30.22         Dda: 7-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Send Dda: 7-0  R  OP:EF M:4  0<02><14>7R0EF4049<00><00>0<00><00><00>:=?2<03>
+ 15:04:30.97  - Recv Dda: 7-0     OP:ef M:4  <02><0E>7R0ef4049>4<4<03>
+ 15:04:33.88  - Send Dda: 7-0  R  OP:KM M:5  0<02><0E>7R0KM5<00><00><00>681><03>
+ 15:04:33.92  - Recv Dda: 7-0     OP:km M:5  <02><0B>7R0km5:1:0<03>
+......... Close Shift in CloseShift at Thu Apr 18 15:05:28 2024
+
+......... Creating TS for substation 1 at Thu Apr 18 15:05:29 2024
+
+......... Sending shift change message to USA_XML at Thu Apr 18 15:05:29 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Thu Apr 18 15:05:30 2024
+
+......... Open Shift at Thu Apr 18 15:05:32 2024
+
+ 15:05:32.97  - Send Dda: 7-0  R  OP:EF M:5  0<02><14>7R0EF5017<00><00>0<00><00><00>;881<03>
+ 15:05:33.02  - Recv Dda: 7-0     OP:ef M:5  <02><0E>7R0ef50178<4;<03>
+ 15:05:33.02         Dda: 7-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+ 15:05:33.57         Dda: 7-0  Disp : enter_POS_state 
+......... Open Shift in CloseShift at Thu Apr 18 15:06:20 2024
+
+......... Creating TS for substation 1 at Thu Apr 18 15:06:20 2024
+
+......... Change shift request, pos=11, pump=0, cashreg=1 at Thu Apr 18 21:14:34 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Thu Apr 18 21:14:34 2024
+
+ 21:14:35.23         Dda: 7-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+ 21:14:36.16  - Send Dda: 7-0  R  OP:EF M:6  0<02><14>7R0EF6049<00><00>0<00><00><00>7378<03>
+ 21:14:36.20  - Recv Dda: 7-0     OP:ef M:6  <02><0E>7R0ef604909:<<03>
+ 21:14:39.54  - Send Dda: 7-0  R  OP:KM M:7  0<02><0E>7R0KM7<00><00><00>8576<03>
+ 21:14:39.60  - Recv Dda: 7-0     OP:km M:7  <02><0B>7R0km781>2<03>
+......... Close Shift in CloseShift at Thu Apr 18 21:14:48 2024
+
+......... Creating TS for substation 1 at Thu Apr 18 21:14:49 2024
+
+......... Sending shift change message to USA_XML at Thu Apr 18 21:14:49 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Thu Apr 18 21:14:50 2024
+
+......... Open Shift at Thu Apr 18 21:14:52 2024
+
+ 21:14:53.18  - Send Dda: 7-0  R  OP:EF M:9  0<02><14>7R0EF9017<00><00>0<00><00><00>5???<03>
+ 21:14:53.23  - Recv Dda: 7-0     OP:ef M:9  <02><0E>7R0ef9017<379<03>
+ 21:14:53.23         Dda: 7-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+ 21:14:53.83         Dda: 7-0  Disp : enter_POS_state 
+......... Open Shift in CloseShift at Thu Apr 18 21:15:03 2024
+
+......... Creating TS for substation 1 at Thu Apr 18 21:15:03 2024
+
+......... Change shift request, pos=11, pump=0, cashreg=2 at Fri Apr 19 04:53:56 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=1  CanClose()=1 at Fri Apr 19 04:53:56 2024
+
+......... Change shift request, pos=11, pump=0, cashreg=1 at Fri Apr 19 04:56:42 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Fri Apr 19 04:56:42 2024
+
+ 04:56:43.28         Dda: 7-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+ 04:56:44.23  - Send Dda: 7-0  R  OP:EF M:5  0<02><14>7R0EF5049<00><00>0<00><00><00><2;7<03>
+ 04:56:44.28  - Recv Dda: 7-0     OP:ef M:5  <02><0E>7R0ef50499270<03>
+ 04:56:47.59  - Send Dda: 7-0  R  OP:KM M:6  0<02><0E>7R0KM6<00><00><00>?3<2<03>
+  - Recv Dda: 7-0     OP:km M:6  <02><0B>7R0km691<3<03>
+......... Close Shift in CloseShift at Fri Apr 19 04:56:51 2024
+
+......... Creating TS for substation 1 at Fri Apr 19 04:56:52 2024
+
+......... Sending shift change message to USA_XML at Fri Apr 19 04:56:52 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Fri Apr 19 04:56:54 2024
+
+......... Open Shift at Fri Apr 19 04:56:56 2024
+
+ 04:56:56.14  - Send Dda: 7-0  R  OP:EF M:0  0<02><14>7R0EF0017<00><00>0<00><00><00>7:?1<03>
+ 04:56:56.19  - Recv Dda: 7-0     OP:ef M:0  <02><0E>7R0ef0017300><03>
+ 04:56:56.19         Dda: 7-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+ 04:56:56.79         Dda: 7-0  Disp : enter_POS_state 
+......... Open Shift in CloseShift at Fri Apr 19 04:57:06 2024
+
+......... Creating TS for substation 1 at Fri Apr 19 04:57:06 2024
+
+......... Shva Transmit at Fri Apr 19 06:00:00 2024
+
+  - Recv Dda: 7-0     OP:mi M:6  
+ 09:00:14.10         Dda: 7-0  track2=458014******6427=********************?
+ 09:00:14.10         Dda: 7-0  Send Ex. POS: mi 4580. Receive=OK
+ 09:00:14.10         Dda: 7-0  Invalid Event mi at state 26
+ 09:00:14.19         Dda: 7-0  Rcv  Ex. POS: 30 S R EM
+ 09:00:14.66  - Send Dda: 7-0  R  OP:EM M:8  0<02><0D>7R0EM8<00><00>732><03>
+ 09:00:14.71  - Recv Dda: 7-0     OP:em M:8  <02><0B>7R0em86;0<<03>
+ 09:00:14.81         Dda: 7-0  Rcv  Ex. POS: 30 S T KM
+ 09:00:15.21  - Send Dda: 7-0  T  OP:KM M:0  0<02><0E>7T0KM0<00><00>062<3<03>
+ 09:00:15.26  - Recv Dda: 7-0     OP:km M:0  <02><0B>7T0km03<80<03>
+ 09:00:15.32         Dda: 7-0  Rcv  Ex. POS: 30 S R EF081X0
+ 09:00:15.84  - Send Dda: 7-0  R  OP:EF M:2  0<02><13>7R0EF2081\2X0<00><00>1>66<03>
+ 09:00:15.88  - Recv Dda: 7-0     OP:ef M:2  <02><0E>7R0ef20810738<03>
+ 09:00:24.68  - Recv Dda: 7-0     OP:fe M:7  <02><17>7R0fe7<00>0051341725^36:4<03>
+ 09:00:24.68         Dda: 7-0  Send Ex. POS: fe 0513. Receive=OK
+ 09:00:24.73         Dda: 7-0  Rcv  Ex. POS: 30 S T KM
+ 09:00:25.28  - Send Dda: 7-0  T  OP:KM M:9  0<02><0E>7T0KM9<00><00>091;4<03>
+ 09:00:25.33  - Recv Dda: 7-0     OP:km M:9  <02><0B>7T0km9:=:9<03>
+ 09:00:25.41         Dda: 7-0  Rcv  Ex. POS: 30 S R EF021X0
+  - Send Dda: 7-0  R  OP:EF M:1  0<02><13>7R0EF1021\2X0<00><00>3>=5<03>
+ 09:00:25.98  - Recv Dda: 7-0     OP:ef M:1  <02><0E>7R0ef1021732?<03>
+ 09:00:39.35  - Recv Dda: 7-0     OP:fe M:4  <02><16>7R0fe4<00>064903703^>6>;<03>
+ 09:00:39.35         Dda: 7-0  Send Ex. POS: fe 6490. Receive=OK
+ 09:00:39.48         Dda: 7-0  Rcv  Ex. POS: 30 S T KMˇˇˇ
+ 09:00:39.90  - Send Dda: 7-0  T  OP:KM M:6  0<02><0E>7T0KM6<FF><FF><FF>:165<03>
+ 09:00:39.95  - Recv Dda: 7-0     OP:km M:6  <02><0B>7T0km65<46<03>
+ 09:00:40.03         Dda: 7-0  Rcv  Ex. POS: 30 S T TPDN    §∑
+ 09:00:40.52  - Send Dda: 7-0  T  OP:TP M:8  0<02>:7T0TP8DN    ÑóâÉÅÅ ëâàòã      ('êô 10)èöéÑ 
+ÄêÄ  \\000K<:==<03>
+ 09:00:40.57  - Recv Dda: 7-0     OP:tp M:8  <02>47T0tp8    ÑóâÉÅÅ ëâàòã    <0A>  ('êô 10)èöéÑ
+ ÄêÄ  ;480<03>
+ 09:00:42.74         Dda: 7-0  Rcv  Ex. POS: 30 S R EM
+ 09:00:42.91  - Send Dda: 7-0  R  OP:EM M:3  0<02><0D>7R0EM3<00><00>83=?<03>
+ 09:00:42.96  - Recv Dda: 7-0     OP:em M:3  <02><0B>7R0em3=:67<03>
+ 09:00:43.04         Dda: 7-0  Rcv  Ex. POS: 30 S T KM
+ 09:00:43.56  - Send Dda: 7-0  T  OP:KM M:5  0<02><0E>7T0KM5<00><00>0=>86<03>
+ 09:00:43.61  - Recv Dda: 7-0     OP:km M:5  <02><0B>7T0km56<25<03>
+ 09:00:43.67         Dda: 7-0  Rcv  Ex. POS: 30 S R EF069X0
+  - Send Dda: 7-0  R  OP:EF M:7  0<02><13>7R0EF7069\2X0<00><00>=1::<03>
+ 09:00:44.26  - Recv Dda: 7-0     OP:ef M:7  <02><0E>7R0ef7069197:<03>
+ 09:00:56.17  - Recv Dda: 7-0     OP:fe M:9  <02><11>7R0fe9<00>060?^67>=<03>
+ 09:00:56.17         Dda: 7-0  Send Ex. POS: fe 60?^. Receive=OK
+ 09:00:56.24         Dda: 7-0  Rcv  Ex. POS: 30 S T KMˇˇˇ
+ 09:00:56.74  - Send Dda: 7-0  T  OP:KM M:1  0<02><0E>7T0KM1<FF><FF><FF>?048<03>
+ 09:00:56.79  - Recv Dda: 7-0     OP:km M:1  <02><0B>7T0km12<:1<03>
+ 09:00:56.87         Dda: 7-0  Rcv  Ex. POS: 30 S T TPDN  ∫† ß
+ 09:00:57.34  - Send Dda: 7-0  T  OP:TP M:3  0<02>:7T0TP3DN  öÄ áÖöîå èöâê Äå     ÑÜ ëÖîé ÑÅÄô
+éÑ   \\000K;;7=<03>
+ 09:00:57.39  - Recv Dda: 7-0     OP:tp M:3  <02>47T0tp3  öÄ áÖöîå èöâê Äå  <0A>   ÑÜ ëÖîé ÑÅÄ
+ôéÑ   52=><03>
+ 09:01:02.31         Dda: 7-0  Rcv  Ex. POS: 30 S T KMˇˇˇ
+ 09:01:02.50  - Send Dda: 7-0  T  OP:KM M:3  0<02><0E>7T0KM3<FF><FF><FF>1=20<03>
+ 09:01:02.55  - Recv Dda: 7-0     OP:km M:3  <02><0B>7T0km30<>3<03>
+ 09:01:02.61         Dda: 7-0  Rcv  Ex. POS: 30 S T TPDN   ∫•¨
+ 09:01:03.15  - Send Dda: 7-0  T  OP:TP M:5  0<02>:7T0TP5DN   öÖåàÖÅé öÖåÖíî       ! ôÉáé åâáö
+é    \\000K?139<03>
+  - Recv Dda: 7-0     OP:tp M:5  <02>47T0tp5   öÖåàÖÅé öÖåÖíî   <0A>    ! ôÉáé åâá
+öé    3093<03>
+ 09:01:05.84         Dda: 7-0  Rcv  Ex. POS: 30 S T KMˇˇˇ
+ 09:01:06.01  - Send Dda: 7-0  T  OP:KM M:1  0<02><0E>7T0KM1<FF><FF><FF>?048<03>
+ 09:01:06.06  - Recv Dda: 7-0     OP:km M:1  <02><0B>7T0km12<:1<03>
+ 09:01:06.14         Dda: 7-0  Rcv  Ex. POS: 30 S R EF017X0
+ 09:01:06.61  - Send Dda: 7-0  R  OP:EF M:3  0<02><13>7R0EF3017\2X0<00><00>890?<03>
+ 09:01:06.64  - Recv Dda: 7-0     OP:ef M:3  <02><0E>7R0ef3017:;=2<03>
+ 09:01:06.72         Dda: 7-0  Rcv  Ex. POS: 30 S R EM
+ 09:01:07.21  - Send Dda: 7-0  R  OP:EM M:5  0<02><0D>7R0EM5<00><00>317?<03>
+ 09:01:07.26  - Recv Dda: 7-0     OP:em M:5  <02><0B>7R0em5;::1<03>
+......... Change shift request, pos=11, pump=0, cashreg=1 at Fri Apr 19 13:37:08 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Fri Apr 19 13:37:08 2024
+
+ 13:37:09.09         Dda: 7-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+ 13:37:09.70  - Send Dda: 7-0  R  OP:EF M:0  0<02><14>7R0EF0049<00><00>0<00><00><00>00<7<03>
+ 13:37:09.74  - Recv Dda: 7-0     OP:ef M:0  <02><0E>7R0ef00492>35<03>
+ 13:37:12.80  - Send Dda: 7-0  R  OP:KM M:1  0<02><0E>7R0KM1<00><00><00>:2>?<03>
+ 13:37:12.85  - Recv Dda: 7-0     OP:km M:1  <02><0B>7R0km1>124<03>
+......... Close Shift in CloseShift at Fri Apr 19 13:38:22 2024
+
+......... Creating TS for substation 1 at Fri Apr 19 13:38:23 2024
+
+......... Sending shift change message to USA_XML at Fri Apr 19 13:38:23 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Fri Apr 19 13:38:23 2024
+
+......... Open Shift at Fri Apr 19 13:38:26 2024
+
+ 13:38:26.56  - Send Dda: 7-0  R  OP:EF M:6  0<02><14>7R0EF6017<00><00>0<00><00><00>094><03>
+ 13:38:26.61  - Recv Dda: 7-0     OP:ef M:6  <02><0E>7R0ef60171797<03>
+ 13:38:26.61         Dda: 7-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+ 13:38:27.21         Dda: 7-0  Disp : enter_POS_state 
+......... Open Shift in CloseShift at Fri Apr 19 13:38:35 2024
+
+......... Creating TS for substation 1 at Fri Apr 19 13:38:35 2024
+
+  - Recv Dda: 7-0     OP:ke M:3  <02><0E>7R0ke3<00>0153?1<03>
+ 15:30:26.69         Dda: 7-0  Send Ex. POS: ke 1. Receive=OK
+ 15:30:27.98         Dda: 7-0  Rcv  Ex. POS: 30 S R EM
+ 15:30:28.38  - Send Dda: 7-0  R  OP:EM M:7  0<02><0D>7R0EM7<00><00>5?1?<03>
+ 15:30:28.41  - Recv Dda: 7-0     OP:em M:7  <02><0B>7R0em79:>3<03>
+ 15:30:28.50         Dda: 7-0  Rcv  Ex. POS: 30 S T KMˇˇˇ
+ 15:30:29.00  - Send Dda: 7-0  T  OP:KM M:9  0<02><0E>7T0KM9<FF><FF><FF>758;<03>
+ 15:30:29.03  - Recv Dda: 7-0     OP:km M:9  <02><0B>7T0km9:=:9<03>
+ 15:30:29.13         Dda: 7-0  Rcv  Ex. POS: 30 S T TPDN   ∑¨£
+ 15:30:29.55  - Send Dda: 7-0  T  OP:TP M:1  0<02>&7T0TP1DN   óåÉöé .òã òÅíÑ   \\000K0505<03>
+ 15:30:29.60  - Recv Dda: 7-0     OP:tp M:1  <02><1F>7T0tp1   óåÉöé .òã òÅíÑ   6;=6<03>
+ 15:30:29.68         Dda: 7-0  Rcv  Ex. POS: 30 S R EM
+ 15:30:30.15  - Send Dda: 7-0  R  OP:EM M:3  0<02><0D>7R0EM3<00><00>83=?<03>
+ 15:30:30.20  - Recv Dda: 7-0     OP:em M:3  <02><0B>7R0em3=:67<03>
+  - Recv Dda: 7-0     OP:mi M:9  
+ 15:30:33.71         Dda: 7-0  track2=458027******6898=********************?
+ 15:30:33.71         Dda: 7-0  Send Ex. POS: mi 4580. Receive=OK
+ 15:30:33.71         Dda: 7-0  Invalid Event mi at state 26
+ 15:30:33.91         Dda: 7-0  Rcv  Ex. POS: 30 S R EM
+ 15:30:34.31  - Send Dda: 7-0  R  OP:EM M:1  0<02><0D>7R0EM1<00><00>>=;?<03>
+ 15:30:34.36  - Recv Dda: 7-0     OP:em M:1  <02><0B>7R0em1?:25<03>
+ 15:30:34.44         Dda: 7-0  Rcv  Ex. POS: 30 S T KMˇˇˇ
+ 15:30:34.96  - Send Dda: 7-0  T  OP:KM M:3  0<02><0E>7T0KM3<FF><FF><FF>1=20<03>
+ 15:30:35.01  - Recv Dda: 7-0     OP:km M:3  <02><0B>7T0km30<>3<03>
+ 15:30:35.10         Dda: 7-0  Rcv  Ex. POS: 30 S T TPDN  ! ∑¨
+ 15:30:35.57  - Send Dda: 7-0  T  OP:TP M:5  0<02>&7T0TP5DN  ! óåÉöé ëâàòã Äå  \\000K3<3><03>
+ 15:30:35.61  - Recv Dda: 7-0     OP:tp M:5  <02><1F>7T0tp5  ! óåÉöé ëâàòã Äå  29;1<03>
+ 15:30:37.75         Dda: 7-0  Rcv  Ex. POS: 30 S T KMˇˇˇ
+ 15:30:37.87  - Send Dda: 7-0  T  OP:KM M:0  0<02><0E>7T0KM0<FF><FF><FF>86?<<03>
+ 15:30:37.92  - Recv Dda: 7-0     OP:km M:0  <02><0B>7T0km03<80<03>
+ 15:30:38.00         Dda: 7-0  Rcv  Ex. POS: 30 S T TPDN   ∑¨£
+  - Send Dda: 7-0  T  OP:TP M:2  0<02>&7T0TP2DN   óåÉöé .òã òÅíÑ   \\000K040><03>
+ 15:30:38.54  - Recv Dda: 7-0     OP:tp M:2  <02><1F>7T0tp2   óåÉöé .òã òÅíÑ   05>=<03>
+ 15:30:38.61         Dda: 7-0  Rcv  Ex. POS: 30 S R EM
+ 15:30:39.08  - Send Dda: 7-0  R  OP:EM M:4  0<02><0D>7R0EM4<00><00>064?<03>
+ 15:30:39.12  - Recv Dda: 7-0     OP:em M:4  <02><0B>7R0em4::80<03>
+  - Recv Dda: 7-0     OP:mi M:5  
+ 15:30:39.71         Dda: 7-0  track2=458027******6898=********************?
+ 15:30:39.71         Dda: 7-0  Send Ex. POS: mi 4580. Receive=OK
+ 15:30:39.71         Dda: 7-0  Invalid Event mi at state 26
+ 15:30:39.91         Dda: 7-0  Rcv  Ex. POS: 30 S R EM
+ 15:30:40.28  - Send Dda: 7-0  R  OP:EM M:7  0<02><0D>7R0EM7<00><00>5?1?<03>
+ 15:30:40.32  - Recv Dda: 7-0     OP:em M:7  <02><0B>7R0em79:>3<03>
+ 15:30:40.41         Dda: 7-0  Rcv  Ex. POS: 30 S T KMˇˇˇ
+ 15:30:40.93  - Send Dda: 7-0  T  OP:KM M:9  0<02><0E>7T0KM9<FF><FF><FF>758;<03>
+ 15:30:40.98  - Recv Dda: 7-0     OP:km M:9  <02><0B>7T0km9:=:9<03>
+ 15:30:41.06         Dda: 7-0  Rcv  Ex. POS: 30 S T TPDN  ! ∑¨
+ 15:30:41.58  - Send Dda: 7-0  T  OP:TP M:1  0<02>&7T0TP1DN  ! óåÉöé ëâàòã Äå  \\000K<?<5<03>
+ 15:30:41.63  - Recv Dda: 7-0     OP:tp M:1  <02><1F>7T0tp1  ! óåÉöé ëâàòã Äå  4>0:<03>
+ 15:30:43.82         Dda: 7-0  Rcv  Ex. POS: 30 S T KMˇˇˇ
+ 15:30:43.89  - Send Dda: 7-0  T  OP:KM M:6  0<02><0E>7T0KM6<FF><FF><FF>:165<03>
+  - Recv Dda: 7-0     OP:km M:6  <02><0B>7T0km65<46<03>
+ 15:30:44.00         Dda: 7-0  Rcv  Ex. POS: 30 S T TPDN   ∑¨£
+ 15:30:44.54  - Send Dda: 7-0  T  OP:TP M:8  0<02>&7T0TP8DN   óåÉöé .òã òÅíÑ   \\000K0234<03>
+ 15:30:44.59  - Recv Dda: 7-0     OP:tp M:8  <02><1F>7T0tp8   óåÉöé .òã òÅíÑ   7156<03>
+ 15:30:44.65         Dda: 7-0  Rcv  Ex. POS: 30 S R EM
+ 15:30:45.14  - Send Dda: 7-0  R  OP:EM M:0  0<02><0D>7R0EM0<00><00>=:8?<03>
+ 15:30:45.19  - Recv Dda: 7-0     OP:em M:0  <02><0B>7R0em0>:04<03>
+  - Recv Dda: 7-0     OP:mi M:0  
+ 15:30:50.85         Dda: 7-0  track2=458027******6898=********************?
+ 15:30:50.85         Dda: 7-0  Send Ex. POS: mi 4580. Receive=OK
+ 15:30:50.85         Dda: 7-0  Invalid Event mi at state 26
+ 15:30:50.88         Dda: 7-0  Rcv  Ex. POS: 30 S R EM
+ 15:30:51.45  - Send Dda: 7-0  R  OP:EM M:2  0<02><0D>7R0EM2<00><00>;4>?<03>
+ 15:30:51.51  - Recv Dda: 7-0     OP:em M:2  <02><0B>7R0em2<:46<03>
+ 15:30:51.58         Dda: 7-0  Rcv  Ex. POS: 30 S T KMˇˇˇ
+ 15:30:52.11  - Send Dda: 7-0  T  OP:KM M:4  0<02><0E>7T0KM4<FF><FF><FF>4<0=<03>
+ 15:30:52.15  - Recv Dda: 7-0     OP:km M:4  <02><0B>7T0km47<04<03>
+ 15:30:52.24         Dda: 7-0  Rcv  Ex. POS: 30 S T TPDN  ! ∑¨
+ 15:30:52.76  - Send Dda: 7-0  T  OP:TP M:6  0<02>&7T0TP6DN  ! óåÉöé ëâàòã Äå  \\000K3=35<03>
+ 15:30:52.81  - Recv Dda: 7-0     OP:tp M:6  <02><1F>7T0tp6  ! óåÉöé ëâàòã Äå  478:<03>
+ 15:30:55.23         Dda: 7-0  Rcv  Ex. POS: 30 S T KMˇˇˇ
+ 15:30:55.81  - Send Dda: 7-0  T  OP:KM M:2  0<02><0E>7T0KM2<FF><FF><FF>6;94<03>
+ 15:30:55.86  - Recv Dda: 7-0     OP:km M:2  <02><0B>7T0km21<<2<03>
+ 15:30:55.95         Dda: 7-0  Rcv  Ex. POS: 30 S T TPDN   ∑¨£
+  - Send Dda: 7-0  T  OP:TP M:4  0<02>&7T0TP4DN   óåÉöé .òã òÅíÑ   \\000K0618<03>
+ 15:30:56.56  - Recv Dda: 7-0     OP:tp M:4  <02><1F>7T0tp4   óåÉöé .òã òÅíÑ   =99;<03>
+ 15:30:56.65         Dda: 7-0  Rcv  Ex. POS: 30 S R EM
+ 15:30:57.09  - Send Dda: 7-0  R  OP:EM M:6  0<02><0D>7R0EM6<00><00>682?<03>
+ 15:30:57.13  - Recv Dda: 7-0     OP:em M:6  <02><0B>7R0em68:<2<03>
+ 15:31:27.86         Dda: 7-0  Rcv  Ex. POS: 30 S T KMˇˇˇ
+ 15:31:28.40  - Send Dda: 7-0  T  OP:KM M:0  0<02><0E>7T0KM0<FF><FF><FF>86?<<03>
+ 15:31:28.45  - Recv Dda: 7-0     OP:km M:0  <02><0B>7T0km03<80<03>
+ 15:31:29.37         Dda: 7-0  Rcv  Ex. POS: 30 S T TPDN   ∫•¨
+ 15:31:29.95  - Send Dda: 7-0  T  OP:TP M:3  0<02>:7T0TP3DN   öÖåàÖÅé öÖåÖíî       ! ôÉáé åâáö
+é    \\000K4>02<03>
+ 15:31:30.01  - Recv Dda: 7-0     OP:tp M:3  <02>47T0tp3   öÖåàÖÅé öÖåÖíî   <0A>    ! ôÉáé åâá
+öé    863;<03>
+ 15:31:32.69         Dda: 7-0  Rcv  Ex. POS: 30 S T KMˇˇˇ
+ 15:31:32.99  - Send Dda: 7-0  T  OP:KM M:0  0<02><0E>7T0KM0<FF><FF><FF>86?<<03>
+ 15:31:33.03  - Recv Dda: 7-0     OP:km M:0  <02><0B>7T0km03<80<03>
+ 15:31:33.13         Dda: 7-0  Rcv  Ex. POS: 30 S R EF017X0
+ 15:31:33.51  - Send Dda: 7-0  R  OP:EF M:2  0<02><13>7R0EF2017\2X0<00><00>>64:<03>
+ 15:31:33.55  - Recv Dda: 7-0     OP:ef M:2  <02><0E>7R0ef2017==66<03>
+ 15:31:33.64         Dda: 7-0  Rcv  Ex. POS: 30 S R EM
+ 15:31:34.13  - Send Dda: 7-0  R  OP:EM M:4  0<02><0D>7R0EM4<00><00>064?<03>
+ 15:31:34.17  - Recv Dda: 7-0     OP:em M:4  <02><0B>7R0em4::80<03>
+......... Change shift request, pos=11, pump=0, cashreg=1 at Fri Apr 19 19:47:16 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Fri Apr 19 19:47:16 2024
+
+ 19:47:17.22         Dda: 7-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+ 19:47:18.03  - Send Dda: 7-0  R  OP:EF M:0  0<02><14>7R0EF0049<00><00>0<00><00><00>00<7<03>
+ 19:47:18.08  - Recv Dda: 7-0     OP:ef M:0  <02><0E>7R0ef00492>35<03>
+ 19:47:21.44  - Send Dda: 7-0  R  OP:KM M:1  0<02><0E>7R0KM1<00><00><00>:2>?<03>
+  - Recv Dda: 7-0     OP:km M:1  <02><0B>7R0km1>124<03>
+......... Close Shift in CloseShift at Fri Apr 19 19:47:26 2024
+
+......... Creating TS for substation 1 at Fri Apr 19 19:47:27 2024
+
+......... Sending shift change message to USA_XML at Fri Apr 19 19:47:27 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Fri Apr 19 19:47:27 2024
+
+......... Open Shift at Fri Apr 19 19:47:29 2024
+
+ 19:47:30.02  - Send Dda: 7-0  R  OP:EF M:5  0<02><14>7R0EF5017<00><00>0<00><00><00>;881<03>
+ 19:47:30.07  - Recv Dda: 7-0     OP:ef M:5  <02><0E>7R0ef50178<4;<03>
+ 19:47:30.07         Dda: 7-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+ 19:47:30.67         Dda: 7-0  Disp : enter_POS_state 
+......... Open Shift in CloseShift at Fri Apr 19 19:47:40 2024
+
+......... Creating TS for substation 1 at Fri Apr 19 19:47:40 2024
+
+......... Change shift request, pos=11, pump=0, cashreg=2 at Sat Apr 20 04:49:36 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=1  CanClose()=1 at Sat Apr 20 04:49:36 2024
+
+......... Change shift request, pos=11, pump=0, cashreg=1 at Sat Apr 20 04:59:11 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Sat Apr 20 04:59:11 2024
+
+ 04:59:12.22         Dda: 7-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+ 04:59:12.92  - Send Dda: 7-0  R  OP:EF M:1  0<02><14>7R0EF1049<00><00>0<00><00><00>6?82<03>
+ 04:59:12.96  - Recv Dda: 7-0     OP:ef M:1  <02><0E>7R0ef10495881<03>
+  - Send Dda: 7-0  R  OP:KM M:2  0<02><0E>7R0KM2<00><00><00>3933<03>
+ 04:59:16.28  - Recv Dda: 7-0     OP:km M:2  <02><0B>7R0km2=147<03>
+......... Close Shift in CloseShift at Sat Apr 20 04:59:21 2024
+
+......... Creating TS for substation 1 at Sat Apr 20 04:59:22 2024
+
+......... Sending shift change message to USA_XML at Sat Apr 20 04:59:22 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Sat Apr 20 04:59:23 2024
+
+......... Open Shift at Sat Apr 20 04:59:25 2024
+
+  - Send Dda: 7-0  R  OP:EF M:7  0<02><14>7R0EF7017<00><00>0<00><00><00>660;<03>
+ 04:59:25.35  - Recv Dda: 7-0     OP:ef M:7  <02><0E>7R0ef70176123<03>
+ 04:59:25.35         Dda: 7-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+ 04:59:25.96         Dda: 7-0  Disp : enter_POS_state 
+......... Open Shift in CloseShift at Sat Apr 20 04:59:35 2024
+
+......... Creating TS for substation 1 at Sat Apr 20 04:59:35 2024
+
+......... Shva Transmit at Sat Apr 20 06:00:00 2024

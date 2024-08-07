@@ -14,46 +14,19 @@ def get_next_day(date_str):
     
     return next_day_str
 
-def get_dict():
-    dict = {
-        'MONEY' : {
-            'start' : 0,
-            'end' : 7
-        },
-        'QTY' : {
-            'start' : 0,
-            'end' : 7,
-        },
-        'Car' : {
-            'start' : 0,
-            'end' : 7,
-        },
-        'NZL' : {
-            'start' : 0,
-            'end' : 7,
-        },
-        'PUMP' : {
-            'start' : 0,
-            'end' : 7,
-        },
-        'TRAN' : {
-            'start' : 0,
-            'end' : 7,
-        },
-        'TIME' : {
-            'start' : 0,
-            'end' : 7,
-        },
-        'DATE' : {
-            'start' : 0,
-            'end' : 7,
-        },
-        'FUEL' : {
-            'start' : 0,
-            'end' : 7,
-        }
-    }
-    return dict
+def get_dict() -> dict:
+    headers_line = "MONEY      QTY         CAR        NZL PUMP   TRAN   TIME  DATE     FUEL       F.T  PAYMENT   CODE   ID                  ADD    WORKER  ODO      CHSPEC   RATE    DISCNT  DT   CT     CLUB                VOUCHER ST MS SNUM CUST_ID   AS CHECK_SUM NUM_CHECKS"
+    headers = headers_line.split()
+    headers_dict = {}
+    for i, header in enumerate(headers):
+        start_index = headers_line.index(header)
+        if i< len(headers) - 1:
+            end_index = headers_line.index(headers[i+1]) - 1
+        else:
+            end_index = start_index + 1
+        
+        headers_dict[header] = {'start': start_index, 'end': end_index}
+    return headers_dict
 
 def convert_date(ddmm):
     # Parse the input string as a date object
@@ -65,7 +38,7 @@ def convert_date(ddmm):
     return formatted_date
 
 def open_to_close(line, timedate):
-    new_line = line.replace('Open ', 'Close')[:52] + timedate + line[66:93] + '999999' + line[99:]
+    new_line = (line.replace('Open ', 'Close')[:52] + timedate + ' ' + line[66:]).replace('000000', '999999')
     return new_line
 
 def parse_headers():

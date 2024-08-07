@@ -1,0 +1,670 @@
+
+
+********* Opened at Mon Jun 17 04:44:00 2024
+
+
+ 04:44:00.37         Dda: 5-0  S091
+  - Recv Dda: 5-0     OP:db M:0  <02><18>5R0db0<00>2 status= 593893<03>
+  - Recv Dda: 5-0     OP:db M:4  <02><12>5R0db4<00>2 run ?591<03>
+ 04:44:06.42  - Recv Dda: 5-0     OP:fs M:1  <02>"5R0fs1<00>201117.79|39.69|2.231|33:1<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><15>5R0db2<00>2 fueled 08=9<03>
+ 04:44:08.09  - Recv Dda: 5-0     OP:hn M:4  <02><0F>5R0hn4<00>2008::3<03>
+ 04:44:08.09         Dda: 5-0  Handle 0
+ 04:44:08.09         Dda: 5-0  Send Ex. POS: hn 00. Receive=2 - Pu
+  - Recv Dda: 5-0     OP:ft M:5  <02>!5R0ft5<00>201117.79|40.74|2.29|22?4<03>
+ 04:44:08.64         Dda: 5-0  Send Ex. POS: ft 0111. Receive=2 - Pump not exist
+ 04:44:08.64         Dda: 5-0  F0910002.290100990.86
+ 04:44:08.64         Dda: 5-0  Disp : DOR-IDBOX:Posting 
+ 04:44:08.64         Dda: 5-0  Disp : Dor_Total=   40.74 
+ 04:44:08.64         Dda: 5-0  DorCh_in=ft|0000200017310765049|9|1|1|   4074|7284300200|000000|||@|0000|   4074|   2290|  1779|
+ 04:44:08.64         Dda: 5-0  Send Ex. POS: ft 0111. Receive=2 - Pump not exist
+ 04:44:08.70         Dda: 5-0  DorCh_ot=CF|0|
+ 04:44:08.70         Dda: 5-0  Disp : Dor-WriteShvaCardNo 0000200017310765049 
+ 04:44:08.70         Dda: 5-0  Disp : Dor-WriteTranCardNo 000200017310765049 
+ 04:44:08.70         Dda: 5-0  Enter into WriteTran
+ 04:44:08.70         Dda: 5-0  Try open shift file
+ 04:44:08.70         Dda: 5-0  Write to .\DATA\RS160624.D1B,len =253
+ 04:44:08.70         Dda: 5-0  RS rec =    40.74       2.290  72843002   1   09     245728 04:44 17/06/24       òåÖë 00    ëöé-èóöÑ 000106 0000200017310765049 0.00                              17.790                                                  1 10  441           0                      
+ 04:44:08.70         Dda: 5-0  Recovery remove pump 09
+ 04:44:08.70         Dda: 5-0  after reco remove
+ 04:44:08.70         Dda: 5-0  RS Copy
+ 04:44:08.70         Dda: 5-0  End of WriteTran .\DATA\RS160624.D1B
+ 04:44:08.70         Dda: 5-0  FuelPointPostTran,TranNo=245728,PumpNo=9,Nozzle=1,ProdNo=0000,dQty=2290
+ 04:44:08.70         Dda: 5-0  Rfc transaction
+ 04:44:08.70         Dda: 5-0  FuelPoint_in=FT2|-1|245728|9|1|0000|0000200017310765049|0|0|0|        |0|2290||||       |000106| 0|06/17/2024 04:44:00|17.790|  40.74|   0.00|   0.00|72843002|000106|
+  - Recv Dda: 5-0     OP:db M:6  <02><18>5R0db6<00>2 status= 4181<=<03>
+  - Recv Dda: 5-0     OP:db M:7  <02><18>5R0db7<00>2 status= 40>:8=<03>
+  - Recv Dda: 5-0     OP:db M:8  <02><1B>5R0db8<00>2 Handle Off:1 ?166<03>
+  - Recv Dda: 5-0     OP:db M:9  <02><1B>5R0db9<00>2 Stop Pump CF 758:<03>
+  - Recv Dda: 5-0     OP:db M:0  <02><0D>5R0db0<00>2027=<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><0D>5R0db1<00>2354=<03>
+  - Recv Dda: 5-0     OP:db M:2  <02>/5R0db2<00>2 Main thread did not send FT data
+ 68>9<03>
+  - Recv Dda: 5-0     OP:db M:3  <02><17>5R0db3<00>2 Pump Off 274<<03>
+  - Recv Dda: 5-0     OP:db M:4  <02><1C>5R0db4<00>2 QS perform ft 5293<03>
+ 04:44:13.82         Dda: 5-0  FuelPoint_ot=CF|
+ 04:44:13.82         Dda: 5-0  Disp : DOR-IDBOX:Posted 
+ 04:44:13.82         Dda: 5-0  Coupon in:GCD|000200017310765049|
+ 04:44:15.83         Dda: 5-0  Fail to call Coupon CH
+ 04:44:15.83         Dda: 5-0  Disp : DOR_TranNo 245728 
+ 04:44:15.83         Dda: 5-0  Disp : DOR_CHtranNO=      
+ 04:44:15.83         Dda: 5-0  Disp : Dor_CustName=                          
+ 04:44:15.83         Dda: 5-0  Disp : Dor_CompanyName= é"íÅ îÖòÇ ëÖÄòàô 
+ 04:44:15.83         Dda: 5-0  Disp : Before-printing1 0 
+ 04:44:15.83         Dda: 5-0  Disp : Temp1 0 
+ 04:44:15.83         Dda: 5-0  Disp : Go-to-print1 
+ 04:44:15.83         Dda: 5-0  Disp : T5-check-for-10 
+ 04:44:17.47         Dda: 5-0  VSU event:[2] v0
+ 04:44:17.89         Dda: 5-0  Disp : Ask_print_Entry 
+ 04:44:17.89         Dda: 5-0  Recovery remove pump 09
+ 04:44:17.89         Dda: 5-0  Recovery remove failed for pump 09, code=2
+ 04:44:17.89  - Send Dda: 5-0  R  OP:CD M:2  0<02><0D>5R0CD200367=<03>
+ 04:44:17.94  - Recv Dda: 5-0     OP:cd M:2  <02><0B>5R0cd2493><03>
+ 04:44:17.94  - Send Dda: 5-0  R  OP:SP M:3  0<02>35R0SP38.350|17.79|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|916:<03>
+ 04:44:17.99  - Recv Dda: 5-0     OP:sp M:3  <02><0B>5R0sp3=5<;<03>
+ 04:44:19.00         Dda: 5-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 5-0     OP:db M:4  <02><1B>5R0db4<00>2 Stop Pump CD <792<03>
+  - Recv Dda: 5-0     OP:db M:5  <02><14>5R0db5<00>2 price ?9:;<03>
+......... Change shift request, pos=11, pump=0, cashreg=1 at Mon Jun 17 05:06:09 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Mon Jun 17 05:06:09 2024
+
+ 05:06:09.66         Dda: 5-0  Interrupt: Shift Change from PC-POS
+ 05:06:10.66  - Send Dda: 5-0  R  OP:RT M:9  0<02><0D>5R0RT9007320<03>
+ 05:06:10.71  - Recv Dda: 5-0     OP:rt M:9  <02><0D>5R0rt9004<=:<03>
+ 05:06:12.44  - Recv Dda: 5-0     OP:ta M:2  <02>=5R0ta2<00>0100990.86|3412023.7|0|0|0|0|0|0|0
+|0|0|0|0|0|0|0|6331<03>
+ 05:06:12.44         Dda: 5-0  WritePumpTotals: iType [1], trs totalizers to server [0], shift totalizers to server [0]
+......... Close Shift in CloseShift at Mon Jun 17 05:06:18 2024
+
+......... Creating TS for substation 1 at Mon Jun 17 05:06:19 2024
+
+......... Sending shift change message to USA_XML at Mon Jun 17 05:06:19 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Mon Jun 17 05:06:20 2024
+
+......... Open Shift at Mon Jun 17 05:06:22 2024
+
+ 05:06:23.05  - Send Dda: 5-0  R  OP:RT M:6  0<02><0D>5R0RT6005?11<03>
+ 05:06:23.10  - Recv Dda: 5-0     OP:rt M:6  <02><0D>5R0rt60060>;<03>
+ 05:06:24.17  - Recv Dda: 5-0     OP:ta M:8  <02>=5R0ta8<00>0100990.86|3412023.7|0|0|0|0|0|0|0
+|0|0|0|0|0|0|0|>80=<03>
+ 05:06:24.17         Dda: 5-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 05:06:24.17  - Send Dda: 5-0  R  OP:CD M:9  0<02><0D>5R0CD900<68<<03>
+  - Recv Dda: 5-0     OP:cd M:9  <02><0B>5R0cd9?855<03>
+ 05:06:24.22  - Send Dda: 5-0  R  OP:SP M:0  0<02>35R0SP08.350|17.79|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|486;<03>
+ 05:06:24.27  - Recv Dda: 5-0     OP:sp M:0  <02><0B>5R0sp0>5:8<03>
+ 05:06:25.25         Dda: 5-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 5-0     OP:db M:1  <02><1B>5R0db1<00>0 Stop Pump CD =921<03>
+  - Recv Dda: 5-0     OP:db M:2  <02>"5R0db2<00>0 VER:5.0.122|17/12/15<?:0<03>
+  - Recv Dda: 5-0     OP:db M:3  <02><1C>5R0db3<00>0 COUNTRY:ISRAEL9==4<03>
+  - Recv Dda: 5-0     OP:db M:4  <02><1B>5R0db4<00>0 Pump Type:BEN3281<03>
+  - Recv Dda: 5-0     OP:db M:5  <02><14>5R0db5<00>0 price 760=<03>
+......... Open Shift in CloseShift at Mon Jun 17 05:06:32 2024
+
+......... Creating TS for substation 1 at Mon Jun 17 05:06:32 2024
+
+ 05:08:27.04         Dda: 5-0  VSU event:[47] v400120uni|0|630ABA90|0|0|50086||0|0||00000000|
+ 05:08:43.69         Dda: 5-0  VSU event:[2] v0
+......... Shva Transmit at Mon Jun 17 06:00:00 2024
+
+ 06:19:03.00  - Recv Dda: 5-0     OP:hn M:7  <02><0F>5R0hn7<00>0011:30<03>
+ 06:19:03.00         Dda: 5-0  Handle 1
+ 06:19:03.00         Dda: 5-0  Send Ex. POS: hn 01. Receive=2 - Pu
+ 06:19:03.00         Dda: 5-0  Invalid Event hn at state 2
+  - Recv Dda: 5-0     OP:db M:8  <02><18>5R0db8<00>0 status= 610149<03>
+  - Recv Dda: 5-0     OP:db M:9  <02><1A>5R0db9<00>0 Handle On:1 <?3=<03>
+ 06:19:33.59         Dda: 5-0  VSU event:[42] v400120uni|0|86519991|0|0|||0|0||00000000|
+ 06:19:33.81         Dda: 5-0  Disp : G3_process 
+ 06:19:33.81         Dda: 5-0  Disp : CardId= uni0086519991 
+ 06:19:33.81         Dda: 5-0  Disp : Checking-Universsal-Idbox uni 
+ 06:19:33.81         Dda: 5-0  Disp : UID= 86519991 
+ 06:19:33.81         Dda: 5-0  Disp : Validate-Uid-using-fuelpoint 
+ 06:19:33.81         Dda: 5-0  maximus_in=LI|uid:86519991|0|9|
+ 06:19:34.56         Dda: 5-0  maximus_ot=OF|0||0|0|9999999|0|0|9999999|0|0|Invalid card number             ||||@|0|
+ 06:19:34.56         Dda: 5-0  Quit on error (0). index = 1
+ 06:19:34.56         Dda: 5-0  Disp : Fuel4/fuelpoint not open / refused 
+ 06:19:34.56         Dda: 5-0  Disp : Dor-universal 
+ 06:19:34.56         Dda: 5-0  Disp : Dorid 0000200022534946739 0106 
+ 06:19:34.56         Dda: 5-0  SetInt to 99900000
+ 06:19:34.56         Dda: 5-0  Disp : CH-3CardID 
+ 06:19:34.56         Dda: 5-0  track2=0000200022534946739
+ 06:19:34.56         Dda: 5-0  Disp : CH-3Temp4 0000 
+ 06:19:34.56         Dda: 5-0  Disp : IdType= I 
+ 06:19:34.56         Dda: 5-0  Disp : ProdCode= 0000 
+ 06:19:34.56         Dda: 5-0  Disp : Checking-2500-Local 
+ 06:19:34.56         Dda: 5-0  Disp : Checking-DOR 
+ 06:19:34.56         Dda: 5-0  Disp : DOR_BoxCarNo= 0000000000 
+ 06:19:34.56         Dda: 5-0  Disp : Temp4= 0000 
+ 06:19:34.56         Dda: 5-0  Disp : UIron 
+ 06:19:34.56         Dda: 5-0  Disp : Dor_Card_18                   
+ 06:19:34.56         Dda: 5-0  Disp : ShvaCardNo 0000200022534946739 
+ 06:19:34.56         Dda: 5-0  DorCh_in=ri|0000200022534946739|9|
+ 06:19:34.95         Dda: 5-0  DorCh_ot=OF|0|Q35000|@|0081561001|0|0|2|10000000001000000000||2500000|0|0|0|0|1|0|0|     é"íÅ åëòîÖô|B|
+ 06:19:34.95         Dda: 5-0  Disp : carno= 0081561001 
+ 06:19:34.95         Dda: 5-0  Disp : Ok---fuels 0 0 
+ 06:19:34.95         Dda: 5-0  Disp : DorOK-Temp4 0106 
+ 06:19:34.95         Dda: 5-0  Disp : Solek= 0 
+ 06:19:34.95         Dda: 5-0  Disp : DOR_OK_RC=  
+ 06:19:34.95         Dda: 5-0  Disp : Device= H 
+ 06:19:34.95         Dda: 5-0  Disp : Checking-DOR-IDBOX 
+ 06:19:34.95         Dda: 5-0  ItsMe() =   ëöé-èóöÑ    Code = 000106
+ 06:19:34.95         Dda: 5-0  Disp : Validate-Idbox-Secret_Code 0000 
+ 06:19:34.95         Dda: 5-0  Disp : IDBOX_FuelType= 0000 
+ 06:19:34.95         Dda: 5-0  Disp : IDBOX_ProdCode= 0000 
+ 06:19:34.95         Dda: 5-0  Disp : Temp4= 0106 
+ 06:19:34.95         Dda: 5-0  Disp : Check fuel types CH 
+ 06:19:34.95         Dda: 5-0  Disp : DOR-IDBOX-Validated 
+ 06:19:35.36         Dda: 5-0  Disp : ValConfirmed-Rfc 
+ 06:19:35.87  - Send Dda: 5-0  R  OP:SP M:7  0<02>35R0SP78.350|17.79|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|52:8<03>
+ 06:19:35.92  - Recv Dda: 5-0     OP:sp M:7  <02><0B>5R0sp7954?<03>
+ 06:19:36.43         Dda: 5-0  Tran type=3, Rate type(cash/credit)=2, Nozzle BITMAP=1
+ 06:19:36.43  - Send Dda: 5-0  R  OP:CT M:8  0<02>f5R0CT830<01>32350.000|2922.5|350.000|6226.5
+|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|?169<03>
+  - Recv Dda: 5-0     OP:ct M:8  <02><0D>5R0ct83080;2<03>
+  - Recv Dda: 5-0     OP:db M:9  <02><14>5R0db9<00>3 price 5906<03>
+  - Recv Dda: 5-0     OP:db M:0  <02><19>5R0db0<00>3 start_pump 2?;:<03>
+  - Recv Dda: 5-0     OP:db M:1  <02>%5R0db1<00>3 prices_ct, rate_type=2 :582<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><14>5R0db2<00>3 price :282<03>
+  - Recv Dda: 5-0     OP:db M:3  <02><15>5R0db3<00>3 author 2819<03>
+  - Recv Dda: 5-0     OP:db M:4  <02><18>5R0db4<00>3 status= 699310<03>
+ 06:19:44.73  - Recv Dda: 5-0     OP:nz M:3  <02><10>5R0nz3<00>30116:;1<03>
+ 06:19:44.73         Dda: 5-0  Recovery save pump 09
+ 06:19:44.73         Dda: 5-0  S091
+  - Recv Dda: 5-0     OP:db M:4  <02><18>5R0db4<00>3 status= 59<643<03>
+  - Recv Dda: 5-0     OP:db M:9  <02><12>5R0db9<00>3 run >655<03>
+ 06:19:51.21  - Recv Dda: 5-0     OP:fs M:6  <02>"5R0fs6<00>301117.79|62.91|3.536|0431<03>
+  - Recv Dda: 5-0     OP:db M:8  <02><15>5R0db8<00>3 fueled >1<7<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><18>5R0db2<00>3 status= 406?3<<03>
+  - Recv Dda: 5-0     OP:ft M:3  <02>"5R0ft3<00>301117.79|79.91|4.492|4;>2<03>
+ 06:19:55.04         Dda: 5-0  Send Ex. POS: ft 0111. Receive=2 - Pump not exist
+ 06:19:55.04         Dda: 5-0  F0910004.492100995.35
+ 06:19:55.04         Dda: 5-0  Disp : DOR-IDBOX:Posting 
+ 06:19:55.04         Dda: 5-0  Disp : Dor_Total=   79.91 
+ 06:19:55.04         Dda: 5-0  DorCh_in=ft|0000200022534946739|9|1|1|   7991|8156100100|000000|||@|0000|   7991|   4492|  1779|
+ 06:19:55.04         Dda: 5-0  Send Ex. POS: ft 0111. Receive=2 - Pump not exist
+ 06:19:55.11         Dda: 5-0  DorCh_ot=CF|0|
+ 06:19:55.11         Dda: 5-0  Disp : Dor-WriteShvaCardNo 0000200022534946739 
+ 06:19:55.11         Dda: 5-0  Disp : Dor-WriteTranCardNo 000200022534946739 
+ 06:19:55.11         Dda: 5-0  Enter into WriteTran
+ 06:19:55.11         Dda: 5-0  Try open shift file
+ 06:19:55.11         Dda: 5-0  Write to .\DATA\RS170624.D1A,len =253
+ 06:19:55.11         Dda: 5-0  RS rec =    79.91       4.492  81561001   1   09     245750 06:19 17/06/24       òåÖë 00    ëöé-èóöÑ 000106 0000200022534946739                                   17.790                                                  1 10  441           0                      
+ 06:19:55.11         Dda: 5-0  Recovery remove pump 09
+ 06:19:55.11         Dda: 5-0  after reco remove
+ 06:19:55.11         Dda: 5-0  RS Copy
+ 06:19:55.12         Dda: 5-0  End of WriteTran .\DATA\RS170624.D1A
+ 06:19:55.12         Dda: 5-0  FuelPointPostTran,TranNo=245750,PumpNo=9,Nozzle=1,ProdNo=0000,dQty=4492
+ 06:19:55.12         Dda: 5-0  Rfc transaction
+ 06:19:55.12         Dda: 5-0  FuelPoint_in=FT2|-1|245750|9|1|0000|0000200022534946739|0|0|0|        |0|4492||||       |000106| 0|06/17/2024 06:19:44|17.790|  79.91|   0.00|0000000|81561001|000106|
+ 06:19:55.53  - Recv Dda: 5-0     OP:hn M:4  <02><0F>5R0hn4<00>300;=93<03>
+ 06:19:55.53         Dda: 5-0  Handle 0
+ 06:19:55.53         Dda: 5-0  Invalid Event hn at state 10
+  - Recv Dda: 5-0     OP:db M:5  <02><1B>5R0db5<00>3 Handle Off:1 8;>0<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><1B>5R0db6<00>3 Stop Pump CF 2><8<03>
+  - Recv Dda: 5-0     OP:db M:7  <02><0D>5R0db7<00>397<<<03>
+  - Recv Dda: 5-0     OP:db M:8  <02><0D>5R0db8<00>3;;?=<03>
+  - Recv Dda: 5-0     OP:db M:9  <02>/5R0db9<00>3 Main thread did not send FT data
+ =19?<03>
+  - Recv Dda: 5-0     OP:db M:0  <02><17>5R0db0<00>3 Pump Off 30:0<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><1C>5R0db1<00>3 QS perform ft ?:21<03>
+ 06:19:59.71         Dda: 5-0  FuelPoint_ot=CF|
+ 06:19:59.71         Dda: 5-0  Disp : DOR-IDBOX:Posted 
+ 06:19:59.71         Dda: 5-0  Coupon in:GCD|000200022534946739|
+ 06:20:01.77         Dda: 5-0  Fail to call Coupon CH
+ 06:20:01.77         Dda: 5-0  Disp : DOR_TranNo 245750 
+ 06:20:01.77         Dda: 5-0  Disp : DOR_CHtranNO=      
+ 06:20:01.77         Dda: 5-0  Disp : Dor_CustName=                          
+ 06:20:01.77         Dda: 5-0  Disp : Dor_CompanyName=      é"íÅ åëòîÖô 
+ 06:20:01.77         Dda: 5-0  Disp : Before-printing1 0 
+ 06:20:01.77         Dda: 5-0  Disp : Temp1 0 
+ 06:20:01.77         Dda: 5-0  Disp : Go-to-print1 
+ 06:20:01.77         Dda: 5-0  Disp : T5-check-for-10 
+ 06:20:03.95         Dda: 5-0  Disp : Ask_print_Entry 
+ 06:20:03.95         Dda: 5-0  Recovery remove pump 09
+ 06:20:03.95         Dda: 5-0  Recovery remove failed for pump 09, code=2
+ 06:20:03.95  - Send Dda: 5-0  R  OP:CD M:9  0<02><0D>5R0CD900<68<<03>
+ 06:20:03.99  - Recv Dda: 5-0     OP:cd M:9  <02><0B>5R0cd9?855<03>
+ 06:20:03.99  - Send Dda: 5-0  R  OP:SP M:0  0<02>35R0SP08.350|17.79|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|486;<03>
+ 06:20:04.04  - Recv Dda: 5-0     OP:sp M:0  <02><0B>5R0sp0>5:8<03>
+ 06:20:05.07         Dda: 5-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 5-0     OP:db M:1  <02><1B>5R0db1<00>3 Stop Pump CD 3:04<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><14>5R0db2<00>3 price :282<03>
+ 06:22:45.26         Dda: 5-0  VSU event:[2] v0
+ 11:33:12.83  - Recv Dda: 5-0     OP:er M:6  <02><C6>5R0er6<00>320<00><00>|deviceType=0|device
+IdMain=00hex|deviceIdSub=0|mainErrNum=3|subErrNum=0|isError=1|date=17062024|ho
+ur=113312|desc=Pump Tcp. Pump parameter: 6 Pump Type:20|Ip=192.168.0.105|port=
+5000|?>49<03>
+ 11:33:12.83         Dda: 5-0  Invalid Event er at state 2
+ 11:33:13.40  - Recv Dda: 5-0     OP:er M:7  <02><C6>5R0er7<00>300<00><00>|deviceType=0|device
+IdMain=00hex|deviceIdSub=0|mainErrNum=3|subErrNum=0|isError=0|date=17062024|ho
+ur=113312|desc=Pump Tcp. Pump parameter: 6 Pump Type:20|Ip=192.168.0.105|port=
+5000|7;>6<03>
+ 11:33:13.40         Dda: 5-0  Invalid Event er at state 2
+  - Recv Dda: 5-0     OP:db M:8  <02><1D>5R0db8<00>3 Error:TCP Bad 1>:09<03>
+  - Recv Dda: 5-0     OP:db M:9  <02>M5R0db9<00>3 Pump Exception: Socket Error # 1
+0054<0D><0A>Connection reset by peer.0<11<03>
+  - Recv Dda: 5-0     OP:db M:0  <02><1C>5R0db0<00>3 Error:TCP OK 1678:<03>
+ 13:22:11.82         Dda: 5-0  VSU event:[42] v400120uni|0|D6170A91|0|0|||0|0||00000000|
+ 13:22:19.02  - Recv Dda: 5-0     OP:hn M:0  <02><0F>5R0hn0<00>30124;4<03>
+ 13:22:19.02         Dda: 5-0  Handle 1
+ 13:22:19.02         Dda: 5-0  Send Ex. POS: hn 01. Receive=2 - Pu
+ 13:22:19.02         Dda: 5-0  Disp : G3_process 
+ 13:22:19.02         Dda: 5-0  Disp : CardId= uni00D6170A91 
+ 13:22:19.02         Dda: 5-0  Disp : Checking-Universsal-Idbox uni 
+ 13:22:19.02         Dda: 5-0  Disp : UID= D6170A91 
+ 13:22:19.02         Dda: 5-0  Disp : Validate-Uid-using-fuelpoint 
+ 13:22:19.02         Dda: 5-0  maximus_in=LI|uid:D6170A91|0|9|
+  - Recv Dda: 5-0     OP:db M:1  <02><18>5R0db1<00>3 status= 6194=<<03>
+ 13:22:19.88         Dda: 5-0  maximus_ot=OF|0||0|0|9999999|0|0|9999999|0|0|Invalid card number             ||||@|0|
+ 13:22:19.88         Dda: 5-0  Quit on error (0). index = 1
+ 13:22:19.88         Dda: 5-0  Disp : Fuel4/fuelpoint not open / refused 
+ 13:22:19.88         Dda: 5-0  Disp : Dor-universal 
+ 13:22:19.88         Dda: 5-0  Disp : Dorid 0000200035918342579 0106 
+ 13:22:19.88         Dda: 5-0  SetInt to 99900000
+ 13:22:19.88         Dda: 5-0  Disp : CH-3CardID 
+ 13:22:19.88         Dda: 5-0  track2=0000200035918342579
+ 13:22:19.88         Dda: 5-0  Disp : CH-3Temp4 0000 
+ 13:22:19.88         Dda: 5-0  Disp : IdType= I 
+ 13:22:19.88         Dda: 5-0  Disp : ProdCode= 0000 
+ 13:22:19.88         Dda: 5-0  Disp : Checking-2500-Local 
+ 13:22:19.88         Dda: 5-0  Disp : Checking-DOR 
+ 13:22:19.88         Dda: 5-0  Disp : DOR_BoxCarNo= 0000000000 
+ 13:22:19.88         Dda: 5-0  Disp : Temp4= 0000 
+ 13:22:19.88         Dda: 5-0  Disp : UIron 
+ 13:22:19.88         Dda: 5-0  Disp : Dor_Card_18                   
+ 13:22:19.88         Dda: 5-0  Disp : ShvaCardNo 0000200035918342579 
+ 13:22:19.88         Dda: 5-0  DorCh_in=ri|0000200035918342579|9|
+  - Recv Dda: 5-0     OP:db M:2  <02><1A>5R0db2<00>3 Handle On:1 ;;56<03>
+ 13:22:20.23         Dda: 5-0  DorCh_ot=OF|0|Q40000|@|0079167501|0|0|2|10000000001000000000||2500000|0|0|0|0|1|1|0|1 çâñâîé àéÖåîâÉ|B|
+ 13:22:20.23         Dda: 5-0  Disp : carno= 0079167501 
+ 13:22:20.23         Dda: 5-0  Disp : Ok---fuels 0 0 
+ 13:22:20.23         Dda: 5-0  Disp : DorOK-Temp4 0106 
+ 13:22:20.23         Dda: 5-0  Disp : Solek= 0 
+ 13:22:20.23         Dda: 5-0  Disp : DOR_OK_RC=  
+ 13:22:20.23         Dda: 5-0  Disp : Device= H 
+ 13:22:20.23         Dda: 5-0  Disp : Checking-DOR-IDBOX 
+ 13:22:20.23         Dda: 5-0  ItsMe() =   ëöé-èóöÑ    Code = 000106
+ 13:22:20.23         Dda: 5-0  Disp : Validate-Idbox-Secret_Code 0000 
+ 13:22:20.23         Dda: 5-0  Disp : IDBOX_FuelType= 0000 
+ 13:22:20.23         Dda: 5-0  Disp : IDBOX_ProdCode= 0000 
+ 13:22:20.23         Dda: 5-0  Disp : Temp4= 0106 
+ 13:22:20.23         Dda: 5-0  Disp : Check fuel types CH 
+ 13:22:20.23         Dda: 5-0  Disp : DOR-IDBOX-Validated 
+ 13:22:20.57         Dda: 5-0  Disp : ValConfirmed-Rfc 
+ 13:22:21.09  - Send Dda: 5-0  R  OP:SP M:4  0<02>35R0SP48.350|17.79|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|8;:9<03>
+ 13:22:21.13  - Recv Dda: 5-0     OP:sp M:4  <02><0B>5R0sp4:52<<03>
+ 13:22:21.65         Dda: 5-0  Tran type=3, Rate type(cash/credit)=2, Nozzle BITMAP=1
+ 13:22:21.65  - Send Dda: 5-0  R  OP:CT M:5  0<02>f5R0CT531<01>32400.000|3340.0|400.000|7116.0
+|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|18<3<03>
+  - Recv Dda: 5-0     OP:ct M:5  <02><0D>5R0ct531=2<2<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><14>5R0db6<00>3 price 0?;7<03>
+  - Recv Dda: 5-0     OP:db M:7  <02><19>5R0db7<00>3 start_pump 572=<03>
+  - Recv Dda: 5-0     OP:db M:8  <02>%5R0db8<00>3 prices_ct, rate_type=2 1;=4<03>
+  - Recv Dda: 5-0     OP:db M:9  <02><14>5R0db9<00>3 price 5906<03>
+  - Recv Dda: 5-0     OP:db M:0  <02><15>5R0db0<00>3 author 50>3<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><18>5R0db1<00>3 status= 6915=4<03>
+ 13:22:30.13  - Recv Dda: 5-0     OP:nz M:0  <02><10>5R0nz0<00>3011:451<03>
+ 13:22:30.13         Dda: 5-0  Recovery save pump 09
+ 13:22:30.13         Dda: 5-0  S091
+  - Recv Dda: 5-0     OP:db M:1  <02><18>5R0db1<00>3 status= 594087<03>
+  - Recv Dda: 5-0     OP:db M:5  <02><12>5R0db5<00>3 run ?7>2<03>
+ 13:22:34.94  - Recv Dda: 5-0     OP:fs M:0  <02>"5R0fs0<00>301117.79|55.97|3.146|55;3<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><15>5R0db6<00>3 fueled ;2;=<03>
+ 13:22:42.17  - Recv Dda: 5-0     OP:fs M:3  <02>#5R0fs3<00>301117.79|107.36|6.035|:652<03>
+ 13:22:45.87         Dda: 5-0  VSU event:[2] v0
+ 13:22:45.97         Dda: 5-0  Disp : Pause2 
+ 13:22:45.97  - Send Dda: 5-0  R  OP:PF M:1  0<02><0D>5R0PF10068<=<03>
+ 13:22:46.01  - Recv Dda: 5-0     OP:pf M:1  <02><0D>5R0pf1005737<03>
+  - Recv Dda: 5-0     OP:db M:4  <02><15>5R0db4<00>0 armoff 488<<03>
+  - Recv Dda: 5-0     OP:db M:5  <02><18>5R0db5<00>0 status= 5139;5<03>
+  - Recv Dda: 5-0     OP:db M:8  <02><18>5R0db8<00>0 status= 41672;<03>
+  - Recv Dda: 5-0     OP:db M:9  <02><5R0db9<00>0 Bennet: Flow bit cleared by pump
+, flow timeout472><03>
+ 13:22:56.76  - Recv Dda: 5-0     OP:hn M:0  <02><0F>5R0hn0<00>0006=<5<03>
+ 13:22:56.76         Dda: 5-0  Handle 0
+ 13:22:56.76         Dda: 5-0  Send Ex. POS: hn 00. Receive=2 - Pu
+  - Recv Dda: 5-0     OP:ft M:1  <02>"5R0ft1<00>001117.79|114.03|6.41|<=<3<03>
+ 13:22:57.32         Dda: 5-0  Send Ex. POS: ft 0111. Receive=2 - Pump not exist
+ 13:22:57.32         Dda: 5-0  F0910006.410101001.76
+ 13:22:57.32         Dda: 5-0  Disp : DOR-IDBOX:Posting 
+ 13:22:57.32         Dda: 5-0  Disp : Dor_Total=  114.03 
+ 13:22:57.32         Dda: 5-0  DorCh_in=ft|0000200035918342579|9|1|1|  11403|7916750100|000000|||@|0000|  11403|   6410|  1779|
+ 13:22:57.32         Dda: 5-0  Send Ex. POS: ft 0111. Receive=2 - Pump not exist
+ 13:22:57.43         Dda: 5-0  DorCh_ot=CF|0|
+ 13:22:57.43         Dda: 5-0  Disp : Dor-WriteShvaCardNo 0000200035918342579 
+ 13:22:57.43         Dda: 5-0  Disp : Dor-WriteTranCardNo 000200035918342579 
+ 13:22:57.43         Dda: 5-0  Enter into WriteTran
+ 13:22:57.43         Dda: 5-0  Try open shift file
+ 13:22:57.43         Dda: 5-0  Write to .\DATA\RS170624.D1A,len =253
+ 13:22:57.43         Dda: 5-0  RS rec =   114.03       6.410  79167501   1   09     246054 13:22 17/06/24       òåÖë 00    ëöé-èóöÑ 000106 0000200035918342579 0.00                              17.790                                                  1 10  441           0                      
+ 13:22:57.43         Dda: 5-0  Recovery remove pump 09
+ 13:22:57.43         Dda: 5-0  after reco remove
+ 13:22:57.43         Dda: 5-0  RS Copy
+ 13:22:57.43         Dda: 5-0  End of WriteTran .\DATA\RS170624.D1A
+ 13:22:57.43         Dda: 5-0  FuelPointPostTran,TranNo=246054,PumpNo=9,Nozzle=1,ProdNo=0000,dQty=6410
+ 13:22:57.43         Dda: 5-0  Rfc transaction
+ 13:22:57.43         Dda: 5-0  FuelPoint_in=FT2|-1|246054|9|1|0000|0000200035918342579|0|0|0|        |0|6410||||       |000106| 0|06/17/2024 13:22:30|17.790| 114.03|   0.00|   0.00|79167501|000106|
+  - Recv Dda: 5-0     OP:db M:2  <02><18>5R0db2<00>0 status= 406::3<03>
+  - Recv Dda: 5-0     OP:db M:3  <02><1B>5R0db3<00>0 Handle Off:1 0:89<03>
+  - Recv Dda: 5-0     OP:db M:4  <02><1B>5R0db4<00>0 Stop Pump CF ><29<03>
+  - Recv Dda: 5-0     OP:db M:5  <02><0D>5R0db5<00>0<9<?<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><0D>5R0db6<00>0909?<03>
+  - Recv Dda: 5-0     OP:db M:7  <02>/5R0db7<00>0 Main thread did not send FT data
+ ;387<03>
+  - Recv Dda: 5-0     OP:db M:8  <02><17>5R0db8<00>0 Pump Off 4300<03>
+  - Recv Dda: 5-0     OP:db M:9  <02><1C>5R0db9<00>0 QS perform ft >303<03>
+ 13:23:02.06         Dda: 5-0  FuelPoint_ot=CF|
+ 13:23:02.06         Dda: 5-0  Disp : DOR-IDBOX:Posted 
+ 13:23:02.06         Dda: 5-0  Coupon in:GCD|000200035918342579|
+ 13:23:04.07         Dda: 5-0  Fail to call Coupon CH
+ 13:23:04.07         Dda: 5-0  Disp : DOR_TranNo 246054 
+ 13:23:04.07         Dda: 5-0  Disp : DOR_CHtranNO=      
+ 13:23:04.07         Dda: 5-0  Disp : Dor_CustName=                          
+ 13:23:04.07         Dda: 5-0  Disp : Dor_CompanyName= 1 çâñâîé àéÖåîâÉ 
+ 13:23:04.07         Dda: 5-0  Disp : Before-printing1 0 
+ 13:23:04.07         Dda: 5-0  Disp : Temp1 0 
+ 13:23:04.07         Dda: 5-0  Disp : Go-to-print1 
+ 13:23:04.07         Dda: 5-0  Disp : T5-check-for-10 
+ 13:23:06.45         Dda: 5-0  Disp : Ask_print_Entry 
+ 13:23:06.45         Dda: 5-0  Recovery remove pump 09
+ 13:23:06.45         Dda: 5-0  Recovery remove failed for pump 09, code=2
+ 13:23:06.45  - Send Dda: 5-0  R  OP:CD M:7  0<02><0D>5R0CD700==8=<03>
+ 13:23:06.49  - Recv Dda: 5-0     OP:cd M:7  <02><0B>5R0cd7199;<03>
+ 13:23:06.49  - Send Dda: 5-0  R  OP:SP M:8  0<02>35R0SP88.350|17.79|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|=?<><03>
+ 13:23:06.54  - Recv Dda: 5-0     OP:sp M:8  <02><0B>5R0sp864:0<03>
+ 13:23:07.57         Dda: 5-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 5-0     OP:db M:9  <02><1B>5R0db9<00>0 Stop Pump CD 5>31<03>
+  - Recv Dda: 5-0     OP:db M:0  <02><14>5R0db0<00>0 price ;47=<03>
+......... Change shift request, pos=11, pump=0, cashreg=1 at Mon Jun 17 15:49:33 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Mon Jun 17 15:49:33 2024
+
+ 15:49:33.69  - Send Dda: 5-0  R  OP:RT M:2  0<02><0D>5R0RT20083=1<03>
+ 15:49:33.74  - Recv Dda: 5-0     OP:rt M:2  <02><0D>5R0rt200;<2;<03>
+ 15:49:34.89  - Recv Dda: 5-0     OP:ta M:4  <02>>5R0ta4<00>0101001.76|3412217.64|0|0|0|0|0|0|
+0|0|0|0|0|0|0|0|837><03>
+ 15:49:34.89         Dda: 5-0  WritePumpTotals: iType [1], trs totalizers to server [0], shift totalizers to server [0]
+......... Close Shift in CloseShift at Mon Jun 17 15:52:09 2024
+
+......... Creating TS for substation 1 at Mon Jun 17 15:52:10 2024
+
+......... Sending shift change message to USA_XML at Mon Jun 17 15:52:10 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Mon Jun 17 15:52:11 2024
+
+......... Open Shift at Mon Jun 17 15:52:13 2024
+
+ 15:52:13.89  - Send Dda: 5-0  R  OP:RT M:4  0<02><0D>5R0RT4003171<03>
+  - Recv Dda: 5-0     OP:rt M:4  <02><0D>5R0rt4000>8;<03>
+ 15:52:15.62  - Recv Dda: 5-0     OP:ta M:7  <02>>5R0ta7<00>0101001.76|3412217.64|0|0|0|0|0|0|
+0|0|0|0|0|0|0|0|0>;><03>
+ 15:52:15.62         Dda: 5-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 15:52:15.62  - Send Dda: 5-0  R  OP:CD M:8  0<02><0D>5R0CD800?1;<<03>
+ 15:52:15.67  - Recv Dda: 5-0     OP:cd M:8  <02><0B>5R0cd8>874<03>
+ 15:52:15.67  - Send Dda: 5-0  R  OP:SP M:9  0<02>35R0SP98.350|17.79|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|672><03>
+ 15:52:15.71  - Recv Dda: 5-0     OP:sp M:9  <02><0B>5R0sp97481<03>
+ 15:52:16.73         Dda: 5-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 5-0     OP:db M:0  <02><1B>5R0db0<00>0 Stop Pump CD <9<3<03>
+  - Recv Dda: 5-0     OP:db M:1  <02>"5R0db1<00>0 VER:5.0.122|17/12/1596:5<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><1C>5R0db2<00>0 COUNTRY:ISRAEL6=>5<03>
+  - Recv Dda: 5-0     OP:db M:3  <02><1B>5R0db3<00>0 Pump Type:BEN402?<03>
+  - Recv Dda: 5-0     OP:db M:4  <02><14>5R0db4<00>0 price 1948<03>
+......... Open Shift in CloseShift at Mon Jun 17 15:52:22 2024
+
+......... Creating TS for substation 1 at Mon Jun 17 15:52:22 2024
+
+ 17:57:12.73  - Recv Dda: 5-0     OP:er M:5  <02>ï5R0er5<00>002<00><00>|deviceType=0|deviceIdM
+ain=06hex|deviceIdSub=20|mainErrNum=1|subErrNum=0|isError=1|date=17062024|hour
+=175712|desc=Offline|Ip=|port=|5847<03>
+ 17:57:12.73         Dda: 5-0  Invalid Event er at state 2
+  - Recv Dda: 5-0     OP:db M:6  <02><1D>5R0db6<00>0 Error:Pump Bad >?=?<03>
+ 17:57:16.07  - Recv Dda: 5-0     OP:er M:1  <02><C6>5R0er1<00>022<00><00>|deviceType=0|device
+IdMain=00hex|deviceIdSub=0|mainErrNum=3|subErrNum=0|isError=1|date=17062024|ho
+ur=175715|desc=Pump Tcp. Pump parameter: 6 Pump Type:20|Ip=192.168.0.105|port=
+5000|==14<03>
+ 17:57:16.07         Dda: 5-0  Invalid Event er at state 2
+  - Recv Dda: 5-0     OP:db M:2  <02><1D>5R0db2<00>0 Error:TCP Bad 1>70><03>
+  - Recv Dda: 5-0     OP:db M:3  <02>M5R0db3<00>0 Pump Exception: Socket Error # 1
+0054<0D><0A>Connection reset by peer.1;14<03>
+ 17:59:21.62  - Recv Dda: 5-0     OP:er M:8  <02><C6>5R0er8<00>000<00><00>|deviceType=0|device
+IdMain=00hex|deviceIdSub=0|mainErrNum=3|subErrNum=0|isError=0|date=17062024|ho
+ur=175921|desc=Pump Tcp. Pump parameter: 6 Pump Type:20|Ip=192.168.0.105|port=
+5000|2843<03>
+ 17:59:21.62         Dda: 5-0  Invalid Event er at state 2
+ 17:59:22.27  - Recv Dda: 5-0     OP:er M:9  <02>î5R0er9<00>000<00><00>|deviceType=0|deviceIdM
+ain=06hex|deviceIdSub=20|mainErrNum=1|subErrNum=0|isError=0|date=17062024|hour
+=175921|desc=Online|Ip=|port=|9>08<03>
+ 17:59:22.27         Dda: 5-0  Invalid Event er at state 2
+  - Recv Dda: 5-0     OP:db M:0  <02><1C>5R0db0<00>0 Error:TCP OK 18?<7<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><1C>5R0db1<00>0 Error:Pump OK 78?2<03>
+ 18:00:48.03  - Recv Dda: 5-0     OP:er M:9  <02>ï5R0er9<00>002<00><00>|deviceType=0|deviceIdM
+ain=06hex|deviceIdSub=20|mainErrNum=1|subErrNum=0|isError=1|date=17062024|hour
+=180047|desc=Offline|Ip=|port=|>3;9<03>
+ 18:00:48.03         Dda: 5-0  Invalid Event er at state 2
+  - Recv Dda: 5-0     OP:db M:0  <02><1D>5R0db0<00>0 Error:Pump Bad 0;=?<03>
+ 18:00:51.50  - Recv Dda: 5-0     OP:er M:5  <02><C6>5R0er5<00>022<00><00>|deviceType=0|device
+IdMain=00hex|deviceIdSub=0|mainErrNum=3|subErrNum=0|isError=1|date=17062024|ho
+ur=180050|desc=Pump Tcp. Pump parameter: 6 Pump Type:20|Ip=192.168.0.105|port=
+5000|1344<03>
+ 18:00:51.50         Dda: 5-0  Invalid Event er at state 2
+  - Recv Dda: 5-0     OP:db M:6  <02><1D>5R0db6<00>0 Error:TCP Bad 1:?11<03>
+  - Recv Dda: 5-0     OP:db M:7  <02>M5R0db7<00>0 Pump Exception: Socket Error # 1
+0054<0D><0A>Connection reset by peer.4234<03>
+ 18:02:56.60  - Recv Dda: 5-0     OP:er M:8  <02><C6>5R0er8<00>000<00><00>|deviceType=0|device
+IdMain=00hex|deviceIdSub=0|mainErrNum=3|subErrNum=0|isError=0|date=17062024|ho
+ur=180256|desc=Pump Tcp. Pump parameter: 6 Pump Type:20|Ip=192.168.0.105|port=
+5000|655<<03>
+ 18:02:56.60         Dda: 5-0  Invalid Event er at state 2
+ 18:02:57.14  - Recv Dda: 5-0     OP:er M:9  <02>î5R0er9<00>000<00><00>|deviceType=0|deviceIdM
+ain=06hex|deviceIdSub=20|mainErrNum=1|subErrNum=0|isError=0|date=17062024|hour
+=180256|desc=Online|Ip=|port=|8?90<03>
+ 18:02:57.14         Dda: 5-0  Invalid Event er at state 2
+  - Recv Dda: 5-0     OP:db M:0  <02><1C>5R0db0<00>0 Error:TCP OK 18?<7<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><1C>5R0db1<00>0 Error:Pump OK 78?2<03>
+ 18:27:56.81  - Recv Dda: 5-0     OP:er M:4  <02>ï5R0er4<00>002<00><00>|deviceType=0|deviceIdM
+ain=06hex|deviceIdSub=20|mainErrNum=1|subErrNum=0|isError=1|date=17062024|hour
+=182756|desc=Offline|Ip=|port=|?;4=<03>
+ 18:27:56.81         Dda: 5-0  Invalid Event er at state 2
+  - Recv Dda: 5-0     OP:db M:5  <02><1D>5R0db5<00>0 Error:Pump Bad 9==?<03>
+ 18:28:00.51  - Recv Dda: 5-0     OP:er M:1  <02><C6>5R0er1<00>022<00><00>|deviceType=0|device
+IdMain=00hex|deviceIdSub=0|mainErrNum=3|subErrNum=0|isError=1|date=17062024|ho
+ur=182800|desc=Pump Tcp. Pump parameter: 6 Pump Type:20|Ip=192.168.0.105|port=
+5000|4<73<03>
+ 18:28:00.51         Dda: 5-0  Invalid Event er at state 2
+  - Recv Dda: 5-0     OP:db M:2  <02><1D>5R0db2<00>0 Error:TCP Bad 1>70><03>
+  - Recv Dda: 5-0     OP:db M:3  <02>M5R0db3<00>0 Pump Exception: Socket Error # 1
+0054<0D><0A>Connection reset by peer.1;14<03>
+......... Change shift request, pos=11, pump=0, cashreg=1 at Mon Jun 17 21:36:03 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Mon Jun 17 21:36:03 2024
+
+ 21:36:03.56  - Send Dda: 5-0  R  OP:RT M:5  0<02><0D>5R0RT5000641<03>
+
+********* Opened at Mon Jun 17 21:46:21 2024
+
+
+ 21:46:25.68         Dda: 5-0  Disp : Statetbl.scr ver 6.1.57.0 
+ 21:46:28.27  - Send Dda: 5-0  R  OP:RR M:0  0<02><0B>5R0RR034=:<03>
+ 21:46:31.90  - Send Dda: 5-0  R  OP:DF M:0  0<02><0D>5R0DF000=2:1<03>
+ 21:46:31.95  - Recv Dda: 5-0     OP:df M:0  <02><0B>5R0df08:8><03>
+ 21:47:07.50  - Send Dda: 5-0  R  OP:RT M:2  0<02><0D>5R0RT20083=1<03>
+ 21:47:07.55  - Recv Dda: 5-0     OP:rt M:2  <02><0D>5R0rt200;<2;<03>
+ 21:47:08.35  - Recv Dda: 5-0     OP:pu M:3  <02><12>5R0pu3<00>0<00><00><00><00><00>?:29<03>
+ 21:47:08.35  - Send Dda: 5-0  R  OP:RT M:4  0<02><0D>5R0RT4003171<03>
+ 21:47:08.39  - Recv Dda: 5-0     OP:rt M:4  <02><0D>5R0rt4000>8;<03>
+ 21:47:08.39         Dda: 5-0  Enable RS <- RT
+ 21:47:09.38  - Recv Dda: 5-0     OP:er M:5  <02><C5>5R0er5<00>020<00><00>|deviceType=0|device
+IdMain=00hex|deviceIdSub=0|mainErrNum=3|subErrNum=0|isError=1|date=17062024|ho
+ur=214621|desc=Pump Tcp. Pump parameter: 6 Pump Type:0|Ip=192.168.0.105|port=5
+000|:<65<03>
+ 21:47:09.38         Dda: 5-0  Invalid Event er at state 21
+  - Recv Dda: 5-0     OP:db M:6  <02>&5R0db6<00>0 DDM2 version: 5.0.207.2 887?
+<03>
+  - Recv Dda: 5-0     OP:db M:7  <02><1C>5R0db7<00>0 pump_type = 0 0::9<03>
+  - Recv Dda: 5-0     OP:db M:8  <02><1D>5R0db8<00>0 Error:TCP Bad 1=;2?<03>
+ 01:06:35.95  - Recv Dda: 5-0     OP:er M:2  <02><C5>5R0er2<00>000<00><00>|deviceType=0|device
+IdMain=00hex|deviceIdSub=0|mainErrNum=3|subErrNum=0|isError=0|date=18062024|ho
+ur=010635|desc=Pump Tcp. Pump parameter: 6 Pump Type:0|Ip=192.168.0.105|port=5
+000|57>;<03>
+ 01:06:35.95         Dda: 5-0  Invalid Event er at state 21
+ 01:06:36.50  - Recv Dda: 5-0     OP:er M:3  <02>ì5R0er3<00>000<00><00>|deviceType=0|deviceIdM
+ain=06hex|deviceIdSub=0|mainErrNum=1|subErrNum=0|isError=0|date=18062024|hour=
+010635|desc=Online|Ip=|port=|>8;<<03>
+ 01:06:36.50         Dda: 5-0  Invalid Event er at state 21
+  - Recv Dda: 5-0     OP:db M:4  <02><1C>5R0db4<00>0 Error:TCP OK 17?60<03>
+ 01:06:37.56  - Recv Dda: 5-0     OP:ta M:5  <02>>5R0ta5<00>0101001.76|3412217.64|0|0|0|0|0|0|
+0|0|0|0|0|0|0|0|?83><03>
+ 01:06:37.56         Dda: 5-0  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 01:06:37.56  - Send Dda: 5-0  R  OP:CD M:6  0<02><0D>5R0CD600>:;=<03>
+ 01:06:37.61  - Recv Dda: 5-0     OP:cd M:6  <02><0B>5R0cd609;:<03>
+ 01:06:37.61  - Send Dda: 5-0  R  OP:SP M:7  0<02>35R0SP78.350|17.79|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|52:8<03>
+ 01:06:37.66  - Recv Dda: 5-0     OP:sp M:7  <02><0B>5R0sp7954?<03>
+ 01:06:38.66         Dda: 5-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+......... Open Shift in CloseShift at Tue Jun 18 01:06:38 2024
+
+......... Creating TS for substation 1 at Tue Jun 18 01:06:38 2024
+
+  - Recv Dda: 5-0     OP:db M:8  <02><1C>5R0db8<00>0 Error:Pump OK 79:<<03>
+  - Recv Dda: 5-0     OP:db M:9  <02>(5R0db9<00>0 Bennet Software Ver: 50 08707:
+<03>
+  - Recv Dda: 5-0     OP:db M:0  <02><18>5R0db0<00>0 status= 409<61<03>
+ 01:06:40.70  - Recv Dda: 5-0     OP:er M:1  <02><C6>5R0er1<00>020<00><00>|deviceType=0|device
+IdMain=00hex|deviceIdSub=0|mainErrNum=3|subErrNum=0|isError=1|date=18062024|ho
+ur=010640|desc=Pump Tcp. Pump parameter: 6 Pump Type:20|Ip=192.168.0.105|port=
+5000|2<5?<03>
+ 01:06:40.70         Dda: 5-0  Invalid Event er at state 2
+ 01:06:41.20  - Recv Dda: 5-0     OP:er M:2  <02><C6>5R0er2<00>000<00><00>|deviceType=0|device
+IdMain=00hex|deviceIdSub=0|mainErrNum=3|subErrNum=0|isError=0|date=18062024|ho
+ur=010640|desc=Pump Tcp. Pump parameter: 6 Pump Type:20|Ip=192.168.0.105|port=
+5000|54?:<03>
+ 01:06:41.20         Dda: 5-0  Invalid Event er at state 2
+  - Recv Dda: 5-0     OP:db M:3  <02><1B>5R0db3<00>0 Stop Pump CD ?8>5<03>
+  - Recv Dda: 5-0     OP:db M:4  <02>"5R0db4<00>0 VER:5.0.122|17/12/157=::<03>
+  - Recv Dda: 5-0     OP:db M:5  <02><1C>5R0db5<00>0 COUNTRY:ISRAEL9=30<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><1B>5R0db6<00>0 Pump Type:BEN1345<03>
+  - Recv Dda: 5-0     OP:db M:7  <02><14>5R0db7<00>0 price :887<03>
+  - Recv Dda: 5-0     OP:db M:8  <02><1D>5R0db8<00>0 Error:TCP Bad 1=;2?<03>
+  - Recv Dda: 5-0     OP:db M:9  <02>M5R0db9<00>0 Pump Exception: Socket Error # 1
+0054<0D><0A>Connection reset by peer.85<4<03>
+  - Recv Dda: 5-0     OP:db M:0  <02><1C>5R0db0<00>0 Error:TCP OK 18?<7<03>
+ 01:07:06.99  - Recv Dda: 5-0     OP:er M:9  <02><C6>5R0er9<00>020<00><00>|deviceType=0|device
+IdMain=00hex|deviceIdSub=0|mainErrNum=3|subErrNum=0|isError=1|date=18062024|ho
+ur=010706|desc=Pump Tcp. Pump parameter: 6 Pump Type:20|Ip=192.168.0.105|port=
+5000|<64><03>
+ 01:07:06.99         Dda: 5-0  Invalid Event er at state 2
+ 01:07:07.53  - Recv Dda: 5-0     OP:er M:0  <02><C6>5R0er0<00>000<00><00>|deviceType=0|device
+IdMain=00hex|deviceIdSub=0|mainErrNum=3|subErrNum=0|isError=0|date=18062024|ho
+ur=010707|desc=Pump Tcp. Pump parameter: 6 Pump Type:20|Ip=192.168.0.105|port=
+5000|7494<03>
+ 01:07:07.53         Dda: 5-0  Invalid Event er at state 2
+  - Recv Dda: 5-0     OP:db M:1  <02><1D>5R0db1<00>0 Error:TCP Bad 1950><03>
+  - Recv Dda: 5-0     OP:db M:2  <02>M5R0db2<00>0 Pump Exception: Socket Error # 1
+0054<0D><0A>Connection reset by peer.0=5<<03>
+  - Recv Dda: 5-0     OP:db M:3  <02><1C>5R0db3<00>0 Error:TCP OK 18?;5<03>
+ 01:09:07.59  - Recv Dda: 5-0     OP:er M:9  <02>ï5R0er9<00>002<00><00>|deviceType=0|deviceIdM
+ain=06hex|deviceIdSub=20|mainErrNum=1|subErrNum=0|isError=1|date=18062024|hour
+=010907|desc=Offline|Ip=|port=|:3:3<03>
+ 01:09:07.59         Dda: 5-0  Invalid Event er at state 2
+  - Recv Dda: 5-0     OP:db M:0  <02><1D>5R0db0<00>0 Error:Pump Bad 0;=?<03>
+ 01:09:10.85  - Recv Dda: 5-0     OP:er M:5  <02><C6>5R0er5<00>022<00><00>|deviceType=0|device
+IdMain=00hex|deviceIdSub=0|mainErrNum=3|subErrNum=0|isError=1|date=18062024|ho
+ur=010910|desc=Pump Tcp. Pump parameter: 6 Pump Type:20|Ip=192.168.0.105|port=
+5000|7807<03>
+ 01:09:10.85         Dda: 5-0  Invalid Event er at state 2
+  - Recv Dda: 5-0     OP:db M:6  <02><1D>5R0db6<00>0 Error:TCP Bad 1:?11<03>
+  - Recv Dda: 5-0     OP:db M:7  <02>M5R0db7<00>0 Pump Exception: Socket Error # 1
+0054<0D><0A>Connection reset by peer.4234<03>
+ 01:14:19.97  - Recv Dda: 5-0     OP:er M:8  <02><C6>5R0er8<00>000<00><00>|deviceType=0|device
+IdMain=00hex|deviceIdSub=0|mainErrNum=3|subErrNum=0|isError=0|date=18062024|ho
+ur=011419|desc=Pump Tcp. Pump parameter: 6 Pump Type:20|Ip=192.168.0.105|port=
+5000|8==:<03>
+ 01:14:19.97         Dda: 5-0  Invalid Event er at state 2
+ 01:14:20.53  - Recv Dda: 5-0     OP:er M:9  <02>î5R0er9<00>000<00><00>|deviceType=0|deviceIdM
+ain=06hex|deviceIdSub=20|mainErrNum=1|subErrNum=0|isError=0|date=18062024|hour
+=011419|desc=Online|Ip=|port=|:><4<03>
+ 01:14:20.53         Dda: 5-0  Invalid Event er at state 2
+  - Recv Dda: 5-0     OP:db M:0  <02><1C>5R0db0<00>0 Error:TCP OK 18?<7<03>
+  - Recv Dda: 5-0     OP:db M:1  <02><1C>5R0db1<00>0 Error:Pump OK 78?2<03>
+ 01:19:01.12  - Recv Dda: 5-0     OP:er M:4  <02>ï5R0er4<00>022<00><00>|deviceType=0|deviceIdM
+ain=06hex|deviceIdSub=20|mainErrNum=1|subErrNum=0|isError=1|date=18062024|hour
+=011900|desc=Offline|Ip=|port=|=86<<03>
+ 01:19:01.12         Dda: 5-0  Invalid Event er at state 2
+ 01:19:01.52  - Recv Dda: 5-0     OP:er M:5  <02><C6>5R0er5<00>022<00><00>|deviceType=0|device
+IdMain=00hex|deviceIdSub=0|mainErrNum=3|subErrNum=0|isError=1|date=18062024|ho
+ur=011900|desc=Pump Tcp. Pump parameter: 6 Pump Type:20|Ip=192.168.0.105|port=
+5000|05>3<03>
+ 01:19:01.52         Dda: 5-0  Invalid Event er at state 2
+  - Recv Dda: 5-0     OP:db M:6  <02><1D>5R0db6<00>0 Error:Pump Bad >?=?<03>
+  - Recv Dda: 5-0     OP:db M:7  <02><1D>5R0db7<00>0 Error:TCP Bad 1710><03>
+  - Recv Dda: 5-0     OP:db M:8  <02>M5R0db8<00>0 Pump Exception: Socket Error # 1
+0054<0D><0A>Connection reset by peer.938<<03>
+ 01:21:06.40  - Recv Dda: 5-0     OP:er M:3  <02><C6>5R0er3<00>000<00><00>|deviceType=0|device
+IdMain=00hex|deviceIdSub=0|mainErrNum=3|subErrNum=0|isError=0|date=18062024|ho
+ur=012105|desc=Pump Tcp. Pump parameter: 6 Pump Type:20|Ip=192.168.0.105|port=
+5000|7>16<03>
+ 01:21:06.40         Dda: 5-0  Invalid Event er at state 2
+ 01:21:06.95  - Recv Dda: 5-0     OP:er M:4  <02>î5R0er4<00>000<00><00>|deviceType=0|deviceIdM
+ain=06hex|deviceIdSub=20|mainErrNum=1|subErrNum=0|isError=0|date=18062024|hour
+=012106|desc=Online|Ip=|port=|9:24<03>
+ 01:21:06.95         Dda: 5-0  Invalid Event er at state 2
+  - Recv Dda: 5-0     OP:db M:5  <02><1C>5R0db5<00>0 Error:TCP OK 18?51<03>
+  - Recv Dda: 5-0     OP:db M:6  <02><1C>5R0db6<00>0 Error:Pump OK 8827<03>
+ 01:21:42.32  - Recv Dda: 5-0     OP:er M:9  <02>ï5R0er9<00>002<00><00>|deviceType=0|deviceIdM
+ain=06hex|deviceIdSub=20|mainErrNum=1|subErrNum=0|isError=1|date=18062024|hour
+=012142|desc=Offline|Ip=|port=|9338<03>
+ 01:21:42.32         Dda: 5-0  Invalid Event er at state 2
+ 01:21:42.88  - Recv Dda: 5-0     OP:er M:0  <02><C6>5R0er0<00>022<00><00>|deviceType=0|device
+IdMain=00hex|deviceIdSub=0|mainErrNum=3|subErrNum=0|isError=1|date=18062024|ho
+ur=012142|desc=Pump Tcp. Pump parameter: 6 Pump Type:20|Ip=192.168.0.105|port=
+5000|:?>8<03>
+ 01:21:42.88         Dda: 5-0  Invalid Event er at state 2
+  - Recv Dda: 5-0     OP:db M:1  <02><1D>5R0db1<00>0 Error:Pump Bad =5<0<03>
+  - Recv Dda: 5-0     OP:db M:2  <02><1D>5R0db2<00>0 Error:TCP Bad 1>70><03>
+  - Recv Dda: 5-0     OP:db M:3  <02>M5R0db3<00>0 Pump Exception: Socket Error # 1
+0054<0D><0A>Connection reset by peer.1;14<03>
+ 01:29:55.55  - Recv Dda: 5-0     OP:er M:1  <02><C6>5R0er1<00>000<00><00>|deviceType=0|device
+IdMain=00hex|deviceIdSub=0|mainErrNum=3|subErrNum=0|isError=0|date=18062024|ho
+ur=012955|desc=Pump Tcp. Pump parameter: 6 Pump Type:20|Ip=192.168.0.105|port=
+5000|1?0?<03>
+ 01:29:55.55         Dda: 5-0  Invalid Event er at state 2
+ 01:29:56.09  - Recv Dda: 5-0     OP:er M:2  <02>î5R0er2<00>000<00><00>|deviceType=0|deviceIdM
+ain=06hex|deviceIdSub=20|mainErrNum=1|subErrNum=0|isError=0|date=18062024|hour
+=012955|desc=Online|Ip=|port=|0>39<03>
+ 01:29:56.09         Dda: 5-0  Invalid Event er at state 2
+  - Recv Dda: 5-0     OP:db M:3  <02><1C>5R0db3<00>0 Error:TCP OK 18?;5<03>
+  - Recv Dda: 5-0     OP:db M:4  <02><1C>5R0db4<00>0 Error:Pump OK 7864<03>
+ 01:30:56.41  - Recv Dda: 5-0     OP:er M:2  <02>ï5R0er2<00>022<00><00>|deviceType=0|deviceIdM
+ain=06hex|deviceIdSub=20|mainErrNum=1|subErrNum=0|isError=1|date=18062024|hour
+=013055|desc=Offline|Ip=|port=|=786<03>
+ 01:30:56.41         Dda: 5-0  Invalid Event er at state 2
+ 01:30:56.91  - Recv Dda: 5-0     OP:er M:3  <02><C6>5R0er3<00>022<00><00>|deviceType=0|device
+IdMain=00hex|deviceIdSub=0|mainErrNum=3|subErrNum=0|isError=1|date=18062024|ho
+ur=013056|desc=Pump Tcp. Pump parameter: 6 Pump Type:20|Ip=192.168.0.105|port=
+5000|3<17<03>
+ 01:30:56.91         Dda: 5-0  Invalid Event er at state 2
+  - Recv Dda: 5-0     OP:db M:4  <02><1D>5R0db4<00>0 Error:Pump Bad 43<0<03>
+  - Recv Dda: 5-0     OP:db M:5  <02><1D>5R0db5<00>0 Error:TCP Bad 1==11<03>
+  - Recv Dda: 5-0     OP:db M:6  <02>M5R0db6<00>0 Pump Exception: Socket Error # 1
+0054<0D><0A>Connection reset by peer.547<<03>
+ 04:52:49.50         Dda: 5-0  VSU event:[42] v400120uni|0|3B7B2198|0|0|||0|0||00000000|
+......... Change shift request, pos=11, pump=0, cashreg=1 at Tue Jun 18 04:53:18 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Tue Jun 18 04:53:18 2024
+
+ 04:53:18.98  - Send Dda: 5-0  R  OP:RT M:3  0<02><0D>5R0RT300;4>1<03>
+ 04:53:19.03  - Recv Dda: 5-0     OP:rt M:3  <02><0D>5R0rt3008;1;<03>
+ 04:53:27.46         Dda: 5-0  VSU event:[2] v0
+ 04:53:29.28         Dda: 5-0  VSU event:[42] v400120uni|0|3B7B2198|0|0|||0|0||00000000|
+ 04:53:59.65         Dda: 5-0  VSU event:[2] v0
+......... Change shift request, pos=11, pump=0, cashreg=1 at Tue Jun 18 04:55:04 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=0  glbSysState=3  CanClose()=1 at Tue Jun 18 04:55:04 2024

@@ -30,7 +30,7 @@ def get_opened_pumps(rs_path):
     with open(rs_path, 'r', errors='ignore') as rs:
         for line in rs:
             if 'Open' in line:
-                pumps_set.add(line[dict['PUMP']['start']:dict['PUMP']['end']])
+                pumps_set.add(line[dict['PUMP']['start']:dict['PUMP']['end']].strip())
     return pumps_set
 
 def get_closed_pumps(rs_path):
@@ -41,7 +41,7 @@ def get_closed_pumps(rs_path):
     with open(rs_path, 'r', errors='ignore') as rs:
         for line in rs:
             if 'Close' in line:
-                pumps_set.add(line[dict['PUMP']['start']:dict['PUMP']['end']])
+                pumps_set.add(line[dict['PUMP']['start']:dict['PUMP']['end']].strip())
     return pumps_set
 
 def check_pumps_open_closed(rs_path):
@@ -55,7 +55,7 @@ def get_pumps_nzl(rs_path):
     pumps_array = []
     with open(rs_path, 'r', errors='ignore') as rs:
         for line in rs:
-            pumps_set.add(line[dict['PUMP']['start']:dict['PUMP']['end']])
+            pumps_set.add(line[dict['PUMP']['start']:dict['PUMP']['end']].strip())
         for pump in pumps_set:
             if 'NZL' in line:
                 pumps_set.add(pump)
@@ -68,44 +68,46 @@ def get_pumps_diff(rs_path):
     pumps_dict = {}
     diff_array = []
     with open(rs_path, 'r', errors='ignore') as rs:
+        lines = rs.readlines()
         # For each line in the RS let's add the pumps and sum the counters
-        for line in rs:
+        for line in lines:
             if 'MONEY' in line:
                 continue
-            pump = line[dict['PUMP']['start']:dict['PUMP']['end']]
-            nzl = line[dict['NZL']['start']:dict['NZL']['end']]
-            count = int(line[dict['QTY']['start']:dict['QTY']['end']].replace(' ', ''))
+            pump = line[dict['PUMP']['start']:dict['PUMP']['end']].strip()
+            nzl = line[dict['NZL']['start']:dict['NZL']['end']].strip()
+            count = float(line[dict['QTY']['start']:dict['QTY']['end']].replace(' ', ''))
             if pump in pumps_dict:
-                if nzl in pumps_dict:
+                if nzl in pumps_dict[pump]:
                     if not ('Open' in line or 'Close' in line):
                         pumps_dict[pump][nzl]['count'] += count
                 else:
                     pumps_dict[pump][nzl] = {
                         'open' : count,
-                        'close' : -1,
-                        'count' : -1
+                        'close' : -1.0,
+                        'count' : 0.0
                     }
             else:
                 pumps_dict[pump] = {
                     nzl : {
                         'open' : count,
-                        'close' : -1,
-                        'count' : -1
+                        'close' : -1.0,
+                        'count' : 0.0
                     }
                 }
         # Let's find the last 'Close' for each pump and nzl
-        for reveresed_line in reversed(list(open(rs_path))):
+        reversed_lines = lines[::-1]
+        for reveresed_line in reversed_lines:
             if 'Close' in reveresed_line:
-                pump = reveresed_line[dict['PUMP']['start']:dict['PUMP']['end']]
-                nzl = reveresed_line[dict['NZL']['start']:dict['NZL']['end']]
-                count = int(reveresed_line[dict['QTY']['start']:dict['QTY']['end']].replace(' ', ''))
+                pump = reveresed_line[dict['PUMP']['start']:dict['PUMP']['end']].strip()
+                nzl = reveresed_line[dict['NZL']['start']:dict['NZL']['end']].strip()
+                count = float(reveresed_line[dict['QTY']['start']:dict['QTY']['end']].replace(' ', ''))
                 if pump in pumps_dict and nzl in pumps_dict[pump] and pumps_dict[pump][nzl]['close'] == -1:
                     pumps_dict[pump][nzl]['close'] = count
         # Let's check if there are any differences
         for pump in pumps_dict:
             for nzl in pumps_dict[pump]:
-                if pumps_dict[pump][nzl]['close'] != (pumps_dict[pump][nzl]['open'] + pumps_dict[pump][nzl]['count']):
-                    diff_array.append([pump, nzl, pumps_dict[pump][nzl]['open'] + pumps_dict[pump][nzl]['count'] - pumps_dict[pump][nzl]['close']])
+                if  abs((pumps_dict[pump][nzl]['open'] + pumps_dict[pump][nzl]['count']) - pumps_dict[pump][nzl]['close']) > 1:
+                    diff_array.append([pump, nzl, round(pumps_dict[pump][nzl]['open'] + pumps_dict[pump][nzl]['count'] - pumps_dict[pump][nzl]['close'], 2)])
     return diff_array
                     
 def neg_diff(pump, nzl, rs_path):
@@ -116,8 +118,8 @@ def neg_diff(pump, nzl, rs_path):
         for line in rs:
             if 'MONEY' in line:
                 continue
-            if pump == line[dict['PUMP']['start']:dict['PUMP']['end']] and nzl == line[dict['NZL']['start']:dict['NZL']['end']]:
-                return int(line[dict['QTY']['start']:dict['QTY']['end'].replace(' ', '')])
+            if pump == line[dict['PUMP']['start']:dict['PUMP']['end']].strip() and nzl == line[dict['NZL']['start']:dict['NZL']['end']].strip():
+                return float(line[dict['QTY']['start']:dict['QTY']['end'].replace(' ', '')])
     return 0
 
 def pos_diff(pump, nzl, rs_path):
@@ -128,8 +130,8 @@ def pos_diff(pump, nzl, rs_path):
         for line in rs:
             if 'MONEY' in line:
                 continue
-            if pump == line[dict['PUMP']['start']:dict['PUMP']['end']] and nzl == line[dict['NZL']['start']:dict['NZL']['end']]:
-                return int(line[dict['QTY']['start']:dict['QTY']['end'].replace(' ', '')])
+            if pump == line[dict['PUMP']['start']:dict['PUMP']['end']].strip() and nzl == line[dict['NZL']['start']:dict['NZL']['end']].strip():
+                return float(line[dict['QTY']['start']:dict['QTY']['end'].replace(' ', '')])
     return 0
 
 def close_pump(pump, rs_path):
@@ -137,9 +139,11 @@ def close_pump(pump, rs_path):
     if not os.path.exists(rs_path):
         return 0
     with open(rs_path, 'r', errors='ignore') as rs:
-        for reveresed_line in reversed(list(open(rs_path))):
+        lines = rs.readlines()
+        reversed_lines = lines[::-1]
+        for reveresed_line in reversed_lines:
             if 'Close' in reveresed_line:
-                close_timedate = reveresed_line[dict['TIME']['start']:dict['DATE']['end']]
+                close_timedate = reveresed_line[dict['TIME']['start']:dict['DATE']['end']].strip()
                 break
     done = False
     next_rs_path = next_rs(rs_path)
@@ -151,14 +155,15 @@ def close_pump(pump, rs_path):
                 if 'MONEY' in line:
                     continue
                 if found:
-                    if pump == line[dict['PUMP']['start']:dict['PUMP']['end']]:
+                    if pump == line[dict['PUMP']['start']:dict['PUMP']['end']].strip():
                         lines_to_copy.append(line)
                     else:
                         done = True
                         break
-                elif pump == line[dict['PUMP']['start']:dict['PUMP']['end']]:
+                elif pump == line[dict['PUMP']['start']:dict['PUMP']['end']].strip():
                     found = True
                     lines_to_copy.append(line)
+        next_rs_path = next_rs(next_rs_path)
     for line in lines_to_copy:
         line_to_write = func.open_to_close(line, close_timedate)
         with open(rs_path, 'a', errors='ignore') as rs:
@@ -260,10 +265,10 @@ def get_open_close(rs_path):
         lines = rs.readlines()
         for line in lines:
             if 'Open' in line:
-                open_timedate = line[dict['TIME']['start']:dict['DATE']['end']]
+                open_timedate = line[dict['TIME']['start']:dict['DATE']['end']].strip()
                 break
         for line in reversed(lines):
             if 'Close' in line:
-                close_timedate = line[dict['TIME']['start']:dict['DATE']['end']]
+                close_timedate = line[dict['TIME']['start']:dict['DATE']['end']].strip()
                 break
         return open_timedate, close_timedate
