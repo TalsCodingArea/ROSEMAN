@@ -1,0 +1,569 @@
+
+
+********* Opened at Tue Apr 30 23:04:44 2024
+
+
+ 23:04:45.80         Dda: 3-1  Disp : Ask_print_Entry 
+ 23:04:45.80         Dda: 3-1  Recovery remove pump 06
+ 23:04:45.80         Dda: 3-1  Recovery remove failed for pump 06, code=2
+ 23:04:45.80         Dda: 3-1  Disp : Floating pos ? 
+ 23:04:45.80         Dda: 3-1  POS#6, Pump#6, PcPos=1
+ 23:04:45.80         Dda: 3-1  Disp : No Floating pos ! 
+ 23:04:45.80         Dda: 3-1  Disp : No Integrated 
+ 23:04:45.80         Dda: 3-1  Disp : Release terminal 
+ 23:04:45.80  - Send Dda: 3-1  R  OP:CD M:9  0<02><0D>3R1CD90003>7<03>
+ 23:04:45.85  - Recv Dda: 3-1     OP:cd M:9  <02><0B>3R1cd90300<03>
+ 23:04:45.85  - Send Dda: 3-1  R  OP:SP M:0  0<02>;3R1SP08.550|17.90|7.720|7.940|0|0|0|0|0|0|0
+|0|0|0|0|0|0<37<03>
+ 23:04:45.90  - Recv Dda: 3-1     OP:sp M:0  <02><0B>3R1sp01>?=<03>
+ 23:04:46.38  - Send Dda: 3-1  R  OP:KM M:1  0<02><0E>3R1KM1<C3>0<F8>9244<03>
+ 23:04:46.43  - Recv Dda: 3-1     OP:km M:1  <02><0B>3R1km19131<03>
+ 23:04:46.43  - Send Dda: 3-1  R  OP:EM M:2  0<02><0D>3R1EM200<=>4<03>
+  - Recv Dda: 3-1     OP:em M:2  <02><0D>3R1em200?21><03>
+ 23:04:46.99         Dda: 3-1  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 3-1     OP:db M:3  <02><1B>3R1db3<00>0 Stop Pump CF =7<5<03>
+ 23:04:47.54  - Send Dda: 3-1  T  OP:KM M:4  0<02><0E>3T1KM4<FF><FF><FF>6883<03>
+ 23:04:47.58  - Recv Dda: 3-1     OP:km M:4  <02><0B>3T1km40<11<03>
+ 23:04:47.66         Dda: 3-1  Rcv  Ex. POS: 6 S T TPDN     §
+  - Recv Dda: 3-1     OP:db M:5  <02><1D>3R1db5<00>0 Money:01 29 39 969:<03>
+ 23:04:48.13  - Send Dda: 3-1  T  OP:TP M:6  0<02>:3T1TP6DN     ÑåÅó öëîÉÑå          òÖôâÄ ïáå
+     \\000K0;1<<03>
+ 23:04:48.18  - Recv Dda: 3-1     OP:tp M:6  <02><0B>3T1tp6362><03>
+  - Recv Dda: 3-1     OP:db M:7  <02><1B>3R1db7<00>0 Val:01 67 60 2=7;<03>
+  - Recv Dda: 3-1     OP:db M:8  <02><1A>3R1db8<00>0 Price: 0304 ?<9?<03>
+  - Recv Dda: 3-1     OP:db M:9  <02>/3R1db9<00>0 Main thread did not send FT data
+ 20<<<03>
+  - Recv Dda: 3-1     OP:db M:0  <02><17>3R1db0<00>0 Pump Off >09:<03>
+  - Recv Dda: 3-1     OP:db M:1  <02>43R1db1<00>0 Dresser, Credit mode price + end
+ sale 2?>?<03>
+  - Recv Dda: 3-1     OP:db M:2  <02><1C>3R1db2<00>0 QS perform ft 89?3<03>
+  - Recv Dda: 3-1     OP:db M:3  <02>,3R1db3<00>0 23:04:38:947: Pump status: 17 42
+72<03>
+  - Recv Dda: 3-1     OP:db M:4  <02>)3R1db4<00>0 Dresser set prices (false) 9592
+<03>
+  - Recv Dda: 3-1     OP:db M:5  <02> 3R1db5<00>0 Dresser, Price OK 5926<03>
+  - Recv Dda: 3-1     OP:db M:6  <02><1B>3R1db6<00>0 Stop Pump CD >2<=<03>
+  - Recv Dda: 3-1     OP:db M:7  <02>)3R1db7<00>0 Dresser set prices (false) 17<8
+<03>
+  - Recv Dda: 3-1     OP:db M:8  <02> 3R1db8<00>0 Dresser, Price OK <=1<<03>
+  - Recv Dda: 3-1     OP:db M:9  <02>(3R1db9<00>0 Wayne KeyDpt - EnableKeys 392<
+<03>
+ 23:04:58.43         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:05:00.29         Dda: 3-1  Rcv  Ex. POS: 6 S T KMˇˇˇ
+ 23:05:00.74  - Send Dda: 3-1  T  OP:KM M:0  0<02><0E>3T1KM0<FF><FF><FF>:272<03>
+ 23:05:00.78  - Recv Dda: 3-1     OP:km M:0  <02><0B>3T1km04<95<03>
+ 23:05:00.86         Dda: 3-1  Rcv  Ex. POS: 6 S R EF017X0
+  - Recv Dda: 3-1     OP:db M:1  <02>(3R1db1<00>0 Wayne KeyDpt - EnableKeys 71=4
+<03>
+ 23:05:01.32  - Send Dda: 3-1  R  OP:EF M:2  0<02><13>3R1EF2017\2X0<00><00>389;<03>
+ 23:05:01.36  - Recv Dda: 3-1     OP:ef M:2  <02><0E>3R1ef2017?9>8<03>
+ 23:05:01.44         Dda: 3-1  Rcv  Ex. POS: 6 S R EM
+ 23:05:01.91  - Send Dda: 3-1  R  OP:EM M:4  0<02><0D>3R1EM4<00><00>4<82<03>
+ 23:05:01.96  - Recv Dda: 3-1     OP:em M:4  <02><0D>3R1em4<00><00>7378<03>
+ 23:06:16.93  - Recv Dda: 3-1     OP:to M:9  <02><0E>3R1to9<00><00>2;30;<03>
+ 23:06:16.93         Dda: 3-1  Invalid Event to at state 2
+  - Recv Dda: 3-1     OP:db M:0  <02><1C>3R1db0<00><00> form report_to3=<0<03>
+  - Recv Dda: 3-1     OP:mi M:3  
+ 23:15:15.52         Dda: 3-1  track2=458003******0045=********************?
+ 23:15:15.52         Dda: 3-1  Disp : ID_CARD 
+ 23:15:15.52         Dda: 3-1  Send Ex. POS: mi 4580. Receive=OK
+ 23:15:15.52         Dda: 3-1  Invalid Event mi at state 2
+ 23:15:15.74         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:15:16.05         Dda: 3-1  Disp : enter_POS_state 
+ 23:15:16.77         Dda: 3-1  Rcv  Ex. POS: 6 S R EM
+ 23:15:17.32  - Send Dda: 3-1  R  OP:EM M:8  0<02><0D>3R1EM8<00><00>39>3<03>
+ 23:15:17.35  - Recv Dda: 3-1     OP:em M:8  <02><0D>3R1em8<00><00>0619<03>
+ 23:15:17.44         Dda: 3-1  Rcv  Ex. POS: 6 S T KM
+ 23:15:17.88  - Send Dda: 3-1  T  OP:KM M:0  0<02><0E>3T1KM0<00><00>0464=<03>
+  - Recv Dda: 3-1     OP:km M:0  <02><0B>3T1km04<95<03>
+ 23:15:18.01         Dda: 3-1  Rcv  Ex. POS: 6 S R EF081X0
+ 23:15:18.49  - Send Dda: 3-1  R  OP:EF M:2  0<02><13>3R1EF2081\2X0<00><00><0;7<03>
+ 23:15:18.54  - Recv Dda: 3-1     OP:ef M:2  <02><0E>3R1ef208123;6<03>
+ 23:15:23.32  - Recv Dda: 3-1     OP:fe M:0  <02><17>3R1fe0<00><00>207108887^<996<03>
+ 23:15:23.32         Dda: 3-1  Send Ex. POS: fe 2071. Receive=OK
+ 23:15:23.43         Dda: 3-1  Rcv  Ex. POS: 6 S T KM
+ 23:15:23.85  - Send Dda: 3-1  T  OP:KM M:2  0<02><0E>3T1KM2<00><00>0:;25<03>
+ 23:15:23.90  - Recv Dda: 3-1     OP:km M:2  <02><0B>3T1km26<=7<03>
+ 23:15:23.97         Dda: 3-1  Rcv  Ex. POS: 6 S R EF021X0
+ 23:15:24.46  - Send Dda: 3-1  R  OP:EF M:4  0<02><13>3R1EF4021\2X0<00><00>2274<03>
+ 23:15:24.50  - Recv Dda: 3-1     OP:ef M:4  <02><0E>3R1ef4021>;>4<03>
+ 23:15:31.68  - Recv Dda: 3-1     OP:fe M:7  <02><16>3R1fe7<00><00>4262630?^4855<03>
+ 23:15:31.68         Dda: 3-1  Send Ex. POS: fe 4262. Receive=OK
+ 23:15:31.69         Dda: 3-1  Rcv  Ex. POS: 6 S T KMˇˇˇ
+  - Send Dda: 3-1  T  OP:KM M:9  0<02><0E>3T1KM9<FF><FF><FF>5105<03>
+ 23:15:32.29  - Recv Dda: 3-1     OP:km M:9  <02><0B>3T1km9==;<<03>
+ 23:15:32.36         Dda: 3-1  Rcv  Ex. POS: 6 S T TPDN    §∑
+ 23:15:32.80  - Send Dda: 3-1  T  OP:TP M:1  0<02>:3T1TP1DN    ÑóâÉÅÅ ëâàòã      ('êô 10)èöéÑ 
+ÄêÄ  \\000K>6:2<03>
+ 23:15:32.85  - Recv Dda: 3-1     OP:tp M:1  <02><0B>3T1tp146<9<03>
+  - Recv Dda: 3-1     OP:db M:2  <02>(3R1db2<00><00> Wayne KeyDpt - EnableKeys =1?
+3<03>
+ 23:15:36.24         Dda: 3-1  Rcv  Ex. POS: 6 S T KMˇˇˇ
+ 23:15:36.66  - Send Dda: 3-1  T  OP:KM M:9  0<02><0E>3T1KM9<FF><FF><FF>5105<03>
+ 23:15:36.71  - Recv Dda: 3-1     OP:km M:9  <02><0B>3T1km9==;<<03>
+ 23:15:36.78         Dda: 3-1  Rcv  Ex. POS: 6 S T TPDN     ∑
+  - Recv Dda: 3-1     OP:db M:0  <02>(3R1db0<00><00> Wayne KeyDpt - EnableKeys <3<
+=<03>
+ 23:15:37.22  - Send Dda: 3-1  T  OP:TP M:1  0<02>:3T1TP1DN     óåÉ ÇÖë òáÅ      3-òåÖë 2-98 1
+-95  \\000K1770<03>
+ 23:15:37.27  - Recv Dda: 3-1     OP:tp M:1  <02><0B>3T1tp146<9<03>
+  - Recv Dda: 3-1     OP:db M:2  <02>(3R1db2<00><00> Wayne KeyDpt - EnableKeys =1?
+3<03>
+ 23:15:38.36  - Recv Dda: 3-1     OP:ke M:3  <02><0E>3R1ke3<00><00>4224?<03>
+ 23:15:38.36         Dda: 3-1  Send Ex. POS: ke 4. Receive=OK
+ 23:15:38.44         Dda: 3-1  PC-POS Refuel Discount type=0,voucher=0064383,cust name=00060000                ,sign_c=0,ash=12161,clubtype=      
+ 23:15:38.44         Dda: 3-1  Refuel cont.: limit=00059900, rgis=0426263000, odo=000001, posNo=6, idbox=
+ 23:15:38.44         Dda: 3-1  clubID=0000000000000000000
+ 23:15:38.44         Dda: 3-1  POS start refuel sync
+  - Recv Dda: 3-1     OP:db M:4  <02>-3R1db4<00><00>OpenChanged = false, EnableKey
+s 40;9<03>
+ 23:15:38.92         Dda: 3-1  Send Ex. POS: db Open. Receive=OK
+ 23:15:38.96         Dda: 3-1  PC-POS Transaction mi
+ 23:15:38.96         Dda: 3-1  iCardLen=16,TrackLen=37
+ 23:15:38.96         Dda: 3-1  track2=458003******0045=********************
+ 23:15:38.96         Dda: 3-1  Disp : Checking-Coupon 
+ 23:15:38.96         Dda: 3-1  Disp : CH-3CardID 
+ 23:15:38.96         Dda: 3-1  track2=458003******0045=********************
+ 23:15:38.96         Dda: 3-1  Disp : CH-3Temp4 4580 
+ 23:15:38.96         Dda: 3-1  Disp : IdType= C 
+ 23:15:38.96         Dda: 3-1  Disp : Checking-DorClub 
+ 23:15:38.96         Dda: 3-1  Disp : ChequeNum=            
+ 23:15:38.96         Dda: 3-1  Disp : chequeAmount=           
+ 23:15:38.96         Dda: 3-1  Disp : Checking-DOR 
+ 23:15:38.96         Dda: 3-1  Disp : Checking-DOR-Card 
+ 23:15:38.96         Dda: 3-1  Disp : temp4= 4580 
+ 23:15:38.96         Dda: 3-1  Disp : Checking-Praxell 
+ 23:15:38.96         Dda: 3-1  Disp : discounttype=  
+ 23:15:38.96         Dda: 3-1  Disp : Ashrait= 1 
+ 23:15:38.96         Dda: 3-1  Disp : Shva-Temp1= 0 
+ 23:15:38.96         Dda: 3-1  Disp : Checking-Shva 
+ 23:15:38.96         Dda: 3-1  Disp : Shva_PipeName= SHVA 
+ 23:15:38.96         Dda: 3-1  int_in=A458003******0045=********************D011100E0000000I06J3O000001P???????
+ 23:15:38.97         Dda: 3-1  int_ot=0000000458003******0045262013****0000060000        000000006011 100  0000000000000000000000000008006082       ÑÜâÖ MAX0                   
+
+ 23:15:38.97         Dda: 3-1  Disp : Prefix6 075998 
+ 23:15:38.97         Dda: 3-1  Credit=000458003******0045
+ 23:15:38.97         Dda: 3-1  Disp : Prefix3= 458 
+ 23:15:38.97         Dda: 3-1  ItsMe() =      âéÖÄå    Code = 070000
+ 23:15:38.97         Dda: 3-1  Disp : Shva-Validated 
+ 23:15:39.00         Dda: 3-1  Disp : ValConfirmed 
+ 23:15:39.00  - Send Dda: 3-1  R  OP:KM M:6  0<02><0E>3R1KM6A <0<>8<03>
+ 23:15:39.05  - Recv Dda: 3-1     OP:km M:6  <02><0B>3R1km6>1=6<03>
+ 23:15:39.05  - Send Dda: 3-1  R  OP:EF M:7  0<02><14>3R1EF7026\2X0<00><00><00>;=6<<03>
+ 23:15:39.10  - Recv Dda: 3-1     OP:ef M:7  <02><0E>3R1ef702600=?<03>
+ 23:15:39.58  - Send Dda: 3-1  R  OP:SP M:8  0<02>;3R1SP88.550|17.90|7.720|7.940|0|0|0|0|0|0|0
+|0|0|0|0|0|;7;2<03>
+ 23:15:39.63  - Recv Dda: 3-1     OP:sp M:8  <02><0B>3R1sp89??5<03>
+ 23:15:40.13         Dda: 3-1  Tran type=2, Rate type(cash/credit)=1, Nozzle BITMAP=2
+ 23:15:40.13  - Send Dda: 3-1  R  OP:CT M:9  0<02>x3R1CT926\22170.058|599.00|33.464|599.00|77.
+591|599.00|75.441|599.00|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|<?9=
+<03>
+  - Recv Dda: 3-1     OP:ct M:9  <02><0D>3R1ct926211><03>
+  - Recv Dda: 3-1     OP:db M:0  <02>)3R1db0<00>2 Dresser set prices (false) 7<99
+<03>
+  - Recv Dda: 3-1     OP:db M:1  <02><19>3R1db1<00>2 start_pump 89;><03>
+ 23:15:41.80  - Recv Dda: 3-1     OP:hn M:2  <02><0F>3R1hn2<00>2025308<03>
+ 23:15:41.80         Dda: 3-1  Handle 2
+ 23:15:41.80         Dda: 3-1  Send Ex. POS: hn 02. Receive=OK
+  - Recv Dda: 3-1     OP:db M:3  <02> 3R1db3<00>2 Dresser, Price OK 4>;1<03>
+ 23:15:42.47         Dda: 3-1  Rcv  Ex. POS: 6 S T KMˇˇˇ
+ 23:15:42.91  - Recv Dda: 3-1     OP:nz M:4  <02><10>3R1nz4<00>20219;<0<03>
+ 23:15:42.91  - Send Dda: 3-1  R  OP:EF M:5  0<02><14>3R1EF5036<00><00>0<00><00><00>5197<03>
+ 23:15:42.96  - Recv Dda: 3-1     OP:ef M:5  <02><0E>3R1ef5036=>86<03>
+ 23:15:42.96         Dda: 3-1  Recovery save pump 06
+ 23:15:42.96         Dda: 3-1  S062
+ 23:15:42.96  - Send Dda: 3-1  R  OP:KM M:6  0<02><0E>3R1KM6Ç<00>0;425<03>
+ 23:15:43.00  - Recv Dda: 3-1     OP:km M:6  <02><0B>3R1km6>1=6<03>
+ 23:15:43.05         Dda: 3-1  Disp : Resume_update_Odo1 
+ 23:15:43.05  - Send Dda: 3-1  R  OP:EF M:8  0<02><14>3R1EF8036<00><00>0<00><00><00>=9:<<03>
+ 23:15:43.10  - Recv Dda: 3-1     OP:ef M:8  <02><0E>3R1ef8036>700<03>
+ 23:15:43.10  - Send Dda: 3-1  R  OP:RF M:9  0<02><0D>3R1RF9004084<03>
+ 23:15:43.14  - Recv Dda: 3-1     OP:rf M:9  <02><0D>3R1rf9007?7><03>
+ 23:15:43.69  - Send Dda: 3-1  T  OP:KM M:1  0<02><0E>3T1KM1<FF><FF><FF>=4<6<03>
+ 23:15:43.74  - Recv Dda: 3-1     OP:km M:1  <02><0B>3T1km15<;4<03>
+ 23:15:43.82         Dda: 3-1  Rcv  Ex. POS: 6 S R EF017X0
+ 23:15:44.26  - Send Dda: 3-1  R  OP:EF M:3  0<02><13>3R1EF3017\2X0<00><00>57=><03>
+ 23:15:44.30  - Recv Dda: 3-1     OP:ef M:3  <02><0E>3R1ef30178?5<<03>
+ 23:15:44.40         Dda: 3-1  Rcv  Ex. POS: 6 S R EM
+ 23:15:44.82  - Send Dda: 3-1  R  OP:EM M:5  0<02><0D>3R1EM5<00><00>7;;2<03>
+ 23:15:44.86  - Recv Dda: 3-1     OP:em M:5  <02><0D>3R1em5<00><00>4448<03>
+  - Recv Dda: 3-1     OP:db M:7  <02>,3R1db7<00><00> 23:15:41:398: Pump status: 11
+ 240><03>
+ 23:15:45.82         Dda: 3-1  Send Ex. POS: db  23:. Receive=OK
+ 23:15:46.30  - Recv Dda: 3-1     OP:fs M:8  <02><19>3R1fs8<00><00>0217.72|0|0|230<<03>
+ 23:15:52.95  - Recv Dda: 3-1     OP:fs M:0  <02> 3R1fs0<00><00>0217.72|17.91|2.32|;5>4<03>
+ 23:15:59.74  - Recv Dda: 3-1     OP:fs M:2  <02>!3R1fs2<00><00>0217.72|52.09|6.747|618?<03>
+ 23:16:06.38  - Recv Dda: 3-1     OP:fs M:4  <02>!3R1fs4<00><00>0217.72|86.62|11.22|>;9:<03>
+ 23:16:13.01  - Recv Dda: 3-1     OP:fs M:6  <02>"3R1fs6<00><00>0217.72|119.51|15.48|1137<03>
+ 23:16:19.65  - Recv Dda: 3-1     OP:fs M:8  <02>"3R1fs8<00><00>0217.72|154.63|20.03|623?<03>
+ 23:16:26.21  - Recv Dda: 3-1     OP:fs M:0  <02>#3R1fs0<00><00>0217.72|187.63|24.305|7246
+<03>
+ 23:16:32.80  - Recv Dda: 3-1     OP:fs M:2  <02>#3R1fs2<00><00>0217.72|198.06|25.655|;9<8
+<03>
+ 23:16:34.28  - Recv Dda: 3-1     OP:hn M:5  <02><0F>3R1hn5<00><00>00;?5;<03>
+ 23:16:34.28         Dda: 3-1  Handle 0
+ 23:16:34.29         Dda: 3-1  Send Ex. POS: hn 00. Receive=OK
+  - Recv Dda: 3-1     OP:ft M:6  <02>#3R1ft6<00><00>0217.72|198.06|25.655|<:7=
+<03>
+ 23:16:34.74         Dda: 3-1  Send Ex. POS: ft 0217. Receive=OK
+ 23:16:34.74         Dda: 3-1  F0620025.655311985.99
+ 23:16:34.74         Dda: 3-1  Disp : Shva-Post 
+ 23:16:34.74         Dda: 3-1  Disp : Ashrait= 1 
+ 23:16:34.74         Dda: 3-1  Disp : Paragr_28 
+ 23:16:34.74         Dda: 3-1  Disp : DiscountType=  
+ 23:16:34.74         Dda: 3-1  int_in=A458003******0045=********************C19806/00060000D011102E0064383I06J49
+ 23:16:34.74         Dda: 3-1  Send Ex. POS: ft 0217. Receive=OK
+ 23:16:35.19  - Send Dda: 3-1  R  OP:KM M:7  0<02><0E>3R1KM7<00><00>097:;<03>
+ 23:16:35.23  - Recv Dda: 3-1     OP:km M:7  <02><0B>3R1km7?1?7<03>
+  - Recv Dda: 3-1     OP:db M:8  <02><1A>3R1db8<00><00> Handle On:2 6;1;<03>
+  - Recv Dda: 3-1     OP:db M:9  <02>(3R1db9<00><00> Dresser set prices (true) ;3:
+4<03>
+  - Recv Dda: 3-1     OP:db M:0  <02> 3R1db0<00><00> Dresser, Price OK 2>4:<03>
+ 23:16:36.53         Dda: 3-1  int_ot=0000000458003******0045262014****3000019806        0000000060210102 B1006438300000000000000000008006082       ÑÜâÖ MAX0                   
+
+ 23:16:36.53         Dda: 3-1  Enter into WriteTran
+ 23:16:36.53         Dda: 3-1  Try open shift file
+ 23:16:36.55         Dda: 3-1  Write to .\DATA\RS300424.D1B,len =253
+ 23:16:36.55         Dda: 3-1  RS rec =   198.06      25.655  04262630   2   06     207676 23:16 30/04/24   95 èâÜêÅ 05     ÑÜâÖ MA 070000 000458003......0045 0.00           00000001 00080082   7.720                     0000000000000000000 0064383  1 00  441           1                      
+ 23:16:36.55         Dda: 3-1  Recovery remove pump 06
+ 23:16:36.55         Dda: 3-1  after reco remove
+ 23:16:36.55         Dda: 3-1  RS Copy
+ 23:16:36.55         Dda: 3-1  End of WriteTran .\DATA\RS300424.D1B
+ 23:16:36.55         Dda: 3-1  FuelPointPostTran,TranNo=207676,PumpNo=6,Nozzle=2,ProdNo=0005,dQty=25655
+ 23:16:36.55         Dda: 3-1  Rfc transaction
+ 23:16:36.55         Dda: 3-1  FuelPoint_in=FT2|-1|207676|6|2|0005|000458003******0045|0|000001|0|        |0|25655|||0000000000000000000|0064383|070000| 0|04/30/2024 23:15:42| 7.720| 198.06|   0.00|   0.00|04262630|070000|
+  - Recv Dda: 3-1     OP:db M:1  <02>,3R1db1<00><00> 23:15:42:085: Pump status: C9
+ 91=9<03>
+  - Recv Dda: 3-1     OP:db M:2  <02>,3R1db2<00><00> 23:15:42:429: Pump status: 89
+ 642;<03>
+  - Recv Dda: 3-1     OP:db M:3  <02><15>3R1db3<00><00> fueled 592?<03>
+  - Recv Dda: 3-1     OP:db M:4  <02>,3R1db4<00><00> 23:16:33:829: Pump status: 8F
+ :8;<<03>
+  - Recv Dda: 3-1     OP:db M:5  <02>'3R1db5<00><00> Dresser, Cash mode price 21:1
+<03>
+  - Recv Dda: 3-1     OP:db M:6  <02><1B>3R1db6<00><00> Handle Off:2 966<<03>
+  - Recv Dda: 3-1     OP:db M:7  <02><1B>3R1db7<00><00> Stop Pump CF 47=3<03>
+  - Recv Dda: 3-1     OP:db M:8  <02><1D>3R1db8<00><00> Money:01 98 06 923:<03>
+  - Recv Dda: 3-1     OP:db M:9  <02><1B>3R1db9<00><00> Val:02 56 55 11=8<03>
+  - Recv Dda: 3-1     OP:db M:0  <02><1A>3R1db0<00><00> Price: 0304 ;622<03>
+ 23:16:41.92         Dda: 3-1  FuelPoint_ot=CF|
+ 23:16:41.92         Dda: 3-1  Disp : Shva-Posted 075998 
+ 23:16:41.92         Dda: 3-1  Disp : Before-printing1 0 
+ 23:16:41.92         Dda: 3-1  Disp : Temp1 0 
+ 23:16:41.92         Dda: 3-1  Disp : Go-to-print1 
+  - Recv Dda: 3-1     OP:db M:1  <02>/3R1db1<00><00> Main thread did not send FT d
+ata <6<9<03>
+  - Recv Dda: 3-1     OP:db M:2  <02><17>3R1db2<00><00> Pump Off 951;<03>
+ 23:16:43.09         Dda: 3-1  Rcv  Ex. POS: 6 S T KMˇˇˇ
+  - Recv Dda: 3-1     OP:db M:3  <02>43R1db3<00><00> Dresser, Credit mode price + 
+end sale :>?:<03>
+ 23:16:43.22  - Send Dda: 3-1  R  OP:EF M:4  0<02><14>3R1EF4025<00><00>0<00><00><00>:183<03>
+ 23:16:43.26  - Recv Dda: 3-1     OP:ef M:4  <02><0E>3R1ef4025:;60<03>
+ 23:16:44.37         Dda: 3-1  Disp : Ask_print_Entry 
+ 23:16:44.37         Dda: 3-1  Recovery remove pump 06
+ 23:16:44.37         Dda: 3-1  Recovery remove failed for pump 06, code=2
+ 23:16:44.37         Dda: 3-1  Disp : Floating pos ? 
+ 23:16:44.37         Dda: 3-1  POS#6, Pump#6, PcPos=1
+ 23:16:44.37         Dda: 3-1  Disp : No Floating pos ! 
+ 23:16:44.37         Dda: 3-1  Disp : No Integrated 
+ 23:16:44.37         Dda: 3-1  Disp : Release terminal 
+ 23:16:44.37  - Send Dda: 3-1  R  OP:CD M:5  0<02><0D>3R1CD5007686<03>
+ 23:16:44.42  - Recv Dda: 3-1     OP:cd M:5  <02><0B>3R1cd5<28<<03>
+ 23:16:44.42  - Send Dda: 3-1  R  OP:SP M:6  0<02>;3R1SP68.550|17.90|7.720|7.940|0|0|0|0|0|0|0
+|0|0|0|0|0|;30<<03>
+ 23:16:44.47  - Recv Dda: 3-1     OP:sp M:6  <02><0B>3R1sp67>3;<03>
+ 23:16:45.03  - Send Dda: 3-1  R  OP:KM M:7  0<02><0E>3R1KM7<C3>0<F8>;5==<03>
+ 23:16:45.06  - Recv Dda: 3-1     OP:km M:7  <02><0B>3R1km7?1?7<03>
+  - Send Dda: 3-1  R  OP:EM M:8  0<02><0D>3R1EM8000:25<03>
+ 23:16:45.11  - Recv Dda: 3-1     OP:em M:8  <02><0D>3R1em80035=?<03>
+ 23:16:45.62         Dda: 3-1  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 3-1     OP:db M:9  <02>,3R1db9<00>0 23:16:34:699: Pump status: 17 >6
+08<03>
+ 23:16:46.17  - Send Dda: 3-1  T  OP:KM M:0  0<02><0E>3T1KM0<FF><FF><FF>:272<03>
+ 23:16:46.21  - Recv Dda: 3-1     OP:km M:0  <02><0B>3T1km04<95<03>
+ 23:16:46.29         Dda: 3-1  Rcv  Ex. POS: 6 S T TPDN     §
+  - Recv Dda: 3-1     OP:db M:1  <02>)3R1db1<00>0 Dresser set prices (false) 035=
+<03>
+ 23:16:46.81  - Send Dda: 3-1  T  OP:TP M:2  0<02>:3T1TP2DN     ÑåÅó öëîÉÑå          òÖôâÄ ïáå
+     \\000K=><><03>
+ 23:16:46.86  - Recv Dda: 3-1     OP:tp M:2  <02><0B>3T1tp276::<03>
+  - Recv Dda: 3-1     OP:db M:3  <02><1C>3R1db3<00>0 QS perform ft 79<2<03>
+  - Recv Dda: 3-1     OP:db M:4  <02> 3R1db4<00>0 Dresser, Price OK 34?><03>
+  - Recv Dda: 3-1     OP:db M:5  <02><1B>3R1db5<00>0 Stop Pump CD =3>;<03>
+  - Recv Dda: 3-1     OP:db M:6  <02>)3R1db6<00>0 Dresser set prices (false) 99>1
+<03>
+  - Recv Dda: 3-1     OP:db M:7  <02> 3R1db7<00>0 Dresser, Price OK 8296<03>
+  - Recv Dda: 3-1     OP:db M:8  <02>(3R1db8<00>0 Wayne KeyDpt - EnableKeys 3033
+<03>
+ 23:16:57.10         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:16:59.64         Dda: 3-1  Rcv  Ex. POS: 6 S T KMˇˇˇ
+ 23:16:59.93  - Send Dda: 3-1  T  OP:KM M:6  0<02><0E>3T1KM6<FF><FF><FF>85>;<03>
+ 23:16:59.98  - Recv Dda: 3-1     OP:km M:6  <02><0B>3T1km62<53<03>
+ 23:17:00.06         Dda: 3-1  Rcv  Ex. POS: 6 S R EF017X0
+  - Recv Dda: 3-1     OP:db M:7  <02>(3R1db7<00>0 Wayne KeyDpt - EnableKeys 4796
+<03>
+ 23:17:00.48  - Send Dda: 3-1  R  OP:EF M:8  0<02><13>3R1EF8017\2X0<00><00>:<5:<03>
+ 23:17:00.53  - Recv Dda: 3-1     OP:ef M:8  <02><0E>3R1ef80179143<03>
+ 23:17:00.60         Dda: 3-1  Rcv  Ex. POS: 6 S R EM
+ 23:17:01.06  - Send Dda: 3-1  R  OP:EM M:0  0<02><0D>3R1EM0<00><00>9042<03>
+ 23:17:01.10  - Recv Dda: 3-1     OP:em M:0  <02><0D>3R1em0<00><00>:?;8<03>
+ 23:18:15.69  - Recv Dda: 3-1     OP:to M:7  <02><0E>3R1to7<00><00>21151<03>
+ 23:18:15.69         Dda: 3-1  Invalid Event to at state 2
+  - Recv Dda: 3-1     OP:db M:8  <02><1C>3R1db8<00><00> form report_to<<:?<03>
+......... Close Shift at Tue Apr 30 23:55:33 2024
+
+  - Send Dda: 3-1  R  OP:RT M:3  0<02><0D>3R1RT300718:<03>
+ 23:55:34.01  - Recv Dda: 3-1     OP:rt M:3  <02><0D>3R1rt3004>70<03>
+ 23:55:40.21  - Recv Dda: 3-1     OP:ta M:2  <02>Y3R1ta2<00>0459547.88|609463.26|0|1378.42|311
+985.99|931345.54|0|1727.14|0|0|0|0|0|0|0|0|462:<03>
+ 23:55:40.21         Dda: 3-1  WritePumpTotals: iType [1], trs totalizers to server [0], shift totalizers to server [0]
+ 23:55:40.21  - Send Dda: 3-1  R  OP:EF M:3  0<02><14>3R1EF3049<00><00>0<00><00><00>6?=9<03>
+ 23:55:40.26  - Recv Dda: 3-1     OP:ef M:3  <02><0E>3R1ef30499167<03>
+ 23:55:42.88  - Send Dda: 3-1  R  OP:KM M:4  0<02><0E>3R1KM4<00><00><00>3:24<03>
+ 23:55:42.93  - Recv Dda: 3-1     OP:km M:4  <02><0B>3R1km4<194<03>
+......... Close Shift in CloseShift at Tue Apr 30 23:56:13 2024
+
+......... Creating TS for substation 1 at Tue Apr 30 23:56:14 2024
+
+......... Sending shift change message to USA_XML at Tue Apr 30 23:56:14 2024
+
+......... shift change message: USA_XML responded: ER|1|| at Tue Apr 30 23:56:14 2024
+
+  - Recv Dda: 3-1     OP:mi M:4  
+ 23:57:57.48         Dda: 3-1  track2=532610******1974=********************?
+ 23:57:57.48         Dda: 3-1  Send Ex. POS: mi 5326. Receive=OK
+ 23:57:57.48  - Send Dda: 3-1  R  OP:EF M:5  0<02><14>3R1EF5049<00><00>0<00><00><00>1<66<03>
+ 23:57:57.52  - Recv Dda: 3-1     OP:ef M:5  <02><0E>3R1ef5049;6?><03>
+ 23:57:57.63         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:57:58.44         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:57:58.98         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:57:59.52         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:00.07         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:00.57         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:01.01         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:01.38         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:01.76         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:02.13         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:02.52         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:02.90         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:03.27         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:03.65         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:04.02         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:04.40         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:04.77         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:05.15         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:05.57         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:05.97         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:06.46         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:06.96         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:07.47         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:08.02         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:08.55         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:09.11         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:09.61         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:10.16         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:10.72         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:11.27         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:11.79         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:12.35         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:12.91         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:13.46         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:13.97         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:14.52         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:15.07         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:15.63         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:16.19         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:16.75         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:17.32         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:17.88         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:18.43         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:18.94         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:19.49         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:20.05         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:20.60         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:21.16         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:21.71         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:22.25         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:22.82         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:23.38         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:23.93         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:24.49         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:25.05         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:25.61         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:26.14         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:26.64         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:27.21         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:27.71         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:28.19         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:28.74         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:29.30         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:29.86         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:30.39         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:30.94         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:31.49         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:32.02         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:32.53         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:33.08         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:33.63         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:34.19         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:34.75         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:35.30         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:35.86         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:36.42         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:36.97         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:37.49         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:37.97         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:38.52         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:38.97         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:39.50         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:40.06         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:40.63         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:41.16         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:41.71         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:42.25         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:42.81         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:43.36         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:43.92         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:44.42         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:44.97         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:45.50         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:46.06         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:46.61         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:47.16         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:47.69         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:48.25         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:48.77         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:49.30         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:49.86         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:50.42         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:50.97         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:51.53         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:52.08         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:52.64         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:53.16         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:53.70         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:54.25         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:54.81         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:55.36         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:55.92         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:56.48         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:57.03         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:57.59         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:58.14         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:58.70         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:59.23         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:58:59.80         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:00.34         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:00.86         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:01.42         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:01.95         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:02.52         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:03.06         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:03.62         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:04.16         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:04.70         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:05.25         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:05.80         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:06.34         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:06.91         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:07.47         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:08.01         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:08.56         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:09.11         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:09.67         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:10.23         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:10.80         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:11.34         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:11.87         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:12.37         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:12.94         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:13.47         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:14.01         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:14.56         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:15.08         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:15.62         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:16.09         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:16.64         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:17.20         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:17.72         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:18.22         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:18.76         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:19.25         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:19.81         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:20.36         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:20.92         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:21.40         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:21.97         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:22.53         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:23.06         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:23.62         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:24.18         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:24.75         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:25.28         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:25.84         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:26.39         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:26.93         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:27.47         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:28.01         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:28.58         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:29.14         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:29.70         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:30.26         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:30.83         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:31.37         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:31.93         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:32.48         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:33.00         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:33.56         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:34.11         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:34.64         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:35.20         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:35.79         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:36.27         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:36.75         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:37.22         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:37.67         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:38.15         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:38.71         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:39.26         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:39.82         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:40.39         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:40.95         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:41.51         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:42.06         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:42.59         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:43.10         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:43.67         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:44.20         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:44.76         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:45.32         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:45.89         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:46.42         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:46.96         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:47.49         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:48.04         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:48.59         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:49.14         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:49.70         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:50.24         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:50.81         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:51.34         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:51.87         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:52.43         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:52.99         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:53.54         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:54.09         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:54.65         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:55.20         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:55.74         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:56.29         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:56.84         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:57.40         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:57.96         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:58.53         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:59.09         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 23:59:59.65         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+ 00:00:00.21         Dda: 3-1  Rcv  Ex. POS: 6 S X 
+
+********* Closed at Wed May  1 00:00:00 2024
+

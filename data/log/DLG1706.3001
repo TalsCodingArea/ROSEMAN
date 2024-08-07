@@ -1,0 +1,33 @@
+
+
+********* Opened at Mon Jun 17 21:46:21 2024
+
+
+ 21:46:28.68         Dda: 7-0  Disp : Statetbl.scr ver 6.1.57.0 
+ 21:46:28.68         Dda: 7-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+ 21:46:29.35         Dda: 7-0  Disp : enter_POS_state 
+ 21:46:30.21         Dda: 7-0  Rcv  Ex. POS: 30 S T KMÿÿÿ
+ 21:46:30.26  - Send Dda: 7-0  T  OP:KM M:4  0<02><0E>7T0KM4<FF><FF><FF>4<0=<03>
+ 21:46:30.31  - Recv Dda: 7-0     OP:km M:4  <02><0B>7T0km47<04<03>
+ 21:46:30.38         Dda: 7-0  Rcv  Ex. POS: 30 S R EF017X0
+ 21:46:30.74  - Send Dda: 7-0  R  OP:EF M:6  0<02><13>7R0EF6017\2X0<00><00>4;7?<03>
+ 21:46:30.79  - Recv Dda: 7-0     OP:ef M:6  <02><0E>7R0ef60171797<03>
+ 21:46:30.87         Dda: 7-0  Rcv  Ex. POS: 30 S R EM
+ 21:46:31.21  - Send Dda: 7-0  R  OP:EM M:8  0<02><0D>7R0EM8<00><00>732><03>
+  - Recv Dda: 7-0     OP:em M:8  <02><0B>7R0em86;0<<03>
+......... Open Shift in CloseShift at Tue Jun 18 01:06:38 2024
+
+......... Creating TS for substation 1 at Tue Jun 18 01:06:38 2024
+
+......... Change shift request, pos=11, pump=0, cashreg=1 at Tue Jun 18 04:53:18 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Tue Jun 18 04:53:18 2024
+
+ 04:53:19.26         Dda: 7-0  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+ 04:53:19.95  - Send Dda: 7-0  R  OP:EF M:8  0<02><14>7R0EF8049<00><00>0<00><00><00>4:8<<03>
+ 04:53:20.00  - Recv Dda: 7-0     OP:ef M:8  <02><0E>7R0ef8049:;?6<03>
+  - Send Dda: 7-0  R  OP:KM M:9  0<02><0E>7R0KM9<00><00><00>272<<03>
+ 04:53:23.15  - Recv Dda: 7-0     OP:km M:9  <02><0B>7R0km9602<<03>
+......... Change shift request, pos=11, pump=0, cashreg=1 at Tue Jun 18 04:55:04 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=0  glbSysState=3  CanClose()=1 at Tue Jun 18 04:55:04 2024

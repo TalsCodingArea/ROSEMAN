@@ -1,0 +1,71 @@
+
+
+********* Opened at Mon Jun 17 21:46:21 2024
+
+
+ 21:46:28.68         Dda: 6-1  Disp : Statetbl.scr ver 6.1.57.0 
+ 21:47:07.55  - Send Dda: 6-1  R  OP:RT M:0  0<02><0D>6R1RT0006064<03>
+ 21:47:07.60  - Recv Dda: 6-1     OP:rt M:0  <02><0D>6R1rt0005?9><03>
+ 21:47:07.60         Dda: 6-1  Enable RS <- RT
+ 21:47:08.49  - Recv Dda: 6-1     OP:pu M:1  <02><12>6R1pu1<00>0<00><00><00><00><00>6263<03>
+ 21:47:08.49  - Send Dda: 6-1  R  OP:RT M:2  0<02><0D>6R1RT2000>04<03>
+ 21:47:08.54  - Recv Dda: 6-1     OP:rt M:2  <02><0D>6R1rt20031?><03>
+ 21:47:08.54         Dda: 6-1  Enable RS <- RT
+ 21:47:09.52  - Recv Dda: 6-1     OP:er M:3  <02>”6R1er3<00>000<00><00>|deviceType=0|deviceIdM
+ain=02hex|deviceIdSub=29|mainErrNum=1|subErrNum=0|isError=0|date=17062024|hour
+=214618|desc=Online|Ip=|port=|9>=><03>
+ 21:47:09.52         Dda: 6-1  Invalid Event er at state 21
+  - Recv Dda: 6-1     OP:db M:4  <02>%6R1db4<00>0 DDM2 version: 5.0.207.2?837<03>
+  - Recv Dda: 6-1     OP:db M:5  <02><1C>6R1db5<00>0 Error:Pump OK ?2;><03>
+ 21:47:11.22  - Recv Dda: 6-1     OP:ta M:6  <02>B6R1ta6<00>0134382.2|574021.04|0|1958.06|0|0|
+0|0|0|0|0|0|0|0|0|0|;<27<03>
+ 21:47:11.22         Dda: 6-1  WritePumpTotals: iType [0], trs totalizers to server [0], shift totalizers to server [0]
+ 21:47:11.22  - Send Dda: 6-1  R  OP:CD M:7  0<02><0D>6R1CD7005058<03>
+ 21:47:11.27  - Recv Dda: 6-1     OP:cd M:7  <02><0B>6R1cd7:1<?<03>
+ 21:47:11.27         Dda: 6-1  Enable RS <- CD
+ 21:47:11.27  - Send Dda: 6-1  R  OP:SP M:8  0<02>36R1SP84.690|4.690|0|0|0|0|0|0|0|0|0|0|0|0|0
+|0|?2=2<03>
+ 21:47:11.32  - Recv Dda: 6-1     OP:sp M:8  <02><0B>6R1sp8=<?4<03>
+ 21:47:12.49         Dda: 6-1  Disp : ------------------------- s t a r t - p r o c e s s ------------------------- 
+  - Recv Dda: 6-1     OP:db M:9  <02>,6R1db9<00>0 21:46:18:420: Pump status: 17 0?
+:9<03>
+  - Recv Dda: 6-1     OP:db M:0  <02><1B>6R1db0<00>0 Stop Pump CD 4:18<03>
+  - Recv Dda: 6-1     OP:db M:1  <02>"6R1db1<00>0 VER:5.0.122|17/12/1582<8<03>
+  - Recv Dda: 6-1     OP:db M:2  <02><1C>6R1db2<00>0 COUNTRY:ISRAEL170><03>
+  - Recv Dda: 6-1     OP:db M:3  <02><1B>6R1db3<00>0 Pump Type:DRS282<<03>
+  - Recv Dda: 6-1     OP:db M:4  <02>)6R1db4<00>0 Dresser set prices (false) 19=7
+<03>
+  - Recv Dda: 6-1     OP:db M:5  <02> 6R1db5<00>0 Dresser, Price OK 19=8<03>
+......... Open Shift in CloseShift at Tue Jun 18 01:06:38 2024
+
+......... Creating TS for substation 1 at Tue Jun 18 01:06:38 2024
+
+......... Change shift request, pos=11, pump=0, cashreg=1 at Tue Jun 18 04:53:18 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=1  glbSysState=2  CanClose()=1 at Tue Jun 18 04:53:18 2024
+
+ 04:53:19.17  - Send Dda: 6-1  R  OP:RT M:1  0<02><0D>6R1RT1005754<03>
+ 04:53:19.21  - Recv Dda: 6-1     OP:rt M:1  <02><0D>6R1rt10068:><03>
+ 04:53:25.92  - Recv Dda: 6-1     OP:ta M:1  <02>B6R1ta1<00>0134382.2|574021.04|0|1958.06|0|0|
+0|0|0|0|0|0|0|0|0|0|6953<03>
+ 04:53:25.92         Dda: 6-1  WritePumpTotals: iType [1], trs totalizers to server [0], shift totalizers to server [0]
+ 04:54:59.59  - Recv Dda: 6-1     OP:hn M:7  <02><0F>6R1hn7<00>001><2<<03>
+ 04:54:59.59         Dda: 6-1  Handle 1
+ 04:54:59.59         Dda: 6-1  Invalid Event hn at state 20
+  - Recv Dda: 6-1     OP:db M:8  <02>,6R1db8<00>0 04:54:59:271: Pump status: 10 1>
+:<<03>
+  - Recv Dda: 6-1     OP:db M:9  <02><1A>6R1db9<00>0 Handle On:1 7?19<03>
+ 04:55:03.67         Dda: 6-1  VSU event:[42] v400120uni|0|D43C2198|0|0|||0|0||00000000|
+......... Change shift request, pos=11, pump=0, cashreg=1 at Tue Jun 18 04:55:04 2024
+
+......... bSyncPcPos=1  !bReportSysBusy=0  glbSysState=3  CanClose()=1 at Tue Jun 18 04:55:04 2024
+
+  - Recv Dda: 6-1     OP:db M:0  <02>,6R1db0<00>0 04:55:23:269: Pump status: 17 78
+5?<03>
+ 04:55:23.94  - Recv Dda: 6-1     OP:hn M:1  <02><0F>6R1hn1<00>0003188<03>
+ 04:55:23.94         Dda: 6-1  Handle 0
+ 04:55:23.94         Dda: 6-1  Invalid Event hn at state 20
+  - Recv Dda: 6-1     OP:db M:2  <02>'6R1db2<00>0 Dresser, Cash mode price =561
+<03>
+  - Recv Dda: 6-1     OP:db M:3  <02><1B>6R1db3<00>0 Handle Off:1 8952<03>
+ 04:55:31.33         Dda: 6-1  VSU event:[2] v0
